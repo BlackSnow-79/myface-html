@@ -1,0 +1,124 @@
+.none-radius {
+  border-radius: 0 !important;
+}
+.container-fluid {
+  width: 1170px;
+}
+main {
+  width: 100$;
+  min-height: 500px;
+}
+header nav {
+  border-radius: 0 !important;
+}
+header nav:before,
+header nav:after {
+  display: table;
+  content: "";
+}
+header nav:after {
+  clear: both;
+}
+header nav li {
+  float: left;
+  position: relative;
+  display: block;
+}
+header nav li a {
+  color: #fff;
+  border-bottom: 3px solid transparent;
+  padding: 20px 5px 17px!important;
+}
+header nav li a:hover,
+header nav li a:focus {
+  color: #fff;
+  background-color: transparent !important;
+  border-bottom: 3px solid #0d7fb2;
+}
+header nav .active a {
+  border-bottom: 3px solid #0d7fb2;
+}
+header .main-menu .search {
+  padding: 0;
+  margin: 12px 0 12px 50px;
+  border-bottom: 1px solid #1ea7da;
+}
+header .main-menu .search .navbar-search-input {
+  padding: 0;
+  color: #e0f4fe;
+  background-color: transparent;
+  border: 0 !important;
+  border-radius: 0 !important;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+header .main-menu .search .navbar-search-input:-moz-placeholder {
+  color: #e0f4fe;
+}
+header .main-menu .search .navbar-search-input::-moz-placeholder {
+  color: #e0f4fe;
+}
+header .main-menu .search .navbar-search-input:-ms-input-placeholder {
+  color: #e0f4fe;
+}
+header .main-menu .search .navbar-search-input::-webkit-input-placeholder {
+  color: #e0f4fe;
+}
+header .main-menu .search .btn {
+  padding: 6px 0 6px 12px;
+  font-size: 16px;
+  color: #1ea7da;
+  background-color: transparent;
+  border: 0 !important;
+}
+header .main-menu .search .btn:focus {
+  outline: none;
+}
+header .main-menu .search .btn:active {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+header .header-top {
+  height: 60px;
+  background: #2bc5f8;
+  border: 0 !important;
+}
+header .header-top .navbar-custom-menu {
+  width: 195px;
+  float: right;
+  padding: 10px 0;
+}
+header .header-top .navbar-custom-menu a {
+  padding: 0 !important;
+}
+header .header-top .navbar-custom-menu a:hover {
+  border: 0 !important;
+}
+header .header-top .user-label {
+  width: 150px;
+  float: left;
+  margin-right: 5px;
+}
+header .header-top .user-label span {
+  width: 100%;
+  display: block;
+  float: right;
+  text-align: right;
+}
+header .header-top .user-label .user-label-2 {
+  font-size: 11px;
+}
+.user-image {
+  width: 40px;
+  height: 40px;
+}
+footer {
+  height: 50px;
+  padding: 15px 0;
+  background-color: transparent;
+  border-top: 1px solid #e1e1e1;
+  text-align: center;
+}
+footer p {
+  color: #727272;
+}
