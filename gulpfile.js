@@ -14,7 +14,7 @@ var paths = {
     images: 'src/assets/images/**/*',
     fonts: 'src/assets/fonts/**/*',
     less: 'src/assets/less/**/*.less',
-    less1: 'src/assets/less/bootstrap/bootstrap.less',
+    less1: 'src/assets/less/bootstrap-less/bootstrap.less',
     less2: 'src/assets/less/style/style.less',
 };
 
