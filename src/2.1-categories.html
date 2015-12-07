@@ -59,13 +59,22 @@
         </div>
         <!-- /.box-body -->
         <div class="box-footer clearfix">
-          <ul class="pagination pagination-sm no-margin pull-right">
-            <li><a href="#">«</a></li>
-            <li><a href="#">1</a></li>
-            <li><a href="#">2</a></li>
-            <li><a href="#">3</a></li>
-            <li><a href="#">»</a></li>
-          </ul>
+          <div class="pull-right">
+            <ul class="pagination pagination-sm no-margin col-md-8">
+              <li><a href="#" class="first">&lt;</a></li>
+              <li><a href="#" class="prev">Trước</a></li>
+              <li><span class="current-pages">Trang 1/1623</span></li>
+              <li><a href="#" class="next">Sau</a></li>
+              <li><a href="#" class="last">&gt;</a></li>
+            </ul>
+            <form id="search_form" class="ordering col-md-4" method="get">
+              <select name="orderby" id="orderby" class="orderby form-control">
+                  <option value="10" selected="selected">10 dòng / trang</option>
+                  <option value="50">50 dòng / trang</option>
+                  <option value="100">100 dòng / trang</option>
+              </select>
+            </form>
+          </div>
         </div>
       </div>
     </div>
