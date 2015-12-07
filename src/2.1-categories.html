@@ -1,44 +1,56 @@
 {% extends "_layout.html" %}
 {% block page-container %}
+<section class="content-header" id="content-header">
+  <div class="container">
+    <div class="row">
+      <h1 class="page-title">Sản phẩm</h1>
+      <ol class="breadcrumb">
+        <li><a href="2.1-categories.html" class="active">Danh mục sản phẩm</a></li>
+        <li><a href="2.3-product.html">Sản phẩm</a></li>
+      </ol>
+    </div>
+  </div>
+</section>
 <main>
   <div class="container">
     <div class="row">
     	<div class="box">
         <div class="box-header with-border">
           <h3 class="box-title">Danh mục sản phẩm</h3>
-          <a href="#" class="btn btn-default pull-right"> <i class="fa fa-plus"></i> Tạo danh mục sản phẩm mới</a>
+          <a href="2.2-create-category.html" class="btn btn-default pull-right"> <i class="fa fa-plus"></i> Tạo danh mục sản phẩm mới</a>
         </div>
         <!-- /.box-header -->
         <div class="box-body">
           <table class="table">
             <thead>
-            <tr>
-                <th class="col-md-2">ID</th>
+              <tr>
+                <th class="col-md-1">ID</th>
                 <th class="col-md-3">Tên danh mục</th>
                 <th class="col-md-3">Ngành hàng</th>
                 <th class="col-md-3">Trạng thái</th>
-                <th class="text-center col-md-1">Sửa/Xóa</th>
+                <th class="col-md-2">Sửa/Xóa</th>
               </tr>
-            <thead>
+            </thead>
             <tbody>
-              
               <tr>
                 <td>169</td>
-                <td>Tai Nghe Bluetooth</td>
+                <td><a href="#" class="cate-name"><span>Tai Nghe Bluetooth</span></a></td>
                 <td>Thiết bị số</td>
-                <td>Kích hoạt</td>
+                <td><a href="2.2-create-category.html" class="active">Kích hoạt</a></td>
                 <td>
-                  <a href="#" class="btn btn-action"><i class="fa fa-cog"></i></a>
-                  <a href="#" class="btn btn-action"><i class="fa fa-trash-o"></i></a>
+                  <span class="action">
+                    <a href="2.2-create-category.html" class="btn btn-action"><i class="fa fa-cog"></i></a>
+                    <a href="#" class="btn btn-action"><i class="fa fa-trash-o"></i></a>
+                  </span>
                 </td>
               </tr>
               <tr>
                 <td>269</td>
-                <td>Sơ mi nam</td>
+                <td><a href="2.2-create-category.html" class="cate-name"><span>Sơ mi nam</span></a></td>
                 <td>Thời trang nam</td>
-                <td>Chưa kích hoạt</td>
+                <td><a href="#" class="deactive">Chưa kích hoạt</a></td>
                 <td>
-                  <a href="#" class="btn btn-action"><i class="fa fa-cog"></i></a>
+                  <a href="2.2-create-category.html" class="btn btn-action"><i class="fa fa-cog"></i></a>
                   <a href="#" class="btn btn-action"><i class="fa fa-trash-o"></i></a>
                 </td>
               </tr>

@@ -11,15 +11,24 @@
     > tr {
       > th,
       > td {
-        border-top: 1px solid @box-border-color;
+        border-bottom: 1px solid @box-border-color;
+        border-top: 0;
+        padding: 15px;
+        vertical-align: middle;
       }
     }
   }
   //thead cells
   > thead > tr > th {
     color: @white;
-    border-bottom: 1px solid @box-border-color;
+    border-bottom: 0;
     background-color: @blue-bg;
+  }
+  > thead > tr > th:first-child {
+    border-radius: 3px 0 0 3px;
+  }
+  > thead > tr > th:last-child {
+    border-radius: 0 3px 3px 0;
   }
   //progress bars in tables
   tr td .progress {
@@ -43,7 +52,7 @@
   > thead > tr {
     > th,
     > td {
-      border-bottom-width: 2px;
+      border-bottom-width: 1px;
     }
   }
 }
@@ -69,5 +78,38 @@ table.text-center {
   }
   td {
     text-align: right;
+  }
+}
+
+.cate-name{
+  color: @box-border-color;
+  padding-bottom: 1px;
+  border-bottom: 1px solid @box-border-color;
+  span {
+    color: @black;
+    font-weight: bold;
+  }
+  &:hover {
+    color: lighten(@black, 15%);
+  }
+}
+.active {
+  color: @green-text;
+  font-weight: bold;
+  &:hover {
+    color: darken(@green-text, 15%);
+  }
+  &:focus {
+    color: @green-text;
+  }
+}
+.deactive {
+  color: @lime-text;
+  font-weight: bold;
+  &:hover {
+    color: darken(@lime-text, 15%)
+  }
+  &:focus {
+    color: @lime-text;
   }
 }
