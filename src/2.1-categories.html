@@ -17,11 +17,11 @@
     	<div class="box">
         <div class="box-header with-border">
           <h3 class="box-title">Danh mục sản phẩm</h3>
-          <a href="2.2-create-category.html" class="btn btn-default pull-right"> <i class="fa fa-plus"></i> Tạo danh mục sản phẩm mới</a>
+          <a href="2.2-create-category.html" class="btn btn-default pull-right"> + Tạo danh mục sản phẩm mới</a>
         </div>
         <!-- /.box-header -->
         <div class="box-body">
-          <table class="table">
+          <table class="table table-striped">
             <thead>
               <tr>
                 <th class="col-md-1">ID</th>
@@ -32,47 +32,53 @@
               </tr>
             </thead>
             <tbody>
+              {% for x in [1,2,3,4,5,6]%}
               <tr>
                 <td>169</td>
-                <td><a href="#" class="cate-name"><span>Tai Nghe Bluetooth</span></a></td>
+                <td><a href="2.2-create-category.html" class="cate-name">Tai Nghe Bluetooth</a></td>
                 <td>Thiết bị số</td>
-                <td><a href="2.2-create-category.html" class="active">Kích hoạt</a></td>
+                <td><a href="#" class="active" data-toggle="modal" data-target="#nontifi-modal">Kích hoạt</a></td>
                 <td>
                   <span class="action">
-                    <a href="2.2-create-category.html" class="btn btn-action"><i class="fa fa-cog"></i></a>
-                    <a href="#" class="btn btn-action"><i class="fa fa-trash-o"></i></a>
+                    <a href="2.2-create-category.html" class="btn-action" title="sửa"><i class="fa fa-cog"></i></a>
+                    <a href="#" class="btn-action" data-toggle="modal" data-target="#nontifi-modal" title="xóa"><i class="fa fa-trash-o"></i></a>
                   </span>
                 </td>
               </tr>
               <tr>
                 <td>269</td>
-                <td><a href="2.2-create-category.html" class="cate-name"><span>Sơ mi nam</span></a></td>
+                <td><a href="2.2-create-category.html" class="cate-name">Sơ mi nam</a></td>
                 <td>Thời trang nam</td>
-                <td><a href="#" class="deactive">Chưa kích hoạt</a></td>
+                <td><a href="#" class="deactive" data-toggle="modal" data-target="#nontifi-modal">Chưa kích hoạt</a></td>
                 <td>
-                  <a href="2.2-create-category.html" class="btn btn-action"><i class="fa fa-cog"></i></a>
-                  <a href="#" class="btn btn-action"><i class="fa fa-trash-o"></i></a>
+                  <span class="action">
+                    <a href="2.2-create-category.html" class="btn-action" title="sửa"><i class="fa fa-cog"></i></a>
+                    <a href="#" class="btn-action" data-toggle="modal" data-target="#nontifi-modal" title="xóa"><i class="fa fa-trash-o"></i></a>
+                  </span>
                 </td>
               </tr>
+              {% endfor %}
             </tbody>
           </table>
         </div>
         <!-- /.box-body -->
         <div class="box-footer clearfix">
           <div class="pull-right">
-            <ul class="pagination pagination-sm no-margin col-md-8">
-              <li><a href="#" class="first">&lt;</a></li>
+            <ul class="pagination pagination-sm no-margin">
+              <li><a href="#" class="first"><i class="fa fa-step-backward"></i></a></li>
               <li><a href="#" class="prev">Trước</a></li>
               <li><span class="current-pages">Trang 1/1623</span></li>
               <li><a href="#" class="next">Sau</a></li>
-              <li><a href="#" class="last">&gt;</a></li>
+              <li><a href="#" class="last"><i class="fa fa-step-forward"></i></a></li>
             </ul>
-            <form id="search_form" class="ordering col-md-4" method="get">
-              <select name="orderby" id="orderby" class="orderby form-control">
-                  <option value="10" selected="selected">10 dòng / trang</option>
-                  <option value="50">50 dòng / trang</option>
-                  <option value="100">100 dòng / trang</option>
-              </select>
+            <form id="pagi-form" class="pagi-form" method="get">
+              <label>
+                <select name="" class="form-control form-select">
+                    <option value="10" selected="selected">10 dòng/trang</option>
+                    <option value="50">50 dòng/trang</option>
+                    <option value="100">100 dòng/trang</option>
+                </select>
+              </label>
             </form>
           </div>
         </div>

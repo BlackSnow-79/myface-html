@@ -7,7 +7,7 @@
   box-shadow: none;
   border-color: @gray;
   &:focus {
-    border-color: @light-blue;
+    border-color: @blue;
     box-shadow: none;
   }
   &::-moz-placeholder,
@@ -25,6 +25,7 @@
 }
 
 .form-group {
+  margin-bottom: 10px;
   &.has-success {
     label {
       color: @green;
@@ -58,6 +59,11 @@
 
 .form-auto {
   width: auto;
+}
+.select-noline {
+  border-width: 0 0 1px 0;
+  border-style: solid;
+  padding: 3px;
 }
 
 /* Input group */

@@ -1,0 +1,78 @@
+//
+// Pagination (multiple pages)
+// --------------------------------------------------
+.pagination {
+  float: left;
+  padding-left: 0;
+  margin: 0;
+  border-radius: @border-radius-base;
+  > li > a, > li > span {
+    margin-left: 5px;
+    border-radius: @box-border-radius;  
+  }
+  > li > a {
+    color: @white;
+    background-color: @blue;
+    border-color: darken(@blue, 5%);
+    &:hover, &:active, &:focus {
+      color: @white;
+      background-color: darken(@blue, 15%);
+      border-color: darken(@blue, 15%);
+    }
+  }
+  > li > span {
+    border-color: transparent;
+    color: @gray-text;
+    padding: 5px;
+    &:hover,
+    &:focus {
+      color: @gray-text;
+      background-color: transparent;
+      border-color: transparent;
+    }
+  }
+  > li:first-child > a, > li:last-child > a {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+.pagi-form {
+  width: 135px;
+  float: left;
+  margin-left: 25px;
+  position: relative;
+  label {
+    width: 100%;
+    font-weight: normal;
+  }
+  label:after {
+    content: "\f107";
+    font: normal normal normal 14px/1 FontAwesome;
+    color: @white;
+    right: 10px;
+    top: 8px;
+    position:absolute;
+    pointer-events:none;
+  }
+  label:before {
+    content:'';
+    width:30px; 
+    height:30px;
+    background: @blue;
+    border-radius: 0 3px 3px 0;
+    position:absolute;
+    right: 0;
+    top: 0;
+    pointer-events:none;
+    display:block;
+  }
+}
+.form-select {
+  height: 30px;
+  font-size: 12px;
+  padding: 5px;
+  -webkit-appearance:none;
+  -moz-appearance:none;
+   appearance:none;
+}

@@ -21,18 +21,22 @@
   //thead cells
   > thead > tr > th {
     color: @white;
+    font-size: 13px;
     border-bottom: 0;
     background-color: @blue-bg;
   }
   > thead > tr > th:first-child {
-    border-radius: 3px 0 0 3px;
+    border-radius: 3px 0 0 0;
   }
   > thead > tr > th:last-child {
-    border-radius: 0 3px 3px 0;
+    border-radius: 0 3px 0 0;
   }
   //progress bars in tables
   tr td .progress {
     margin-top: 5px;
+  }
+  p {
+    margin: 0;
   }
 }
 
@@ -81,18 +85,13 @@ table.text-center {
   }
 }
 
-.cate-name{
-  color: @box-border-color;
-  padding-bottom: 1px;
-  border-bottom: 1px solid @box-border-color;
-  span {
-    color: @black;
-    font-weight: bold;
-  }
-  &:hover {
-    color: lighten(@black, 15%);
-  }
+.table-striped > tbody > tr:nth-of-type(odd) {
+  background-color: @white;
 }
+.table-striped > tbody > tr:nth-of-type(even) {
+  background-color: @light-gray-bg;
+}
+
 .active {
   color: @green-text;
   font-weight: bold;

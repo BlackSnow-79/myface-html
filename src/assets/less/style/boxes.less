@@ -10,6 +10,7 @@
   margin-bottom: 20px;
   width: 100%;
   box-shadow: @box-boxshadow;
+  padding-bottom: 5px;
   &.collapsed-box {
     .box-body,
     .box-footer {
@@ -65,7 +66,7 @@
       .box-solid-variant(@gray, #444);
     }
     &.box-primary {
-      .box-solid-variant(@light-blue);
+      .box-solid-variant(@blue);
     }
     &.box-info {
       .box-solid-variant(@aqua);
@@ -79,7 +80,7 @@
     &.box-success {
       .box-solid-variant(@green);
     }
-
+    
     > .box-header > .box-tools .btn {
       border: 0;
       box-shadow: none;
@@ -91,9 +92,18 @@
         color: #fff;
       }
     }
-
   }
-
+  
+  .box-lime {
+    border: 1px solid @box-border-color;
+    .box-header {
+      .box-title {
+        color: @lime;
+        font-size: 14px;
+        font-weight: bold;
+      }
+    }
+  }
   //BOX GROUP
   .box-group {
     > .box {
@@ -169,7 +179,7 @@
   > .glyphicon,
   > .ion,
   .box-title {
-    color: @light-blue;
+    color: @blue;
     display: inline-block;
     font-weight: normal;
     font-size: 20px;
@@ -216,7 +226,7 @@
 //Box Body
 .box-body {
   .border-radius(0; 0; @box-border-radius; @box-border-radius);
-  padding: @box-padding;
+  padding: 25px 15px 5px;
   .no-header & {
     .border-top-radius(@box-border-radius);
   }

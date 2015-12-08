@@ -5,8 +5,8 @@
     <div class="row">
       <h1 class="page-title">Sản phẩm</h1>
       <ol class="breadcrumb">
-        <li><a href="2.1-categories.html">Danh mục sản phẩm</a></li>
-        <li><a href="2.3-product.html"  class="active">Sản phẩm</a></li>
+        <li><a href="2.1-categories.html" class="active">Danh mục sản phẩm</a></li>
+        <li><a href="2.3-product.html">Sản phẩm</a></li>
       </ol>
     </div>
   </div>
@@ -16,36 +16,30 @@
     <div class="row">
     	<div class="box">
         <div class="box-header with-border">
-          <h3 class="box-title">Danh sách sản phẩm</h3>
-          <a href="2.4-product-detail.html" class="btn btn-default pull-right"> + Tạo sản phẩm mới</a>
+          <h3 class="box-title">Danh sách khách hàng</h3>
+          <a href="3.2-create-customer.html" class="btn btn-default pull-right"> + Tạo khách hàng mới</a>
         </div>
         <!-- /.box-header -->
         <div class="box-body">
-          <table class="table">
+          <table class="table table-striped">
             <thead>
               <tr>
-                <th><input type="checkbox"></th>
-                <th>SKU</th>
-                <th>Tên sản phẩm</th>
-                <th>Danh mục</th>
-                <th>Số lượng</th>
-                <th>Giá bán</th>
-                <th>Kênh bán</th>
-                <th>Trạng thái</th>
-                <th>Sửa/Xóa</th>
+                <th class="col-md-2">Tên khách hàng</th>
+                <th class="col-md-4">Địa chỉ</th>
+                <th class="col-md-2">Số điện thoại</th>
+                <th class="col-md-1">Tổng <br> đơn hàng</th>
+                <th class="col-md-2">Đơn hàng mới nhất</th>
+                <th class="col-md-1">Sửa/Xóa</th>
               </tr>
             </thead>
             <tbody>
               {% for x in [1,2,3,4,5,6]%}
               <tr>
-                <td><input type="checkbox"></td>
-                <td><a href="#" class="cate-name">TNBTMF001758</a></td>
-                <td>Tai Nghe Bluetooth GH-1752 trắng</td>
-                <td>Thiết bị số</td>
-                <td class="text-right">120</td>
-                <td>350.000<ins>đ</ins></td>
-                <td>Facebook</td>
-                <td><a href="#" class="active" data-toggle="modal" data-target="#nontifi-modal">Kích hoạt</a></td>
+                <td><a href="#" class="cus-name">Phạm Ngọc Thiên Thư</a></td>
+                <td>281/25/5, Đường Lê Văn Sỹ, Phường 12, Quận Phú Nhuận, Thành phố Hồ Chí Minh</td>
+                <td class="text-center"><p>0902148489</p></td>
+                <td class="text-right">125</td>
+                <td class="text-center"><a href="#" class="cate-name">12486578929</a></td>
                 <td>
                   <span class="action">
                     <a href="2.2-create-category.html" class="btn-action" title="sửa"><i class="fa fa-cog"></i></a>
@@ -54,14 +48,14 @@
                 </td>
               </tr>
               <tr>
-                <td><input type="checkbox"></td>
-                <td><a href="#" class="cate-name">TTNAMF002403</a></td>
-                <td>Sơ mi nam</td>
-                <td>Thời trang nam</td>
-                <td class="text-right">10</td>
-                <td>1350.000<ins>đ</ins></td>
-                <td>Facebook</td>
-                <td><a href="#" class="deactive" data-toggle="modal" data-target="#nontifi-modal">Chưa kích hoạt</a></td>
+                <td><a href="#" class="cus-name">Hoàng Minh</a></td>
+                <td>Số 42, Đường Hoàn Kiếm, Phường Hoàn Kiếm, Quận Hai Bà Trưng, Thành phố Hà Nội</td>
+                <td class="text-center">
+                  <p>0902148489</p>
+                  <p>0902559591</p>
+                </td>
+                <td class="text-right">5</td>
+                <td class="text-center"><a href="#" class="cate-name">000114785425</a></td>
                 <td>
                   <span class="action">
                     <a href="2.2-create-category.html" class="btn-action" title="sửa"><i class="fa fa-cog"></i></a>
@@ -75,18 +69,6 @@
         </div>
         <!-- /.box-body -->
         <div class="box-footer clearfix">
-          <div class="row">
-            <div class="col-md-12">
-              <div class="form-group">
-                <select class="form-control form-auto select-noline">
-                  <option>Thao tác khác</option>
-                  <option>Kích hoạt</option>
-                  <option>Không kích hoạt</option>
-                </select>
-              </div>
-              <label class="lime-highlight">Tổng sản phẩm: <ins>10</ins></label>
-            </div>
-          </div>
           <div class="pull-right">
             <ul class="pagination pagination-sm no-margin">
               <li><a href="#" class="first"><i class="fa fa-step-backward"></i></a></li>

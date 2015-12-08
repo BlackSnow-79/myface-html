@@ -57,20 +57,19 @@
 .btn-default {
   background-color: @light-lime;
   color: #958884;
-  &:hover,
-  &:active,
-  &.hover, &:focus{
-    background-color: darken(@light-lime, 5%);
+  &:active,&:active:focus,
+  &:hover, &:focus{
+    background-color: @lime;
     border: 1px solid transparent;
   }
 }
 
 .btn-primary {
-  background-color: @light-blue;
-  border-color: darken(@light-blue, 5%);
-  &:hover, &:active, &.focus {
-    background-color: darken(@light-blue, 5%);
-    border-color: darken(@light-blue, 5%);
+  background-color: @blue;
+  border-color: darken(@blue, 5%);
+  &:hover, &:active, &:focus {
+    background-color: darken(@blue, 5%);
+    border-color: darken(@blue, 5%);
   }
 }
 
@@ -78,7 +77,7 @@
   color: @white;
   background-color: @lime;
   border-color: darken(@lime, 5%);
-  &:hover, &:active, &.hover {
+  &:hover, &:active, &:focus {
     background-color: darken(@lime, 5%);
   }
 }
@@ -95,15 +94,18 @@
 .btn-action {
   color: @gray-text;
   &:hover {
-    color: darken(@gray-text, 5%);
+    color: @blue;
   }
   &:focus {
     color: @gray-text;
   }
   i {
-    color: @white;
     font-size: 23px;
-    text-shadow: 0 0 1px #333;
+  }
+}
+.action {
+  .btn-action:first-child {
+    margin-right: 10px;
   }
 }
 

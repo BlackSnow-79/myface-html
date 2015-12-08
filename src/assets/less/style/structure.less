@@ -5,6 +5,7 @@ main {
   width: 100%;
   min-height: 500px;
   float: left;
+  margin-bottom: 30px;
 }
 .create-cate-side-left {
 	padding-right: 30px;
@@ -13,4 +14,25 @@ main {
 	border-left: 1px dotted @box-border-color;
 	padding-top: 35px;
 	padding-left: 35px;
+}
+.cate-name{
+  color: @black;
+  font-weight: bold;
+  padding-bottom: 1px;
+  border-bottom: 1px solid @box-border-color;
+  &:hover {
+    color: @blue;
+    border-bottom: 0;
+  }
+}
+.cus-name {
+	color: @black;
+  font-weight: bold;
+  padding-bottom: 1px;
+  &:hover {
+    color: @blue;
+  }
+}
+.lime-highlight {
+  color: @lime-text;
 }

@@ -1,0 +1,97 @@
+/*
+ * Component: modal
+ * ----------------
+ */
+.modal {
+  background: rgba(0, 0, 0, .3);
+  .modal-sm {
+    width: 330px;
+    height: 150px;
+  }
+  .modal-title {
+    color: @blue;
+    margin: 0;
+  }
+  p {
+    margin: 0;
+  }
+  .btn {
+    min-width: 70px;
+    padding: 6px 20px;
+  }
+}
+
+.modal-content {
+  .border-radius(2);
+  .box-shadow(0 2px 3px rgba(0, 0, 0, .125));
+  border: 0;
+  @media (min-width: @screen-sm-min) {
+    .box-shadow(0 2px 3px rgba(0, 0, 0, .125));
+  }
+}
+
+.modal-header {
+  padding: 10px 15px;
+  border-bottom-color: @box-border-color;
+}
+
+.modal-footer {
+  padding: 0 15px 15px;
+  border-top-color: transparent;
+}
+
+//Modal variants
+.modal-primary {
+  .modal-body {
+    &:extend(.bg-light-blue);
+  }
+  .modal-header,
+  .modal-footer {
+    &:extend(.bg-light-blue-active);
+    border-color: darken(@blue, 10%);
+  }
+}
+
+.modal-warning {
+  .modal-body {
+    &:extend(.bg-yellow);
+  }
+  .modal-header,
+  .modal-footer {
+    &:extend(.bg-yellow-active);
+    border-color: darken(@yellow, 10%);
+  }
+}
+
+.modal-info {
+  .modal-body {
+    &:extend(.bg-aqua);
+  }
+  .modal-header,
+  .modal-footer {
+    &:extend(.bg-aqua-active);
+    border-color: darken(@aqua, 10%);
+  }
+}
+
+.modal-success {
+  .modal-body {
+    &:extend(.bg-green);
+  }
+  .modal-header,
+  .modal-footer {
+    &:extend(.bg-green-active);
+    border-color: darken(@green, 10%);
+  }
+}
+
+.modal-danger {
+  .modal-body {
+    &:extend(.bg-red);
+  }
+  .modal-header,
+  .modal-footer {
+    &:extend(.bg-red-active);
+    border-color: darken(@red, 10%);
+  }
+}
