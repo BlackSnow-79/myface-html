@@ -29,8 +29,38 @@
                 <!-- /.box-header -->
                 <!-- form start -->
                 <form class="form-horizontal">
-                  <div class="box-body">
-                    
+                  <div class="box-body product-form">
+                    <div class="row">
+                      <div class="product-img-left">
+                        <div class="img-box">
+                          <img src="assets/images/myface.png" alt="myface"/>
+                        </div>
+                        <label><ins class="lime-highlight">Lưu ý:</ins></label>
+                        <p class="noted">Kích thước hình ảnh là 180 x 180 pixel Định dạng hình là *.png , *.jpeg , *.jpg</p>
+                      </div>
+                      <div class="product-img-right">
+                        <label>Thêm hình sản phẩm</label>
+                        <div class="img-box">
+                          <img src="assets/images/product/product-1.jpg" alt="myface"/>
+                        </div>
+                        <div class="img-box">
+                          <img src="assets/images/product/product-2.jpg" alt="myface"/>
+                        </div>
+                        <div class="img-box">
+                          <img src="assets/images/product/product-3.jpg" alt="myface"/>
+                        </div>
+                        <div class="img-box">
+                          <img src="assets/images/product/product-3.jpg" alt="myface"/>
+                        </div>
+                        <div class="img-box">
+                          <img src="assets/images/product/product-1.jpg" alt="myface"/>
+                        </div>
+                        <div class="img-box">
+                          <span>+</span>
+                          <input class="upload-btn" id="upload-img-btn" type="file" name="pic" accept="image/*">
+                        </div>
+                      </div>
+                    </div>
                   </div>
                   <!-- /.box-body -->
                 </form>
@@ -45,7 +75,7 @@
                 <!-- /.box-header -->
                 <!-- form start -->
                 <form class="form-horizontal">
-                  <div class="box-body">
+                  <div class="box-body product-form">
                     <div class="form-group">
                       <label for="" class="col-sm-4 control-label">Tên sản phẩm</label>
                       <div class="col-sm-8">
@@ -103,8 +133,10 @@
                 <!-- /.box-header -->
                 <!-- form start -->
                 <form class="form-horizontal">
-                  <div class="box-body">
-                    
+                  <div class="box-body product-form editor-form">
+                    <div class="form-group">
+                      
+                    </div>
                   </div>
                   <!-- /.box-body -->
                 </form>
@@ -119,8 +151,47 @@
                 <!-- /.box-header -->
                 <!-- form start -->
                 <form class="form-horizontal">
-                  <div class="box-body">
+                  <div class="box-body product-form">
                     
+                  </div>
+                  <!-- /.box-body -->
+                </form>
+              </div>
+              <!-- /.box -->
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-12">
+              <div class="box box-lime">
+                <div class="box-header with-border">
+                  <h4 class="box-title">Trạng thái sản phẩm</h4>
+                </div>
+                <!-- /.box-header -->
+                <!-- form start -->
+                <form class="form-horizontal">
+                  <div class="box-body">
+                    <div class="col-md-3 form-group radio">
+                      <label class="radio-material-blue">
+                        <input type="radio" name="status" id="" value="" checked=""><span class="circle"></span><span class="check"></span>Không kích hoạt sản phẩm                                
+                      </label>
+                    </div>
+                    <div class="col-md-3 form-group radio">
+                      <label class="radio-material-blue">
+                        <input type="radio" name="status" id="" value=""><span class="circle"></span><span class="check"></span>Kích hoạt sản phẩm                                
+                      </label>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="col-md-6 form-group radio">
+                        <label class="radio-material-blue">
+                          <input type="radio" name="status" id="" value=""><span class="circle"></span><span class="check"></span>Chọn ngày kích hoạt sản phẩm                                
+                        </label>
+                      </div>
+                      <div class="col-md-6 form-group date-picker-group">
+                        <input type="text" name="date-picker" id="date-picker" class="form-control date-picker" placeholder="09/04/2015 10:20">
+                        <span class="calendar-icon l-calendar-icon"><i class="fa fa-calendar"></i></span>
+                      </div>
+                    </div>
                   </div>
                   <!-- /.box-body -->
                 </form>

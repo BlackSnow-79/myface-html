@@ -36,3 +36,80 @@ main {
 .lime-highlight {
   color: @lime-text;
 }
+.product-form {
+  min-height: 310px;
+  padding-top: 15px;
+  > .form-group {
+    > label{
+      color: @black;
+      font-weight: normal;
+      padding: 7px 0 0;
+    }
+  }
+}
+.product-img-left, .product-img-right {
+  float: left;
+  img {
+    max-width: 100%;
+  }
+  .img-box {
+    overflow: hidden;
+  }
+}
+.product-img-left {
+  width: 200px; 
+  padding: 15px 7px;
+  .img-box {
+    width: 180px;
+    height: 180px;
+  }
+  .lime-highlight {
+    display: block;
+    margin: 10px 0 0;
+  }
+}
+.product-img-right {
+  width: 350px;
+  padding: 0 10px;
+  .img-box {
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+  }
+  label {
+    font-weight: bold;
+    color: @black;
+    display: block;
+    width: 100%;
+  }
+}
+.img-box {
+  border-radius: @box-border-radius;
+  border: @box-border;
+  position: relative;
+  float: left;
+  span {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+    font-size: 70px;
+    color: @gray-text;
+  }
+}
+.upload-btn {
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 9;
+  width: 100%;
+  height: 100%;
+}
+.noted {
+  font-size: 11px;
+}

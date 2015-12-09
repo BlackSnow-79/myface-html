@@ -3,6 +3,10 @@ $(document).ready(function() {
   $("#yes-btn").on("click", function () {
     $('#nontifi-modal').modal('hide');
   });
+  /*date picker*/
+	$(function () {
+    $('.date-picker').datetimepicker();
+  });
 	// Modal
 	(function ($) {
 	    "use strict";
