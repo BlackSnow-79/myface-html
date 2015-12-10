@@ -1,4 +1,5 @@
 $(document).ready(function() {
+	// Set panel height
   // Close modal
   $("#yes-btn").on("click", function () {
     $('#nontifi-modal').modal('hide');

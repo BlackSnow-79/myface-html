@@ -249,6 +249,7 @@ header .main-menu .search .btn:active {
 header .header-top {
   height: 60px;
   background: #2bc5f8;
+  border-radius: 0;
   border: 0 solid transparent;
   margin-bottom: 0;
 }
@@ -1352,9 +1353,9 @@ main {
  */
 .login-logo,
 .register-logo {
+  background-color: #2bc5f8;
   font-size: 35px;
   text-align: center;
-  margin-bottom: 25px;
   font-weight: 300;
 }
 .login-logo a,
