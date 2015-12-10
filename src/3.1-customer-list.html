@@ -29,6 +29,36 @@
               </tr>
             </thead>
             <tbody>
+              <tr class="filter">
+                <td colspan="6">
+                  <div class="col-sm-11 pull-right">
+                    <span class="text-control">Lọc khách hàng từ</span>
+                    <div class="col-sm-3">
+                      <select class="form-control">
+                        <option>Ngày đặt hàng</option>
+                        <option>Ngày kích hoạt tài khoản</option>
+                      </select>
+                    </div>
+                    <span class="text-control">Từ</span>
+                    <div class="col-sm-3">
+                      <div class="date-picker-group">
+                        <input type="text" name="date-picker" id="" class="form-control date-picker" placeholder="09/04/2015 10:20">
+                        <span class="calendar-icon l-calendar-icon"><i class="fa fa-calendar"></i></span>
+                      </div>
+                    </div>
+                    <span class="text-control">Đến</span>
+                    <div class="col-sm-3">
+                      <div class="date-picker-group">
+                        <input type="text" name="date-picker" id="" class="form-control date-picker" placeholder="09/04/2015 10:20">
+                        <span class="calendar-icon l-calendar-icon"><i class="fa fa-calendar"></i></span>
+                      </div>
+                    </div>
+                    <div class="col-sm-1">
+                      <input type="button" class="btn btn-default pull-right" value="Lọc">
+                    </div>
+                  </div>
+                </td>
+              </tr>
               {% for x in [1,2,3,4,5,6]%}
               <tr>
                 <td><a href="#" class="cus-name">Phạm Ngọc Thiên Thư</a></td>

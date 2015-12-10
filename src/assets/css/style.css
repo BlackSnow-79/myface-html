@@ -295,7 +295,7 @@ header .header-top .user-label .user-label-2 {
   float: left;
   color: #727272;
   font-weight: normal;
-  padding: 10px 30px 3px 0;
+  padding: 10px 30px 12px 0;
   border-right: 1px solid #dfdfdf;
   margin: 0;
   font-size: 22px;
@@ -432,7 +432,7 @@ footer p {
 .l-calendar-icon {
   position: absolute;
   top: 0;
-  right: -20px;
+  right: 20px;
   padding: 0 3px;
   font-size: 24px;
 }
@@ -1154,6 +1154,14 @@ table.text-center th {
 }
 .deactive:focus {
   color: #ff5722;
+}
+.text-control {
+  float: left;
+  margin: 6px 0;
+}
+.table-striped > tbody > tr.filter {
+  width: 100%;
+  background-color: #d5f3fe;
 }
 .pagination {
   float: left;
