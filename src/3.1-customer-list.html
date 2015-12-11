@@ -20,45 +20,45 @@
           <table class="table table-striped">
             <thead>
               <tr>
-                <th class="col-md-2">Tên khách hàng</th>
-                <th class="col-md-4">Địa chỉ</th>
-                <th class="col-md-2 text-center">Số điện thoại</th>
-                <th class="col-md-1 text-center">Tổng <br> đơn hàng</th>
-                <th class="col-md-2 text-center">Đơn hàng mới nhất</th>
-                <th class="col-md-1">Sửa/Xóa</th>
+                <th class="col-xs-2">Tên khách hàng</th>
+                <th class="col-xs-4">Địa chỉ</th>
+                <th class="col-xs-2 text-center">Số điện thoại</th>
+                <th class="col-xs-1 text-center">Tổng <br> đơn hàng</th>
+                <th class="col-xs-2 text-center">Đơn hàng mới nhất</th>
+                <th class="col-xs-1">Sửa/Xóa</th>
               </tr>
             </thead>
             <tbody>
+              <!--filter-->
               <tr class="filter">
                 <td colspan="6">
-                  <div class="col-sm-11 pull-right">
+                  <div class="col-xs-11 pull-right">
                     <span class="text-control">Lọc khách hàng từ</span>
-                    <div class="col-sm-3">
+                    <div class="col-xs-3">
                       <select class="form-control">
                         <option>Ngày đặt hàng</option>
                         <option>Ngày kích hoạt tài khoản</option>
                       </select>
                     </div>
                     <span class="text-control">Từ</span>
-                    <div class="col-sm-3">
+                    <div class="col-xs-3">
                       <div class="date-picker-group">
                         <input type="text" name="date-picker" id="" class="form-control date-picker" placeholder="09/04/2015 10:20">
                         <span class="calendar-icon l-calendar-icon"><i class="fa fa-calendar"></i></span>
                       </div>
                     </div>
                     <span class="text-control">Đến</span>
-                    <div class="col-sm-3">
+                    <div class="col-xs-3">
                       <div class="date-picker-group">
                         <input type="text" name="date-picker" id="" class="form-control date-picker" placeholder="09/04/2015 10:20">
                         <span class="calendar-icon l-calendar-icon"><i class="fa fa-calendar"></i></span>
                       </div>
                     </div>
-                    <div class="col-sm-1">
-                      <input type="button" class="btn btn-default pull-right" value="Lọc">
-                    </div>
+                    <input type="button" class="btn btn-default pull-right" value="Lọc">
                   </div>
                 </td>
               </tr>
+              <!--./filter-->
               {% for x in [1,2,3,4,5,6]%}
               <tr>
                 <td><a href="#" class="cus-name">Phạm Ngọc Thiên Thư</a></td>

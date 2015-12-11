@@ -116,10 +116,12 @@ table.text-center {
   float: left;
   margin: 6px 0;
 }
-.table-striped > tbody > tr.filter {
+.table-striped > tbody > tr.filter, table > tbody > tr.filter, filter {
   width: 100%;
   background-color: #d5f3fe;
-  .filter-div {
-    
+}
+.filter {
+  .form-control {
+    border-color: transparent;
   }
 }
