@@ -345,15 +345,21 @@ footer {
 footer p {
   color: #727272;
 }
-.text-danger {
+.text-danger,
+label.error {
   color: #f44336;
   padding: 0;
   margin: 0;
   font-size: 11px;
 }
 a.text-danger:hover,
-a.text-danger:focus {
+alabel.error:hover,
+a.text-danger:focus,
+alabel.error:focus {
   color: #ea1c0d;
+}
+label.error {
+  font-weight: normal;
 }
 /*
  * Component: Form
