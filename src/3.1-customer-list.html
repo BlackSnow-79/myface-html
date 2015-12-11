@@ -61,7 +61,7 @@
               <!--./filter-->
               {% for x in [1,2,3,4,5,6]%}
               <tr>
-                <td><a href="#" class="cus-name">Phạm Ngọc Thiên Thư</a></td>
+                <td><a href="#" class="cus-name" data-toggle="modal" data-target="#customer-modal">Phạm Ngọc Thiên Thư</a></td>
                 <td>281/25/5, Đường Lê Văn Sỹ, Phường 12, Quận Phú Nhuận, Thành phố Hồ Chí Minh</td>
                 <td class="text-center"><p>0902148489</p></td>
                 <td class="text-right">125</td>
@@ -74,7 +74,7 @@
                 </td>
               </tr>
               <tr>
-                <td><a href="#" class="cus-name">Hoàng Minh</a></td>
+                <td><a href="#" class="cus-name" data-toggle="modal" data-target="#customer-modal">Hoàng Minh</a></td>
                 <td>Số 42, Đường Hoàn Kiếm, Phường Hoàn Kiếm, Quận Hai Bà Trưng, Thành phố Hà Nội</td>
                 <td class="text-center">
                   <p>0902148489</p>
@@ -118,4 +118,7 @@
     </div>
   </div>
 </main>
+
+<!--customer-detail-modal-->
+{% include "_customer-detail-modal.html" %}
 {% endblock %}

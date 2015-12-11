@@ -10,10 +10,16 @@ main {
 .create-cate-side-left {
 	padding-right: 30px;
 }
-.create-cate-side-right {
+.create-cate-side-right, .create-customer-side-right {
 	border-left: 1px dotted @box-border-color;
 	padding-top: 35px;
 	padding-left: 35px;
+}
+.create-customer-side-right {
+  border-left: 0;
+}
+.create-customer-side-left {
+  border-right: 1px solid @box-border-color;
 }
 .cate-name{
   color: @black;
@@ -32,9 +38,6 @@ main {
   &:hover {
     color: @blue;
   }
-}
-.lime-highlight {
-  color: @lime-text;
 }
 .product-form {
   min-height: 310px;
@@ -113,3 +116,30 @@ main {
 .noted {
   font-size: 11px;
 }
+.black-label {
+  color: @black;
+  a {
+    color: @black;
+    &:hover {
+      color: @blue-text;
+    }
+  }
+}
+.customer-info {
+  > div {
+    float: left;
+    width: 100%;
+  }
+}
+.update-info-box {
+  width: 100%;
+  float: left;
+  padding: @box-padding 0;
+  margin-bottom: 20px;
+  border-radius: @box-border-radius;
+  border: 1px solid @box-border-color;
+  .list-group-noline {
+    margin: 0;
+  }
+}
+

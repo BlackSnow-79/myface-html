@@ -156,11 +156,18 @@ a:focus {
   color: #75d9fa;
 }
 /* No link*/
+img {
+  max-width: 100%;
+  margin: 0 auto;
+}
 .text-center {
   text-align: center;
 }
 .text-right {
   text-align: right;
+}
+.info-label {
+  font-weight: bold;
 }
 /* Page Header */
 .page-header {
@@ -361,6 +368,12 @@ alabel.error:focus {
 label.error {
   font-weight: normal;
 }
+.lime-highlight {
+  color: #ff5722;
+}
+.green-highlight {
+  color: #3ac562;
+}
 /*
  * Component: Form
  * ---------------
@@ -445,12 +458,25 @@ label.error {
 .form-group-sm .form-control + .form-control-feedback.fa {
   line-height: 30px;
 }
+.date-picker-group {
+  position: relative;
+  z-index: 1;
+  background: #fff;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.date-picker-group .date-picker {
+  background: transparent;
+  cursor: pointer;
+}
 .l-calendar-icon {
   position: absolute;
   top: 0;
-  right: 20px;
+  right: 3px;
+  z-index: -1;
   padding: 0 3px;
   font-size: 24px;
+  cursor: pointer;
 }
 .editor-form {
   padding-top: 0;
@@ -1060,9 +1086,23 @@ label.error {
   padding: 0 15px 15px;
   border-top-color: transparent;
 }
-.modal-primary .modal-header,
-.modal-primary .modal-footer {
+.modal-primary .modal-header {
+  background-color: #2bc5f8;
+  border-radius: 3px 3px 0 0;
+}
+.modal-primary .modal-header .close {
+  color: #fff;
+  opacity: 1;
+}
+.modal-primary .modal-header {
   border-color: #08b0e8;
+}
+.modal-primary .info-footer {
+  border-top: 1px solid #dfdfdf;
+  border-radius: 0 0 3px 3px;
+}
+.modal-primary .modal-title {
+  color: #fff;
 }
 .modal-warning .modal-header,
 .modal-warning .modal-footer {
@@ -1184,6 +1224,25 @@ filter {
 .filter .form-control {
   border-color: transparent;
 }
+.list-group-noline {
+  list-style: none;
+  /* Remove list bullets */
+  padding: 0;
+  margin: 10px 0 0 0;
+}
+.list-group-noline li {
+  position: relative;
+  padding: 3px 0 3px 15px;
+}
+.list-group-noline li:before {
+  content: "\f0c8";
+  font-family: FontAwesome;
+  color: #2bc5f8;
+  font-size: 6px;
+  position: absolute;
+  top: 10px;
+  left: 0;
+}
 .pagination {
   float: left;
   padding-left: 0;
@@ -1274,10 +1333,17 @@ main {
 .create-cate-side-left {
   padding-right: 30px;
 }
-.create-cate-side-right {
+.create-cate-side-right,
+.create-customer-side-right {
   border-left: 1px dotted #dfdfdf;
   padding-top: 35px;
   padding-left: 35px;
+}
+.create-customer-side-right {
+  border-left: 0;
+}
+.create-customer-side-left {
+  border-right: 1px solid #dfdfdf;
 }
 .cate-name {
   color: #212121;
@@ -1296,9 +1362,6 @@ main {
 }
 .cus-name:hover {
   color: #2bc5f8;
-}
-.lime-highlight {
-  color: #ff5722;
 }
 .product-form {
   min-height: 310px;
@@ -1375,6 +1438,30 @@ main {
 }
 .noted {
   font-size: 11px;
+}
+.black-label {
+  color: #212121;
+}
+.black-label a {
+  color: #212121;
+}
+.black-label a:hover {
+  color: #2bc5f8;
+}
+.customer-info > div {
+  float: left;
+  width: 100%;
+}
+.update-info-box {
+  width: 100%;
+  float: left;
+  padding: 15px 0;
+  margin-bottom: 20px;
+  border-radius: 3px;
+  border: 1px solid #dfdfdf;
+}
+.update-info-box .list-group-noline {
+  margin: 0;
 }
 /*
  * Page: Login & Register

@@ -104,14 +104,25 @@
 .form-group-sm .form-control + .form-control-feedback.fa {
   line-height: @input-height-small;
 }
-.date-picker {
+.date-picker-group {
+  position: relative;
+  z-index: 1;
+  background: @white;
+  border-radius: @box-border-radius;
+  cursor: pointer;
+  .date-picker {
+    background: transparent;
+    cursor: pointer;
+  }
 }
 .l-calendar-icon {
   position: absolute;
   top: 0;
-  right: 20px;
+  right: 3px;
+  z-index: -1;
   padding: 0 3px;
   font-size: 24px;
+  cursor: pointer;
 }
 .editor-form {
   padding-top: 0;
