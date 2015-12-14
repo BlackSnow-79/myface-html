@@ -82,6 +82,15 @@
   }
 }
 
+.btn-gray {
+  color: @gray-text;
+  border: 1px solid @box-border-color;
+  &:hover, &:active, &:focus {
+    background-color: darken(@lime, 5%);
+    color: @white;
+  }
+}
+
 .btn-update {
   color: @gray-text;
   border-bottom: 1px solid @box-border-color;
