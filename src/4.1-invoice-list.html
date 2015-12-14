@@ -1,0 +1,146 @@
+{% extends "_layout.html" %}
+{% block page-container %}
+<section class="content-header" id="content-header">
+	<div class="container">
+		<div class="row">
+			<h1 class="page-title">Đơn hàng</h1>
+			<ol class="breadcrumb">
+				<li><a href="4.1-invoice-list.html"  class="active">Xem đơn hàng</a></li>
+				<li><a href="4.3-invoice-help.html">Yêu cầu hỗ trợ đơn hàng</a></li>
+			</ol>
+		</div>
+	</div>
+</section>
+<main>
+	<div class="container">
+		<div class="row">
+			<div class="box">
+				<div class="box-header with-border">
+					<h3 class="box-title">Xem đơn hàng</h3>
+				</div>
+				<!-- /.box-header -->
+				<div class="box-body">
+					<table class="table table-striped">
+						<thead>
+							<tr>
+								<th class="">ID</th>
+								<th class="">Trạng thái đơn hàng</th>
+								<th class="text-center">Vận chuyển</th>
+								<th class="text-center">Tên khách hàng</th>
+								<th class="text-center">Ngày đặt hàng</th>
+								<th class="text-center">Tổng tiền</th>
+								<th class=""></th>
+							</tr>
+						</thead>
+						<tbody>
+							{% for x in [1,2,3,4,5,6]%}
+							<tr>
+								<td><a href="4.2-invoice-detail.html" class="cate-name">12486578929</a></td>
+								<td>
+									<select class="form-control">
+										<option>Đặt hàng thành công</option>
+										<option>Đã xác nhận</option>
+										<option>Chưa liên lạc được</option>
+										<option>Đang chuẩn bị hàng</option>
+										<option>Đã đóng gói</option>
+										<option>Đang giao hàng</option>
+										<option>Đã giao hàng</option>
+										<option>Hủy đơn hàng</option>
+										<option>Thanh toán thành công</option>
+										<option>Thanh toán thất bại</option>
+									</select>
+								</td>
+								<td>
+									<select class="form-control">
+										<option>Tính phí vận chuyển</option>
+										<option>Miễn phí vận chuyển</option>
+										<option>Nhận hàng tại shop</option>
+										<option>Quantium</option>
+										<option>Viet Post</option>
+									</select>
+								</td>
+								<td>
+									<p><a href="3.3-update-customer.html">Phạm Ngọc Thiên Thư</a></p>
+									<p>(32 đơn hàng)</p>
+								</td>
+								<td class="text-center">04/11/2015 - 11:00:35</td><!--format 24 giờ -->
+								<td>
+									<label>1.000.000<ins>đ</ins></label>
+								</td>
+								<td>
+									<a href="3.3-update-customer.html" class="btn btn-default"> Xem</a>
+								</td>
+							</tr>
+							<tr>
+								<td><a href="4.2-invoice-detail.html" class="cate-name">12486578929</a></td>
+								<td>
+									<select class="form-control">
+										<option>Thanh toán thành công</option>
+										<option>Đặt hàng thành công</option>
+										<option>Đã xác nhận</option>
+										<option>Chưa liên lạc được</option>
+										<option>Đang chuẩn bị hàng</option>
+										<option>Đã đóng gói</option>
+										<option>Đang giao hàng</option>
+										<option>Đã giao hàng</option>
+										<option>Hủy đơn hàng</option>
+										<option>Thanh toán thất bại</option>
+									</select>
+								</td>
+								<td>
+									<select class="form-control">
+										<option>Quantium</option>
+										<option>Tính phí vận chuyển</option>
+										<option>Miễn phí vận chuyển</option>
+										<option>Nhận hàng tại shop</option>
+										<option>Viet Post</option>
+									</select>
+								</td>
+								<td>
+									<p><a href="3.3-update-customer.html">Hoàng Minh</a></p>
+									<p>(1 đơn hàng)</p>
+								</td>
+								<td class="text-center">04/11/2015 - 20:00:10</td><!--format 24 giờ -->
+								<td>
+									<label>4.000.000<ins>đ</ins></label>
+								</td>
+								<td>
+									<a href="3.3-update-customer.html" class="btn btn-default"> Xem</a>
+								</td>
+							</tr>
+							{% endfor %}
+						</tbody>
+					</table>
+				</div>
+				<!-- /.box-body -->
+				<div class="box-footer clearfix">
+					<div class="row">
+						<div class="col-xs-12">
+							<label class="lime-highlight">Tổng đơn hàng: <ins>325</ins></label>
+						</div>
+					</div>
+					<div class="pull-right">
+						<ul class="pagination pagination-sm no-margin">
+							<li><a href="#" class="first"><i class="fa fa-step-backward"></i></a></li>
+							<li><a href="#" class="prev">Trước</a></li>
+							<li><span class="current-pages">Trang 1/1623</span></li>
+							<li><a href="#" class="next">Sau</a></li>
+							<li><a href="#" class="last"><i class="fa fa-step-forward"></i></a></li>
+						</ul>
+						<form id="pagi-form" class="pagi-form" method="get">
+							<label>
+								<select name="" class="form-control form-select">
+										<option value="10" selected="selected">10 dòng/trang</option>
+										<option value="50">50 dòng/trang</option>
+										<option value="100">100 dòng/trang</option>
+								</select>
+							</label>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</main>
+
+{% endblock %}
