@@ -1523,6 +1523,32 @@ main {
 .update-info-box .list-group-noline {
   margin: 0;
 }
+.search-container {
+  width: 100%;
+  padding: 0 0 30px;
+}
+.search-container .create-cate-side-right {
+  text-align: center;
+}
+.search-container .control-label {
+  padding-top: 7px;
+}
+.advance-search .row {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.advance-search .checkbox {
+  margin: 10px 0;
+}
+.advance-search .checkbox + .checkbox {
+  margin: 10px 0;
+}
+.advance-search .btn {
+  max-width: 85px;
+  float: none;
+  display: block;
+  margin: 0 auto;
+}
 /*
  * Page: Login & Register
  * ----------------------

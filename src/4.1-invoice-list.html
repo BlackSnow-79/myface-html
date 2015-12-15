@@ -20,6 +20,183 @@
 				</div>
 				<!-- /.box-header -->
 				<div class="box-body">
+          <!--search-->
+          <div class="row search-container">
+            <!--form start-->
+            <form role="form">
+              <div class="col-xs-9">
+                <div class="row form-group">
+                  <p class="col-xs-12">Thời gian</p>
+                  <p class="col-xs-1 control-label">Từ</p>
+                  <div class="col-xs-4">
+                    <div class="date-picker-group">
+                      <input type="text" name="date-picker" id="" class="form-control date-picker" placeholder="09/04/2015 10:20">
+                      <span class="calendar-icon l-calendar-icon"><i class="fa fa-calendar"></i></span>
+                    </div>
+                  </div>
+                  <p class="col-xs-1 col-xs-offset-2 control-label">Đến</p>
+                  <div class="col-xs-4">
+                    <div class="date-picker-group">
+                      <input type="text" name="date-picker" id="" class="form-control date-picker" placeholder="09/04/2015 10:20">
+                      <span class="calendar-icon l-calendar-icon"><i class="fa fa-calendar"></i></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-xs-3">
+                    <div class="form-group">
+                      <p for="">Tên khách hàng</p>
+                      <input type="text" class="form-control" id="" placeholder="">
+                    </div>
+                  </div>
+                  <div class="col-xs-3">
+                    <div class="form-group">
+                      <p for="">Người nhận hàng</p>
+                      <input type="text" class="form-control" id="" placeholder="">
+                    </div>
+                  </div>
+                  <div class="col-xs-3">
+                    <div class="form-group">
+                      <p for="">Email</p>
+                      <input type="email" class="form-control" id="" placeholder="">
+                    </div>
+                  </div>
+                  <div class="col-xs-3">
+                    <div class="form-group">
+                      <p for="">Điện thoại</p>
+                      <input type="number" class="form-control" id="" placeholder="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-2 col-xs-offset-1 create-cate-side-right">
+                <div class="form-group clearfix">
+                  <input type="button" class="btn btn-lime" value="Tìm kiếm đơn hàng">
+                </div>
+                <div class="form-group">
+                  <a href="2.2-create-category.html" class="btn-update">Tìm kiếm nâng cao <br> <i class="fa fa-caret-down"></i></a><!--Thông báo đã tạo danh mục thành công-->
+                </div>
+              </div>
+            </form>
+          </div>
+
+          <!--advance-search-->
+          <div class="advance-search">
+            <div class="box box-lime">
+              <div class="box-header with-border">
+                <h4 class="box-title">Tìm kiếm nâng cao</h4>
+              </div>
+              <!-- /.box-header -->
+              <div class="box-body">
+                <form role="form">
+                  <div class="row">
+                    <label class="col-xs-12">Trạng thái đơn hàng</label>
+                    <div class="checkbox col-xs-3">
+                      <label>
+                        <input type="checkbox" checked> 01. Đặt hàng thành công
+                      </label>
+                    </div>
+                    <div class="checkbox col-xs-3">
+                      <label>
+                        <input type="checkbox"> 02. Đã xác nhận
+                      </label>
+                    </div>
+                    <div class="checkbox col-xs-3">
+                      <label>
+                        <input type="checkbox"> 03. Chưa liên hệ được
+                      </label>
+                    </div>
+                    <div class="checkbox col-xs-3">
+                      <label>
+                        <input type="checkbox"> 04. Đang chuẩn bị hàng
+                      </label>
+                    </div>
+                    <div class="checkbox col-xs-3">
+                      <label>
+                        <input type="checkbox"> 05. Đã đóng gói
+                      </label>
+                    </div>
+                    <div class="checkbox col-xs-3">
+                      <label>
+                        <input type="checkbox"> 06. Đang giao hàng
+                      </label>
+                    </div>
+                    <div class="checkbox col-xs-3">
+                      <label>
+                        <input type="checkbox"> 07. Đã giao hàng
+                      </label>
+                    </div>
+                    <div class="checkbox col-xs-3">
+                      <label>
+                        <input type="checkbox"> 08. Hủy đơn hàng 
+                      </label>
+                    </div>
+                    <div class="checkbox col-xs-3">
+                      <label>
+                        <input type="checkbox"> 09. Thanh toán thành công
+                      </label>
+                    </div>
+                    <div class="checkbox col-xs-3">
+                      <label>
+                        <input type="checkbox"> 10. Thanh toán thất bại
+                      </label>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <label class="col-xs-12">Vận chuyển</label>
+                      <div class="checkbox col-xs-3">
+                        <label>
+                          <input type="checkbox" checked> Miễn phí vận chuyển
+                        </label>
+                      </div>
+                      <div class="checkbox col-xs-3">
+                        <label>
+                          <input type="checkbox"> Tính phí vận chuyển
+                        </label>
+                      </div>
+                      <div class="checkbox col-xs-3">
+                        <label>
+                          <input type="checkbox"> Nhận hàng tại shop
+                        </label>
+                      </div>
+                      <div class="checkbox col-xs-3">
+                        <label>
+                          <input type="checkbox"> Quantium
+                        </label>
+                      </div>
+                      <div class="checkbox col-xs-3">
+                        <label>
+                          <input type="checkbox"> Giao hàng nhanh
+                        </label>
+                      </div>
+                      <div class="checkbox col-xs-3">
+                        <label>
+                          <input type="checkbox"> Viettel Post
+                        </label>
+                      </div>
+                      <div class="checkbox col-xs-3">
+                        <label>
+                          <input type="checkbox"> Pro Ship
+                        </label>
+                      </div>
+                  </div>
+                  <div class="row">
+                    <label class="col-xs-12">Đơn hàng</label>
+                      <div class="checkbox col-xs-3">
+                        <label>
+                          <input type="checkbox" checked> Có sử dụng coupon
+                        </label>
+                      </div> 
+                  </div>
+                  <div class="form-group clearfix">
+                    <input type="button" class="btn btn-lime" value="Tìm kiếm">
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+
 					<table class="table table-striped">
 						<thead>
 							<tr>
