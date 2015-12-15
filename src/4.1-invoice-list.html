@@ -24,7 +24,7 @@
           <div class="row search-container">
             <!--form start-->
             <form role="form">
-              <div class="col-xs-9">
+              <div class="col-xs-10">
                 <div class="row form-group">
                   <p class="col-xs-12">Thời gian</p>
                   <p class="col-xs-1 control-label">Từ</p>
@@ -55,13 +55,13 @@
                       <input type="text" class="form-control" id="" placeholder="">
                     </div>
                   </div>
-                  <div class="col-xs-3">
+                  <div class="col-xs-4">
                     <div class="form-group">
                       <p for="">Email</p>
                       <input type="email" class="form-control" id="" placeholder="">
                     </div>
                   </div>
-                  <div class="col-xs-3">
+                  <div class="col-xs-2">
                     <div class="form-group">
                       <p for="">Điện thoại</p>
                       <input type="number" class="form-control" id="" placeholder="">
@@ -70,19 +70,19 @@
                 </div>
               </div>
 
-              <div class="col-md-2 col-xs-offset-1 create-cate-side-right">
+              <div class="col-xs-2 create-cate-side-right">
                 <div class="form-group clearfix">
                   <input type="button" class="btn btn-lime" value="Tìm kiếm đơn hàng">
                 </div>
                 <div class="form-group">
-                  <a href="2.2-create-category.html" class="btn-update">Tìm kiếm nâng cao <br> <i class="fa fa-caret-down"></i></a><!--Thông báo đã tạo danh mục thành công-->
+                  <a href="" class="btn-update" id="show-advance-search-btn">Tìm kiếm nâng cao <br> <i class="fa fa-caret-down"></i></a>
                 </div>
               </div>
             </form>
           </div>
 
           <!--advance-search-->
-          <div class="advance-search">
+          <div class="advance-search advance-hidden" id="advance-search">
             <div class="box box-lime">
               <div class="box-header with-border">
                 <h4 class="box-title">Tìm kiếm nâng cao</h4>
@@ -190,7 +190,7 @@
                       </div> 
                   </div>
                   <div class="form-group clearfix">
-                    <input type="button" class="btn btn-lime" value="Tìm kiếm">
+                    <input type="button" class="btn btn-lime" id="advance-search-btn" value="Tìm kiếm">
                   </div>
                 </form>
               </div>

@@ -32,9 +32,46 @@
               <li class=""><a href="#tab_2" data-toggle="tab" aria-expanded="false">Yêu cầu hỗ trợ</a></li>
               <li class=""><a href="#tab_3" data-toggle="tab" aria-expanded="true">Lịch sử đơn hàng</a></li>
             </ul>
-            <div class="tab-content">
+            <div class="tab-content invoice-tab-content form-horizontal">
+              <!--tab-1-->
               <div class="tab-pane active" id="tab_1">
-                Thông tin đơn hàng
+                <div class="row invoice-info-content">
+                  <div class="col-xs-6">
+                    <p class="">Đơn hàng <strong>123456789</strong> của (chị) <strong>Phạm Ngọc Thiên Thư</strong>, ngày đặt hàng <strong>04/11/2015 - 11:00:35</strong></p>
+                  </div>
+
+                  <div class="col-xs-6">
+                    <div class="col-xs-7">
+                      <span>Trạng thái</span>
+                        <div class="col-xs-9 pull-right">
+                          <select class="form-control">
+                            <option>Đặt hàng thành công</option>
+                            <option>Đã xác nhận</option>
+                            <option>Chưa liên lạc được</option>
+                            <option>Đang chuẩn bị hàng</option>
+                            <option>Đã đóng gói</option>
+                            <option>Đang giao hàng</option>
+                            <option>Đã giao hàng</option>
+                            <option>Hủy đơn hàng</option>
+                            <option>Thanh toán thành công</option>
+                            <option>Thanh toán thất bại</option>
+                          </select>
+                        </div>
+                    </div>
+                    <div class="col-xs-5">
+                      <span>Lý do hủy</span>
+                      <div class="col-xs-8 pull-right">
+                        <select class="form-control">
+                          <option>Chưa biết</option>
+                          <option>Hủy bởi công ty</option>
+                          <option>Hủy bởi khách hàng</option>
+                          <option>Hủy do hết hàng</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
                 <div class="row">
                   <div class="col-md-6">
                     <div class="box box-lime">
@@ -141,7 +178,7 @@
                           </td>
                         </tr>
                         <tr>
-                          <td>01</td>
+                          <td>02</td>
                           <td class="products-list">
                             <div class="item">
                               <div class="product-img">
@@ -222,10 +259,12 @@
                 </div>
               </div>
               <!-- /.tab-pane -->
+              <!--tab-2-->
               <div class="tab-pane" id="tab_2">
                 Yêu cầu hỗ trợ
               </div>
               <!-- /.tab-pane -->
+              <!--tab-3-->
               <div class="tab-pane" id="tab_3">
                 Lịch sử đơn hàng
               </div>

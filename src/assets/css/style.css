@@ -1549,6 +1549,22 @@ main {
   display: block;
   margin: 0 auto;
 }
+.invoice-tab-content {
+  padding: 15px 0;
+}
+.invoice-info-content {
+  width: 100%;
+  float: left;
+  padding: 15px 0;
+}
+.invoice-info-content p,
+.invoice-info-content span {
+  float: left;
+  margin: 7px 0;
+}
+.advance-hidden {
+  display: none;
+}
 /*
  * Page: Login & Register
  * ----------------------
