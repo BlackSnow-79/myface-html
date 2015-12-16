@@ -25,6 +25,10 @@
             <button type="button" class="btn btn-lime">In đơn hàng</button>
             <button type="button" class="btn btn-gray">Sửa đơn hàng</button>
           </div>
+          <div class="pull-right invoice-button-group">
+            <a href="4.2-invoice-detail.html"><i class="fa fa-angle-left"></i> Đơn hàng cũ hơn</a>
+            <a href="4.2-invoice-detail.html">Đơn hàng mới hơn <i class="fa fa-angle-right"></i></a>
+          </div>
 
           <div class="nav-tabs-custom">
             <ul class="nav nav-tabs">
@@ -301,11 +305,53 @@
                     <!-- /.box -->
                   </div>
                 </div>
+
+                <div class="clearfix">
+                  <input type="button" class="btn btn-lime pull-right" data-toggle="modal" data-target="#alert-modal" value="Lưu đơn hàng">
+                </div>
               </div>
               <!-- /.tab-pane -->
-              <!--tab-2-->
-              <div class="tab-pane" id="tab_2">
-                Yêu cầu hỗ trợ
+              <!--tab-2--><!--yêu cầu hỗ trợ-->
+              <div class="invoice-tab-2 tab-pane" id="tab_2">
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="box box-gray">
+                      <div class="box-header with-border">
+                        <div class="pull-left invoice-tab2-header"><span>(Chị) <strong>Phạm Ngọc Thiên Thư</strong></span><span>Đơn hàng <a href="#">123456789</a></span></div>
+                        <div class="pull-right"><span>Đã gửi yêu cầu lúc:  <i class="fa fa-clock-o"></i>  04/11/2015 - 11:00:35</span></div>
+                      </div>
+                      <!-- /.box-header -->
+                      <div class="box-body">
+                        <p>Mình muốn chọn áo màu đen, nhưng khi đăng ký mua thì không hiện lên áo màu đen???</p>
+                        <div class="callout"> 
+                          <textarea class="form-control" rows="3" placeholder=""></textarea>
+                        </div>
+                        <div class="clearfix">
+                          <input type="button" class="btn btn-lime pull-right" value="Trả lời">
+                        </div>
+                      </div>
+                    </div>
+                    <!-- /.box -->
+                  </div>
+
+                  <div class="col-md-12">
+                    <div class="box box-gray">
+                      <div class="box-header with-border">
+                        <div class="pull-left invoice-tab2-header"><span>(Chị) <strong>Phạm Ngọc Thiên Thư</strong></span><span>Đơn hàng <a href="#">123456789</a></span></div>
+                        <div class="pull-right"><span>Đã gửi yêu cầu lúc:  <i class="fa fa-clock-o"></i>  04/11/2015 - 11:00:35</span></div>
+                      </div>
+                      <!-- /.box-header -->
+                      <div class="box-body">
+                        <p>Mình muốn chọn áo màu đen, nhưng khi đăng ký mua thì không hiện lên áo màu đen???</p>
+                        <div class="callout"> 
+                          <p><strong>Team hỗ trợ MyFace</strong>  - Đã trả lời lúc:  04/11/2015 - 13:00:15</p>
+                          <p>Chào bạn! Bạn có thể liên hệ tổng đài 06 2700 3838 phím 0 để được hỗ trợ nha bạn. Cảm ơn bạn.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- /.box -->
+                  </div>
+                </div>
               </div>
               <!-- /.tab-pane -->
               <!--tab-3-->
@@ -318,11 +364,6 @@
           </div>
         </div>
         <!-- /.box-body -->
-        <div class="box-footer clearfix">
-          <div class="form-group clearfix">
-            <input type="button" class="btn btn-lime pull-right" data-toggle="modal" data-target="#alert-modal" value="Lưu đơn hàng">
-          </div>
-        </div>
       </div>
     </div>
   </div>

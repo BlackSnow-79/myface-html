@@ -171,11 +171,14 @@ main {
     margin: 0 auto;
   }
 }
+.invoice-button-group {
+  a:first-child {
+    margin-right: 20px;
+  }
+}
 .invoice-tab-content{
   padding: 15px 0;
-  .box-body {
-    min-height: 162px;
-  }
+
 }
 .invoice-tab-1 {
   .box {
@@ -186,6 +189,9 @@ main {
   }
   > div {
     margin-bottom: 20px;
+  }
+  .box-body {
+    min-height: 162px;
   }
 }
 .invoice-row-1 {
@@ -261,6 +267,31 @@ main {
         }
       }
     }
+  }
+}
+.invoice-tab-2 {
+  textarea {
+    width: 100%;
+    resize: none;
+    background-color: @light-gray-bg;
+    .border-radius(3px);
+    border: 1px solid @box-border-color;
+  }
+}
+.invoice-tab2-header {
+  span {
+    display: inline-block; 
+  }
+  span:first-child {
+    padding-right: 15px;
+    border-right: 1px solid @box-border-color;
+  }
+  span:last-child {
+    padding-left: 15px;
+  }
+  .box-body {
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 
