@@ -739,6 +739,18 @@ label.error {
   font-size: 14px;
   font-weight: bold;
 }
+.box .box-gray {
+  border: 1px solid #dfdfdf;
+  box-shadow: none;
+}
+.box .box-gray .box-header {
+  padding: 10px 15px 6px;
+}
+.box .box-gray .box-header .box-title {
+  color: #212121;
+  font-size: 14px;
+  font-weight: bold;
+}
 .box .box-group > .box {
   margin-bottom: 5px;
 }
@@ -1331,6 +1343,13 @@ filter {
   -moz-appearance: none;
   appearance: none;
 }
+.nav-tabs-custom .nav-tabs > li a {
+  color: #727272;
+}
+.nav-tabs-custom .nav-tabs > li.active > a {
+  color: #ff5722;
+  font-weight: bold;
+}
 /*
  * Component: Products List
  * ------------------------
@@ -1552,18 +1571,86 @@ main {
 .invoice-tab-content {
   padding: 15px 0;
 }
-.invoice-info-content {
-  width: 100%;
-  float: left;
-  padding: 15px 0;
+.invoice-tab-content .box-body {
+  min-height: 162px;
 }
-.invoice-info-content p,
-.invoice-info-content span {
+.invoice-tab-1 .box {
+  margin-bottom: 0;
+}
+.invoice-tab-1 .table {
+  margin-bottom: 10px;
+}
+.invoice-tab-1 > div {
+  margin-bottom: 20px;
+}
+.invoice-row-1 {
+  float: left;
+  padding: 15px 0 0;
+}
+.invoice-row-1 p,
+.invoice-row-1 span {
   float: left;
   margin: 7px 0;
 }
 .advance-hidden {
   display: none;
+}
+.invoice-row1-inner {
+  padding: 0;
+}
+.invoice-row1-inner .pull-right {
+  padding: 0;
+}
+.invoice-row-3 .box-body div.col-xs-6,
+.invoice-row-3 .box-body div.col-xs-5 {
+  padding: 0 20px 0 0 ;
+}
+.invoice-row-3 .box-body div.col-xs-6 .control-label,
+.invoice-row-3 .box-body div.col-xs-5 .control-label {
+  text-align: left;
+}
+.invoice-row-3 .box-body .price {
+  margin-top: 7px;
+  float: left;
+}
+.invoice-row-5 .box-body {
+  height: 215px;
+  padding: 0;
+}
+.invoice-row-5 .box-body textarea {
+  width: 100%;
+  height: 100%;
+  padding: 25px 15px 5px;
+  resize: none;
+  border-color: transparent;
+}
+.invoice-price {
+  background-color: #d3eafd;
+}
+.invoice-price table {
+  margin: 10px 0 0;
+}
+.invoice-price table tbody tr th,
+.invoice-price table tbody tr td {
+  padding: 10px 0;
+  border: 0;
+  text-align: right;
+  font-weight: normal;
+}
+.invoice-price table tbody tr th {
+  padding-left: 10px;
+  padding-right: 20px;
+}
+.invoice-price table tbody tr td {
+  padding-right: 10px;
+}
+.invoice-price table tbody .invoice-price-footer {
+  border-top: 1px solid #212121;
+  margin-top: 10px;
+}
+.invoice-price table tbody .invoice-price-footer th {
+  color: #212121;
+  font-weight: bold;
 }
 /*
  * Page: Login & Register

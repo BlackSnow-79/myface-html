@@ -22,7 +22,7 @@
         <!-- /.box-header -->
         <div class="box-body">
           <div class="btn-group form-group">
-            <button type="button" class="btn btn-gray">In đơn hàng</button>
+            <button type="button" class="btn btn-lime">In đơn hàng</button>
             <button type="button" class="btn btn-gray">Sửa đơn hàng</button>
           </div>
 
@@ -34,13 +34,13 @@
             </ul>
             <div class="tab-content invoice-tab-content form-horizontal">
               <!--tab-1-->
-              <div class="tab-pane active" id="tab_1">
-                <div class="row invoice-info-content">
+              <div class="invoice-tab-1 tab-pane active" id="tab_1">
+                <div class="row invoice-row-1">
                   <div class="col-xs-6">
                     <p class="">Đơn hàng <strong>123456789</strong> của (chị) <strong>Phạm Ngọc Thiên Thư</strong>, ngày đặt hàng <strong>04/11/2015 - 11:00:35</strong></p>
                   </div>
 
-                  <div class="col-xs-6">
+                  <div class="col-xs-6 invoice-row1-inner">
                     <div class="col-xs-7">
                       <span>Trạng thái</span>
                         <div class="col-xs-9 pull-right">
@@ -72,7 +72,7 @@
                   </div>
                 </div>
 
-                <div class="row">
+                <div class="row invoice-row-2">
                   <div class="col-md-6">
                     <div class="box box-lime">
                       <div class="box-header with-border">
@@ -80,13 +80,9 @@
                       </div>
                       <!-- /.box-header -->
                       <div class="box-body">
-                        <address>
-                          <strong>Admin, Inc.</strong><br>
-                          795 Folsom Ave, Suite 600<br>
-                          San Francisco, CA 94107<br>
-                          Phone: (804) 123-5432<br>
-                          Email: info@almasaeedstudio.com
-                        </address>
+                          <p>(Chị)<strong>Phạm Ngọc Thiên Thư</strong></p>
+                          <p>281/25/5, Đường Lê Văn Sỹ, Phường 12, Quận Phú Nhuận, Thành phố Hồ Chí Minh</p>
+                          <p>Điện thoại liên lạc: <strong>0902148489</strong></p>
                       </div>
                     </div>
                     <!-- /.box -->
@@ -99,28 +95,25 @@
                       </div>
                       <!-- /.box-header -->
                       <div class="box-body">
-                        <address>
-                          <strong>Admin, Inc.</strong><br>
-                          795 Folsom Ave, Suite 600<br>
-                          San Francisco, CA 94107<br>
-                          Phone: (804) 123-5432<br>
-                          Email: info@almasaeedstudio.com
-                        </address>
+                          <p>(Chị)<strong>Phạm Ngọc Thiên Thư</strong></p>
+                          <p>281/25/5, Đường Lê Văn Sỹ, Phường 12, Quận Phú Nhuận, Thành phố Hồ Chí Minh</p>
+                          <p>Điện thoại liên lạc: <strong>0902148489</strong></p>
                       </div>
                     </div>
                     <!-- /.box -->
                   </div>
                 </div>
 
-                <div class="row">
+                <div class="row invoice-row-3">
                   <div class="col-md-4">
                     <div class="box box-lime">
                       <div class="box-header with-border">
                         <h4 class="box-title">Phương thức thanh toán</h4>
                       </div>
                       <!-- /.box-header -->
-                      <div class="">
-                      Phương thức thanh toán
+                      <div class="box-body">
+                        <p class="">Phương thức: Nhân viên giao hàng thu tiền tận nơi</p>
+                        <p class="">Số tiền đã trả: <label>2.000.000<ins>đ</ins></label></p>
                       </div>
                     </div>
                     <!-- /.box -->
@@ -132,15 +125,56 @@
                         <h4 class="box-title">Thông tin vận chuyển</h4>
                       </div>
                       <!-- /.box-header -->
-                      <div class="">
-                      Thông tin vận chuyển
+                      <div class="box-body">
+                        <div class="form-group">
+                          <div class="col-xs-6">
+                            <p for="" class="col-xs-6 control-label">Công ty vận chuyển</p>
+                            <div class="col-xs-6">
+                              <select class="form-control">
+                                <option>Quantium</option>
+                                <option>Vietel-Post</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="col-xs-6">
+                            <p for="" class="col-xs-6 control-label">Ngày lấy hàng</p>
+                            <div class="col-md-6 date-picker-group">
+                              <input type="text" name="date-picker" id="date-picker" class="form-control date-picker" placeholder="09/04/2015 10:20">
+                            </div>
+                          </div>
+                        </div><!--/.form-group-->
+
+                        <div class="form-group">
+                          <div class="col-xs-6">
+                            <p for="" class="col-xs-6 control-label">Cước vận chuyển</p>
+                            <div class="col-xs-5">
+                              <input type="text" class="form-control" id="" placeholder="0">
+                            </div>
+                            <ins class="price">đ</ins>
+                          </div>
+                          <div class="col-xs-6">
+                            <p for="" class="col-xs-6 control-label">Ngày khách nhận hàng</p>
+                            <div class="col-md-6 date-picker-group">
+                              <input type="text" name="date-picker" id="date-picker" class="form-control date-picker" placeholder="09/04/2015 10:20">
+                            </div>
+                          </div>
+                        </div><!--/.form-group-->
+
+                        <div class="form-group">
+                          <div class="col-xs-6">
+                          <p for="" class="col-xs-6 control-label">Mã vận chuyển</p>
+                          <div class="col-xs-6">
+                            <input type="text" class="form-control" id="" placeholder="MF011509242345">
+                          </div>
+                        </div>
+                        </div><!--/.form-group-->
                       </div>
                     </div>
                     <!-- /.box -->
                   </div>
                 </div>
 
-                <div class="row">
+                <div class="row invoice-row-4">
                   <div class="col-xs-12">
                     <table class="table table-striped">
                       <thead>
@@ -206,53 +240,63 @@
                   </div>
                 </div>
 
-                <div class="row">
+                <div class="row invoice-row-5">
                   <div class="col-md-4">
-                    <div class="box">
+                    <div class="box box-gray">
                       <div class="box-header with-border">
                         <h4 class="box-title">Ghi chú đơn hàng</h4>
                       </div>
                       <!-- /.box-header -->
-                      <div class="">
-                      Ghi chú đơn hàng
+                      <div class="box-body">
+                        <textarea class="form-control" rows="3" placeholder=""></textarea>
                       </div>
                     </div>
                     <!-- /.box -->
                   </div>
 
                   <div class="col-md-4">
-                    <div class="box">
+                    <div class="box box-gray">
                       <div class="box-header with-border">
                         <h4 class="box-title">Ghi chú của khách hàng</h4>
                       </div>
                       <!-- /.box-header -->
-                      <div class="">
-                      Ghi chú của khách hàng
+                      <div class="box-body">
+                        <textarea class="form-control" rows="3" placeholder=""></textarea>
                       </div>
                     </div>
                     <!-- /.box -->
                   </div>
 
                   <div class="col-md-4">
-                    <div class="table-responsive">
+                    <div class="table-responsive invoice-price">
                       <table class="table">
-                        <tbody><tr>
-                          <th style="width:50%">Subtotal:</th>
-                          <td>$250.30</td>
-                        </tr>
-                        <tr>
-                          <th>Tax (9.3%)</th>
-                          <td>$10.34</td>
-                        </tr>
-                        <tr>
-                          <th>Shipping:</th>
-                          <td>$5.80</td>
-                        </tr>
-                        <tr>
-                          <th>Total:</th>
-                          <td>$265.24</td>
-                        </tr>
-                      </tbody></table>
+                        <tbody>
+                          <tr>
+                            <th>Tiền sản phẩm:</th>
+                            <td>2.000.000<ins>đ</ins></td>
+                          </tr>
+                          <tr>
+                            <th>Phí vận chuyển và thu tiền tận nơi: </th>
+                            <td>0<ins>đ</ins></td>
+                          </tr>
+                          <tr>
+                            <th>Giảm giá khuyến mãi:</th>
+                            <td>0<ins>đ</ins></td>
+                          </tr>
+                          <tr>
+                            <th>Giảm giá coupon:</th>
+                            <td>0<ins>đ</ins></td>
+                          </tr>
+                          <tr>
+                            <th>Mã coupon sử dụng:</th>
+                            <td>Chưa có</td>
+                          </tr>
+                          <tr class="invoice-price-footer">
+                            <th>Tổng tiền đơn hàng:</th>
+                            <td><label class="lime-highlight">2.000.000<ins>đ</ins></label></td>
+                          </tr>
+                        </tbody>
+                      </table>
                     </div>
                     <!-- /.box -->
                   </div>
