@@ -1,0 +1,226 @@
+{% extends "_layout.html" %}
+{% block page-container %}
+<section class="content-header" id="content-header">
+  <div class="container">
+    <div class="row">
+      <h1 class="page-title">Đơn hàng</h1>
+      <ol class="breadcrumb">
+        <li><a href="4.1-invoice-list.html" class="active">Xem đơn hàng</a></li>
+        <li><a href="4.4-invoice-help.html">Yêu cầu hỗ trợ đơn hàng</a></li>
+      </ol>
+    </div>
+  </div>
+</section>
+<main>
+  <div class="container">
+    <div class="row">
+    	<div class="box">
+        <div class="box-header with-border">
+          <h3 class="box-title">Đơn hàng 123456789</h3>
+        </div>
+        <!-- /.box-header -->
+        <div class="box-body">
+          <div class="btn-group form-group">
+            <button type="button" class="btn btn-gray">In đơn hàng</button>
+            <a href="4.3.1-invoice-detail-edit-1.html" class="btn btn-lime">Sửa đơn hàng</a>
+          </div>
+          
+          <!--progress-row-->
+          <div class="progress-row">
+          </div>
+
+          <!--form-row-->
+          <div class="row invoice-row-2">
+            <div class="col-md-6">
+              <div class="box box-lime">
+                <div class="box-header with-border">
+                  <h4 class="box-title">Địa chỉ thu tiền</h4>
+                </div>
+                <!-- /.box-header -->
+                <div class="box-body">
+                    <p>(Chị)<strong>Phạm Ngọc Thiên Thư</strong></p>
+                    <p>281/25/5, Đường Lê Văn Sỹ, Phường 12, Quận Phú Nhuận, Thành phố Hồ Chí Minh</p>
+                    <p>Điện thoại liên lạc: <strong>0902148489</strong></p>
+                </div>
+              </div>
+              <!-- /.box -->
+
+              <div class="box box-lime">
+                <div class="box-header with-border">
+                  <h4 class="box-title">Địa chỉ giao hàng</h4>
+                </div>
+                <!-- /.box-header -->
+                <div class="box-body">
+                    <p>(Chị)<strong>Phạm Ngọc Thiên Thư</strong></p>
+                    <p>281/25/5, Đường Lê Văn Sỹ, Phường 12, Quận Phú Nhuận, Thành phố Hồ Chí Minh</p>
+                    <p>Điện thoại liên lạc: <strong>0902148489</strong></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="box box-lime">
+                <div class="box-header with-border">
+                  <h4 class="box-title">Thông tin vận chuyển</h4>
+                </div>
+                <!-- /.box-header -->
+                <div class="box-body">
+                  <div class="form-group">
+                    <div class="col-xs-6">
+                      <p for="" class="col-xs-6 control-label">Công ty vận chuyển</p>
+                      <div class="col-xs-6">
+                        <select class="form-control">
+                          <option>Quantium</option>
+                          <option>Vietel-Post</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="col-xs-6">
+                      <p for="" class="col-xs-6 control-label">Ngày lấy hàng</p>
+                      <div class="col-md-6 date-picker-group">
+                        <input type="text" name="date-picker" id="date-picker" class="form-control date-picker" placeholder="09/04/2015 10:20">
+                      </div>
+                    </div>
+                  </div><!--/.form-group-->
+
+                  <div class="form-group">
+                    <div class="col-xs-6">
+                      <p for="" class="col-xs-6 control-label">Cước vận chuyển</p>
+                      <div class="col-xs-5">
+                        <input type="text" class="form-control" id="" placeholder="0">
+                      </div>
+                      <ins class="price">đ</ins>
+                    </div>
+                    <div class="col-xs-6">
+                      <p for="" class="col-xs-6 control-label">Ngày khách nhận hàng</p>
+                      <div class="col-md-6 date-picker-group">
+                        <input type="text" name="date-picker" id="date-picker" class="form-control date-picker" placeholder="09/04/2015 10:20">
+                      </div>
+                    </div>
+                  </div><!--/.form-group-->
+
+                  <div class="form-group">
+                    <div class="col-xs-6">
+                    <p for="" class="col-xs-6 control-label">Mã vận chuyển</p>
+                    <div class="col-xs-6">
+                      <input type="text" class="form-control" id="" placeholder="MF011509242345">
+                    </div>
+                  </div>
+                  </div><!--/.form-group-->
+                </div>
+              </div>
+              <!-- /.box -->
+
+              <div class="box box-lime">
+                <div class="box-header with-border">
+                  <h4 class="box-title">Thông tin vận chuyển</h4>
+                </div>
+                <!-- /.box-header -->
+                <div class="box-body">
+                  <div class="form-group">
+                    <div class="col-xs-6">
+                      <p for="" class="col-xs-6 control-label">Công ty vận chuyển</p>
+                      <div class="col-xs-6">
+                        <select class="form-control">
+                          <option>Quantium</option>
+                          <option>Vietel-Post</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="col-xs-6">
+                      <p for="" class="col-xs-6 control-label">Ngày lấy hàng</p>
+                      <div class="col-md-6 date-picker-group">
+                        <input type="text" name="date-picker" id="date-picker" class="form-control date-picker" placeholder="09/04/2015 10:20">
+                      </div>
+                    </div>
+                  </div><!--/.form-group-->
+
+                  <div class="form-group">
+                    <div class="col-xs-6">
+                      <p for="" class="col-xs-6 control-label">Cước vận chuyển</p>
+                      <div class="col-xs-5">
+                        <input type="text" class="form-control" id="" placeholder="0">
+                      </div>
+                      <ins class="price">đ</ins>
+                    </div>
+                    <div class="col-xs-6">
+                      <p for="" class="col-xs-6 control-label">Ngày khách nhận hàng</p>
+                      <div class="col-md-6 date-picker-group">
+                        <input type="text" name="date-picker" id="date-picker" class="form-control date-picker" placeholder="09/04/2015 10:20">
+                      </div>
+                    </div>
+                  </div><!--/.form-group-->
+
+                  <div class="form-group">
+                    <div class="col-xs-6">
+                    <p for="" class="col-xs-6 control-label">Mã vận chuyển</p>
+                    <div class="col-xs-6">
+                      <input type="text" class="form-control" id="" placeholder="MF011509242345">
+                    </div>
+                  </div>
+                  </div><!--/.form-group-->
+                </div>
+              </div>
+              <!-- /.box -->
+
+              <div class="box box-lime">
+                <div class="box-header with-border">
+                  <h4 class="box-title">Thông tin vận chuyển</h4>
+                </div>
+                <!-- /.box-header -->
+                <div class="box-body">
+                  <div class="form-group">
+                    <div class="col-xs-6">
+                      <p for="" class="col-xs-6 control-label">Công ty vận chuyển</p>
+                      <div class="col-xs-6">
+                        <select class="form-control">
+                          <option>Quantium</option>
+                          <option>Vietel-Post</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="col-xs-6">
+                      <p for="" class="col-xs-6 control-label">Ngày lấy hàng</p>
+                      <div class="col-md-6 date-picker-group">
+                        <input type="text" name="date-picker" id="date-picker" class="form-control date-picker" placeholder="09/04/2015 10:20">
+                      </div>
+                    </div>
+                  </div><!--/.form-group-->
+
+                  <div class="form-group">
+                    <div class="col-xs-6">
+                      <p for="" class="col-xs-6 control-label">Cước vận chuyển</p>
+                      <div class="col-xs-5">
+                        <input type="text" class="form-control" id="" placeholder="0">
+                      </div>
+                      <ins class="price">đ</ins>
+                    </div>
+                    <div class="col-xs-6">
+                      <p for="" class="col-xs-6 control-label">Ngày khách nhận hàng</p>
+                      <div class="col-md-6 date-picker-group">
+                        <input type="text" name="date-picker" id="date-picker" class="form-control date-picker" placeholder="09/04/2015 10:20">
+                      </div>
+                    </div>
+                  </div><!--/.form-group-->
+
+                  <div class="form-group">
+                    <div class="col-xs-6">
+                    <p for="" class="col-xs-6 control-label">Mã vận chuyển</p>
+                    <div class="col-xs-6">
+                      <input type="text" class="form-control" id="" placeholder="MF011509242345">
+                    </div>
+                  </div>
+                  </div><!--/.form-group-->
+                </div>
+              </div>
+              <!-- /.box -->
+            </div>
+          </div>
+        </div>
+        <!-- /.box-body -->
+      </div>
+    </div>
+  </div>
+</main>
+
+{% endblock %}

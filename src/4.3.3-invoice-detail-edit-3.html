@@ -1,0 +1,276 @@
+{% extends "_layout.html" %}
+{% block page-container %}
+<section class="content-header" id="content-header">
+  <div class="container">
+    <div class="row">
+      <h1 class="page-title">Đơn hàng</h1>
+      <ol class="breadcrumb">
+        <li><a href="4.1-invoice-list.html" class="active">Xem đơn hàng</a></li>
+        <li><a href="4.4-invoice-help.html">Yêu cầu hỗ trợ đơn hàng</a></li>
+      </ol>
+    </div>
+  </div>
+</section>
+<main>
+  <div class="container">
+    <div class="row">
+    	<div class="box">
+        <div class="box-header with-border">
+          <h3 class="box-title">Đơn hàng 123456789</h3>
+        </div>
+        <!-- /.box-header -->
+        <div class="box-body">
+          <div class="btn-group form-group">
+            <button type="button" class="btn btn-gray">In đơn hàng</button>
+            <a href="4.3.1-invoice-detail-edit-1.html" class="btn btn-lime">Sửa đơn hàng</a>
+          </div>
+          
+          <!--progress-row-->
+          <div class="progress-row">
+            
+          </div>
+
+          <!--form-row-->
+          <div class="invoice-tab-1 form-horizontal">
+            <div class="row invoice-row-2">
+              <div class="col-md-6">
+                <div class="box box-lime">
+                  <div class="box-header with-border">
+                    <h4 class="box-title">Địa chỉ thu tiền</h4>
+                  </div>
+                  <!-- /.box-header -->
+                  <div class="box-body">
+                      <p>(Chị)<strong>Phạm Ngọc Thiên Thư</strong></p>
+                      <p>281/25/5, Đường Lê Văn Sỹ, Phường 12, Quận Phú Nhuận, Thành phố Hồ Chí Minh</p>
+                      <p>Điện thoại liên lạc: <strong>0902148489</strong></p>
+                  </div>
+                </div>
+                <!-- /.box -->
+              </div>
+
+              <div class="col-md-6">
+                <div class="box box-lime">
+                  <div class="box-header with-border">
+                    <h4 class="box-title">Địa chỉ giao hàng</h4>
+                  </div>
+                  <!-- /.box-header -->
+                  <div class="box-body">
+                      <p>(Chị)<strong>Phạm Ngọc Thiên Thư</strong></p>
+                      <p>281/25/5, Đường Lê Văn Sỹ, Phường 12, Quận Phú Nhuận, Thành phố Hồ Chí Minh</p>
+                      <p>Điện thoại liên lạc: <strong>0902148489</strong></p>
+                  </div>
+                </div>
+                <!-- /.box -->
+              </div>
+            </div>
+
+            <div class="row invoice-row-3">
+              <div class="col-md-4">
+                <div class="box box-lime">
+                  <div class="box-header with-border">
+                    <h4 class="box-title">Phương thức thanh toán</h4>
+                  </div>
+                  <!-- /.box-header -->
+                  <div class="box-body">
+                    <p class="">Phương thức: Nhân viên giao hàng thu tiền tận nơi</p>
+                    <p class="">Số tiền đã trả: <label>2.000.000<ins>đ</ins></label></p>
+                  </div>
+                </div>
+                <!-- /.box -->
+              </div>
+
+              <div class="col-md-8">
+                <div class="box box-lime">
+                  <div class="box-header with-border">
+                    <h4 class="box-title">Thông tin vận chuyển</h4>
+                  </div>
+                  <!-- /.box-header -->
+                  <div class="box-body">
+                    <div class="form-group">
+                      <div class="col-xs-6">
+                        <p for="" class="col-xs-6 control-label">Công ty vận chuyển</p>
+                        <div class="col-xs-6">
+                          <select class="form-control">
+                            <option>Quantium</option>
+                            <option>Vietel-Post</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="col-xs-6">
+                        <p for="" class="col-xs-6 control-label">Ngày lấy hàng</p>
+                        <div class="col-md-6 date-picker-group">
+                          <input type="text" name="date-picker" id="date-picker" class="form-control date-picker" placeholder="09/04/2015 10:20">
+                        </div>
+                      </div>
+                    </div><!--/.form-group-->
+
+                    <div class="form-group">
+                      <div class="col-xs-6">
+                        <p for="" class="col-xs-6 control-label">Cước vận chuyển</p>
+                        <div class="col-xs-5">
+                          <input type="text" class="form-control" id="" placeholder="0">
+                        </div>
+                        <ins class="price">đ</ins>
+                      </div>
+                      <div class="col-xs-6">
+                        <p for="" class="col-xs-6 control-label">Ngày khách nhận hàng</p>
+                        <div class="col-md-6 date-picker-group">
+                          <input type="text" name="date-picker" id="date-picker" class="form-control date-picker" placeholder="09/04/2015 10:20">
+                        </div>
+                      </div>
+                    </div><!--/.form-group-->
+
+                    <div class="form-group">
+                      <div class="col-xs-6">
+                      <p for="" class="col-xs-6 control-label">Mã vận chuyển</p>
+                      <div class="col-xs-6">
+                        <input type="text" class="form-control" id="" placeholder="MF011509242345">
+                      </div>
+                    </div>
+                    </div><!--/.form-group-->
+                  </div>
+                </div>
+                <!-- /.box -->
+              </div>
+            </div>
+
+            <div class="row invoice-row-4">
+              <div class="col-xs-12">
+                <table class="table table-striped">
+                  <thead>
+                    <tr>
+                      <th class="col-xs-1">STT</th>
+                      <th class="col-xs-5">Tên sản phẩm</th>
+                      <th class="col-xs-2 text-center">Giá bán</th>
+                      <th class="col-xs-1 text-center">Số lượng</th>
+                      <th class="col-xs-2 text-center">Thành tiền</th>
+                      <th class="col-xs-1"></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>01</td>
+                      <td class="products-list">
+                        <div class="item">
+                          <div class="product-img">
+                            <a href="#"><img src="assets/images/product/product-2.jpg" alt="myface"></a>
+                          </div>
+                          <div class="product-info">
+                            <a href="#" class="product-title">Combo 2 Hộp Sữa Bột Ensure Gold Acti M2 400g
+                          </div>
+                        </div>
+                      </td>
+                      <td class="text-center">
+                        <span>1.000.000<ins>đ</ins></span>
+                      </td>
+                      <td class="text-right">01</td>
+                      <td class="text-center">
+                        <label>1.000.000<ins>đ</ins></label>
+                      </td>
+                      <td>
+                        <a href="#" class="btn-action" data-toggle="modal" data-target="#nontifi-modal" title="xóa"><i class="fa fa-trash-o"></i></a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>02</td>
+                      <td class="products-list">
+                        <div class="item">
+                          <div class="product-img">
+                            <a href="#"><img src="assets/images/product/product-2.jpg" alt="myface"></a>
+                          </div>
+                          <div class="product-info">
+                            <a href="#" class="product-title">Combo 2 Hộp Sữa Bột Ensure Gold Acti M2 400g
+                          </div>
+                        </div>
+                      </td>
+                      <td class="text-center">
+                        <span>1.000.000<ins>đ</ins></span>
+                      </td>
+                      <td class="text-right">01</td>
+                      <td class="text-center">
+                        <label>1.000.000<ins>đ</ins></label>
+                      </td>
+                      <td>
+                        <a href="#" class="btn-action" data-toggle="modal" data-target="#nontifi-modal" title="xóa"><i class="fa fa-trash-o"></i></a>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+                <input type="button" class="btn btn-default" value="+ Thêm sản phẩm">
+              </div>
+            </div>
+
+            <div class="row invoice-row-5">
+              <div class="col-md-4">
+                <div class="box box-gray">
+                  <div class="box-header with-border">
+                    <h4 class="box-title">Ghi chú đơn hàng</h4>
+                  </div>
+                  <!-- /.box-header -->
+                  <div class="box-body">
+                    <textarea class="form-control" rows="3" placeholder=""></textarea>
+                  </div>
+                </div>
+                <!-- /.box -->
+              </div>
+
+              <div class="col-md-4">
+                <div class="box box-gray">
+                  <div class="box-header with-border">
+                    <h4 class="box-title">Ghi chú của khách hàng</h4>
+                  </div>
+                  <!-- /.box-header -->
+                  <div class="box-body">
+                    <textarea class="form-control" rows="3" placeholder=""></textarea>
+                  </div>
+                </div>
+                <!-- /.box -->
+              </div>
+
+              <div class="col-md-4">
+                <div class="table-responsive invoice-price">
+                  <table class="table">
+                    <tbody>
+                      <tr>
+                        <th>Tiền sản phẩm:</th>
+                        <td>2.000.000<ins>đ</ins></td>
+                      </tr>
+                      <tr>
+                        <th>Phí vận chuyển và thu tiền tận nơi: </th>
+                        <td>0<ins>đ</ins></td>
+                      </tr>
+                      <tr>
+                        <th>Giảm giá khuyến mãi:</th>
+                        <td>0<ins>đ</ins></td>
+                      </tr>
+                      <tr>
+                        <th>Giảm giá coupon:</th>
+                        <td>0<ins>đ</ins></td>
+                      </tr>
+                      <tr>
+                        <th>Mã coupon sử dụng:</th>
+                        <td>Chưa có</td>
+                      </tr>
+                      <tr class="invoice-price-footer">
+                        <th>Tổng tiền đơn hàng:</th>
+                        <td><label class="lime-highlight">2.000.000<ins>đ</ins></label></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <!-- /.box -->
+              </div>
+            </div>
+
+            <div class="clearfix">
+              <input type="button" class="btn btn-lime pull-right" data-toggle="modal" data-target="#alert-modal" value="Cập nhật và Lưu đơn hàng">
+            </div>
+          </div>
+        </div>
+        <!-- /.box-body -->
+      </div>
+    </div>
+  </div>
+</main>
+
+{% endblock %}
