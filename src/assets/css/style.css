@@ -1717,6 +1717,12 @@ main {
   padding-left: 0;
   padding-right: 0;
 }
+.invoice-tab-3 table .fa {
+  margin-right: 10px;
+}
+.invoice-tab-3 table strong {
+  color: #212121;
+}
 /*
  * Page: Login & Register
  * ----------------------
