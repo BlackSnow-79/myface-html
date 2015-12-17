@@ -1696,7 +1696,8 @@ main {
   color: #212121;
   font-weight: bold;
 }
-.invoice-tab-2 textarea {
+.invoice-tab-2 textarea,
+.callout textarea {
   width: 100%;
   resize: none;
   background-color: #f0f1f3;
