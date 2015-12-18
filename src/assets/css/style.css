@@ -600,7 +600,7 @@ label.error {
  * ----------------
  */
 .label-default {
-  width: 26px;
+  width: 25px;
   line-height: 25px;
   padding: 0;
   display: inline-block;
@@ -1750,6 +1750,11 @@ main {
 .invoice-price table tbody .invoice-price-footer th {
   color: #212121;
   font-weight: bold;
+}
+.temp-price tbody tr th,
+.temp-price tbody tr td {
+  padding: 0;
+  border-bottom: 0;
 }
 .invoice-tab-2 textarea,
 .callout textarea {
