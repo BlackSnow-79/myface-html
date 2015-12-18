@@ -600,8 +600,13 @@ label.error {
  * ----------------
  */
 .label-default {
-  background-color: #d2d6de;
-  color: #444;
+  width: 26px;
+  line-height: 25px;
+  padding: 0;
+  display: inline-block;
+  border-radius: 50%;
+  background-color: #b6b6b6;
+  color: #fff;
 }
 /*
  * Component: Callout
@@ -1254,14 +1259,14 @@ table.text-center th {
 .table-striped > tbody > tr:nth-of-type(even) {
   background-color: #f0f1f3;
 }
-a.active {
+.table a.active {
   color: #3ac562;
   font-weight: bold;
 }
-a.active:hover {
+.table a.active:hover {
   color: #298a45;
 }
-a.active:focus {
+.table a.active:focus {
   color: #3ac562;
 }
 .deactive {
@@ -1441,6 +1446,53 @@ filter {
 .product-list-in-box > .item:last-of-type {
   border-bottom-width: 0;
 }
+/*
+ * Component: Progress Bar
+ * -----------------------
+ */
+.progress-row-content {
+  height: 50px;
+  margin: 0 auto;
+  padding: 13px 0;
+  text-align: center;
+}
+.progress-row-content > * {
+  display: inline-block;
+}
+.progress-link,
+.progress-link:focus {
+  position: relative;
+  color: #b6b6b6;
+}
+.progress-link p,
+.progress-link:focus p {
+  position: absolute;
+  left: -60px;
+  right: -60px;
+}
+.progress-link:hover,
+.progress-link:focus:hover,
+.progress-link.active,
+.progress-link:focus.active {
+  color: #2bc5f8;
+}
+.progress-link:hover span,
+.progress-link:focus:hover span,
+.progress-link.active span,
+.progress-link:focus.active span {
+  background-color: #2bc5f8;
+}
+.progress {
+  height: 3px;
+  width: 140px;
+  margin-bottom: 0;
+}
+.progress-bar {
+  color: #fff;
+  background-color: #b6b6b6;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
 .container {
   min-width: 1170px;
 }
@@ -1449,6 +1501,9 @@ main {
   min-height: 500px;
   float: left;
   margin-bottom: 30px;
+}
+.page-done .list-group-item {
+  display: list-item;
 }
 .create-cate-side-left {
   padding-right: 30px;

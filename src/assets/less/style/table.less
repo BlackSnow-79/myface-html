@@ -92,14 +92,16 @@ table.text-center {
   background-color: @light-gray-bg;
 }
 
-a.active {
-  color: @green-text;
-  font-weight: bold;
-  &:hover {
-    color: darken(@green-text, 15%);
-  }
-  &:focus {
+.table {
+    a.active {
     color: @green-text;
+    font-weight: bold;
+    &:hover {
+      color: darken(@green-text, 15%);
+    }
+    &:focus {
+      color: @green-text;
+    }
   }
 }
 .deactive {
