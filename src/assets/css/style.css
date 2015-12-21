@@ -1676,7 +1676,7 @@ main {
 .invoice-tab-1 .table {
   margin-bottom: 10px;
 }
-.invoice-tab-1 > div {
+.invoice-tab-1 > form > div {
   margin-bottom: 20px;
 }
 .invoice-tab-1 .box-body {
