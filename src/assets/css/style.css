@@ -564,6 +564,7 @@ label.error {
 }
 .btn-gray {
   color: #727272;
+  background-color: #dfdfdf;
   border: 1px solid #dfdfdf;
 }
 .btn-gray:hover,
@@ -1783,6 +1784,9 @@ main {
 }
 .invoice-tab-3 table strong {
   color: #212121;
+}
+#insert-product-form {
+  display: none;
 }
 .progress-row {
   width: 100%;

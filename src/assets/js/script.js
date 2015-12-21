@@ -26,6 +26,15 @@ $(document).ready(function() {
 		  $( "#advance-search" ).hide('slow');
 		});
   });
+  // Insert product
+  $(function () {
+    $( '#insert-product-btn').click(function(e) {
+      $( "#insert-product-form" ).show('fast');
+    });
+    $( '#insert-btn-active').click(function(e) {
+      $( "#insert-product-form" ).hide('fast');
+    });
+  });
 
 	// Modal
 	(function ($) {

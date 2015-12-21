@@ -21,7 +21,7 @@
         <!-- /.box-header -->
         <div class="box-body">
           <div class="btn-group form-group">
-            <button type="button" class="btn btn-gray">In đơn hàng</button>
+            <a href="4.2-invoice-detail.html" class="btn btn-gray">Sửa đơn hàng</a>
             <a href="4.3.1-invoice-detail-edit-1.html" class="btn btn-lime">Sửa đơn hàng</a>
           </div>
           
@@ -72,14 +72,16 @@
                           <a href="#"><img src="assets/images/product/product-2.jpg" alt="myface"></a>
                         </div>
                         <div class="product-info">
-                          <a href="#" class="product-title">Combo 2 Hộp Sữa Bột Ensure Gold Acti M2 400g
+                          <a href="#" class="product-title">Combo 2 Hộp Sữa Bột Ensure Gold Acti M2 400g</a>
                         </div>
                       </div>
                     </td>
                     <td class="text-center">
                       <span>1.000.000<ins>đ</ins></span>
                     </td>
-                    <td class="text-right">01</td>
+                    <td class="text-right">
+                      <input type="number" name="quantity" min="1" value="1" class="form-control">
+                    </td>
                     <td class="text-center">
                       <label>1.000.000<ins>đ</ins></label>
                     </td>
@@ -95,14 +97,16 @@
                           <a href="#"><img src="assets/images/product/product-2.jpg" alt="myface"></a>
                         </div>
                         <div class="product-info">
-                          <a href="#" class="product-title">Combo 2 Hộp Sữa Bột Ensure Gold Acti M2 400g
+                          <a href="#" class="product-title">Combo 2 Hộp Sữa Bột Ensure Gold Acti M2 400g</a>
                         </div>
                       </div>
                     </td>
                     <td class="text-center">
                       <span>1.000.000<ins>đ</ins></span>
                     </td>
-                    <td class="text-right">01</td>
+                    <td class="text-right">
+                      <input type="number" name="quantity" min="1" value="1" class="form-control">
+                    </td>
                     <td class="text-center">
                       <label>1.000.000<ins>đ</ins></label>
                     </td>
@@ -114,15 +118,15 @@
               </table>
               <div class="row">
                 <div class="col-xs-2">
-                  <input type="button" class="btn btn-default" value="+ Thêm sản phẩm">
+                  <input type="button" id="insert-product-btn" class="btn btn-default" value="+ Thêm sản phẩm">
                 </div>
 
                 <div class="col-xs-6">
-                  <div class="input-group">
-                    <input type="text" class="form-control">
-                    <span class="input-group-btn">
-                      <input type="submit" class="btn btn-lime" value="Thêm">
-                    </span>
+                  <div id="insert-product-form" class="row insert-product-form">
+                    <div class="col-xs-10">
+                      <input type="text" class="form-control">
+                    </div>
+                    <input type="submit" id="insert-btn-active" class="col-xs-2 btn btn-lime" value="Thêm">
                   </div>
                 </div>
 
@@ -141,6 +145,8 @@
               </div><!--/.row-->
             </div>
           </div>
+          .
+
         </div>
         <!-- /.box-body -->
       </div>
