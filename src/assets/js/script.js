@@ -9,23 +9,7 @@ $(document).ready(function() {
     $('.date-picker').datetimepicker();
   });
   //advance-search
-  $(function () {
-    $( '#show-advance-search-btn').click(function(e) {
-    	e.preventDefault();
-    	if ($('#advance-search').hasClass('advance-hidden')) {
-    		$( "#advance-search" ).slideDown('slow');
-    		$( "#advance-search" ).removeClass('advance-hidden');
-    	}
-    	else {
-    		$( "#advance-search" ).addClass('advance-hidden');
-    		$( "#advance-search" ).hide('slow');
-    	}
-		});
-		$( '#advance-search-btn').click(function() {
-			$( "#advance-search" ).addClass('advance-hidden');
-		  $( "#advance-search" ).hide('slow');
-		});
-  });
+
   // Insert product
   $(function () {
     $( '#insert-product-btn').click(function(e) {
