@@ -609,6 +609,16 @@ label.error {
   background-color: #b6b6b6;
   color: #fff;
 }
+.color-label {
+  width: 45px;
+  border: 1px solid #ff5722;
+  color: #ff5722;
+  display: block;
+  margin: 0;
+  padding: 6px;
+  border-radius: 3px;
+  text-align: center;
+}
 /*
  * Component: Callout
  * ------------------
@@ -1483,14 +1493,25 @@ filter {
 .progress-link:focus.active span {
   background-color: #2bc5f8;
 }
+.progress-link.activeted,
+.progress-link:focus.activeted {
+  color: #8fddf8;
+}
+.progress-link.activeted span,
+.progress-link:focus.activeted span {
+  background-color: #8fddf8;
+}
 .progress {
   height: 3px;
   width: 140px;
   margin-bottom: 0;
+  background-color: #b6b6b6;
+}
+.progress.progress-light-blue {
+  background-color: #8fddf8;
 }
 .progress-bar {
   color: #fff;
-  background-color: #b6b6b6;
   -webkit-box-shadow: none;
   box-shadow: none;
 }
@@ -1794,6 +1815,12 @@ main {
   background-color: #f0f1f3;
   border-radius: 3px;
   margin-bottom: 20px;
+}
+.invoice-promotion-box {
+  padding-bottom: 15px;
+}
+.invoice-promotion-box .radio {
+  margin-bottom: 10px;
 }
 /*
  * Page: Login & Register
