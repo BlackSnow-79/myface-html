@@ -374,6 +374,10 @@ label.error {
 .green-highlight {
   color: #3ac562;
 }
+.radio + .radio,
+.checkbox + .checkbox {
+  margin-top: 10px;
+}
 /*
  * Component: Form
  * ---------------
@@ -1875,4 +1879,22 @@ main {
 }
 .icheck input[type="checkbox"] {
   margin-left: -15px;
+}
+.report-form {
+  width: 100%;
+  min-height: 355px;
+  background-color: #ebebeb;
+  border-radius: 3px;
+}
+.report-title {
+  width: 100%;
+  display: block;
+  padding: 15px 20px;
+  margin: 0;
+  border-bottom: 1px solid #fff;
+  font-size: 17px;
+}
+.report-form-inner {
+  width: 100%;
+  padding: 20px;
 }

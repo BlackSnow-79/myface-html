@@ -16,7 +16,281 @@
 				</div>
 				<!-- /.box-header -->
 				<div class="box-body">
-         Đây là hệ thống báo cáo
+          <div class="box box-lime">
+            <div class="box-header with-border">
+              <h4 class="box-title">Xuất file báo cáo theo</h4>
+            </div>
+            <!-- /.box-header -->
+            <div class="box-body">
+              <!--Đơn hàng-->
+              <div class="report-invoice-row">
+                <label>Đơn hàng</label>
+                <div class="form-group">
+                  <div class="row">
+                    <div class="col-xs-3">
+                      <div class="radio">
+                        <label>
+                          <input type="radio" name="optionsRadios" id="" value="">
+                          Bình thường 
+                        </label>
+                      </div>
+                    </div>
+
+                    <div class="col-xs-3">
+                      <div class="radio">
+                        <label>
+                          <input type="radio" name="optionsRadios" id="" value="">
+                          Sử dụng mã coupon 
+                        </label>
+                      </div>
+                    </div>
+
+                    <div class="col-xs-3">
+                      <div class="radio">
+                        <label>
+                          <input type="radio" name="optionsRadios" id="" value="">
+                          Theo ngành hàng
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div><!--/.form-group-->
+
+                <!--report-form-->
+                <div class="report-form">
+                  <div class="report-form-1">
+                    <h3 class="report-title">Báo cáo đơn hàng <span class="lime-highlight">Bình thường</span></h3>
+                    <div class="report-form-inner">
+                      <div class="row form-group">
+                        <label for="" class="col-sm-3 control-label">Chọn tỉnh / Thành phố</label>
+                        <div class="col-sm-3">
+                          <select class="form-control">
+                            <option>Chọn Tỉnh / Thành phố</option>
+                            <option>Hồ Chí Minh</option>
+                            <option>Hà Nội</option>
+                          </select>
+                        </div>
+                      </div><!--/.form-group-->
+
+                      <div class="row form-group">
+                        <label class="col-xs-12 clearfix">Trạng thái đơn hàng</label>
+                        <div class="radio col-xs-3">
+                          <label>
+                            <input type="radio" checked=""> 01. Đặt hàng thành công
+                          </label>
+                        </div>
+                        <div class="radio col-xs-3">
+                          <label>
+                            <input type="radio"> 02. Đã xác nhận
+                          </label>
+                        </div>
+                        <div class="radio col-xs-3">
+                          <label>
+                            <input type="radio"> 03. Chưa liên hệ được
+                          </label>
+                        </div>
+                        <div class="radio col-xs-3">
+                          <label>
+                            <input type="radio"> 04. Đang chuẩn bị hàng
+                          </label>
+                        </div>
+                        <div class="radio col-xs-3">
+                          <label>
+                            <input type="radio"> 05. Đã đóng gói
+                          </label>
+                        </div>
+                        <div class="radio col-xs-3">
+                          <label>
+                            <input type="radio"> 06. Đang giao hàng
+                          </label>
+                        </div>
+                        <div class="radio col-xs-3">
+                          <label>
+                            <input type="radio"> 07. Đã giao hàng
+                          </label>
+                        </div>
+                        <div class="radio col-xs-3">
+                          <label>
+                            <input type="radio"> 08. Hủy đơn hàng 
+                          </label>
+                        </div>
+                        <div class="radio col-xs-3">
+                          <label>
+                            <input type="radio"> 09. Thanh toán thành công
+                          </label>
+                        </div>
+                        <div class="radio col-xs-3">
+                          <label>
+                            <input type="radio"> 10. Thanh toán thất bại
+                          </label>
+                        </div>
+                      </div><!--/.form-group-->
+
+                      <div class="row form-group">
+                        <label class="col-xs-2">Chọn thời gian</label>
+                        <div class="col-xs-7">
+                          <div class="row">
+                            <p class="col-xs-1 control-label">Từ</p>
+                            <div class="col-xs-4">
+                              <div class="date-picker-group">
+                                <input type="text" name="date-picker" id="" class="form-control date-picker" placeholder="09/04/2015 10:20">
+                                <span class="calendar-icon l-calendar-icon"><i class="fa fa-calendar"></i></span>
+                              </div>
+                            </div>
+                            <p class="col-xs-1 col-xs-offset-2 control-label">Đến</p>
+                            <div class="col-xs-4">
+                              <div class="date-picker-group">
+                                <input type="text" name="date-picker" id="" class="form-control date-picker" placeholder="09/04/2015 10:20">
+                                <span class="calendar-icon l-calendar-icon"><i class="fa fa-calendar"></i></span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div><!--/.form-group-->
+
+                      <div class="form-group clearfix">
+                        <input type="button" class="btn btn-lime pull-right" value="Xuất Excel">
+                      </div>
+                    </div>
+                  </div><!--/.report-form-1-->
+                </div><!--/.report-form-->
+
+              </div><!--/.Đơn hàng-->
+
+              <!--Vận chuyển-->
+              <div class="report-transport-row">
+                <label>Vận chuyển</label>
+                <div class="form-group">
+                  <div class="row">
+                    <div class="col-xs-3">
+                      <div class="radio">
+                        <label>
+                          <input type="radio" name="optionsRadios" id="" value="">
+                          Miến phí vận chuyên
+                        </label>
+                      </div>
+                    </div>
+
+                    <div class="col-xs-3">
+                      <div class="radio">
+                        <label>
+                          <input type="radio" name="optionsRadios" id="" value="">
+                          Tính phí vận chuyển
+                        </label>
+                      </div>
+                    </div>
+
+                    <div class="col-xs-3">
+                      <div class="radio">
+                        <label>
+                          <input type="radio" name="optionsRadios" id="" value="">
+                          Nhận hàng tại shop
+                        </label>
+                      </div>
+                    </div>
+
+                    <div class="col-xs-3">
+                      <div class="radio">
+                        <label>
+                          <input type="radio" name="optionsRadios" id="" value="">
+                          Quatium
+                        </label>
+                      </div>
+                    </div>
+
+                    <div class="col-xs-3">
+                      <div class="radio">
+                        <label>
+                          <input type="radio" name="optionsRadios" id="" value="">
+                          Giao hàng nhanh
+                        </label>
+                      </div>
+                    </div>
+
+                    <div class="col-xs-3">
+                      <div class="radio">
+                        <label>
+                          <input type="radio" name="optionsRadios" id="" value="">
+                          Viettel Post
+                        </label>
+                      </div>
+                    </div>
+
+                    <div class="col-xs-3">
+                      <div class="radio">
+                        <label>
+                          <input type="radio" name="optionsRadios" id="" value="">
+                          Pro Ship
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div><!--/.form-group-->
+              </div><!--/.Vận chuyển-->
+
+              <!--Khách hàng-->
+              <div class="report-custommer-row">
+                <label>Khách hàng</label>
+                <div class="form-group">
+                  <div class="row">
+                    <div class="col-xs-3">
+                      <div class="radio">
+                        <label>
+                          <input type="radio" name="optionsRadios" id="" value="">
+                          Bình thường 
+                        </label>
+                      </div>
+                    </div>
+
+                    <div class="col-xs-3">
+                      <div class="radio">
+                        <label>
+                          <input type="radio" name="optionsRadios" id="" value="">
+                          Theo nhóm sản phẩm
+                        </label>
+                      </div>
+                    </div>
+
+                    <div class="col-xs-3">
+                      <div class="radio">
+                        <label>
+                          <input type="radio" name="optionsRadios" id="" value="">
+                          Giá trị đơn hàng
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div><!--/.form-group-->
+              </div><!--/.Khách hàng-->
+
+              <!--Sản phẩm-->
+              <div class="report-product-row">
+                <label>Sản phẩm</label>
+                <div class="form-group">
+                  <div class="row">
+                    <div class="col-xs-3">
+                      <div class="radio">
+                        <label>
+                          <input type="radio" name="optionsRadios" id="" value="">
+                          Trạng thái sản phẩm
+                        </label>
+                      </div>
+                    </div>
+
+                    <div class="col-xs-3">
+                      <div class="radio">
+                        <label>
+                          <input type="radio" name="optionsRadios" id="" value="">
+                          Số lượng bán
+                        </label>
+                      </div>
+                    </div>
+
+                  </div>
+                </div><!--/.form-group-->
+              </div><!--/.Sản phẩm-->
+            </div>
+          </div>
 				</div>
 				<!-- /.box-body -->
 			</div>
