@@ -20,6 +20,16 @@ $(document).ready(function() {
     });
   });
 
+  // Show report form
+  $(function () {
+    var checkboxValue;
+    $('.report-form-control').click(function(){
+      checkboxValue = $(this).attr('value');
+      $('.report-form').removeClass('report-form-selected');
+      $('.'+ checkboxValue).addClass('report-form-selected');
+    });
+  });
+
 	// Modal
 	(function ($) {
     "use strict";
