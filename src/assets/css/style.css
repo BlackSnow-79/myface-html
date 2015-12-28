@@ -374,10 +374,6 @@ label.error {
 .green-highlight {
   color: #3ac562;
 }
-.radio + .radio,
-.checkbox + .checkbox {
-  margin-top: 10px;
-}
 /*
  * Component: Form
  * ---------------
@@ -1461,6 +1457,44 @@ filter {
 .product-list-in-box > .item:last-of-type {
   border-bottom-width: 0;
 }
+ul.ss-box {
+  width: 470px;
+  height: 150px;
+  overflow-y: auto;
+  position: absolute;
+  top: 100%;
+  left: 15px;
+  margin-top: 5px;
+  display: block;
+  list-style: none;
+  padding: 5px 0;
+  background: #fff;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+  border-radius: 3px;
+  border: 1px solid #ddd;
+}
+ul.ss-box a {
+  width: 100%;
+  display: block;
+  color: #727272;
+}
+ul.ss-box a:hover {
+  background-color: #f0f1f3;
+}
+.ss-result a {
+  padding: 10px;
+}
+.product-box-img {
+  width: 50px;
+  height: 50px;
+  overflow: hidden;
+}
+.product-box-img img {
+  width: 100%;
+}
+.product-box-des {
+  padding: 0 10px;
+}
 /*
  * Component: Progress Bar
  * -----------------------
@@ -1904,16 +1938,20 @@ main {
 }
 .rp-arrow {
   display: none;
-  width: 25px;
-  height: 25px;
-  background-color: #000;
+  width: 20px;
+  height: 20px;
+  background-color: #ebebeb;
   position: absolute;
   border-bottom: 0;
   left: 50%;
+  margin-left: -5px;
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
 }
 .report-form-control:checked ~ .rp-arrow {
   display: block;
 }
-.report-container .radio {
+.report-container .radio > label {
   position: relative;
 }
