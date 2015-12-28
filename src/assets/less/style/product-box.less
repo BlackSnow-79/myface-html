@@ -6,7 +6,7 @@ ul.ss-box {
   top: 100%;
   left: 15px;
   margin-top: 5px;
-  display: block;
+  display: none;
   list-style: none;
   padding: 5px 0;
   background: #fff;
@@ -37,4 +37,9 @@ ul.ss-box {
 }
 .product-box-des {
   padding: 0 10px;
+}
+#insert-input-active {
+  &:focus ~ ul.ss-box {
+      display: block;
+    }
 }
