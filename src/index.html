@@ -1,5 +1,234 @@
 {% extends "_layout.html" %}
 {% block page-container %}
-<main>
+<main class="dashboard">
+	<div class="container">
+		<!--row-1-->
+		<div class="row">
+			<!--col-1-->
+        <div class="col-xs-4">
+          <div class="box">
+            {% include "_chat-list.html" %}
+          </div>
+        </div><!--/.col-1-->
+			<!--col-2-->
+			<div class="col-xs-5">
+				{% include "_inbox-widget.html" %}
+			</div><!--/.col-2-->
+			<!--col-3-->
+			<div class="col-xs-3">
+				{% include "_info-user.html" %}
+			</div><!--/.col-3-->
+		</div><!--/.row-1-->
+		<!--row-2-->
+		<div class="row">
+			<!--col-1-->
+			<div class="col-xs-9">
+				<div class="box">
+					{% include "_timeline-widget.html" %}
+				</div>
+			</div><!--/.col-1-->
+			<!--col-2-->
+			<div class="col-xs-3">
+				<div class="box">
+					{% include "_sum-product.html" %}
+				</div>
+			</div><!--/.col-2-->
+		</div><!--/.row-2-->
+		<!--row-3-->
+		<div class="box">
+      <div class="box-header with-border">
+        <h3 class="box-title">Danh mục sản phẩm</h3>
+        <a href="2.2-create-category.html" class="btn btn-default pull-right"> + Tạo danh mục sản phẩm mới</a>
+      </div>
+      <!-- /.box-header -->
+      <div class="box-body">
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th class="col-md-1">ID</th>
+              <th class="col-md-3">Tên danh mục</th>
+              <th class="col-md-3">Ngành hàng</th>
+              <th class="col-md-3">Trạng thái</th>
+              <th class="col-md-2">Sửa/Xóa</th>
+            </tr>
+          </thead>
+          <tbody>
+            
+            <tr>
+              <td>169</td>
+              <td><a href="2.2-create-category.html" class="cate-name">Tai Nghe Bluetooth</a></td>
+              <td>Thiết bị số</td>
+              <td><a href="#" class="active" data-toggle="modal" data-target="#nontifi-modal">Kích hoạt</a></td>
+              <td>
+                <span class="action">
+                  <a href="2.2-create-category.html" class="btn-action" title="sửa"><i class="fa fa-cog"></i></a>
+                  <a href="#" class="btn-action" data-toggle="modal" data-target="#nontifi-modal" title="xóa"><i class="fa fa-trash-o"></i></a>
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <td>269</td>
+              <td><a href="2.2-create-category.html" class="cate-name">Sơ mi nam</a></td>
+              <td>Thời trang nam</td>
+              <td><a href="#" class="deactive" data-toggle="modal" data-target="#nontifi-modal">Chưa kích hoạt</a></td>
+              <td>
+                <span class="action">
+                  <a href="2.2-create-category.html" class="btn-action" title="sửa"><i class="fa fa-cog"></i></a>
+                  <a href="#" class="btn-action" data-toggle="modal" data-target="#nontifi-modal" title="xóa"><i class="fa fa-trash-o"></i></a>
+                </span>
+              </td>
+            </tr>
+            
+            <tr>
+              <td>169</td>
+              <td><a href="2.2-create-category.html" class="cate-name">Tai Nghe Bluetooth</a></td>
+              <td>Thiết bị số</td>
+              <td><a href="#" class="active" data-toggle="modal" data-target="#nontifi-modal">Kích hoạt</a></td>
+              <td>
+                <span class="action">
+                  <a href="2.2-create-category.html" class="btn-action" title="sửa"><i class="fa fa-cog"></i></a>
+                  <a href="#" class="btn-action" data-toggle="modal" data-target="#nontifi-modal" title="xóa"><i class="fa fa-trash-o"></i></a>
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <td>269</td>
+              <td><a href="2.2-create-category.html" class="cate-name">Sơ mi nam</a></td>
+              <td>Thời trang nam</td>
+              <td><a href="#" class="deactive" data-toggle="modal" data-target="#nontifi-modal">Chưa kích hoạt</a></td>
+              <td>
+                <span class="action">
+                  <a href="2.2-create-category.html" class="btn-action" title="sửa"><i class="fa fa-cog"></i></a>
+                  <a href="#" class="btn-action" data-toggle="modal" data-target="#nontifi-modal" title="xóa"><i class="fa fa-trash-o"></i></a>
+                </span>
+              </td>
+            </tr>
+            
+            <tr>
+              <td>169</td>
+              <td><a href="2.2-create-category.html" class="cate-name">Tai Nghe Bluetooth</a></td>
+              <td>Thiết bị số</td>
+              <td><a href="#" class="active" data-toggle="modal" data-target="#nontifi-modal">Kích hoạt</a></td>
+              <td>
+                <span class="action">
+                  <a href="2.2-create-category.html" class="btn-action" title="sửa"><i class="fa fa-cog"></i></a>
+                  <a href="#" class="btn-action" data-toggle="modal" data-target="#nontifi-modal" title="xóa"><i class="fa fa-trash-o"></i></a>
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <td>269</td>
+              <td><a href="2.2-create-category.html" class="cate-name">Sơ mi nam</a></td>
+              <td>Thời trang nam</td>
+              <td><a href="#" class="deactive" data-toggle="modal" data-target="#nontifi-modal">Chưa kích hoạt</a></td>
+              <td>
+                <span class="action">
+                  <a href="2.2-create-category.html" class="btn-action" title="sửa"><i class="fa fa-cog"></i></a>
+                  <a href="#" class="btn-action" data-toggle="modal" data-target="#nontifi-modal" title="xóa"><i class="fa fa-trash-o"></i></a>
+                </span>
+              </td>
+            </tr>
+            
+            <tr>
+              <td>169</td>
+              <td><a href="2.2-create-category.html" class="cate-name">Tai Nghe Bluetooth</a></td>
+              <td>Thiết bị số</td>
+              <td><a href="#" class="active" data-toggle="modal" data-target="#nontifi-modal">Kích hoạt</a></td>
+              <td>
+                <span class="action">
+                  <a href="2.2-create-category.html" class="btn-action" title="sửa"><i class="fa fa-cog"></i></a>
+                  <a href="#" class="btn-action" data-toggle="modal" data-target="#nontifi-modal" title="xóa"><i class="fa fa-trash-o"></i></a>
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <td>269</td>
+              <td><a href="2.2-create-category.html" class="cate-name">Sơ mi nam</a></td>
+              <td>Thời trang nam</td>
+              <td><a href="#" class="deactive" data-toggle="modal" data-target="#nontifi-modal">Chưa kích hoạt</a></td>
+              <td>
+                <span class="action">
+                  <a href="2.2-create-category.html" class="btn-action" title="sửa"><i class="fa fa-cog"></i></a>
+                  <a href="#" class="btn-action" data-toggle="modal" data-target="#nontifi-modal" title="xóa"><i class="fa fa-trash-o"></i></a>
+                </span>
+              </td>
+            </tr>
+            
+            <tr>
+              <td>169</td>
+              <td><a href="2.2-create-category.html" class="cate-name">Tai Nghe Bluetooth</a></td>
+              <td>Thiết bị số</td>
+              <td><a href="#" class="active" data-toggle="modal" data-target="#nontifi-modal">Kích hoạt</a></td>
+              <td>
+                <span class="action">
+                  <a href="2.2-create-category.html" class="btn-action" title="sửa"><i class="fa fa-cog"></i></a>
+                  <a href="#" class="btn-action" data-toggle="modal" data-target="#nontifi-modal" title="xóa"><i class="fa fa-trash-o"></i></a>
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <td>269</td>
+              <td><a href="2.2-create-category.html" class="cate-name">Sơ mi nam</a></td>
+              <td>Thời trang nam</td>
+              <td><a href="#" class="deactive" data-toggle="modal" data-target="#nontifi-modal">Chưa kích hoạt</a></td>
+              <td>
+                <span class="action">
+                  <a href="2.2-create-category.html" class="btn-action" title="sửa"><i class="fa fa-cog"></i></a>
+                  <a href="#" class="btn-action" data-toggle="modal" data-target="#nontifi-modal" title="xóa"><i class="fa fa-trash-o"></i></a>
+                </span>
+              </td>
+            </tr>
+            
+            <tr>
+              <td>169</td>
+              <td><a href="2.2-create-category.html" class="cate-name">Tai Nghe Bluetooth</a></td>
+              <td>Thiết bị số</td>
+              <td><a href="#" class="active" data-toggle="modal" data-target="#nontifi-modal">Kích hoạt</a></td>
+              <td>
+                <span class="action">
+                  <a href="2.2-create-category.html" class="btn-action" title="sửa"><i class="fa fa-cog"></i></a>
+                  <a href="#" class="btn-action" data-toggle="modal" data-target="#nontifi-modal" title="xóa"><i class="fa fa-trash-o"></i></a>
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <td>269</td>
+              <td><a href="2.2-create-category.html" class="cate-name">Sơ mi nam</a></td>
+              <td>Thời trang nam</td>
+              <td><a href="#" class="deactive" data-toggle="modal" data-target="#nontifi-modal">Chưa kích hoạt</a></td>
+              <td>
+                <span class="action">
+                  <a href="2.2-create-category.html" class="btn-action" title="sửa"><i class="fa fa-cog"></i></a>
+                  <a href="#" class="btn-action" data-toggle="modal" data-target="#nontifi-modal" title="xóa"><i class="fa fa-trash-o"></i></a>
+                </span>
+              </td>
+            </tr>
+            
+          </tbody>
+        </table>
+      </div>
+      <!-- /.box-body -->
+      <div class="box-footer clearfix">
+        <div class="pull-right">
+          <ul class="pagination pagination-sm no-margin">
+            <li><a href="#" class="first"><i class="fa fa-step-backward"></i></a></li>
+            <li><a href="#" class="prev">Trước</a></li>
+            <li><span class="current-pages">Trang 1/1623</span></li>
+            <li><a href="#" class="next">Sau</a></li>
+            <li><a href="#" class="last"><i class="fa fa-step-forward"></i></a></li>
+          </ul>
+          <form id="pagi-form" class="pagi-form" method="get">
+            <label>
+              <select name="" class="form-control form-select">
+                  <option value="10" selected="selected">10 dòng/trang</option>
+                  <option value="50">50 dòng/trang</option>
+                  <option value="100">100 dòng/trang</option>
+              </select>
+            </label>
+          </form>
+        </div>
+      </div>
+    </div><!--/.row-3-->
+	</div>
 </main>
 {% endblock %}

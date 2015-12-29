@@ -1,0 +1,49 @@
+/*
+ * Component: Chat List
+ * ------------------------
+ */
+.chats-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  > .item {
+    .clearfix();
+    padding: 10px 0;
+    background: transparent;
+  }
+  .chat-img {
+    float: left;
+    img {
+      width: 50px;
+      height: 50px;
+    }
+  }
+  .chat-info {
+    margin-left: 60px;
+    margin-right: 90px;
+  }
+  .chat-title {
+    color: @gray-text;
+  }
+  .chat-description {
+    display: block;
+    color: #999;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+  .conversation-info {
+    width: 80px;
+    display: block;
+    float: right;
+  }
+}
+
+.chat-list-in-box > .item {
+  .box-shadow(none);
+  .border-radius(0);
+  border-bottom: 1px solid @box-border-color;
+  &:last-of-type {
+    border-bottom-width: 0;
+  }
+}

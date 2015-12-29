@@ -1,0 +1,32 @@
+{% extends "_layout.html" %}
+{% block page-container %}
+<section class="content-header" id="content-header">
+  <div class="container">
+    <div class="row">
+      <h1 class="page-title">Kết nối Social mới nhất</h1>
+    </div>
+  </div>
+</section>
+<main>
+  <div class="container">
+    <div class="row">
+      <div class="row">
+        <!--col-1-->
+        <div class="col-xs-4">
+          <div class="box">
+            {% include "_chat-list.html" %}
+          </div>
+        </div><!--/.col-1-->
+        <!--col-2-->
+        <div class="col-xs-5">
+          {% include "_inbox-widget.html" %}
+        </div><!--/.col-2-->
+        <!--col-3-->
+        <div class="col-xs-3">
+          {% include "_info-user.html" %}
+        </div><!--/.col-3-->
+      </div>
+    </div>
+  </div>
+</main>
+{% endblock %}
