@@ -24,7 +24,7 @@ $(document).ready(function() {
   $(function () {
     var checkboxValue;
     $('.report-form-control').click(function(){
-      checkboxValue = $(this).attr('value');
+      checkboxValue = $(this).attr('id');
       $('.report-form').removeClass('report-form-selected');
       $('.'+ checkboxValue).addClass('report-form-selected');
     });
