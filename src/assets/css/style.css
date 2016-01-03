@@ -1991,31 +1991,27 @@ ul.ss-box a:hover {
   position: relative;
 }
 .widget-user .widget-user-header {
-  padding: 20px;
+  padding: 10px 0;
   height: 120px;
   border-top-right-radius: 3px;
   border-top-left-radius: 3px;
 }
 .widget-user .widget-user-username {
-  margin-top: 0;
-  margin-bottom: 5px;
-  font-size: 25px;
-  font-weight: 300;
-  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+  color: #fff;
+  font-size: 16px;
+  text-align: center;
+  margin: 10px 0;
 }
 .widget-user .widget-user-desc {
   margin-top: 0;
 }
 .widget-user .widget-user-image {
-  position: absolute;
-  top: 65px;
-  left: 50%;
-  margin-left: -45px;
+  width: 70px;
+  margin: auto;
 }
 .widget-user .widget-user-image > img {
-  width: 90px;
+  width: 100%;
   height: auto;
-  border: 3px solid #fff;
 }
 .widget-user .box-footer {
   padding-top: 30px;
@@ -2047,6 +2043,17 @@ ul.ss-box a:hover {
 .modal-info .modal-header,
 .modal-info .modal-footer {
   background-color: #2bc5f8;
+}
+.invoice-stt {
+  color: #727272;
+  font-size: 12px;
+  font-weight: normal;
+}
+.info-user-list li {
+  padding-left: 0;
+}
+.info-user-list li:before {
+  content: "";
 }
 /*
  * Component: Users List
