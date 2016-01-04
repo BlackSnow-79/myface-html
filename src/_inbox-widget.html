@@ -1,29 +1,33 @@
 <!-- inbox-widget -->
 <div class="box box-primary direct-chat direct-chat-primary">
   <div class="box-header with-border">
-    <h3 class="box-title">Anh Hai Vui Tính</h3>
+    <h3 class="box-title user-name-w">Anh Hai Vui Tính</h3>
 
-    <div class="box-tools pull-right">
-      <span data-toggle="tooltip" title="3 New Messages" class="badge bg-light-blue">3</span>
-      <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
-      </button>
-      <button type="button" class="btn btn-box-tool" data-toggle="tooltip" title="Contacts" data-widget="chat-pane-toggle">
-        <i class="fa fa-comments"></i></button>
-      <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+    <div class="pull-right">
+      <a href="" class="btn btn-default">+ Soạn tin mới</a>
     </div>
   </div>
   <!-- /.box-header -->
   <div class="box-body">
     <!-- Conversations are loaded here -->
     <div class="direct-chat-messages">
+      <div class="conversation-timestamp">
+        <span class="direct-chat-timestamp ">Thứ ba, 20/10/2015</span>
+      </div>
       <!-- Message. Default to the left -->
       <div class="direct-chat-msg">
         <!-- /.direct-chat-info -->
         <img class="direct-chat-img" src="assets/images/user/user.jpg" alt="Message User Image"><!-- /.direct-chat-img -->
-        <div class="direct-chat-text">
-          <p>Bà già tụi bây, bán hàng lởm quá, tao mua zìa không xài được nè</p>
-        </div>
-        <!-- /.direct-chat-text -->
+        <div class="direct-chat-text-w">
+          <div class="direct-chat-text">
+            <p>Bà già tụi bây, bán hàng lởm quá, tao mua zìa không xài được nè</p>
+          </div>
+        </div><!-- /.direct-chat-text -->
+        <div class="direct-chat-text-w">
+          <div class="direct-chat-text">
+            <p>Bà già tụi bây</p>
+          </div>
+        </div><!-- /.direct-chat-text -->
         <div class="direct-chat-info clearfix">
           <span class="direct-chat-timestamp">21:39</span>
         </div>
@@ -33,54 +37,59 @@
       <div class="direct-chat-msg right">
         <!-- /.direct-chat-info -->
         <img class="direct-chat-img" src="assets/images/user/user-2.jpg" alt="Message User Image"><!-- /.direct-chat-img -->
-        <div class="direct-chat-text">
-          <p>Sao vậy anh 2?</p>
+        <div class="direct-chat-text-w">
+          <div class="direct-chat-text">
+            <p>Sao vậy anh</p>
+          </div>
+        </div><!-- /.direct-chat-text -->
+        <div class="direct-chat-text-w">
+          <div class="direct-chat-text">
+            <p>Tụi em bán hàng xịn nhất đó</p>
+          </div>
         </div>
-        <div class="direct-chat-text">
-          <p>Tụi em bán hàng xịn nhất đó</p>
-        </div>
-        <div class="direct-chat-text">
-          <p>Anh 2 hỏi Chị 3 hàng xóm là biết cách dùng ngon lành liền hà :)</p>
+        <div class="direct-chat-text-w">
+          <div class="direct-chat-text">
+            <p>Anh 2 hỏi Chị 3 hàng xóm là biết cách dùng ngon lành liền hà :)</p>
+          </div>
         </div>
         <!-- /.direct-chat-text -->
         <div class="direct-chat-info clearfix">
           <span class="direct-chat-timestamp pull-right">21:40</span>
         </div>
       </div><!-- /.direct-chat-msg -->
-    </div>
-    <!--/.direct-chat-messages-->
-
-    <!-- Contacts are loaded here -->
-    <div class="direct-chat-contacts">
-      <ul class="contacts-list">
-        <li>
-          <a href="#">
-            <img class="contacts-list-img" src="assets/images/user/user.jpg">
-
-            <div class="contacts-list-info">
-                  <span class="contacts-list-name">
-                    Count Dracula
-                    <small class="contacts-list-date pull-right">2/28/2015</small>
-                  </span>
-              <span class="contacts-list-msg">How have you been? I was...</span>
-            </div>
-            <!-- /.contacts-list-info -->
-          </a>
-        </li>
-        <!-- End Contact Item -->
-      </ul>
-      <!-- /.contatcts-list -->
-    </div>
+    </div><!--/.direct-chat-messages-->
     <!-- /.direct-chat-pane -->
   </div>
   <!-- /.box-body -->
   <div class="box-footer">
     <form action="#" method="post">
-      <div class="input-group">
-        <input type="text" name="message" placeholder="Type Message ..." class="form-control">
-            <span class="input-group-btn">
-              <button type="submit" class="btn btn-primary btn-flat">Send</button>
-            </span>
+      <div class="type-mes">
+        <textarea title="Type a message..." class="type-mes-textarea" placeholder="Nhập nội dung..."></textarea>
+      </div>
+      <div class="type-mes-tool">
+        <ul class="nav navbar-nav">
+          <li >
+            <a href="">
+              <i class="fa fa-tags"></i>
+              <p>Sản phẩm</p>
+            </a>
+          </li>
+          <li >
+            <a href="">
+              <i class="fa fa-picture-o"></i>
+              <p>Kho hình</p>
+            </a>
+          </li>
+          <li >
+            <a href="">
+              <i class="fa fa-camera-retro"></i>
+              <p>Tải lên</p>
+            </a>
+          </li>
+        </ul>
+        <div class="pull-right">
+          <input type="submit" class="btn btn-lime send-btn" value="Gửi">
+        </div>
       </div>
     </form>
   </div>

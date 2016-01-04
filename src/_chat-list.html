@@ -1,23 +1,23 @@
-<div class="border-right fb-chat-list">
-  <div class="nav-tabs-custom">
+<div class="fb-chat-list">
+  <div class="nav-tabs-flat">
     <ul class="nav nav-tabs">
       <li class="active">
-        <a href="#tab_1" data-toggle="tab" aria-expanded="false"><i class="fa fa-inbox fa-2x"></i></a>
+        <a href="#tab_1" data-toggle="tab" aria-expanded="false"><i class="fa fa-inbox"></i></a>
       </li>
       <li>
-        <a href="#tab_1" data-toggle="tab" aria-expanded="false"><i class="fa fa-envelope-o fa-2x"></i></a>
+        <a href="#tab_1" data-toggle="tab" aria-expanded="false"><i class="fa fa-file-text-o"></i></i></a>
       </li>
       <li>
-        <a href="#tab_2" data-toggle="tab" aria-expanded="false"><i class="fa fa-comment-o fa-2x"></i></a>
+        <a href="#tab_2" data-toggle="tab" aria-expanded="false"><i class="fa fa-comment-o"></i></a>
       </li>
       <li>
-        <a href="#tab_3" data-toggle="tab" aria-expanded="true"><i class="fa fa-eye-slash fa-2x"></i></a>
+        <a href="#tab_3" data-toggle="tab" aria-expanded="true"><i class="fa fa-eye-slash"></i></a>
       </li>
     </ul>
-    <div class="input-group input-group-sm">
-      <input type="text" class="form-control">
+    <div class="input-group chat-search">
+      <input type="text" class="form-control" placeholder="Tên khách hàng ...">
       <span class="input-group-btn">
-        <button type="submit" class="btn btn-primary btn-flat">Send</button>
+        <button type="submit" class="btn"><i class="fa fa-search"></i></button>
       </span>
     </div>
     <!--tab-content-->
@@ -26,26 +26,48 @@
       <div class="tab-pane active" id="tab_1">
         <div class="inbox-list">
           <ul class="chats-list chat-list-in-box">
-            {% for x in [1,2,3,4,5] %}
+            {% for x in [1,2,3,4] %}
+            <!-- /.item -->
+            <li class="item">
+              <div class="chat-img">
+                <img class="direct-chat-img" src="assets/images/user/user.jpg" alt="myface">
+              </div>
+              <div class="chat-info">
+                <p class="chat-title">
+                  <span class="direct-chat-name">Black Snow</span>
+                </p>
+                <span class="chat-description">
+                  Đầm màu trắng DW-102, Size M. Sao bán trên FB mà ko hỏi tui?
+                </span>
+              </div>
+              <div class="conversation-info">
+                <span class="direct-chat-timestamp mes-ac-1">15 phút trước</span>
+                <a href="" class="mes-ac-2"><i class="fa fa-envelope-o"></i></a>
+                <a class="mes-ac-3"><i class="fa fa-circle"></i></a>
+              </div>
+            </li>
+            <!-- /.item -->
+            {% endfor %}
             <!-- /.item -->
             <li class="item">
               <div class="chat-img">
                 <img class="direct-chat-img" src="assets/images/user/user-2.jpg" alt="myface">
               </div>
               <div class="chat-info">
-                <a href="javascript::;" class="chat-title">
+                <p class="chat-title">
                   <span class="direct-chat-name">Black Snow</span>
-                </a>
+                </p>
                 <span class="chat-description">
                   Đầm màu trắng DW-102, Size M. Sao bán trên FB mà ko hỏi tui?
                 </span>
               </div>
               <div class="conversation-info">
-                <span class="direct-chat-timestamp pull-right">15 phút trước</span>
+                <span class="direct-chat-timestamp mes-ac-1">15 phút trước</span>
+                <a href="" class="mes-ac-2"><i class="fa fa-envelope-o"></i></a>
+                <a class="mes-ac-3 active"><i class="fa fa-circle"></i></a>
               </div>
             </li>
             <!-- /.item -->
-            {% endfor %}
           </ul>
         </div>
       </div><!-- /.tab-pane -->

@@ -13,3 +13,23 @@
     }
   }
 }
+.nav-tabs-flat {
+  .nav-tabs {
+    border-bottom: 0;
+    >li{
+      a {
+        color: @light-gray-text;
+        &:hover {
+          border-color: transparent;
+        }
+      }
+    }
+    >li.active {
+      >a {
+        color: @blue;
+        font-weight: normal;
+        border: 0;
+      }
+    }
+  }
+}

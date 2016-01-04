@@ -14,6 +14,15 @@
       .translate(0, 0);
     }
   }
+  .box-footer {
+    padding: 15px 0 0;
+  }
+}
+
+.box-header  {
+    .user-name-w {
+    color: @lime-text;
+  }
 }
 
 .direct-chat-messages {
@@ -23,9 +32,9 @@
   overflow: auto;
 }
 
-.direct-chat-msg,
-.direct-chat-text {
+.direct-chat-msg{
   display: block;
+  position: relative;
 }
 
 .direct-chat-msg {
@@ -38,38 +47,42 @@
   .transition-transform(.5s ease-in-out);
 }
 
+.direct-chat-text-w {
+  width: 100%;
+  float: left;
+}
 .direct-chat-text {
-  .border-radius(5px);
+  .border-radius(3px);
   position: relative;
-  padding: 5px 10px;
+  display: inline-block;
+  width: auto;
+  max-width: 80%;
+  padding: 15px;  
+  margin: 10px 0 0 50px;
   background: @blue;
   border: 1px solid @blue;
-  margin: 5px 0 0 50px;
   color: @white;
+  float: left;
+  p {
+    margin: 0;
+  }
 
   //Create the arrow
   &:after,
   &:before {
+    width: 16px;
+    height: 10px;
+    background-color: @blue;
+    transform: skew(40deg);
     position: absolute;
     right: 100%;
-    top: 0;
-    border: solid transparent;
-    border-right-color: @light-gray-line;
-    content: ' ';
-    height: 0;
-    width: 0;
-    pointer-events: none;
+    top: -1px;
+    z-index: 0;
+    margin-right: -12px;
+    content: '';
   }
-
-  &:after {
-    border-width: 5px;
-    margin-top: -5px;
-  }
-  &:before {
-    border-width: 6px;
-    margin-top: -6px;
-  }
-  .right & {
+    .right & {
+    float: right;
     margin-right: 50px;
     margin-left: 0;
     background: @light-gray-line;
@@ -79,11 +92,14 @@
     &:before {
       right: auto;
       left: 100%;
-      border-right-color: transparent;
-      border-left-color: @light-gray-line;
+      transform: skew(-40deg);
+      margin-left: -12px;
+      background-color: @light-gray-line;
+      top: 0;
     }
   }
 }
+
 
 .direct-chat-img {
   .border-radius(50%);
@@ -93,9 +109,19 @@
   .right & {
     float: right;
   }
+  .direct-chat-msg & {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .right & {
+    left: auto;
+    right: 0;
+  }
 }
 
 .direct-chat-info {
+  float: left;
   display: block;
   margin-bottom: 2px;
   font-size: 12px;
@@ -105,8 +131,20 @@
   font-weight: 600;
 }
 
-.direct-chat-timestamp {
-  color: #999;
+.direct-chat {
+    .direct-chat-timestamp {
+    color: #999;
+    margin-left: 50px;
+    margin-top: 10px;
+    display: block;
+  }
+}
+.direct-chat {
+  .right {
+    .direct-chat-timestamp {
+      margin-right: 50px;
+    }
+  }
 }
 
 //Direct chat contacts pane
@@ -173,5 +211,51 @@
 
 .contacts-list-msg {
   color: #999;
+}
+.conversation-timestamp {
+  width: 100%;
+  text-align: center;
+  .direct-chat-timestamp {
+    color: @lime-text;
+  }
+}
+.type-mes-textarea {
+  width: 100%;
+  resize: none;
+  height: 90px;
+  padding: 15px;
+  border-left: 0;
+  border-right: 0;
+  border-color: @light-gray-line;
+  &:focus, &:active:focus {
+    outline: none;
+  }
+}
+.type-mes-tool {
+  width: 100%;
+  padding: 0 15px;
+  text-align: center;
+  li {
+    a {
+      font-size: 12px;
+      padding: 10px;
+      margin-right: 10px;
+      color: @light-gray-text;
+      p {
+        margin-bottom: 0;
+      }
+      &:hover {
+        background-color: transparent;
+        color: @lime-text;
+      }
+    }
+  }
+  i {
+    font-size: 20px;
+  }
+}
+.send-btn {
+  width: 85px;
+  margin-top: 10px;
 }
 

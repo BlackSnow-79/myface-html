@@ -174,7 +174,9 @@
       left: 15px;
     }
   }
-  li.ingray {
-    background-color: lighten(@light-gray-bg, 3%);
+  li {
+    &:nth-child(even) {
+      background-color: lighten(@light-gray-bg, 3%);
+    }
   }
 }

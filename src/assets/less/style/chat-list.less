@@ -6,10 +6,20 @@
   list-style: none;
   margin: 0;
   padding: 0;
+  color: @light-gray-text;
   > .item {
     .clearfix();
+    cursor: pointer;
+    position: relative;
     padding: 10px 0;
     background: transparent;
+    padding-left: 10px;
+    &:nth-child(even) {
+      background-color: lighten(@light-gray-bg, 3%);
+    }
+    &:hover {
+      background-color: @light-gray-bg;
+    }
   }
   .chat-img {
     float: left;
@@ -24,6 +34,8 @@
   }
   .chat-title {
     color: @gray-text;
+    margin-top: 7px;
+    margin-bottom: 0;
   }
   .chat-description {
     display: block;
@@ -35,15 +47,59 @@
   .conversation-info {
     width: 80px;
     display: block;
-    float: right;
+    position: absolute;
+    top: 0;
+    right: 10px;
+    font-size: 12px;
+    padding: 17px 0;
+    text-overflow: ellipsis;
+    text-align: right;
+    span, a {
+      width: 100%;
+      display: block;
+      &.mes-ac-3 {
+        font-size: 8px;
+        color: @gray-text;
+        &.active {
+          color: @green;
+        }
+      }
+    }
   }
 }
 
 .chat-list-in-box > .item {
   .box-shadow(none);
   .border-radius(0);
-  border-bottom: 1px solid @box-border-color;
+  border-bottom: 0;
   &:last-of-type {
     border-bottom-width: 0;
   }
 }
+.chat-search {
+  margin: 5px 10px 15px;
+  .form-control {
+    border-right: 0;
+  }
+  .btn {
+    border: 1px solid @gray;
+    border-left: 0;
+    background-color: transparent;
+    i {
+      font-size: 16px;
+      color: @blue;
+    }
+  }
+}
+.fb-chat-list {
+  .nav-tabs-flat {
+    .nav-tabs {
+      li {
+        width: 25%;
+        text-align: center;
+        font-size: 24px;
+      }
+    }
+  }
+}
+

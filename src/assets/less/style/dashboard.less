@@ -1,3 +1,53 @@
 .dashboard {
 	margin-top: 20px;
 }
+.viewall-btn {
+	color: @gray-text;
+	font-weight: bold;
+	margin-top: 10px;
+	font-size: 13px;
+	i {
+		color: @blue;
+		width: 20px;
+		text-align: right;
+	}
+	&:hover {
+		color: @blue;
+	}
+}
+.invoice-sum {
+	background-color: @light-blue-bg;
+	font-weight: bold;
+}
+.sum {
+	background-color: @blue;
+	color: @white;
+	td:first-child {	
+		border-radius: 0 0 0 3px;
+	}
+	td:last-child {	
+		border-radius: 0 0 3px 0;
+	}
+}
+.dash-table-box {
+	table {
+		thead {
+			th {
+				background-color: @white;
+				color: @black;
+			}
+		}
+	}
+	.table-striped > tbody > {
+		tr:nth-of-type(odd) {
+			background-color: lighten(@light-gray-bg, 3%)
+		}
+		tr:nth-child(even) {
+      background-color: @white;
+    }
+	}
+	padding-bottom: 0;
+	.box-body {
+		padding: 15px 0 0;
+	}
+}
