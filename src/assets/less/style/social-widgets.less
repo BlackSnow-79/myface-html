@@ -21,7 +21,8 @@
     color: @white;
     font-size: 16px;
     text-align: center;
-    margin: 10px 0;
+    margin: 0;
+    padding: 10px 0;
   }
   //User single line description
   .widget-user-desc {
@@ -37,7 +38,12 @@
     }
   }
   .box-footer {
-    padding-top: 30px;
+    padding: 10px 0;
+    .btn {
+      width: 116px;
+      display: block;
+      margin: 0 auto;
+    }
   }
 }
 
@@ -83,8 +89,92 @@
 .info-user-list {
   li {
     padding-left: 0;
+    color: @gray-text; 
     &:before {
       content: "";
     }
+    i {
+      width: 20px;
+    }
+    a {
+      color: @gray-text;
+      &:hover {
+        color: @blue;
+      }
+    }
+  }
+}
+.user-info-box-footer {
+  .info-user-list {
+    margin: 30px 0 20px;   
+    li {
+      padding: 0px 15px 10px;
+      border-bottom: 1px solid @box-border-color;
+    }
+    li:before {
+      width: 16px;
+      height: 16px;
+      position: absolute;
+      top: 23px;
+      left: 25px;
+      border: 1px solid @box-border-color;
+      border-top: 0;
+      border-left: 0;
+      background-color: @white;
+      -ms-transform: rotate(45deg);
+      -webkit-transform: rotate(45deg);
+      transform: rotate(45deg);
+    }
+    i {
+      width: 20px;
+      text-align: center;
+      color: @blue;
+    }
+  }
+}
+.info-update-btn {
+  padding: 10px 0;
+  font-style: italic;
+  i {
+    width: 26px;
+    text-align: center;
+  }
+}
+.user-name-block {
+  position: relative;
+  &:after {
+    width: 22px;
+    height: 22px;
+    position: absolute;
+    bottom: -11px;
+    left: 35px;
+    background-color: @blue;
+    -ms-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+}
+.user-info-box-body {
+  padding-top: 10px;
+  border-bottom: 1px solid @box-border-color;
+}
+.w-invoice-list {
+  padding: 0;
+  .cate-name {
+    font-weight: normal;
+    color: @gray-text;
+    border-bottom: 0;
+  }
+  li {
+    height: 34px;
+    overflow: hidden;
+    padding: 7px 15px 7px 25px;
+    &:before {
+      top: 13px;
+      left: 15px;
+    }
+  }
+  li.ingray {
+    background-color: lighten(@light-gray-bg, 3%);
   }
 }

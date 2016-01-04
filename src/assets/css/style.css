@@ -1761,7 +1761,7 @@ ul.ss-box a:hover {
   -o-transform: translate(0, 0);
   transform: translate(0, 0);
   padding: 10px;
-  height: 250px;
+  height: 475px;
   overflow: auto;
 }
 .direct-chat-msg,
@@ -2000,7 +2000,8 @@ ul.ss-box a:hover {
   color: #fff;
   font-size: 16px;
   text-align: center;
-  margin: 10px 0;
+  margin: 0;
+  padding: 10px 0;
 }
 .widget-user .widget-user-desc {
   margin-top: 0;
@@ -2014,7 +2015,12 @@ ul.ss-box a:hover {
   height: auto;
 }
 .widget-user .box-footer {
-  padding-top: 30px;
+  padding: 10px 0;
+}
+.widget-user .box-footer .btn {
+  width: 116px;
+  display: block;
+  margin: 0 auto;
 }
 .widget-user-2 .widget-user-header {
   padding: 20px;
@@ -2051,9 +2057,91 @@ ul.ss-box a:hover {
 }
 .info-user-list li {
   padding-left: 0;
+  color: #727272;
 }
 .info-user-list li:before {
   content: "";
+}
+.info-user-list li i {
+  width: 20px;
+}
+.info-user-list li a {
+  color: #727272;
+}
+.info-user-list li a:hover {
+  color: #2bc5f8;
+}
+.user-info-box-footer .info-user-list {
+  margin: 30px 0 20px;
+}
+.user-info-box-footer .info-user-list li {
+  padding: 0px 15px 10px;
+  border-bottom: 1px solid #dfdfdf;
+}
+.user-info-box-footer .info-user-list li:before {
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  top: 23px;
+  left: 25px;
+  border: 1px solid #dfdfdf;
+  border-top: 0;
+  border-left: 0;
+  background-color: #fff;
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.user-info-box-footer .info-user-list i {
+  width: 20px;
+  text-align: center;
+  color: #2bc5f8;
+}
+.info-update-btn {
+  padding: 10px 0;
+  font-style: italic;
+}
+.info-update-btn i {
+  width: 26px;
+  text-align: center;
+}
+.user-name-block {
+  position: relative;
+}
+.user-name-block:after {
+  width: 22px;
+  height: 22px;
+  position: absolute;
+  bottom: -11px;
+  left: 35px;
+  background-color: #2bc5f8;
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.user-info-box-body {
+  padding-top: 10px;
+  border-bottom: 1px solid #dfdfdf;
+}
+.w-invoice-list {
+  padding: 0;
+}
+.w-invoice-list .cate-name {
+  font-weight: normal;
+  color: #727272;
+  border-bottom: 0;
+}
+.w-invoice-list li {
+  height: 34px;
+  overflow: hidden;
+  padding: 7px 15px 7px 25px;
+}
+.w-invoice-list li:before {
+  top: 13px;
+  left: 15px;
+}
+.w-invoice-list li.ingray {
+  background-color: #f9f9fa;
 }
 /*
  * Component: Users List
