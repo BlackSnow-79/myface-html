@@ -1680,21 +1680,11 @@ ul.ss-box a:hover {
 }
 .timeline {
   list-style: none;
-  padding: 20px 0 20px;
+  padding: 0;
   position: relative;
-}
-.timeline:before {
-  top: 0;
-  bottom: 0;
-  position: absolute;
-  content: " ";
-  width: 3px;
-  background-color: #eeeeee;
-  left: 50%;
-  margin-left: -1.5px;
 }
 .timeline > li {
-  margin-bottom: 20px;
+  margin-bottom: 15px;
   position: relative;
 }
 .timeline > li:before,
@@ -1713,37 +1703,56 @@ ul.ss-box a:hover {
 .timeline > li:after {
   clear: both;
 }
-.timeline > li > .timeline-panel {
-  width: 46%;
+.timeline-heading {
+  display: block;
+  width: 100%;
   float: left;
-  border: 1px solid #d4d4d4;
+}
+.timeline-panel {
+  width: 70%;
+  float: left;
   border-radius: 2px;
-  padding: 20px;
+  padding: 15px;
+  margin-left: 40px;
   position: relative;
-  -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
-  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+  background: #ebebeb;
+  border: #ebebeb;
 }
-.timeline > li > .timeline-panel:before {
-  position: absolute;
-  top: 26px;
-  right: -15px;
-  display: inline-block;
-  border-top: 15px solid transparent;
-  border-left: 15px solid #ccc;
-  border-right: 0 solid #ccc;
-  border-bottom: 15px solid transparent;
-  content: " ";
+.bg-green .timeline-panel {
+  background: #d0f1d9;
 }
-.timeline > li > .timeline-panel:after {
+.bg-yellow .timeline-panel {
+  background: #fce9ca;
+}
+.bg-red .timeline-panel {
+  background: #feefee;
+}
+.bg-purple .timeline-panel {
+  background: #dbdaeb;
+}
+.timeline-panel:before {
+  width: 16px;
+  height: 10px;
+  background: #ebebeb;
+  transform: skew(40deg);
   position: absolute;
-  top: 27px;
-  right: -14px;
-  display: inline-block;
-  border-top: 14px solid transparent;
-  border-left: 14px solid #fff;
-  border-right: 0 solid #fff;
-  border-bottom: 14px solid transparent;
-  content: " ";
+  right: 100%;
+  top: 0;
+  z-index: 0;
+  margin-right: -12px;
+  content: '';
+}
+.bg-green .timeline-panel:before {
+  background: #d0f1d9;
+}
+.bg-yellow .timeline-panel:before {
+  background: #fce9ca;
+}
+.bg-red .timeline-panel:before {
+  background: #feefee;
+}
+.bg-purple .timeline-panel:before {
+  background: #dbdaeb;
 }
 .timeline > li > .timeline-badge {
   color: #fff;
@@ -1765,12 +1774,15 @@ ul.ss-box a:hover {
 }
 .timeline > li.timeline-inverted > .timeline-panel {
   float: right;
+  margin-left: auto;
+  margin-right: 40px;
 }
 .timeline > li.timeline-inverted > .timeline-panel:before {
-  border-left-width: 0;
-  border-right-width: 15px;
-  left: -15px;
   right: auto;
+  left: 100%;
+  transform: skew(-40deg);
+  margin-left: -12px;
+  top: 0;
 }
 .timeline > li.timeline-inverted > .timeline-panel:after {
   border-left-width: 0;
@@ -1778,31 +1790,69 @@ ul.ss-box a:hover {
   left: -14px;
   right: auto;
 }
-.timeline-badge.primary {
-  background-color: #2e6da4 !important;
-}
-.timeline-badge.success {
-  background-color: #3f903f !important;
-}
-.timeline-badge.warning {
-  background-color: #f0ad4e !important;
-}
-.timeline-badge.danger {
-  background-color: #d9534f !important;
-}
-.timeline-badge.info {
-  background-color: #5bc0de !important;
-}
 .timeline-title {
   margin-top: 0;
   color: inherit;
+  display: inline-block;
+  float: right;
+  font-weight: bold;
+}
+.timeline-inverted .timeline-title {
+  float: left;
+}
+.bg-green .timeline-title {
+  color: #3ac562;
+}
+.bg-yellow .timeline-title {
+  color: #f39c12;
+}
+.bg-red .timeline-title {
+  color: #f44336;
+}
+.bg-purple .timeline-title {
+  color: #605ca8;
+}
+.timeline-time {
+  margin-top: 0;
+  color: inherit;
+  display: inline-block;
+  float: left;
+}
+.timeline-inverted .timeline-time {
+  float: right;
 }
 .timeline-body > p,
 .timeline-body > ul {
   margin-bottom: 0;
 }
+.timeline-body > p strong,
+.timeline-body > ul strong {
+  color: #212121;
+}
 .timeline-body > p + p {
   margin-top: 5px;
+}
+.timline-icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 20px;
+}
+.timeline-inverted .timline-icon {
+  left: auto;
+  right: 0;
+}
+.bg-green .timline-icon {
+  color: #3ac562;
+}
+.bg-yellow .timline-icon {
+  color: #f39c12;
+}
+.bg-red .timline-icon {
+  color: #f44336;
+}
+.bg-purple .timline-icon {
+  color: #605ca8;
 }
 /*
  * Component: Direct Chat
@@ -2057,12 +2107,12 @@ ul.ss-box a:hover {
  */
 .info-box {
   display: block;
-  min-height: 90px;
+  min-height: 105px;
   background: #fff;
   width: 100%;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
   border-radius: 2px;
-  margin-bottom: 15px;
+  margin-bottom: 1px;
 }
 .info-box small {
   font-size: 14px;
@@ -2086,24 +2136,29 @@ ul.ss-box a:hover {
   border-bottom-left-radius: 2px;
   display: block;
   float: left;
-  height: 90px;
-  width: 90px;
-  text-align: center;
+  width: 120px;
+  height: 105px;
+  padding: 20px 10px;
   font-size: 45px;
-  line-height: 90px;
-  background: rgba(0, 0, 0, 0.2);
+  background: #2bc5f8;
+  color: #fff;
 }
 .info-box-icon > img {
   max-width: 100%;
 }
+.info-box-icon .info-box-text {
+  font-size: 13px;
+  margin-top: 5px;
+}
 .info-box-content {
-  padding: 5px 10px;
-  margin-left: 90px;
+  height: 105px;
+  padding: 20px 10px 20px 5px;
+  margin-left: 120px;
 }
 .info-box-number {
   display: block;
-  font-weight: bold;
-  font-size: 18px;
+  font-size: 24px;
+  font-weight: lighter;
 }
 .progress-description,
 .info-box-text {
@@ -2113,14 +2168,49 @@ ul.ss-box a:hover {
   overflow: hidden;
   text-overflow: ellipsis;
 }
-.info-box-text {
-  text-transform: uppercase;
-}
 .info-box-more {
   display: block;
 }
 .progress-description {
   margin: 0;
+}
+.sum-product {
+  margin-bottom: 30px;
+}
+.sum-box {
+  width: 100%;
+  padding: 20px 0;
+  border-bottom: 1px solid #ebebeb;
+}
+.sum-box .info-box-text {
+  text-align: center;
+  text-transform: none;
+  color: #b6b6b6;
+}
+.sum-box .info-box-number {
+  text-align: center;
+  font-size: 35px;
+  color: #3ac562;
+  font-weight: lighter;
+}
+.sum-table {
+  height: 65px;
+  margin-bottom: 0;
+  padding: 5px 0;
+  font-size: 12px;
+}
+.sum-table tbody tr td {
+  padding: 5px 0;
+}
+.sum-table i {
+  font-size: 8px;
+  width: 12px;
+}
+.sum-table .p-active {
+  color: #3ac562;
+}
+.sum-table .p-deactive {
+  color: #2bc5f8;
 }
 /*
  * Component: Social Widgets
@@ -2776,4 +2866,10 @@ main {
 }
 .dash-table-box .box-body {
   padding: 15px 0 0;
+}
+.dash-invoice-new {
+  padding-right: 0;
+}
+.dash-sum-product .box-body {
+  padding: 0;
 }
