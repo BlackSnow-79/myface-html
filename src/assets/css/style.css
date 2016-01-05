@@ -1471,6 +1471,12 @@ filter {
 .product-list-in-box > .item:last-of-type {
   border-bottom-width: 0;
 }
+.fb-store-list .item {
+  border-bottom: 0;
+}
+.fb-store-list .product-info {
+  padding: 10px;
+}
 /*
  * Component: Chat List
  * ------------------------
@@ -2820,9 +2826,6 @@ main {
 .report-container .radio > label {
   position: relative;
 }
-.dashboard {
-  margin-top: 20px;
-}
 .viewall-btn {
   color: #727272;
   font-weight: bold;
@@ -2872,4 +2875,31 @@ main {
 }
 .dash-sum-product .box-body {
   padding: 0;
+}
+.show-list-fanpage {
+  width: 100%;
+}
+.show-list-fanpage .avatar-image-store img {
+  width: 50px;
+  height: 50px;
+}
+.avatar-image-td {
+  width: 50px;
+  height: 50px;
+  padding: 0!important;
+}
+.avatar-text-store {
+  color: #727272;
+  font-weight: bold;
+}
+.avatar-text-store i {
+  margin-left: 5px;
+  color: #b6b6b6;
+  font-size: 12px;
+}
+.avatar-text-store:hover {
+  color: #2bc5f8;
+}
+.avatar-text-store:hover i {
+  color: #2bc5f8;
 }

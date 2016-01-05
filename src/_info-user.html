@@ -1,7 +1,7 @@
 <div class="box box-widget widget-user">
 	<div class="widget-user-header bg-aqua-active">
 		<div class="widget-user-image">
-		  <img class="img-circle" src="assets/images/user/user.jpg" alt="User Avatar">
+		  <img class="img-circle" src="assets/images/user/user.jpg" alt="myface">
 		</div>
 		<div class="clearfix user-name-block">
 		  	<h3 class="widget-user-username">Anh Hai Vui Tính</h3>
@@ -16,7 +16,7 @@
 			<li><i class="fa fa-map-marker"></i> <span>63, Đường Cái Bè, P. Thạnh Mỹ Lợi, Lai 
 Vung, Đồng Tháp.</span></li>
 			<li>
-				<a class="pull-right info-update-btn">Cập nhật thông tin <i class="fa fa-cog"></i></a>
+				<a class="pull-right info-update-btn" data-toggle="modal" data-target="#update-info-modal">Cập nhật thông tin <i class="fa fa-cog"></i></a>
 			</li>
 	    </ul>
 	</div>
@@ -34,3 +34,5 @@ Vung, Đồng Tháp.</span></li>
 	    </ul>
 	</div>
 </div>
+<!--update-info-user-modal-->
+{% include "_update-info-user-modal.html" %}
