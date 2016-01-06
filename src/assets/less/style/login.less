@@ -3,6 +3,9 @@
  * ----------------------
  */
 .login-page {
+	main {
+		margin-bottom: 0;
+	}
 	.login-bg {
 		position: absolute;
 		top: 0;
@@ -46,7 +49,8 @@
 .register-box {
 	width: 420px;
 	padding: 15px;
-	margin: 7% auto;
+	margin: 0 auto 0;
+	padding-top: 20px;
 	position: relative;
 	@media (max-width: @screen-sm) {
 		width: 90%;
@@ -71,6 +75,13 @@
 		left: auto;
 		right: 0;
 	}
+	.text-bold {
+		font-size: 16px;
+		font-weight: bold;
+	}
+	.text-normal {
+		line-height: 25px;
+	}
 }
 .login-box-body,
 .register-box-body {
@@ -88,7 +99,6 @@
 	color: @white;
 	font-size: 19px;
 	font-weight: lighter;
-	word-spacing: 2px;
 	margin: 0 0 25px;
 	padding: 0;
 }
@@ -124,12 +134,12 @@
 		content: '';
 		width: 5px;
 		height: 5px;
-		background-color: #4355a5;
+		background-color: @blackblue;
 	}
 }
 .signup-link {
 	position: relative;
-	color: #4355a5;
+	color: @blackblue;
 	&:before {
 		position: absolute;
 		left: 0;
@@ -137,7 +147,12 @@
 		content: '';
 		width: 100%;
 		height: 1px;
-		background-color: #4355a5;
+		background-color: lighten(@blackblue, 20%);
+	}
+	&:hover {
+		&:before {
+			background-color: transparent;
+		}
 	}
 }
 .btn-login {
@@ -160,23 +175,6 @@
 		&:last-child {
 			border-bottom: 0;
 		}
-		i {
-			width: 27px;
-			height: 30px;
-			&:before {
-				content: '';
-			}
-			&.fa-envelope {
-				background: url('../images/icon/store-icon.png') bottom no-repeat;
-				background-size: 100% auto;
-			}
-			&.fa-envelope-o {
-				background: url('../images/icon/email-icon.png') bottom no-repeat;
-			}
-			&.fa-lock {
-				background: url('../images/icon/pass-icon.png') bottom no-repeat;
-			}
-		}
 		.domain-span {
 			font-style: italic;
 			font-size: 12px;
@@ -191,20 +189,40 @@
 		text-align: left;
 		padding: 6px 0;
 		font-size: 24px;
+		    padding-right: 12px;
+		i {
+			width: 27px;
+			height: 22px;
+			&:before {
+				content: '';
+			}
+			&.fa-envelope {
+				background: url('../images/icon/store-icon.png') bottom no-repeat;
+				background-size: 100% auto;
+			}
+			&.fa-envelope-o {
+				background: url('../images/icon/email-icon.png') bottom no-repeat;
+			}
+			&.fa-lock {
+				background: url('../images/icon/pass-icon.png') bottom no-repeat;
+				background-size: auto 100%;
+			}
+		}
 	}
 	.form-control {
 		height: 55px;
 		border: 0;
 		color: @light-gray;
+		padding-left: 0;
+		padding-right: 0;
 		&:-moz-placeholder {
       color: @light-gray;
       font-style: italic;
-      word-spacing: 2px;
+
     }
     &::-moz-placeholder {
       color: @light-gray;
       font-style: italic;
-      word-spacing: 2px;
     }
     &:-ms-input-placeholder {
       color: @light-gray;
@@ -213,7 +231,62 @@
     &::-webkit-input-placeholder {
       ccolor: @light-gray;
       font-style: italic;
-      word-spacing: 2px;
+
     }
 	}
+}
+.login-f-v {
+	position: absolute;
+	top: 0px;
+	height: 55px;
+	left: 100%;
+	margin-left: 15px;
+	width: 100%;
+	background-color: lighten( @yellow, 30%);
+	color: @gray-text;
+	font-weight: normal;
+	font-size: 12px;
+	padding: 20px;
+	border-radius:  @box-border-radius;
+	i {
+		color: @yellow;
+		margin-right: 5px;
+		font-size: 18px;
+	}
+	&:before {
+		content: '';
+		width: 16px;
+    height: 16px;
+    background-color: lighten( @yellow, 30%);
+    position: absolute;
+    border-bottom: 0;
+    left: -8px;
+    -ms-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+	}
+	span {
+		height: 55px;
+	}
+}
+.rule-mgs {
+	a {	
+		color: @blackblue;
+	}
+	span {
+		color: @white;
+	}
+}
+.back-btn {
+	margin-top: 30px;
+	color: @white;
+	font-size: 13px;
+	i {
+		margin-right: 5px;
+	}
+}
+.lg-select {
+	width: auto !important; 
+	font-style: italic;
+	color: #999 !important;
 }

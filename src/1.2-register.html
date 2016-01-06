@@ -1,0 +1,142 @@
+{% extends "_layout-base.html" %}
+{% block bodyclass%}login-page{% endblock %}
+<!--page-container-->
+{% block page-container %}
+<main>
+  <div class="login-bg">
+  </div>
+
+  <!--login-box-->
+  <div  class="login-box">
+    <div class="login-logo">
+      <a href="1-login.html"><img src="assets/images/myface-logo.png" alt="myface"></a>
+    </div>
+    <!-- /.login-logo -->
+    <!--register-step-1-->
+    <div class="login-box-body" style="display:none">
+      <p class="login-box-msg">Chào mừng bạn đến myFace, giải pháp 
+      bán hàng hiệu quả trên Facebook.</p>
+      <div class="social-auth-links text-center">
+        <a href="#" class="btn btn-block btn-social btn-facebook"><i class="fa fa-facebook"></i> Đăng nhập Store bằng Facebook</a>
+        <p class="login-email-mgs">hoặc đăng ký bằng thông tin</p>
+      </div>
+      <form action="" method="post">
+      <div class="login-group">
+          <div class="input-group">
+            <span class="input-group-addon"><i class="fa fa-envelope"></i></span>
+            <input type="text" class="form-control" placeholder="Nhập tên Store của bạn">
+            <span class="input-group-addon domain-span">.myface.vn</span>
+          </div>
+          <div class="input-group">
+            <span class="input-group-addon"><i class="fa fa-envelope-o"></i></span>
+            <input type="email" class="form-control" placeholder="Email">
+            <!--validate-->
+            <label class="login-f-v" style="display:none"><i class="fa fa-exclamation-circle"></i> <span>Địa chỉ Email ko hợp lệ</span></label>
+          </div>
+          <div class="input-group">
+            <span class="input-group-addon"><i class="fa fa-lock"></i></span>
+            <input type="password" class="form-control" placeholder="Nhập mật khẩu">
+          </div>
+        </div><!--/.login-group-->
+        <div class="form-group">
+          <div class="col-xs-12">
+            <div class="checkbox icheck">
+              <label>
+                <input type="checkbox"> 
+                <span class="rule-mgs">Đồng ý với quy định 
+                  <a href="#"> Qui định sử dụng <span>&</span> Chính sách bảo mật </a>của myFace.
+                </span>
+              </label>
+            </div>
+          </div>
+          <!-- /.col -->
+          <button id="step-2-btn" type="button" class="btn btn-lg btn-blackblue btn-login">Tiếp tục</button>
+          <!-- /.col -->
+        </div>
+      </form>
+      <p class="no-account">
+        <span>Đã đăng ký?</span>
+        <a href="1.1-login.html" class="text-center signup-link">Đăng nhập</a>
+      </p>
+    </div>
+
+    <!--register-step-2-->
+    <div class="login-box-body">
+      <p class="login-box-msg">Chào mừng bạn đến myFace, giải pháp 
+      bán hàng hiệu quả trên Facebook.</p>
+      <div class="social-auth-links text-center">
+        <a href="#" class="btn btn-block btn-social btn-facebook"><i class="fa fa-facebook"></i> Đăng nhập Store bằng Facebook</a>
+        <p class="login-email-mgs"><span class="text-bold">Thêm thông tin của bạn</span><br/><span class="text-normal">(trong trường hợp chúng tôi cần hỗ trợ bạn)</span></p>
+      </div>
+      <form action="" method="post">
+        <div class="login-group">
+          <div class="input-group">
+            <div class="col-xs-5">
+              <div class="row arrow-row">
+                <select class="form-control lg-select">
+                  <option>Chọn giới tính</option>
+                  <option>Nam</option>
+                  <option>Nữ</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-xs-7">
+              <div class="row">
+                <input type="text" class="form-control" placeholder="Nhập tên họ của bạn">
+              </div>
+            </div>
+          </div>
+          <div class="input-group">
+            <input type="text" class="form-control" placeholder="Nhập số điện thoại của bạn">
+          </div>
+          <div class="input-group">
+            <select class="form-control lg-select">
+              <option>Chọn Tỉnh / Thành phố</option>
+              <option>Hồ Chí Minh</option>
+              <option>Hà Nội</option>
+            </select>
+          </div>
+          <div class="input-group">
+            <div class="col-xs-6">
+              <div class="row arrow-row">
+                <select class="form-control lg-select">
+                  <option>Chọn Quận / Huyện</option>
+                  <option>abc</option>
+                  <option>xyz</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-xs-6">
+              <div class="row">
+                <select class="form-control lg-select pull-right">
+                  <option>Chọn Phường / Xã</option>
+                  <option>abc</option>
+                  <option>xyz</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="input-group">
+            <input type="text" class="form-control" placeholder="Nhập tên Đường/Phố">
+          </div>
+          <div class="input-group">
+            <input type="text" class="form-control" placeholder="Nhập Số nhà/Ngõ/Ngách/Hẽm">
+          </div>
+        </div><!--/.login-group-->
+        <div class="form-group">
+          <!-- /.col -->
+          <button type="submit" class="btn btn-lg btn-blackblue btn-login">Đăng ký</button>
+          <!-- /.col -->
+        </div>
+      </form>
+      <a id="step-1-btn" href="" class="text-center back-btn"><i class="fa fa-angle-left"></i> Quay lại</a>
+    </div>
+  </div>
+  <!-- /.login-box-body -->
+</main>
+<!-- /.login-box -->
+{% endblock %}
+<!--footer-->
+{% block footer%}
+{% include "_footer.html" %}
+{% endblock %}

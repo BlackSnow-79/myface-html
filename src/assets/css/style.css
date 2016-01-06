@@ -4006,6 +4006,9 @@ main {
  * Page: Login & Register
  * ----------------------
  */
+.login-page main {
+  margin-bottom: 0;
+}
 .login-page .login-bg {
   position: absolute;
   top: 0;
@@ -4048,7 +4051,8 @@ main {
 .register-box {
   width: 420px;
   padding: 15px;
-  margin: 7% auto;
+  margin: 0 auto 0;
+  padding-top: 20px;
   position: relative;
 }
 @media (max-width: 768px) {
@@ -4077,6 +4081,13 @@ main {
   left: auto;
   right: 0;
 }
+.login-email-mgs .text-bold {
+  font-size: 16px;
+  font-weight: bold;
+}
+.login-email-mgs .text-normal {
+  line-height: 25px;
+}
 .login-box-body,
 .register-box-body {
   background: #2bc5f8;
@@ -4093,7 +4104,6 @@ main {
   color: #fff;
   font-size: 19px;
   font-weight: lighter;
-  word-spacing: 2px;
   margin: 0 0 25px;
   padding: 0;
 }
@@ -4141,7 +4151,10 @@ main {
   content: '';
   width: 100%;
   height: 1px;
-  background-color: #4355a5;
+  background-color: #828fcc;
+}
+.signup-link:hover:before {
+  background-color: transparent;
 }
 .btn-login {
   width: 100%;
@@ -4165,23 +4178,6 @@ main {
 .login-group .input-group:last-child {
   border-bottom: 0;
 }
-.login-group .input-group i {
-  width: 27px;
-  height: 30px;
-}
-.login-group .input-group i:before {
-  content: '';
-}
-.login-group .input-group i.fa-envelope {
-  background: url('../images/icon/store-icon.png') bottom no-repeat;
-  background-size: 100% auto;
-}
-.login-group .input-group i.fa-envelope-o {
-  background: url('../images/icon/email-icon.png') bottom no-repeat;
-}
-.login-group .input-group i.fa-lock {
-  background: url('../images/icon/pass-icon.png') bottom no-repeat;
-}
 .login-group .input-group .domain-span {
   font-style: italic;
   font-size: 12px;
@@ -4195,21 +4191,40 @@ main {
   text-align: left;
   padding: 6px 0;
   font-size: 24px;
+  padding-right: 12px;
+}
+.login-group .input-group-addon i {
+  width: 27px;
+  height: 22px;
+}
+.login-group .input-group-addon i:before {
+  content: '';
+}
+.login-group .input-group-addon i.fa-envelope {
+  background: url('../images/icon/store-icon.png') bottom no-repeat;
+  background-size: 100% auto;
+}
+.login-group .input-group-addon i.fa-envelope-o {
+  background: url('../images/icon/email-icon.png') bottom no-repeat;
+}
+.login-group .input-group-addon i.fa-lock {
+  background: url('../images/icon/pass-icon.png') bottom no-repeat;
+  background-size: auto 100%;
 }
 .login-group .form-control {
   height: 55px;
   border: 0;
   color: #b6b6b6;
+  padding-left: 0;
+  padding-right: 0;
 }
 .login-group .form-control:-moz-placeholder {
   color: #b6b6b6;
   font-style: italic;
-  word-spacing: 2px;
 }
 .login-group .form-control::-moz-placeholder {
   color: #b6b6b6;
   font-style: italic;
-  word-spacing: 2px;
 }
 .login-group .form-control:-ms-input-placeholder {
   color: #b6b6b6;
@@ -4218,7 +4233,59 @@ main {
 .login-group .form-control::-webkit-input-placeholder {
   ccolor: #b6b6b6;
   font-style: italic;
-  word-spacing: 2px;
+}
+.login-f-v {
+  position: absolute;
+  top: 0px;
+  height: 55px;
+  left: 100%;
+  margin-left: 15px;
+  width: 100%;
+  background-color: #fad9a4;
+  color: #727272;
+  font-weight: normal;
+  font-size: 12px;
+  padding: 20px;
+  border-radius: 3px;
+}
+.login-f-v i {
+  color: #f39c12;
+  margin-right: 5px;
+  font-size: 18px;
+}
+.login-f-v:before {
+  content: '';
+  width: 16px;
+  height: 16px;
+  background-color: #fad9a4;
+  position: absolute;
+  border-bottom: 0;
+  left: -8px;
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.login-f-v span {
+  height: 55px;
+}
+.rule-mgs a {
+  color: #4355a5;
+}
+.rule-mgs span {
+  color: #fff;
+}
+.back-btn {
+  margin-top: 30px;
+  color: #fff;
+  font-size: 13px;
+}
+.back-btn i {
+  margin-right: 5px;
+}
+.lg-select {
+  width: auto !important;
+  font-style: italic;
+  color: #999 !important;
 }
 .report-form {
   width: 100%;
