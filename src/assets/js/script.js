@@ -30,6 +30,18 @@ $(document).ready(function() {
     });
   });
 
+  // register form
+  $(function () {
+    $( '#step-2-btn').click(function(e) {
+      $( "#step-1-f" ).hide('fast');
+      $( "#step-2-f" ).show('slow');
+    });
+    $( '#step-1-btn').click(function(e) {
+      $( "#step-2-f" ).hide('fast');
+      $( "#step-1-f" ).show('fast');
+    });
+  });
+
 	// Modal
 	(function ($) {
     "use strict";

@@ -4287,6 +4287,9 @@ main {
   font-style: italic;
   color: #999 !important;
 }
+#step-2-f {
+  display: none;
+}
 .report-form {
   width: 100%;
   min-height: 355px;
