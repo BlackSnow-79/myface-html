@@ -35,11 +35,15 @@
 	<![endif]-->
 </head>
 <body class="{% block bodyclass%}{% endblock %}">
-	{% include "_header.html" %}
+	<!--header-->
+	{% block header%}{% endblock %}
+	<!--page-container-->
 	{% block page-container %}{% endblock %}
-	{% include "_footer.html" %}
-	{% include "_y-n-modal.html" %}
-	{% include "_alert-modal.html" %}
+	<!--footer-->
+	{% block footer%}{% endblock %}
+	<!--modal-->
+	{% block modal%}{% endblock %}
+	<!--script-->
 	{% block script%}
 	<script src="assets/js/jquery.js" type="text/javascript"></script>
 	<script src="assets/js/moment.js" type="text/javascript"></script>

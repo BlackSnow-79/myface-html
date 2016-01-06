@@ -82,6 +82,16 @@
   }
 }
 
+.btn-blackblue {
+  color: @white;
+  background-color: @blackblue;
+  border-color: darken(@blackblue, 5%);
+  &:hover, &:active, &:focus {
+    color: @white;
+    background-color: darken(@blackblue, 5%);
+  }
+}
+
 .btn-gray {
   color: @gray-text;
   background-color: @box-border-color;
