@@ -4010,7 +4010,7 @@ main {
   margin-bottom: 0;
 }
 .login-page .login-bg {
-  position: absolute;
+  position: fixed;
   top: 0;
   bottom: 0;
   left: 0;
@@ -4019,11 +4019,7 @@ main {
   z-index: 0;
 }
 .login-page #footer {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  z-index: 2;
+  position: relative;
   border-top: 1px solid #18a0cb;
 }
 .login-page #footer p {
@@ -4051,7 +4047,7 @@ main {
 .register-box {
   width: 420px;
   padding: 15px;
-  margin: 0 auto 0;
+  margin: 0 auto 30px;
   padding-top: 20px;
   position: relative;
 }
@@ -4407,4 +4403,22 @@ main {
 }
 .avatar-text-store:hover i {
   color: #2bc5f8;
+}
+.new-order-box .invoice-price {
+  background-color: #fff;
+  font-size: 13px;
+}
+.new-order-box .invoice-price tbody tr th {
+  text-align: left;
+  padding: 5px 0;
+}
+.new-order-box .invoice-price tbody tr td {
+  padding: 5px 0;
+}
+.new-order-box .invoice-price tbody .invoice-price-footer {
+  border-top: 0;
+}
+.new-order-box .invoice-price tbody .invoice-price-footer th,
+.new-order-box .invoice-price tbody .invoice-price-footer td {
+  color: #3ac562;
 }

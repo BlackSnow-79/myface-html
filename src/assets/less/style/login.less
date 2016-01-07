@@ -7,7 +7,7 @@
 		margin-bottom: 0;
 	}
 	.login-bg {
-		position: absolute;
+		position: fixed;
 		top: 0;
 		bottom: 0;
 		left: 0;
@@ -16,11 +16,7 @@
 		z-index: 0;
 	}
 	#footer {
-		position: absolute;
-		bottom: 0;
-		left: 0;
-		right: 0;
-		z-index: 2;
+		position: relative;
 		border-top: 1px solid lighten(#0d5870, 20%);
 		p {
 			color: #0d5870;
@@ -49,7 +45,7 @@
 .register-box {
 	width: 420px;
 	padding: 15px;
-	margin: 0 auto 0;
+	margin: 0 auto 30px;
 	padding-top: 20px;
 	position: relative;
 	@media (max-width: @screen-sm) {
