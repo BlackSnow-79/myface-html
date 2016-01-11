@@ -1,5 +1,9 @@
 <div class="box box-widget new-order-box">
 	<div class="box-body">
+    <!--invoice-product-table-->
+    <div class="invoice-product-list row">
+      {% include "_product-list.html" %}
+    </div>
 		<!--new-order-form-->
 		<div class="new-order-form">
 			<form role="form">
@@ -76,9 +80,12 @@
           </div>
 		    </div>
 		    <div class="wrap text-center">
-		    	<button type="button" class="btn btn-default creat-invoice-btn" data-toggle="modal" data-target="#">Tạo đơn hàng</button>
+		    	<button type="button" class="btn btn-default creat-invoice-btn" data-toggle="modal" data-target="#add-coupon-modal">Tạo đơn hàng</button>
 		    </div>
 		  </form>
 		</div><!--/.new-order-form-->
 	</div>
 </div>
+
+<!--add-coupon-modal-->
+{% include "_add-coupon-modal.html" %}

@@ -1,4 +1,6 @@
 .new-order-box {
+	height: 656px;
+  	overflow-x: auto;
 	.invoice-price {
 		background-color: @white;
 		font-size: 13px;
@@ -19,5 +21,58 @@
 				}
 			}
 		}
+	}
+	.box-body {
+		padding-top: 10px;
+	}
+}
+.invoice-product-list {
+	overflow: hidden;
+	font-size: 12px;
+	border: @box-border;
+	border-radius: @box-border-radius;
+	.product-list-in-box {
+		.item {
+			padding: 10px 5px;
+		  position: relative;
+		  background-color: #f0f1f3;
+		  .close {
+		  	position: absolute;
+			  right: 5px;
+			  top: 7px;
+		  }
+		  .product-info {
+			  margin-left: 55px;
+			  line-height: 1.2;
+			  padding-right: 5px;
+			  .product-title {
+				  font-size: 13px;
+				  &:hover {
+				  	color: @blue;
+				  }
+				}
+			}
+		}
+	}
+}
+.p-subtotal {
+  width: 100%;
+  margin-top: 5px;
+  display: inline-block;
+  float: left;
+  span {
+  	display: inline-block;
+  }
+  input.form-control {
+  	text-align: center;
+	  width: 25px;
+	  height: 25px;
+	  padding: 0;
+	  display: inline-block;
+  }
+  .product-p {
+	  color: #212121;
+	  margin-top: 5px;
+	  font-weight: bold;
 	}
 }

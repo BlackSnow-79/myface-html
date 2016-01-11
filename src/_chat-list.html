@@ -25,8 +25,28 @@
       <!--tab-1-->
       <div class="tab-pane active" id="tab_1">
         <div class="inbox-list">
-          <ul class="chats-list chat-list-in-box">
-            {% for x in [1,2,3,4] %}
+          <!--tab_category_content control class-->
+          <ul class="chats-list chat-list-in-box tab_category_content">
+            <li class="item item-active">
+                <div class="chat-img">
+                  <img class="direct-chat-img" src="assets/images/user/user.jpg" alt="myface">
+                </div>
+                <div class="chat-info">
+                  <p class="chat-title">
+                    <span class="direct-chat-name">Anh Hai Vui Tính</span>
+                  </p>
+                  <span class="chat-description">
+                    Bà già tụi bây, bán hàng lởm quá, tao mua zìa không xài được nè
+                  </span>
+                </div>
+                <div class="conversation-info">
+                  <span class="direct-chat-timestamp mes-ac-1">15 phút trước</span>
+                  <a href="" class="mes-ac-2"><i class="fa fa-envelope-o"></i></a>
+                  <a class="mes-ac-3 active"><i class="fa fa-circle"></i></a>
+                </div>
+              </li>
+            <!-- /.item -->
+            {% for x in [1,2,3,4,5,6] %}
             <!-- /.item -->
             <li class="item">
               <div class="chat-img">
