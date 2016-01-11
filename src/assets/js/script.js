@@ -50,6 +50,28 @@ $(document).ready(function() {
       $(this).addClass('item-active');
     });
   });
+  //dropdown-active
+  $(function () {
+    var open = false;
+    var openSidebar = function(){
+      $( ".panel-product-dropdown").addClass('active');
+      open = true; //This is the new part!
+    }
+    var closeSidebar = function(){
+      $( ".panel-product-dropdown").removeClass('active');
+      open = false;
+    }
+    $('.product-dropdown-ct').click( function(event) {
+      event.stopPropagation();
+      var toggle = open ? closeSidebar : openSidebar;
+      toggle();
+    });
+    $(document).click( function(event){
+      if ( !$(event.target).closest('.panel-product-dropdown').length ) {
+          closeSidebar();   
+      }
+    });
+  });
 
 	// Modal
 	(function ($) {
