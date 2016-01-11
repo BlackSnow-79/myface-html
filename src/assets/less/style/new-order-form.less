@@ -76,3 +76,18 @@
 	  font-weight: bold;
 	}
 }
+.md-link {
+	color: @light-gray-text;
+	font-style: italic;
+	position: relative;
+	&:before {
+		content: '';
+		width: 100%;
+		height: 1px;
+		display: block;
+		position: absolute;
+		left: 0;
+		bottom: -1px;
+		background-color: @light-gray;
+	}
+}

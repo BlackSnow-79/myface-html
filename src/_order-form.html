@@ -64,11 +64,11 @@
                   <td>2.000.000<ins>đ</ins></td>
                 </tr>
                 <tr>
-                  <th>Thêm phí vận chuyển: </th>
+                  <th><a href="#" class="md-link" data-toggle="modal" data-target="#add-transform-modal">Thêm phí vận chuyển <i class="fa fa-pencil-square-o"></i></a></th>
                   <td>0<ins>đ</ins></td>
                 </tr>
                 <tr>
-                  <th>Thêm khuyến mãi:</th>
+                  <th><a href="#" class="md-link" data-toggle="modal" data-target="#add-coupon-modal">Thêm khuyến mãi <i class="fa fa-pencil-square-o"></i></a></th>
                   <td>0<ins>đ</ins></td>
                 </tr>
                 <tr class="invoice-price-footer">
@@ -87,5 +87,7 @@
 	</div>
 </div>
 
+<!--add-transform-modal-->
+{% include "_add-transform-modal.html" %}
 <!--add-coupon-modal-->
 {% include "_add-coupon-modal.html" %}

@@ -42,6 +42,15 @@ $(document).ready(function() {
     });
   });
 
+  // add item-active for inbox-list
+  $(function () {
+    $( '.fb-chat-list li.item:first-child').addClass('item-active');
+    $( '.fb-chat-list li.item').click(function(e) {
+      $( ".fb-chat-list li.item" ).removeClass('item-active');
+      $(this).addClass('item-active');
+    });
+  });
+
 	// Modal
 	(function ($) {
     "use strict";
