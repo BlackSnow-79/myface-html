@@ -2109,6 +2109,12 @@ ul.ss-box a:hover {
   padding: 0 15px;
   text-align: center;
 }
+.type-mes-tool ul {
+  position: relative;
+}
+.type-mes-tool li {
+  position: static;
+}
 .type-mes-tool li a {
   font-size: 12px;
   padding: 10px;
@@ -2124,6 +2130,43 @@ ul.ss-box a:hover {
 }
 .type-mes-tool i {
   font-size: 20px;
+}
+.type-mes-tool .panel-product-dropdown {
+  top: auto;
+  left: 10px;
+  bottom: 100%;
+  margin-bottom: 0;
+  border-top: 1px solid #dfdfdf;
+  border-radius: 3px;
+  -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+  text-align: left;
+}
+.type-mes-tool .panel-product-dropdown.active {
+  width: 300px;
+}
+.type-mes-tool .panel-product-dropdown:before {
+  position: absolute;
+  bottom: -7px;
+  left: 9px;
+  display: inline-block;
+  border-right: 7px solid transparent;
+  border-top: 7px solid #fff;
+  border-left: 7px solid transparent;
+  border-bottom-color: rgba(0, 0, 0, 0.2);
+  content: '';
+}
+.type-mes-tool .panel-product-dropdown a {
+  display: block;
+}
+.type-mes-tool .panel-body {
+  padding: 0 15px;
+}
+.boxsearch input {
+  border: none;
+  width: 100%;
+  padding: 7px 10px;
+  border-bottom: 1px solid #ccc;
 }
 .send-btn {
   width: 85px;

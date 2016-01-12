@@ -53,8 +53,12 @@ $(document).ready(function() {
   //dropdown-active
   $(function () {
     var open = false;
-    var openSidebar = function(){
-      $( ".panel-product-dropdown").addClass('active');
+    var openSidebar1 = function(){
+      $( ".box-search-product .panel-product-dropdown").addClass('active');
+      open = true; //This is the new part!
+    }
+    var openSidebar2 = function(){
+      $( ".dropdown-pd-list").addClass('active');
       open = true; //This is the new part!
     }
     var closeSidebar = function(){
@@ -63,7 +67,12 @@ $(document).ready(function() {
     }
     $('.product-dropdown-ct').click( function(event) {
       event.stopPropagation();
-      var toggle = open ? closeSidebar : openSidebar;
+      var toggle = open ? closeSidebar : openSidebar1;
+      toggle();
+    });
+    $('.add-product-ct').click( function(event) {
+      event.stopPropagation();
+      var toggle = open ? closeSidebar : openSidebar2;
       toggle();
     });
     $(document).click( function(event){

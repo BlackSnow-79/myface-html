@@ -235,7 +235,11 @@
   width: 100%;
   padding: 0 15px;
   text-align: center;
+  ul {
+    position: relative;
+  }
   li {
+    position: static;
     a {
       font-size: 12px;
       padding: 10px;
@@ -252,6 +256,46 @@
   }
   i {
     font-size: 20px;
+  }
+  .panel-product-dropdown {
+    top: auto;
+    left: 10px;
+    bottom: 100%;
+    margin-bottom: 0;
+    border-top: 1px solid @box-border-color;
+    border-radius: 3px;
+    -webkit-box-shadow: 0 6px 12px rgba(0,0,0,.175);
+    box-shadow: 0 6px 12px rgba(0,0,0,.175);
+    text-align: left;
+    &.active {
+      width: 300px;
+
+    }
+    &:before {
+      position: absolute;
+      bottom: -7px;
+      left: 9px;
+      display: inline-block;
+      border-right: 7px solid transparent;
+      border-top: 7px solid #fff;
+      border-left: 7px solid transparent;
+      border-bottom-color: rgba(0,0,0,.2);
+      content: '';
+    }
+    a {
+      display: block;
+    }
+  }
+  .panel-body {
+    padding: 0 15px;
+  }
+}
+.boxsearch { 
+  input {
+    border: none;
+    width: 100%;
+    padding: 7px 10px;
+    border-bottom: 1px solid #ccc;
   }
 }
 .send-btn {
