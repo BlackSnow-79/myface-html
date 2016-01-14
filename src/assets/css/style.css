@@ -307,39 +307,6 @@ header .header-top .user-label .user-label-2 {
   margin: 0;
   font-size: 22px;
 }
-.content-header .breadcrumb {
-  float: left;
-  background: transparent;
-  margin-top: 0;
-  margin-bottom: 0;
-  font-size: 12px;
-  padding: 7px 10px 0;
-  top: 15px;
-  right: 10px;
-  border-radius: 2px;
-}
-.content-header .breadcrumb > li > a {
-  padding: 10px 0;
-  margin: 0 10px;
-  color: #444;
-  text-decoration: none;
-  border-bottom: 2px solid transparent;
-  display: inline-block;
-}
-.content-header .breadcrumb > li > a > .fa,
-.content-header .breadcrumb > li > a > .glyphicon,
-.content-header .breadcrumb > li > a > .ion {
-  margin-right: 5px;
-}
-.content-header .breadcrumb > li > .active,
-.content-header .breadcrumb > li > a:hover {
-  color: #ff5722;
-  border-bottom: 2px solid #ff5722;
-}
-.content-header .breadcrumb > li + li:before {
-  content: '';
-  padding: 0;
-}
 footer {
   width: 100%;
   height: 50px;
@@ -351,6 +318,39 @@ footer {
 }
 footer p {
   color: #727272;
+}
+.breadcrumb {
+  float: left;
+  background: transparent;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 12px;
+  padding: 7px 10px 0;
+  top: 15px;
+  right: 10px;
+  border-radius: 2px;
+}
+.breadcrumb > li > a {
+  padding: 10px 0;
+  margin: 0 10px;
+  color: #444;
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+  display: inline-block;
+}
+.breadcrumb > li > a > .fa,
+.breadcrumb > li > a > .glyphicon,
+.breadcrumb > li > a > .ion {
+  margin-right: 5px;
+}
+.breadcrumb > li > .active,
+.breadcrumb > li > a:hover {
+  color: #ff5722;
+  border-bottom: 2px solid #ff5722;
+}
+.breadcrumb > li + li:before {
+  content: '';
+  padding: 0;
 }
 .text-danger,
 label.error {
