@@ -1,0 +1,173 @@
+/*
+ * Component: Dropdown menus
+ * -------------------------
+ */
+
+/*Dropdowns in general*/
+.dropdown-menu {
+  box-shadow: none;
+  border-color: #eee;
+  > li > a {
+    color: #777;
+  }
+  > li > a > .glyphicon,
+  > li > a > .fa,
+  > li > a > .ion {
+    margin-right: 10px;
+  }
+  > li > a:hover {
+    background-color: @blue-line;
+    color: #333;
+  }
+  > .divider {
+    background-color: #eee;
+  }
+}
+
+//User menu
+.navbar-nav > .user-menu {
+  height: 50px;
+  .dropdown-toggle {
+    padding: 0;
+    color: @white;
+    background-color: transparent;
+    &:focus,
+    &:active,
+    &:hover,
+    &:active:focus,
+    &:visited {
+      background-color: transparent;
+    }
+  }
+> .dropdown-menu {
+    width: 246px;
+    .border-top-radius(0);
+    padding: 1px 0 0 0;
+    border-top-width: 0;
+    width: 280px;
+  }
+}
+
+/* Add fade animation to dropdown menus by appending
+ the class .animated-dropdown-menu to the .dropdown-menu ul (or ol)*/
+.open:not(.dropup) > .animated-dropdown-menu {
+  backface-visibility: visible !important;
+  .animation(flipInX .7s both);
+
+}
+
+@keyframes flipInX {
+  0% {
+    transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+    transition-timing-function: ease-in;
+    opacity: 0;
+  }
+
+  40% {
+    transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+    transition-timing-function: ease-in;
+  }
+
+  60% {
+    transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+    opacity: 1;
+  }
+
+  80% {
+    transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
+  }
+
+  100% {
+    transform: perspective(400px);
+  }
+}
+
+@-webkit-keyframes flipInX {
+  0% {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+    -webkit-transition-timing-function: ease-in;
+    opacity: 0;
+  }
+
+  40% {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+    -webkit-transition-timing-function: ease-in;
+  }
+
+  60% {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+    opacity: 1;
+  }
+
+  80% {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
+  }
+
+  100% {
+    -webkit-transform: perspective(400px);
+  }
+}
+
+/* Fix dropdown menu in navbars */
+.navbar-custom-menu > .navbar-nav {
+  > li {
+    position: relative;
+    > .dropdown-menu {
+      position: absolute;
+      right: 0;
+      left: auto;
+    }
+    .account-submenu-dropdown {
+      &:before {
+        content: '';
+        width: 16px;
+        height: 16px;
+        background-color: @white;
+        position: absolute;
+        border-bottom: 0;
+        top: -8px;
+        right: 40px;
+        -ms-transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
+        transform: rotate(45deg);
+      }
+      li {
+        position: relative;
+        a {
+          padding: 15px;
+          color: @light-gray-text;
+        }
+      }
+      .user-footer {
+        position: relative;
+        border-top: 1px solid @gray-line;
+        &:before {
+          content: '';
+          height: 1px;
+          width: 100%;
+          background-color: @gray-line;
+          position: absolute;
+          top: 2px;
+          left: 0;
+          z-index: 2;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: @screen-sm-max) {
+  .navbar-custom-menu > .navbar-nav {
+    float: right;
+    > li {
+      position: static;
+      > .dropdown-menu {
+        position: absolute;
+        right: 5%;
+        left: auto;
+        border: 1px solid #ddd;
+        background: #fff;
+      }
+    }
+  }
+}
