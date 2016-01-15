@@ -1,0 +1,104 @@
+{% extends "_layout.html" %}
+{% block page-container %}
+{% include "_shop-setting-header.html" %}
+<main class="shop-store">
+  <div class="container submenu">
+    <div class="row">
+      <ol class="breadcrumb">
+        <li><a href="7.1-shop-info.html">Thông tin chung</a></li>
+        <li><a href="7.2.1-shop-account.html" class="active">Tài khoản</a></li>
+      </ol>
+    </div>
+  </div><!--/.submenu-->
+
+	<div class="container">
+    <div class="row">
+      <div class="box">
+        <div class="box-header with-border">
+          <h3 class="box-title">Gói dịch vụ</h3>
+        </div>
+        <!-- /.box-header -->
+        <div class="box-body">
+          <div class="box box-gray">
+            <div class="box-header with-border">
+              <h4 class="box-title">Thay đổi gói dịch vụ</h4>
+            </div>
+            <!-- /.box-header -->
+            <div class="box-body">
+              <div class="clearfix">
+                <p><i class="fa fa-circle-o"></i> Hiện bạn đang sử dụng gói dịch vụ:  <label class="green-highlight">Chuyên nghiệp</label> (199.000đ /tháng), ngày hết hạn:  <label class="green-highlight">31/12/2017</label></p>
+                <p><i class="fa fa-circle-o"></i> Chọn gói dịch vụ khác</p>
+              </div>
+              <!--Goi dich vu-->
+              <div class="row">
+                <!--box-service-->
+                <div class="col-xs-6">
+                  <div class="box box-gray">
+                    <div class="box-body">
+                      <h4 class="box-title"><span class="blue-highlight">199.000<ins>đ</ins></span> /tháng (Gói chuyên nghiệp)</h4>
+                      <ul class="list-group-noline check-list-group">
+                        <li><p>Không giới hạn sản phẩm</p></li>
+                        <li><p>Không giới hạn bài biết blog</p></li>
+                        <li><p>Hỗ trợ 10 email@tencongty.com</p></li>
+                        <li><p>Sử dụng tên miền riêng của bạn</p></li>
+                        <li><p>Các kênh bán hàng: 5giay, webtretho, adayroi, zalora, websosanh, ...</p></li>
+                        <li><p>Abandoned cart recovery</p></li>
+                      </ul>
+                    </div>
+                    <div class="box-footer">
+                      <input type="button" class="btn btn-lime" value="Gói cước hiện nay" disabled>
+                    </div>
+                  </div>
+                </div>
+                <!--box-service-->
+                <div class="col-xs-6">
+                  <div class="box box-gray">
+                    <div class="box-body">
+                      <h4 class="box-title"><span class="blue-highlight">299.000<ins>đ</ins></span> /tháng (Gói không giới hạn)</h4>
+                      <ul class="list-group-noline check-list-group">
+                        <li><p>Không giới hạn sản phẩm</p></li>
+                        <li><p>Không giới hạn bài biết blog</p></li>
+                        <li><p>Hỗ trợ 10 email@tencongty.com</p></li>
+                        <li><p>Sử dụng tên miền riêng của bạn</p></li>
+                        <li><p>Các kênh bán hàng: 5giay, webtretho, adayroi, zalora, websosanh, ...</p></li>
+                        <li><p>Abandoned cart recovery</p></li>
+                        <li><p>Tự động gửi mail cho đơn hàng chưa hoàn tất</p></li>
+                        <li><p>Thống kê chuyên nghiệp</p></li>
+                      </ul>
+                    </div>
+                    <div class="box-footer">
+                      <input type="button" class="btn btn-lime" value="Chọn gói cước này">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- /.box -->
+          <div class="box box-gray">
+            <div class="box-header with-border">
+              <h4 class="box-title">Thời hạn sử dụng</h4>
+            </div>
+            <!-- /.box-header -->
+            <div class="box-body">
+              <ul class="list-group-noline">
+                <li><p>Thời hạn quy đổi từ gói cũ: <span class="green-highlight">90 ngày sử dụng</span></p></li>
+                <li><p>Ngày hết hạn gói dịch vụ:  <span class="green-highlight">30/03/2018</span></p></li>
+                <li><p>Bạn phải bù thêm:  <span class="green-highlight">500.000đ</span></p></li>
+              </ul>
+            </div>
+          </div>
+          <!-- /.box -->
+        </div>
+        <!-- /.box-body -->
+        <div class="box-footer clearfix">
+          <div class="form-group text-right">
+            <input type="button" class="btn btn-lime" data-toggle="modal" data-target="#alert-modal" value="Đồng ý thay đổi gói dịch vụ">
+            <a href="" class="btn btn-default">Hủy</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+{% endblock %}
