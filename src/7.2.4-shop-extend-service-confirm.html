@@ -62,9 +62,20 @@
             </div>
             <!-- /.box-header -->
             <div class="box-body">
-              <p><i class="fa fa-circle-o"></i> Chuyển khoản ngân hàng <a href="#"><i>(Xem hướng dẫn)</i></a></p>
-              <p><i class="fa fa-circle-o"></i> Thanh toán online qua thẻ thanh toán nội địa <a href="#"><i>(Xem hướng dẫn)</i></a></p>
-              <p><i class="fa fa-circle-o"></i> Thanh toán online qua thẻ <label>Visa/ Master Card</label> <a href="#"><i>(Xem hướng dẫn)</i></a></p>
+              <div class="form-group">
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                    Thanh toán online qua thẻ thanh toán nội địa <a href="#"><i>(Xem hướng dẫn)</i></a>
+                  </label>
+                </div>
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3">
+                    Thanh toán online qua thẻ <strong>Visa/ Master Card</strong> <a href="#"><i>(Xem hướng dẫn)</i></a>
+                  </label>
+                </div>
+              </div>
             </div>
           </div>
           <!-- /.box -->
@@ -72,8 +83,10 @@
         <!-- /.box-body -->
         <div class="box-footer clearfix">
           <div class="form-group text-right">
-            <input type="button" class="btn btn-lime" data-toggle="modal" data-target="#alert-modal" value="Xác nhận">
+            <div class="form-group text-right">
+            <a href="" class="btn btn-lime">Xác nhận</a>
             <a href="" class="btn btn-default">Hủy</a>
+          </div>
           </div>
         </div>
       </div>
