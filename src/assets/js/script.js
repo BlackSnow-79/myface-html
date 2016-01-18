@@ -82,6 +82,30 @@ $(document).ready(function() {
     });
   });
 
+  //slimscroll
+  $(function(){
+    $('.tab_category_content').slimScroll({
+        height: '500px',
+        size: '5px'
+    });
+    $('.new-order-box').slimScroll({
+        height: '650px',
+        size: '5px'
+    });
+    $('.direct-chat-messages').slimScroll({
+        height: '416px',
+        size: '5px'
+    });
+    $('.product-list-in-box').slimScroll({
+        height: '161px',
+        size: '5px'
+    });
+    $('.dash-invoice-new .box-body').slimScroll({
+        height: '505px',
+        size: '5px'
+    });
+  });
+
 	// Modal
 	(function ($) {
     "use strict";
