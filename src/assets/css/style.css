@@ -1922,6 +1922,7 @@ ul.ss-box a:hover {
 }
 .direct-chat .box-footer {
   padding: 15px 0 0;
+  position: relative;
 }
 .box-header .user-name-w {
   color: #ff5722;
@@ -2192,6 +2193,45 @@ ul.ss-box a:hover {
 .send-btn {
   width: 85px;
   margin-top: 10px;
+}
+.review-img-upload {
+  width: 100%;
+  resize: none;
+  height: 90px;
+  padding: 15px;
+  background-color: #ffcaba;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 9;
+}
+.review-img-upload .img-review {
+  width: 80px;
+  height: 60px;
+  overflow: hidden;
+  position: relative;
+}
+.review-img-upload .img-review img {
+  width: 60px;
+  height: 60px;
+}
+.review-img-upload .item-review {
+  width: 100%;
+  height: 60px;
+  overflow: hidden;
+  position: relative;
+}
+.review-img-upload .close {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.review-img-upload .review-link {
+  display: block;
+  white-space: nowrap;
+  width: 250px;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 /*
  * Component: Info Box
