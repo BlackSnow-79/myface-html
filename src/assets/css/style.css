@@ -373,6 +373,9 @@ label.error {
 .green-highlight {
   color: #3ac562;
 }
+.blue-highlight {
+  color: #2bc5f8;
+}
 /*
  * Component: Form
  * ---------------
@@ -483,6 +486,11 @@ label.error {
 .editor-form textarea {
   width: 100%;
 }
+.form-horizontal-right .control-label {
+  text-align: left;
+  font-weight: normal;
+  padding: 7px 15px 0;
+}
 /*
  * Component: Button
  * -----------------
@@ -539,6 +547,7 @@ label.error {
 .btn-default:hover,
 .btn-default:focus {
   background-color: #ff5722;
+  color: #fff;
   border: 1px solid transparent;
 }
 .btn-primary {
@@ -548,6 +557,7 @@ label.error {
 .btn-primary:hover,
 .btn-primary:active,
 .btn-primary:focus {
+  color: #fff;
   background-color: #12bef7;
   border-color: #12bef7;
 }
@@ -559,6 +569,7 @@ label.error {
 .btn-lime:hover,
 .btn-lime:active,
 .btn-lime:focus {
+  color: #fff;
   background-color: #ff4408;
 }
 .btn-blackblue {
@@ -1133,6 +1144,9 @@ label.error {
 .modal .panel-body {
   color: #444;
 }
+.box-padding {
+  padding: 20px;
+}
 /*
  * Component: modal
  * ----------------
@@ -1331,6 +1345,14 @@ filter {
   position: absolute;
   top: 10px;
   left: 0;
+}
+.check-list-group li {
+  padding-left: 25px;
+}
+.check-list-group li:before {
+  top: 0;
+  content: "\f00c";
+  font-size: 18px;
 }
 .pagination {
   float: left;
@@ -4755,4 +4777,7 @@ main {
   transform: translateY(0) scale(1);
   opacity: 1;
   z-index: 1;
+}
+.shop-store .radio {
+  margin-top: 0;
 }

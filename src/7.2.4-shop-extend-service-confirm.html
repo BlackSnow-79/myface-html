@@ -1,0 +1,83 @@
+{% extends "_layout.html" %}
+{% block page-container %}
+{% include "_shop-setting-header.html" %}
+<main class="shop-store">
+  <div class="container submenu">
+    <div class="row">
+      <ol class="breadcrumb">
+        <li><a href="7.1-shop-info.html">Thông tin chung</a></li>
+        <li><a href="7.2.1-shop-account.html" class="active">Tài khoản</a></li>
+      </ol>
+    </div>
+  </div><!--/.submenu-->
+
+  <div class="container">
+    <div class="row">
+      <div class="box">
+        <div class="box-header with-border">
+          <h3 class="box-title">Gia hạn gói dịch vụ</h3>
+        </div>
+        <!-- /.box-header -->
+        <div class="box-body">
+          <div class="box box-gray">
+            <div class="box-header with-border">
+              <h4 class="box-title">Thay đổi gói dịch vụ</h4>
+            </div>
+            <!-- /.box-header -->
+            <div class="box-body">
+              <div class="clearfix">
+                <p><i class="fa fa-circle-o"></i> Hiện bạn đang sử dụng gói dịch vụ: <label class="green-highlight">Chuyên nghiệp</label> (199.000đ /tháng), ngày hết hạn:  <label class="green-highlight">31/12/2015</label></p>
+                <p><i class="fa fa-circle-o"></i>  Bạn đã gia hạn gói dịch vụ: <label class="green-highlight">Chuyên nghiệp </label> (199.000đ /tháng), ngày hết hạn:  <label class="green-highlight">30/03/2016</label></p>
+                <p><i class="fa fa-circle-o"></i> Để sử dụng gói dịch vụ, bạn phải bù thêm:  <label class="green-highlight">500.000đ</label>/tháng</p>
+              </div>
+            </div>
+          </div>
+          <!-- /.box -->
+          <div class="box box-gray">
+            <div class="box-header with-border">
+              <h4 class="box-title">Thời hạn sử dụng</h4>
+            </div>
+            <!-- /.box-header -->
+            <div class="box-body">
+              <ul class="list-group-noline">
+                <li><p>Gói dịch vụ được kích hoạt trong 4 giờ làm việc đối với phương thức thanh toán: <label>Chuyển khoản ngân hàng</label></p></li>
+                <li><p>Gói dịch vụ được kích hoạt ngay khi <label>thanh toán online thành công</label></p></li>
+                <li><p>Thời gian quy đổi từ gói cũ: <span class="green-highlight">90 ngày sử dụng</span></p></li>
+                <li><p>Ngày bắt đầu sử dụng gói dịch vụ mới là: <span class="green-highlight">01/01/2016</span>. Ngày hết hạn gói dịch vụ cũ: <span class="green-highlight">30/03/2016</span></p></li>
+              </ul>
+            </div>
+          </div>
+          <!-- /.box -->
+          <!-- /.box -->
+          <div class="box box-gray">
+            <div class="box-header">
+              <h4 class="box-title">Tổng tiền thanh toán: <span class="green-highlight">299.000<ins>đ</ins></span></h4>
+            </div>
+          </div>
+          <!-- /.box -->
+          <!-- /.box -->
+          <div class="box box-gray">
+            <div class="box-header with-border">
+              <h4 class="box-title">Thời hạn sử dụng</h4>
+            </div>
+            <!-- /.box-header -->
+            <div class="box-body">
+              <p><i class="fa fa-circle-o"></i> Chuyển khoản ngân hàng <a href="#"><i>(Xem hướng dẫn)</i></a></p>
+              <p><i class="fa fa-circle-o"></i> Thanh toán online qua thẻ thanh toán nội địa <a href="#"><i>(Xem hướng dẫn)</i></a></p>
+              <p><i class="fa fa-circle-o"></i> Thanh toán online qua thẻ <label>Visa/ Master Card</label> <a href="#"><i>(Xem hướng dẫn)</i></a></p>
+            </div>
+          </div>
+          <!-- /.box -->
+        </div>
+        <!-- /.box-body -->
+        <div class="box-footer clearfix">
+          <div class="form-group text-right">
+            <input type="button" class="btn btn-lime" data-toggle="modal" data-target="#alert-modal" value="Xác nhận">
+            <a href="" class="btn btn-default">Hủy</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+{% endblock %}
