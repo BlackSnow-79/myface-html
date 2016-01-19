@@ -1,0 +1,59 @@
+<div class="modal" id="create-new-product-modal">
+  <div class="modal-dialog modal-md">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">Tạo sản phẩm mới</h4>
+      </div>
+      <div class="modal-body">
+        <div class="form-horizontal form-horizontal-right">
+          <div class="form-group">
+            <label for="" class="col-sm-4 control-label">Hình sản phẩm</label>
+            <div class="col-sm-8">
+              <div class="product-img-thumb">
+                <div class="img-box">
+                  <img src="assets/images/myface.png" alt="myface" title="up hình sản phẩm">
+                  <input class="upload-btn" id="upload-img-btn" type="file" name="pic" accept="image/*" title="up hình sản phẩm">
+                </div>
+                <a href="#" data-toggle="modal" class="close img-remove-btn" title="xóa ảnh"><i class="fa fa-times"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="" class="col-sm-4 control-label">Tên sản phẩm</label>
+            <div class="col-sm-8">
+              <input type="text" class="form-control" id="" placeholder="">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="" class="col-sm-4 control-label">Nhóm sản phẩm</label>
+            <div class="col-sm-8">
+              <select class="form-control">
+                <option>Chọn nhóm sản phẩm</option>
+                <option>Thiết bị số</option>
+                <option>Thời trang nam</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="" class="col-sm-4 control-label">Giá bán sản phẩm</label>
+            <div class="col-sm-6">
+              <input type="text" class="form-control" id="" placeholder="Nhập giá sản phẩm">
+            </div>
+            <div class="col-xs-2">
+              <p class="color-label pull-right">VND</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <input type="submit" class="btn btn-lime" value="Tạo mới">
+        <a href="" class="btn btn-default">Hủy</a>
+      </div>
+    </div>
+  <!-- /.modal-content -->
+  </div>
+  <!-- /.modal-dialog -->
+</div>
+<!-- /.modal -->

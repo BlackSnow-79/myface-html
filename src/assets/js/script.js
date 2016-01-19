@@ -84,7 +84,7 @@ $(document).ready(function() {
 
   //slimscroll
   $(function(){
-    $('.tab_category_content').slimScroll({
+    $('.slimscroll500').slimScroll({
         height: '500px',
         size: '5px'
     });
