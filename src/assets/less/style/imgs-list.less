@@ -1,32 +1,39 @@
 /*
- * Component: Users List
+ * Component: imgs List
  * ---------------------
  */
-.users-list {
+ #img-store-modal {
+ }
+.imgs-list {
+  list-style: none;
+  padding: 0;
   &:extend(.list-unstyled);
   > li {
-    width: 25%;
+    width: 125px;
+    height: 125px;
     float: left;
-    padding: 10px;
+    margin: 10px;
+    padding: 5px;
+    border: @box-border;
     text-align: center;
+    cursor: pointer;
     img {
-      .border-radius(50%);
       max-width: 100%;
       height: auto;
     }
     > a:hover {
       &,
-      .users-list-name {
+      .imgs-list-name {
         color: #999;
       }
     }
   }
 }
-.users-list-name,
-.users-list-date {
+.imgs-list-name,
+.imgs-list-date {
   display: block;
 }
-.users-list-name {
+.imgs-list-name {
   font-weight: 600;
   color: #444;
   overflow: hidden;
@@ -34,7 +41,7 @@
   text-overflow: ellipsis;
 }
 
-.users-list-date {
+.imgs-list-date {
   color: #999;
   font-size: 12px;
 }

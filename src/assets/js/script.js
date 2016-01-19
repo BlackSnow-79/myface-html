@@ -104,6 +104,10 @@ $(document).ready(function() {
         height: '505px',
         size: '5px'
     });
+    $('.slimcroll330').slimScroll({
+        height: '330px',
+        size: '5px'
+    });
   });
 
 	// Modal

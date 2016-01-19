@@ -2051,6 +2051,7 @@ ul.ss-box a:hover {
   display: block;
   margin-bottom: 2px;
   font-size: 12px;
+  width: 100%;
 }
 .direct-chat-name {
   font-weight: 600;
@@ -2063,6 +2064,7 @@ ul.ss-box a:hover {
 }
 .direct-chat .right .direct-chat-timestamp {
   margin-right: 50px;
+  text-align: right;
 }
 .direct-chat-contacts-open .direct-chat-contacts {
   -webkit-transform: translate(0, 0);
@@ -2526,36 +2528,43 @@ ul.ss-box a:hover {
   background-color: #f9f9fa;
 }
 /*
- * Component: Users List
+ * Component: imgs List
  * ---------------------
  */
-.users-list > li {
-  width: 25%;
-  float: left;
-  padding: 10px;
-  text-align: center;
+.imgs-list {
+  list-style: none;
+  padding: 0;
 }
-.users-list > li img {
-  border-radius: 50%;
+.imgs-list > li {
+  width: 125px;
+  height: 125px;
+  float: left;
+  margin: 10px;
+  padding: 5px;
+  border: 1px solid #dfdfdf;
+  text-align: center;
+  cursor: pointer;
+}
+.imgs-list > li img {
   max-width: 100%;
   height: auto;
 }
-.users-list > li > a:hover,
-.users-list > li > a:hover .users-list-name {
+.imgs-list > li > a:hover,
+.imgs-list > li > a:hover .imgs-list-name {
   color: #999;
 }
-.users-list-name,
-.users-list-date {
+.imgs-list-name,
+.imgs-list-date {
   display: block;
 }
-.users-list-name {
+.imgs-list-name {
   font-weight: 600;
   color: #444;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
 }
-.users-list-date {
+.imgs-list-date {
   color: #999;
   font-size: 12px;
 }
