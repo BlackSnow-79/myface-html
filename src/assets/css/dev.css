@@ -1,3 +1,14 @@
-.tab_category_content {
 
+#please_select_inbox{
+    height: 500px;
+    position: relative
+}
+.displayed {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    right: 40%;
+}
+._error{
+    color: #ff0000;
 }

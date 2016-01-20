@@ -44,10 +44,15 @@ $(document).ready(function() {
 
   // add item-active for inbox-list
   $(function () {
-    $( '.fb-chat-list li.item:first-child').addClass('item-active');
     $( '.fb-chat-list li.item').click(function(e) {
       $( ".fb-chat-list li.item" ).removeClass('item-active');
       $(this).addClass('item-active');
+    });
+  });
+  $(function () {
+    $( '.imgs-list li').click(function(e) {
+      $( ".imgs-list li" ).removeClass('active');
+      $(this).addClass('active');
     });
   });
   //dropdown-active
@@ -94,7 +99,8 @@ $(document).ready(function() {
     });
     $('.direct-chat-messages').slimScroll({
         height: '416px',
-        size: '5px'
+        size: '5px',
+        start: 'bottom'
     });
     $('.product-list-in-box').slimScroll({
         height: '161px',

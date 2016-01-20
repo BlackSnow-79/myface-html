@@ -1,0 +1,75 @@
+{% extends "_layout.html" %}
+{% block page-container %}
+{% include "_shop-setting-header.html" %}
+<main class="shop-store">
+	<div class="container">
+    <div class="row">
+      <div class="box">
+        <div class="box-header with-border">
+          <h3 class="box-title">vận chuyển</h3>
+        </div>
+        <!-- /.box-header -->
+        <div class="box-body">
+          <div class="box box-lime">
+            <div class="box-header with-border">
+              <h4 class="box-title">Địa chỉ kho hàng của bạn</h4>
+              <div class="pull-right">
+                <a href="" class="btn-update"><i class="fa fa-cog"></i> <i>Thay đổi địa chỉ kho hàng</i></a>
+              </div>
+            </div>
+            <!-- /.box-header -->
+            <div class="box-body">
+              <div class="clearfix">
+                <div class="pull-left">
+                  <p>Số 63, đường Cái Bè, Phường Thạnh Mĩ Lợi, Lai Vung, Đồng Tháp.</p>
+                  <p class="note"><i>*Lưu ý: Công ty vận chuyển tính phí giao hàng dựa trên địa chỉ kho hàng của bạn và địa chỉ nhận hàng của khách hàng</i></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- /.box -->
+          <div class="box box-lime">
+            <div class="box-header with-border">
+              <h4 class="box-title">Chọn công ty vận chuyển</h4>
+            </div>
+            <!-- /.box-header -->
+            <div class="box-body">
+              <div class="box-footer clearfix">
+                <div class="row form-group">
+                  <a href="7.3-shop-admin.html" class="btn btn-lime">Lưu công ty vận chuyển</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- /.box -->
+          <div class="box box-lime">
+            <div class="box-header with-border">
+              <p><strong>Thay đổi tài khoản chủ sở hữu</strong></p>
+            </div>
+            <!-- /.box-header -->
+            <div class="box-body">
+              <div class="form-group">
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked="">
+                    Sử dụng khu vực và phí vận chuyển của công ty vận chuyển
+                  </label>
+                </div>
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                    Thiết lập khu vực và phí vận chuyển riêng
+                  </label>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+          <!-- /.box -->
+        </div>
+        <!-- /.box-body -->
+      </div>
+    </div>
+  </div>
+</main>
+{% endblock %}

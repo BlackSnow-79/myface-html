@@ -2583,6 +2583,9 @@ ul.ss-box a:hover {
 .imgs-list > li > a:hover .imgs-list-name {
   color: #999;
 }
+.imgs-list > li.active {
+  border: 3px solid #2bc5f8;
+}
 .imgs-list-name,
 .imgs-list-date {
   display: block;
