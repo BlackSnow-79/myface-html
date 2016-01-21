@@ -488,7 +488,6 @@ label.error {
 }
 .form-horizontal-right .control-label {
   text-align: left;
-  font-weight: normal;
   padding: 7px 15px 0;
 }
 /*
@@ -616,6 +615,34 @@ label.error {
 }
 .action .btn-action:first-child {
   margin-right: 10px;
+}
+.btn-transperent-lime-line {
+  background-color: transparent;
+  border: 1px solid #ff5722;
+  color: #ff5722;
+}
+.btn-transperent-lime-line:hover {
+  color: #ff5722;
+}
+.btn-chossen {
+  color: #fff;
+  background-color: #ff5722;
+  border-color: #ff4408;
+}
+.btn-chossen:hover,
+.btn-chossen:active,
+.btn-chossen:focus {
+  color: #fff;
+  background-color: #ff4408;
+}
+.btn-chossen:before {
+  font-family: FontAwesome;
+  content: '';
+  top: 0;
+  content: "\f00c";
+  font-size: 18px;
+  color: #f39c12;
+  margin-right: 5px;
 }
 /*
  * Component: Label
@@ -4888,4 +4915,7 @@ main {
 }
 .shop-store .radio {
   margin-top: 0;
+}
+.shop-store .form-horizontal-right .control-label {
+  font-weight: normal;
 }
