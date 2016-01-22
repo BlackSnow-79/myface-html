@@ -644,6 +644,9 @@ label.error {
   color: #f39c12;
   margin-right: 5px;
 }
+.btn-edit {
+  color: #727272;
+}
 /*
  * Component: Label
  * ----------------
@@ -4918,4 +4921,21 @@ main {
 }
 .shop-store .form-horizontal-right .control-label {
   font-weight: normal;
+}
+.setting-shipping-cost .box {
+  background: #ebebeb;
+}
+.shipping-setting .box {
+  background-color: rgba(255, 255, 255, 0.6);
+}
+.shipping-setting .box .box-header .box-title {
+  color: #2bc5f8;
+  font-weight: normal;
+}
+.shipping-setting .view-more {
+  color: #ff5722;
+  font-style: italic;
+}
+.shipping-setting .view-more:hover {
+  color: #727272;
 }
