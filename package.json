@@ -1,10 +1,6 @@
 {
   "name": "myface",
   "version": "0.0.0",
-  "scripts": {
-    "gulp": "gulp",
-    "minify": "gulp minify"
-  },
   "private": true,
   "dependencies": {
     "gulp": "latest",
@@ -15,6 +11,6 @@
     "del": "latest"
   },
   "devDependencies": {
-    "gulp-util": "^3.0.0"
+    "gulp-util": "^3.0.7"
   }
 }

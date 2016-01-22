@@ -14,7 +14,7 @@
             <div class="box-header with-border">
               <h4 class="box-title">Địa chỉ kho hàng của bạn</h4>
               <div class="pull-right">
-                <a href="" class="btn-edit"><i class="fa fa-cog"></i> <i>Thay đổi địa chỉ kho hàng</i></a>
+                <a href="#" class="btn-edit" data-toggle="modal" data-target="#change-warehouse-modal"><i class="fa fa-cog"></i> <i>Thay đổi địa chỉ kho hàng</i></a>
               </div>
             </div>
             <!-- /.box-header -->
@@ -34,10 +34,48 @@
             </div>
             <!-- /.box-header -->
             <div class="box-body">
-              <div class="box-footer clearfix">
-                <div class="row form-group">
-                  <a href="7.3-shop-admin.html" class="btn btn-lime">Lưu công ty vận chuyển</a>
+              <div class="row">
+                <div class="col-xs-4 col-shipping-add">
+                  <div class="radio radio-shipping">
+                    <label>
+                      <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked="">
+                      Quantium
+                    </label>
+                  </div>
+                  <div class="img-shipping-thumb">
+                    <img src="assets/images/shipping/quantium-logo.png" alt="myface">
+                  </div>
                 </div>
+
+                <div class="col-xs-4 col-shipping-add">
+                  <div class="radio radio-shipping">
+                    <label>
+                      <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked="">
+                      Giao hàng nhanh 
+                    </label>
+                  </div>
+                  <div class="img-shipping-thumb">
+                    <img src="assets/images/shipping/giaohangnhanh-logo.png" alt="myface">
+                  </div>
+                </div>
+
+                <div class="col-xs-4 col-shipping-add">
+                  <div class="radio radio-shipping">
+                    <label>
+                      <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked="">
+                      Viettel Post
+                    </label>
+                  </div>
+                  <div class="img-shipping-thumb">
+                    <img src="assets/images/shipping/viettelpost-logo.png" alt="myface">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="box-footer clearfix">
+              <div class="form-group">
+                <input href="#" type="button" class="btn btn-lime pull-right" data-toggle="modal" data-target="#alert-modal" value="Lưu công ty vận chuyển">
               </div>
             </div>
           </div>
@@ -132,7 +170,7 @@
                         </div><!--/.box-header -->
                         <div class="box-body">
                           <div class="form-group">
-                            <span for="" class="col-sm-3 control-label">Hình thức vận chuyển</span>
+                            <label for="" class="col-sm-3 control-label">Hình thức vận chuyển</label>
                             <div class="col-sm-5">
                               <select class="form-control">
                                 <option>Nhân viên giao hàng và thu tiền tận nơi (C.O.D)</option>
@@ -142,7 +180,7 @@
                             <span for="" class="col-sm-2 control-label"><a href="#" class="view-more">( Xem thêm )</a></span>
                           </div>
                           <div class="form-group">
-                            <span for="" class="col-sm-4 control-label">Tiêu chuẩn tính cước phí vận chuyển</span>
+                            <label for="" class="col-sm-4 control-label">Tiêu chuẩn tính cước phí vận chuyển</label>
                             <div class="col-sm-4">
                               <select class="form-control">
                                 <option>Tổng giá trị đơn hàng</option>
@@ -150,6 +188,82 @@
                               </select>
                             </div>
                             <span for="" class="col-sm-2 control-label"><a href="#" class="view-more">( Xem thêm )</a></span>
+                          </div>
+                          <div class="form-group">
+                            <label for="" class="control-label">Hình thức vận chuyển</label>
+                            <span for="" class="control-label"><a href="#" class="view-more">( Xem thêm )</a></span>
+                          </div>
+                          <div class="form-group">
+                            <span for="" class="col-xs-3 control-label">Miễn phí vận chuyển cho đơn hàng:</span>
+                            <div class="col-xs-9">
+                              <span for="" class="control-label">Từ</span>
+                              <input type="text" class="form-control shipping-form-control" id="" placeholder="">
+                              <span for="" class="control-label">Đến</span>
+                              <input type="text" class="form-control shipping-form-control" id="" placeholder="">
+                              <span for="" class="control-label">{đ}</span>
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <div class="col-xs-9 col-xs-offset-3">
+                              <span for="" class="col-xs-3 control-label">Tại các Quận / Huyện</span>
+                              <div class="col-xs-9">
+                                <div class="row shipping-check-area">
+                                  <div class="checkbox col-xs-3">
+                                    <label class="checkbox-material-line-gray">
+                                      <input type="checkbox">Tất cả
+                                    </label>
+                                  </div>
+                                  {% for x in [1,2,3] %}
+                                  <div class="checkbox col-xs-3">
+                                    <label class="checkbox-material-line-gray">
+                                      <input type="checkbox">Quận 1
+                                    </label>
+                                  </div>
+                                  <div class="checkbox col-xs-3">
+                                    <label class="checkbox-material-line-gray">
+                                      <input type="checkbox">Quận 3
+                                    </label>
+                                  </div>
+                                  <div class="checkbox col-xs-3">
+                                    <label class="checkbox-material-line-gray">
+                                      <input type="checkbox">Quận 4
+                                    </label>
+                                  </div>
+                                  {% endfor %}
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <span for="" class="col-xs-3 control-label">Tính phí vận chuyển cho đơn hàng:</span>
+                            <div class="col-xs-9">
+                              <span for="" class="control-label">Từ</span>
+                              <input type="text" class="form-control shipping-form-control" id="" placeholder="">
+                              <span for="" class="control-label">Đến</span>
+                              <input type="text" class="form-control shipping-form-control" id="" placeholder="">
+                              <span for="" class="control-label">{đ}</span>
+                            </div>
+                          </div>
+
+                          <div class="row setting-shipping-div">
+                            <div class="col-xs-9 col-xs-offset-3">
+                              <div class="col-xs-3 setting-shipping-col-1">
+                                <label class="blue-highlight setting-shipping-title">Quận/Huyện</label>
+                                <div class="checkbox">
+                                  <label class="checkbox-material-line-gray">
+                                    <input type="checkbox">Quận 1
+                                  </label>
+                                </div>
+                              </div><!--/.col-1-->
+                              <div class="col-xs-4 setting-shipping-col-2">
+                                <label class="blue-highlight">Cước phí vận chuyển</label>
+                                <input type="text" class="form-control" id="" placeholder="">
+                              </div><!--/.col-2-->
+                              <div class="col-xs-3 col-xs-offset-1 setting-shipping-col-3">
+                                <label class="blue-highlight">Cước phí cuối cùng</label>
+                                <label class="ship-label green-highlight">15000</label><ins>đ</ins>
+                              </div><!--/.col-3-->
+                            </div>
                           </div>
                         </div>
                       </div>
@@ -165,5 +279,9 @@
       </div>
     </div>
   </div>
+
+  <!--change-warehouse-modal-->
+  {% include "_change-warehouse-modal.html" %}
 </main>
 {% endblock %}
+
