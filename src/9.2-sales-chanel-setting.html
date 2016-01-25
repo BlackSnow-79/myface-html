@@ -1,0 +1,102 @@
+{% extends "_layout.html" %}
+{% block page-container %}
+{% include "_shop-setting-header.html" %}
+<main class="sales-chanel">
+	<div class="container">
+    <div class="row">
+      <div class="box">
+        <div class="box-header with-border">
+          <h3 class="box-title">Quản lý kênh bán hàng</h3>
+        </div>
+        <!-- /.box-header -->
+        <div class="box-body">
+          <div class="row">
+            <div class="col-md-3">
+              <div class="box-widget widget-user">  
+                <div class="widget-user-header bg-aqua-active">
+                  <div class="widget-user-image">
+                    <img class="img-circle" src="assets/images/user/user.jpg" alt="myface">
+                  </div>
+                  <div class="clearfix user-name-block">
+                      <h3 class="widget-user-username">Anh Hai Vui Tính</h3>
+                  </div>
+                  <div class="text-center clearfix">
+                    <a href="">Ngắt kết nối Facebook store của bạn với MyFace</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-9 sale-chanel-col">
+              <div class="box box-lime">
+                <div class="box-header with-border">
+                  <h4 class="box-title">Page tab</h4>
+                </div>
+                <!-- /.box-header -->
+                <div class="box-body">
+                  <p>Cửa hàng của bạn trên Facebook sẽ được hiển thị dưới dạng 1 Tab. Hãy tùy chỉnh tiêu đề và ảnh cho Tab này. </p>
+                  <p><i>(Kích cỡ hình ảnh lớn hơn 111x74 pixel sẽ được tự động điều chỉnh lại cho phù hợp)</i></p>
+                  <ul class="list-group-noline">
+                    <li><p>Tiêu đề Tab </p></li>
+                    <li><p>Ảnh đại diện Tab</p></li>
+                  </ul>
+                </div>
+              </div>
+              <!-- /.box -->
+              <div class="box box-lime">
+                <div class="box-header with-border">
+                  <h4 class="box-title">Hình ảnh banner</h4>
+                </div>
+                <!-- /.box-header -->
+                <div class="box-body">
+                  <p>Tải hình ảnh banner cho cửa hàng của bạn.</p>
+                  <p><i>(Kích cỡ hình ảnh lớn hơn 808x200 pixel sẽ được tự động điều chỉnh lại cho phù hợp)</i></p>
+                  <ul class="list-group-noline">
+                    <li><p>Ảnh đại diện Tab</p></li>
+                  </ul>
+                </div>
+              </div>
+              <!-- /.box -->
+              <div class="box box-lime">
+                <div class="box-header with-border">
+                  <h4 class="box-title">Bạn muốn bán sản phẩm trong cửa hàng lên Facebook theo</h4>
+                </div>
+                <!-- /.box-header -->
+                <div class="box-body form-horizontal form-horizontal-right">
+                  <div class="form-group">
+                    <span for="" class="col-sm-2 control-label">Nhóm sản phẩm</span>
+                    <div class="col-sm-5">
+                      <select class="form-control">
+                        <option>Thời trang Nam</option>
+                        <option>Đồ điện tử</option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-xs-5 col-xs-offset-2">
+                      <label>Nhóm sản phẩm bạn đã chọn:</label>
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <span for="" class="col-sm-2 control-label">Sản phẩm</span>
+                    <div class="col-sm-5">
+                      <select class="form-control">
+                        <option>Thời trang Nam</option>
+                        <option>Đồ điện tử</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- /.box -->
+            </div>
+          </div>
+        </div>
+        <!-- /.box-body -->
+      </div>
+    </div>
+  </div>
+</main>
+{% endblock %}
