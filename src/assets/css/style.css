@@ -4972,3 +4972,19 @@ main {
   text-align: left;
   padding: 7px 0 0;
 }
+.chanel-account-col .widget-user .widget-user-header {
+  height: auto;
+  border-radius: 3px;
+  padding-top: 20px;
+}
+.chanel-account-col .user-name-block:after {
+  content: none;
+}
+.chanel-account-col .chanel-account-control-div {
+  width: 100%;
+  text-align: center;
+  padding: 20px 40px;
+}
+.chanel-account-col .chanel-account-control {
+  color: #fff;
+}

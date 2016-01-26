@@ -31,7 +31,7 @@ $(document).ready(function() {
   });
 
   // register form
-  $(function () {
+  /*$(function () {
     $( '#step-2-btn').click(function(e) {
       $( "#step-1-f" ).hide('fast');
       $( "#step-2-f" ).show('slow');
@@ -40,7 +40,7 @@ $(document).ready(function() {
       $( "#step-2-f" ).hide('fast');
       $( "#step-1-f" ).show('fast');
     });
-  });
+  });*/
 
   // add item-active for inbox-list
   $(function () {
