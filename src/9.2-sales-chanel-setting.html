@@ -21,7 +21,7 @@
                       <h3 class="widget-user-username">Anh Hai Vui Tính</h3>
                   </div>
                   <div class="chanel-account-control-div">
-                    <a href="" class="chanel-account-control">Ngắt kết nối Facebook store của bạn với MyFace</a>
+                    <a href="" class="chanel-account-control"><i class="fa fa-chain-broken"></i> <span> Ngắt kết nối Facebook store của bạn với MyFace</span></a>
                   </div>
                 </div>
               </div>
@@ -36,9 +36,25 @@
                 <div class="box-body">
                   <p>Cửa hàng của bạn trên Facebook sẽ được hiển thị dưới dạng 1 Tab. Hãy tùy chỉnh tiêu đề và ảnh cho Tab này. </p>
                   <p><i>(Kích cỡ hình ảnh lớn hơn 111x74 pixel sẽ được tự động điều chỉnh lại cho phù hợp)</i></p>
-                  <ul class="list-group-noline">
-                    <li><p>Tiêu đề Tab </p></li>
-                    <li><p>Ảnh đại diện Tab</p></li>
+                  <ul class="list-group-noline sales-chanel-setting-group">
+                    <li class="form-group">
+                      <label class="col-xs-2 control-label">Tiêu đề Tab </label>
+                      <div class="col-sm-8">
+                        <input type="text" class="form-control" id="" placeholder="">
+                      </div>
+                    </li>
+                    <li class="form-group">
+                      <label class="col-xs-2 control-label">Ảnh đại diện Tab</label>
+                      <div class="col-sm-8">
+                        <div class="product-img-thumb tab-img-upload">
+                          <div class="img-box">
+                            <!--<img src="assets/images/myface.png" alt="myface" title="up hình sản phẩm">-->
+                            <input class="upload-btn" id="upload-img-btn" type="file" name="pic" accept="image/*" title="up hình sản phẩm">
+                          </div>
+                          <a href="#" class="close img-remove-btn" title="xóa ảnh"><i class="fa fa-trash-o"></i></a>
+                        </div>
+                      </div>
+                    </li>
                   </ul>
                 </div>
               </div>
@@ -51,8 +67,19 @@
                 <div class="box-body">
                   <p>Tải hình ảnh banner cho cửa hàng của bạn.</p>
                   <p><i>(Kích cỡ hình ảnh lớn hơn 808x200 pixel sẽ được tự động điều chỉnh lại cho phù hợp)</i></p>
-                  <ul class="list-group-noline">
-                    <li><p>Ảnh đại diện Tab</p></li>
+                  <ul class="list-group-noline sales-chanel-setting-group">
+                    <li class="form-group">
+                      <label class="col-xs-2 control-label">Ảnh banner Tab</label>
+                      <div class="col-sm-8">
+                        <div class="product-img-thumb banner-img-upload">
+                          <div class="img-box">
+                            <!--<img src="assets/images/myface.png" alt="myface" title="up hình sản phẩm">-->
+                            <input class="upload-btn" id="upload-img-btn" type="file" name="pic" accept="image/*" title="up hình sản phẩm">
+                          </div>
+                          <a href="#" class="close img-remove-btn" title="xóa ảnh"><i class="fa fa-trash-o"></i></a>
+                        </div>
+                      </div>
+                    </li>
                   </ul>
                 </div>
               </div>
@@ -63,29 +90,81 @@
                 </div>
                 <!-- /.box-header -->
                 <div class="box-body form-horizontal form-horizontal-right">
-                  <div class="form-group">
-                    <span for="" class="col-sm-2 control-label">Nhóm sản phẩm</span>
-                    <div class="col-sm-5">
-                      <select class="form-control">
-                        <option>Thời trang Nam</option>
-                        <option>Đồ điện tử</option>
-                      </select>
+                  <div class="form-group st-product-form-group">
+                    <div class="radio col-xs-2">
+                      <label class="radio-material-blue">
+                        <input type="radio" name="" id="" value="" checked="">
+                        <span class="check">Nhóm sản phẩm</span>
+                      </label>
+                    </div>
+                    <div class="col-sm-7">
+                      <input type="text" class="form-control" id="" placeholder="">
                     </div>
                   </div>
 
+                  <!--nhóm sản phẩm-->
                   <div class="row">
-                    <div class="col-xs-5 col-xs-offset-2">
-                      <label>Nhóm sản phẩm bạn đã chọn:</label>
+                    <div class="col-xs-10 col-xs-offset-2">
+                      <label class="st-group-label">Nhóm sản phẩm bạn đã chọn:</label>
+                      <div class="form-group">
+                        <div class="col-xs-6 st-group-col">
+                          <p>Nhóm sản phẩm nổi bật 
+                            <a href="" class="st-remove-btn" title="xóa nhóm sản phẩm"><i class="fa fa-times-circle"></i></a>
+                          </p>
+                        </div>
+                        <div class="col-xs-6 st-group-col">
+                          <p>Nhóm sản phẩm khuyến mãi
+                            <a href="" class="st-remove-btn" title="xóa nhóm sản phẩm"><i class="fa fa-times-circle"></i></a>
+                          </p>
+                        </div>
+                        <div class="col-xs-6 st-group-col">
+                          <p>Nhóm sản phẩm đồ dùng em bé
+                            <a href="" class="st-remove-btn" title="xóa nhóm sản phẩm"><i class="fa fa-times-circle"></i></a>
+                          </p>
+                        </div>
+                        <div class="col-xs-6 st-group-col">
+                          <p>Nhóm sản phẩm mẹ & bé
+                            <a href="" class="st-remove-btn" title="xóa nhóm sản phẩm"><i class="fa fa-times-circle"></i></a>
+                          </p>
+                        </div>
+                      </div>
                     </div>
                   </div>
 
-                  <div class="form-group">
-                    <span for="" class="col-sm-2 control-label">Sản phẩm</span>
-                    <div class="col-sm-5">
-                      <select class="form-control">
-                        <option>Thời trang Nam</option>
-                        <option>Đồ điện tử</option>
-                      </select>
+                  <div class="form-group st-product-form-group">
+                    <div class="radio col-xs-2">
+                      <label class="radio-material-blue">
+                        <input type="radio" name="" id="" value="" checked="">
+                        <span class="check">Sản phẩm</span>
+                      </label>
+                    </div>
+                    <div class="col-sm-7">
+                      <input type="text" class="form-control" id="" placeholder="">
+                    </div>
+                  </div>
+
+                  <!--sản phẩm được chọn-->
+                  <div class="row">
+                    <div class="col-xs-10 col-xs-offset-2">
+                      <label class="st-group-label">Sản phẩm bạn đã chọn:</label>
+                      <ul class=" row products-list st-product-list slimscroll297">
+                        {% for x in [1,2,3,4,5,6,7]%}
+                        <li class="item col-xs-6">
+                          <div class="product-item-inner">
+                            <div class="product-img">
+                                <img src="assets/images/product/product-1.jpg" alt="myface">
+                            </div>
+                            <div class="product-info">
+                              <span class="product-title">Combo 2 Hộp Sữa Bột Ensure Gold Acti M2 400g</span>
+                            </div>
+                          </div>
+                          <button type="button" class="close">
+                            <i class="fa fa-times"></i>
+                          </button>
+                        </li>
+                        <!-- /.item -->
+                        {% endfor %}
+                      </ul>
                     </div>
                   </div>
                 </div>
