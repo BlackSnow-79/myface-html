@@ -1395,6 +1395,11 @@ filter {
   content: "\f00c";
   font-size: 18px;
 }
+.list-group-noline-noicon {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 0 0;
+}
 .pagination {
   float: left;
   padding-left: 0;
@@ -5098,4 +5103,48 @@ main {
 .st-product-list .product-info {
   margin-left: 80px;
   padding-right: 15px;
+}
+.st-select-toggle {
+  position: relative;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: left;
+  font-style: italic;
+}
+.st-select-toggle i {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+.st-select-box-wrap {
+  width: 130%;
+  border: 1px solid #dfdfdf;
+  border-radius: 3px;
+}
+.st-select-box-content {
+  width: 100%;
+  padding: 0 10px 0 0;
+}
+.st-select-box {
+  width: 100%;
+  height: 155px;
+  margin: 5px 0;
+  overflow: hidden;
+}
+.st-select-box li {
+  padding: 0 10px;
+}
+.st-select-box li .checkbox {
+  padding: 5px 0;
+}
+.st-select-title {
+  border-bottom: 1px solid #dfdfdf;
+  padding: 0 10px 10px;
+}
+.st-select-title label {
+  width: auto;
+  margin-bottom: 0;
+}
+.st-select-title .btn {
+  margin-top: 3px;
 }
