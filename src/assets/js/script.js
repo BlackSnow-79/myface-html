@@ -124,6 +124,18 @@ $(document).ready(function() {
     });
   });
 
+  //multiple
+  $('.st-select-box').multiselect({
+     maxHeight: 200,
+    includeSelectAllOption: true,
+    enableFiltering: true,
+    buttonContainer: '<div class="st-btn-group"></div>',
+    buttonClass: 'st-select-toggle',
+    templates: {
+      button: '<span class="multiselect-selected-text dropdown-toggle" data-toggle="dropdown">Chọn nhóm sản phẩm <i class="fa fa-caret-down"></i></span>'
+    }
+  });
+
 	// Modal
 	(function ($) {
     "use strict";

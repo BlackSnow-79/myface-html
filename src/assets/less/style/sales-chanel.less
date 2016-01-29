@@ -112,22 +112,37 @@
 		padding-right: 15px;
 	}
 }
-.st-select-toggle {
+.st-btn-group {
+	width: 100%;
 	position: relative;
-	padding-left: 10px;
-	padding-right: 10px;
-	text-align: left;
-	font-style: italic;
-	i {
-		position: absolute;
-		top: 10px;
-		right: 10px;
-	}
+}
+.st-select-toggle {
+	display: block;
+  width: 100%;
+  height: @input-height-base;
+  padding: @padding-base-vertical @padding-base-horizontal;
+  font-size: @font-size-base;
+  line-height: @line-height-base;
+  background-color: @input-bg;
+  background-image: none;
+  border: 1px solid @input-border;
+  .border-radius(@input-radius);
+  box-shadow: none;
+  border-color: @gray;
+  &::-moz-placeholder,
+  &:-ms-input-placeholder,
+  &::-webkit-input-placeholder {
+    color: @light-gray;
+    opacity: 1;
+  }
+  i {
+  	position: absolute;
+  	top: 10px;
+  	right: 10px;
+  }
 }
 .st-select-box-wrap {
-	width: 130%;
-	border: @box-border;
-	border-radius: @box-border-radius;
+	width: 120%;
 }
 .st-select-box-content {
 	width: 100%;
