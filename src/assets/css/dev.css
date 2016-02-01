@@ -1,4 +1,7 @@
-
+.tab_category_content {
+    height: 500px;
+    overflow-x: auto;
+}
 #please_select_inbox{
     height: 500px;
     position: relative

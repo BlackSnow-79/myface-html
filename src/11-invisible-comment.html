@@ -50,12 +50,14 @@
         <!-- /.box-body -->
         <div class="box-footer clearfix">
           <div class="text-right">
-            <input type="button" class="btn btn-lime" value="Lưu">
-            <a href="" class="btn btn-default">Hủy</a>
+            <input type="button" class="btn btn-lime" data-toggle="modal" data-target="#invi-comment-modal" value="Lưu">
           </div>
         </div><!--./box-footer-->
       </div>
     </div>
   </div>
+
+  <!--invi-comment-modal-->
+  {% include "_invi-comment-modal.html" %}
 </main>
 {% endblock %}

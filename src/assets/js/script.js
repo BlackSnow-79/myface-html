@@ -125,26 +125,6 @@ $(document).ready(function() {
   });
 
   //multiple
-  $('#st-select-product-group').multiselect({
-    maxHeight: 220,
-    includeSelectAllOption: false,
-    enableFiltering: true,
-    buttonContainer: '<div class="st-btn-group"></div>',
-    buttonClass: 'st-select-toggle',
-    templates: {
-      button: '<span class="multiselect-selected-text dropdown-toggle" data-toggle="dropdown">Chọn nhóm sản phẩm <i class="fa fa-caret-down"></i></span>'
-    }
-  });
-  $('#st-select-product').multiselect({
-    maxHeight: 200,
-    includeSelectAllOption: true,
-    enableFiltering: true,
-    buttonContainer: '<div class="st-btn-group"></div>',
-    buttonClass: 'st-select-toggle',
-    templates: {
-      button: '<span class="multiselect-selected-text dropdown-toggle" data-toggle="dropdown">Chọn sản phẩm <i class="fa fa-caret-down"></i></span>'
-    }
-  });
 
 	// Modal
 	(function ($) {
