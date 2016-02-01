@@ -126,8 +126,8 @@ $(document).ready(function() {
 
   //multiple
   $('#st-select-product-group').multiselect({
-    maxHeight: 200,
-    includeSelectAllOption: true,
+    maxHeight: 220,
+    includeSelectAllOption: false,
     enableFiltering: true,
     buttonContainer: '<div class="st-btn-group"></div>',
     buttonClass: 'st-select-toggle',

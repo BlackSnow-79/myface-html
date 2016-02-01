@@ -1,0 +1,61 @@
+{% extends "_layout.html" %}
+{% block page-container %}
+{% include "_shop-setting-header.html" %}
+<main class="invisible-commnet">
+	<div class="container">
+    <div class="row">
+      <div class="box">
+        <div class="box-header with-border">
+          <h3 class="box-title">Ẩn comment tự động</h3>
+        </div>
+        <!-- /.box-header -->
+        <div class="box-body">
+          <table class="table table-bottom-border">
+            <thead>
+              <tr>
+                <th class="col-md-3 text-center">Fanpage </th>
+                <th class="col-md-2 text-center">Ẩn comment</th>
+                <th class="col-md-2 text-center">Ẩn số điện thoại</th>
+                <th class="col-md-2 text-center">Tự động trả lời</th>
+                <th class="col-md-3"></th>
+              </tr>
+            </thead>
+            <tbody>
+              {% for x in [1,2,3,4] %} 
+              <tr>
+                <td>
+                  <a href="#" class="cate-name">Koko Shop</a>
+                </td>
+                <td class="text-center">
+                  <label class="checkbox-material-lime">
+                    <input type="checkbox">
+                  </label>
+                </td>
+                <td class="text-center">
+                  <label class="checkbox-material-lime">
+                    <input type="checkbox">
+                  </label>
+                </td>
+                <td class="text-center">
+                  <label class="checkbox-material-lime">
+                    <input type="checkbox">
+                  </label>
+                </td>
+                <td></td>
+              </tr>
+              {% endfor %}
+            </tbody>
+          </table>
+        </div>
+        <!-- /.box-body -->
+        <div class="box-footer clearfix">
+          <div class="text-right">
+            <input type="button" class="btn btn-lime" value="Lưu">
+            <a href="" class="btn btn-default">Hủy</a>
+          </div>
+        </div><!--./box-footer-->
+      </div>
+    </div>
+  </div>
+</main>
+{% endblock %}

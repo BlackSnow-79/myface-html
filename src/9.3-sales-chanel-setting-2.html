@@ -1,0 +1,145 @@
+{% extends "_layout.html" %}
+{% block page-container %}
+{% include "_shop-setting-header.html" %}
+<main class="sales-chanel">
+	<div class="container">
+    <div class="row">
+      <div class="box">
+        <div class="box-header with-border">
+          <h3 class="box-title">Quản lý kênh bán hàng</h3>
+        </div>
+        <!-- /.box-header -->
+        <div class="box-body">
+          <div class="row">
+            <div class="col-md-3 chanel-account-col">
+              <div class="box-widget widget-user">  
+                <div class="widget-user-header bg-aqua-active">
+                  <div class="widget-user-image">
+                    <img class="img-circle" src="assets/images/user/user.jpg" alt="myface">
+                  </div>
+                  <div class="clearfix user-name-block">
+                      <h3 class="widget-user-username">Anh Hai Vui Tính</h3>
+                  </div>
+                  <div class="chanel-account-control-div">
+                    <a href="" class="chanel-account-control"><i class="fa fa-chain-broken"></i> <span> Ngắt kết nối cửa hàng của bạn với MyFace Shop</span></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-9 sale-chanel-col">
+              <div class="box box-lime">
+                <div class="box-header with-border">
+                  <h4 class="box-title">Bạn muốn bán sản phẩm trong cửa hàng lên MyFace Shop theo</h4>
+                </div>
+                <!-- /.box-header -->
+                <div class="box-body form-horizontal form-horizontal-right">
+                  <div class="form-group st-product-form-group">
+                    <div class="radio col-xs-2">
+                      <label class="radio-material-blue">
+                        <input type="radio" name="" id="" value="" checked="">
+                        <span class="check">Nhóm sản phẩm</span>
+                      </label>
+                    </div>
+                    <div class="col-sm-7">
+                      <div class="st-select-box-wrap">
+                        <select id="st-select-product-group" class="form-control st-select-box" multiple="multiple">
+                            <option value="">Nhóm sản phẩm nổi bật</option>
+                            <option value="">Nhóm sản phẩm khuyến mãi</option>
+                            <option value="">Nhóm sản phẩm đồ dùng em bé</option>
+                            <option value="">Nhóm sản phẩm mẹ & bé</option>
+                        </select>
+                     </div>
+                    </div>
+                  </div>
+
+                  <!--nhóm sản phẩm-->
+                  <div class="row">
+                    <div class="col-xs-10 col-xs-offset-2">
+                      <label class="st-group-label">Nhóm sản phẩm bạn đã chọn:</label>
+                      <div class="form-group">
+                        <div class="col-xs-6 st-group-col">
+                          <p>Nhóm sản phẩm nổi bật 
+                            <a href="" class="st-remove-btn" title="xóa nhóm sản phẩm"><i class="fa fa-times-circle"></i></a>
+                          </p>
+                        </div>
+                        <div class="col-xs-6 st-group-col">
+                          <p>Nhóm sản phẩm khuyến mãi
+                            <a href="" class="st-remove-btn" title="xóa nhóm sản phẩm"><i class="fa fa-times-circle"></i></a>
+                          </p>
+                        </div>
+                        <div class="col-xs-6 st-group-col">
+                          <p>Nhóm sản phẩm đồ dùng em bé
+                            <a href="" class="st-remove-btn" title="xóa nhóm sản phẩm"><i class="fa fa-times-circle"></i></a>
+                          </p>
+                        </div>
+                        <div class="col-xs-6 st-group-col">
+                          <p>Nhóm sản phẩm mẹ & bé
+                            <a href="" class="st-remove-btn" title="xóa nhóm sản phẩm"><i class="fa fa-times-circle"></i></a>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="form-group st-product-form-group">
+                    <div class="radio col-xs-2">
+                      <label class="radio-material-blue">
+                        <input type="radio" name="" id="" value="" checked="">
+                        <span class="check">Sản phẩm</span>
+                      </label>
+                    </div>
+                    <div class="col-sm-7">
+                      <div class="st-select-box-wrap">
+                        <select id="st-select-product" class="form-control st-select-box" multiple="multiple">
+                            <option value="">Combo 2 Hộp Sữa Bột Ensure Gold Acti M2 400g</option>
+                            <option value="">Combo 2 Hộp Sữa Bột Ensure Gold Acti M2 400g</option>
+                            <option value="">Combo 2 Hộp Sữa Bột Ensure Gold Acti M2 400g</option>
+                            <option value="">Combo 2 Hộp Sữa Bột Ensure Gold Acti M2 400g</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!--sản phẩm được chọn-->
+                  <div class="row">
+                    <div class="col-xs-10 col-xs-offset-2">
+                      <label class="st-group-label">Sản phẩm bạn đã chọn:</label>
+                      <ul class=" row products-list st-product-list slimscroll297">
+                        {% for x in [1,2,3,4,5,6,7]%}
+                        <li class="item col-xs-6">
+                          <div class="product-item-inner">
+                            <div class="product-img">
+                                <img src="assets/images/product/product-1.jpg" alt="myface">
+                            </div>
+                            <div class="product-info">
+                              <span class="product-title">Combo 2 Hộp Sữa Bột Ensure Gold Acti M2 400g</span>
+                            </div>
+                          </div>
+                          <button type="button" class="close">
+                            <i class="fa fa-times"></i>
+                          </button>
+                        </li>
+                        <!-- /.item -->
+                        {% endfor %}
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- /.box -->
+            </div>
+          </div>
+        </div>
+        <!-- /.box-body -->
+        <div class="box-footer clearfix">
+          <div class="text-right">
+            <input type="button" class="btn btn-lime" value="Kích hoạt và lưu kết nối Facebook">
+            <a href="" class="btn btn-default">Hủy</a>
+          </div>
+        </div><!--./box-footer-->
+      </div>
+    </div>
+  </div>
+</main>
+{% endblock %}
