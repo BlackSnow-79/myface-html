@@ -4,10 +4,60 @@
 	padding: 15px;
 	float: left;
 	background-color: @white;
+	display: none;
 }
-.promotion-form-inner {
+.promotion-form-body {
 	width: 100%;
-	padding: 15px;
+	float: left;
+	padding: 15px 30px;
 	background-color: #ebebeb;
     border-radius: 3px;
+}
+.promotion-form-footer {
+	width: 100%;
+	float: left;
+	margin: 20px 0 0;
+}
+.list-group-noline.promotion-group {
+	li {
+		width: 100%;
+		float: left;
+		&:before {
+			top: 15px;
+		}
+	}
+	.control-label {
+    color: @black;
+    padding: 7px 0 0 0;
+    font-size: 13px;
+	}
+	.date-label {
+		padding-top: 7px;
+	}
+	.date-div {
+		padding-left: 0;
+	}
+	.gray-label {
+		padding: 7px 0 0 0;
+    font-size: 13px;
+	}
+}
+.promotion-note {
+	font-style: italic;
+	margin-top: 10px;
+}
+.p-control-left {
+	padding-right: 0;
+}
+.p-control-right {
+	padding-left: 5px;
+}
+.p-coupon-control {
+	padding-left: 5px;
+	padding-right: 5px;
+	color: @lime;
+	border-color: @lime;
+}
+.promotion-form-selected {
+	display: block;
 }

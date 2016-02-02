@@ -29,6 +29,15 @@ $(document).ready(function() {
       $('.'+ checkboxValue).addClass('report-form-selected');
     });
   });
+  //Show promotion form
+  $(function () {
+    var checkboxValue;
+    $('.promotion-form-control').click(function(){
+      checkboxValue = $(this).attr('id');
+      $('.promotion-form').removeClass('promotion-form-selected');
+      $('.'+ checkboxValue).addClass('promotion-form-selected');
+    });
+  });
 
   // register form
   /*$(function () {

@@ -37,10 +37,13 @@
 	li {
 		width: 100%;
 		float: left;
+		&:before {
+			top: 15px;
+		}
 	}
 	.control-label {
 		color: @black;
-		padding: 0;
+		padding: 7px 0 0 0;
 		font-size: 13px;
 	}
 }
@@ -169,5 +172,16 @@
 	}
 	.btn {
 		margin-top: 3px;
+	}
+}
+.st-product-form-group {
+	.radio.col-xs-2 {
+		width: 19%;
+		padding-right: 0;
+	}
+}
+.st-product-form-row {
+	>div {
+		padding-left: 35px;
 	}
 }

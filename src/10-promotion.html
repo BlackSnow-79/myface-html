@@ -11,16 +11,15 @@
         <!-- /.box-header -->
         <div class="box-body">
           <!--Đơn hàng-->
-          <div class="report-invoice-row">
-            <p class="black-highlight">Tạo các chương trình khuyến mãi cho khách hàng mua sản phẩm của bạn.</p class=""promotion-label>
+          <div class="promotion-row">
+            <p class="black-highlight">Tạo các chương trình khuyến mãi cho khách hàng mua sản phẩm của bạn.</p>
             <div class="form-group">
               <div class="row">
                 <div class="col-xs-4">
                   <div class="radio">
                     <label>
-                      <input type="radio" name="optionsRadios" class="report-form-control" id="report-invoice-form-1">
+                      <input type="radio" name="optionsRadios" class="promotion-form-control" id="promotion-form-1">
                       Tạo mã Coupon  
-                      <span class="rp-arrow"></span>
                     </label>
                   </div>
                 </div>
@@ -28,9 +27,8 @@
                 <div class="col-xs-4">
                   <div class="radio">
                     <label>
-                      <input type="radio" name="optionsRadios" class="report-form-control" id="report-invoice-form-2">
+                      <input type="radio" name="optionsRadios" class="promotion-form-control" id="promotion-form-2">
                       Tặng quà cho đơn hàng 
-                      <span class="rp-arrow"></span>
                     </label>
                   </div>
                 </div>
@@ -38,9 +36,8 @@
                 <div class="col-xs-4">
                   <div class="radio">
                     <label>
-                      <input type="radio" name="optionsRadios" class="report-form-control" id="report-invoice-form-3">
+                      <input type="radio" name="optionsRadios" class="promotion-form-control" id="promotion-form-3">
                       Tặng quà cho sản phẩm
-                      <span class="rp-arrow"></span>
                     </label>
                   </div>
                 </div>
@@ -48,91 +45,14 @@
 
               <!--promotion-form-->
               <div class="row">
-                <div class="promotion-form report-invoice-form-1" style="display:block">
-                  <div class="promotion-form-header">
-                    <div class="row">
-                      <div class="col-xs-4">
-                        <div class="radio">
-                          <label>
-                            <input type="radio" name="optionsRadios" class="report-form-control" id="report-invoice-form-1">
-                            Áp dụng cho <strong>tất cả đơn hàng</strong>
-                            <span class="rp-arrow"></span>
-                          </label>
-                        </div>
-                      </div>
+                {% include "_form-promotion-1.html" %}<!--/.promotion-form-1-->
 
-                      <div class="col-xs-4">
-                        <div class="radio">
-                          <label>
-                            <input type="radio" name="optionsRadios" class="report-form-control" id="report-invoice-form-2">
-                            Áp dụng cho <strong>nhóm sản phẩm</strong>
-                            <span class="rp-arrow"></span>
-                          </label>
-                        </div>
-                      </div>
-
-                      <div class="col-xs-4">
-                        <div class="radio">
-                          <label>
-                            <input type="radio" name="optionsRadios" class="report-form-control" id="report-invoice-form-3">
-                            Áp dụng cho <strong>sản phẩm</strong>
-                            <span class="rp-arrow"></span>
-                          </label>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <!--promotion-form-inner-->
-                  <div class="promotion-form-inner">
-                    <div class="row form-group">
-                      <label for="" class="col-sm-3 control-label">Chọn tỉnh / Thành phố</label>
-                      <div class="col-sm-3">
-                        <select class="form-control">
-                          <option>Chọn Tỉnh / Thành phố</option>
-                          <option>Hồ Chí Minh</option>
-                          <option>Hà Nội</option>
-                        </select>
-                      </div>
-                    </div><!--/.form-group-->
-
-                    <div class="row form-group">
-                      <label class="col-xs-12 clearfix">Trạng thái đơn hàng</label>
-                    </div><!--/.form-group-->
-
-                    <div class="row form-group">
-                      <label class="col-xs-2">Chọn thời gian</label>
-                      <div class="col-xs-7">
-                        <div class="row">
-                          <p class="col-xs-1 control-label">Từ</p>
-                          <div class="col-xs-4">
-                            <div class="date-picker-group">
-                              <input type="text" name="date-picker" id="" class="form-control date-picker" placeholder="09/04/2015 10:20">
-                              <span class="calendar-icon l-calendar-icon"><i class="fa fa-calendar"></i></span>
-                            </div>
-                          </div>
-                          <p class="col-xs-1 col-xs-offset-2 control-label">Đến</p>
-                          <div class="col-xs-4">
-                            <div class="date-picker-group">
-                              <input type="text" name="date-picker" id="" class="form-control date-picker" placeholder="09/04/2015 10:20">
-                              <span class="calendar-icon l-calendar-icon"><i class="fa fa-calendar"></i></span>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div><!--/.form-group-->
-
-                    <div class="form-group clearfix">
-                      <input type="button" class="btn btn-lime pull-right" value="Xuất Excel">
-                    </div>
-                  </div>
-                </div><!--/.promotion-form-1-->
-
-                <div class="report-form report-invoice-form-2">
+                <div class="promotion-form promotion-form-2">
                 </div><!--/.promotion-form-2-->
 
-                <div class="report-form report-invoice-form-3">
+                <div class="promotion-form promotion-form-3">
                 </div><!--/.promotion-form-3-->
-              </div><!--/.report-form-->
+              </div><!--/.promotion-form-->
             </div><!--/.form-group-->
           </div><!--/.Đơn hàng-->
         </div>
