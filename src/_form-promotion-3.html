@@ -4,7 +4,7 @@
       <div class="col-xs-6">
         <div class="radio">
           <label>
-            <input type="radio" name="promotion-option-control" class="promotion-option-control" id="promotion-option-form-1" checked="">
+            <input type="radio" name="promotion-option-control-3" class="promotion-option-control" id="promotion-option-form-1" checked="">
             Mua {x} sản phẩm cùng loại tặng 01 sản phẩm cùng loại 
             <span class="rp-arrow"></span>
           </label>
@@ -14,7 +14,7 @@
       <div class="col-xs-6">
         <div class="radio">
           <label>
-            <input type="radio" name="promotion-option-control" class="promotion-option-control" id="promotion-option-form-2">
+            <input type="radio" name="promotion-option-control-3" class="promotion-option-control" id="promotion-option-form-2">
             Mua {x} sản phẩm cùng loại tặng {x} sản phẩm khác
             <span class="rp-arrow"></span>
           </label>
@@ -95,7 +95,7 @@
       </ul>
     </div>
     <div class="promotion-form-footer clearfix">
-      <input type="button" class="btn btn-lime pull-right" value="Lưu và xuất file Excel">
+      <input type="button" class="btn btn-lime pull-right" value="Lưu và kích hoạt chương trình">
     </div>
   </div><!--/.promotion-option-form-1-->
   <div class="promotion-option-form promotion-option-form-2">
@@ -131,33 +131,13 @@
         <li class="form-group">
           <label class="col-xs-3 control-label">Chọn sản phẩm áp dụng:</label>
           <div class="col-xs-6">
-            <select id="" class="form-control st-select-box st-select-product" multiple="multiple">
+            <select id="" class="form-control">
+              <option>Chọn sản phẩm áp dụng</option>
               <option value="">Combo 2 Hộp Sữa Bột Ensure Gold Acti M2 400g</option>
               <option value="">Combo 2 Hộp Sữa Bột Ensure Gold Acti M2 400g</option>
               <option value="">Combo 2 Hộp Sữa Bột Ensure Gold Acti M2 400g</option>
               <option value="">Combo 2 Hộp Sữa Bột Ensure Gold Acti M2 400g</option>
             </select>
-          </div>
-          <div class="col-xs-9 col-xs-offset-3">
-            <label class="st-group-label">Sản phẩm bạn đã chọn:</label>
-            <ul class=" row products-list st-product-list slimscroll297">
-              {% for x in [1,2,3,4,5,6,7]%}
-              <li class="item col-xs-6">
-                <div class="product-item-inner">
-                  <div class="product-img">
-                      <img src="assets/images/product/product-1.jpg" alt="myface">
-                  </div>
-                  <div class="product-info">
-                    <span class="product-title">Combo 2 Hộp Sữa Bột Ensure Gold Acti M2 400g</span>
-                  </div>
-                </div>
-                <button type="button" class="close">
-                  <i class="fa fa-times"></i>
-                </button>
-              </li>
-              <!-- /.item -->
-              {% endfor %}
-            </ul>
           </div>
         </li>
         <li class="form-group">
@@ -195,7 +175,7 @@
       </ul>
     </div>
     <div class="promotion-form-footer clearfix">
-      <input type="button" class="btn btn-lime pull-right" value="Lưu và xuất file Excel">
+      <input type="button" class="btn btn-lime pull-right" value="Lưu và kích hoạt chương trình">
     </div>
   </div><!--/.promotion-option-form-2-->
 </div><!--/.promotion-form-1-->
