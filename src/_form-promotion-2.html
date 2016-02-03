@@ -1,11 +1,11 @@
-<div class="promotion-form promotion-form-1">
+<div class="promotion-form promotion-form-2">
   <div class="promotion-form-header">
     <div class="row">
       <div class="col-xs-4">
         <div class="radio">
           <label>
             <input type="radio" name="promotion-option-control" class="promotion-option-control" id="promotion-option-form-1" checked="">
-            Áp dụng cho <strong>tất cả đơn hàng</strong>
+             Tặng phí vận chuyển cho đơn hàng mua trên{x} sản phẩm
             <span class="rp-arrow"></span>
           </label>
         </div>
@@ -15,7 +15,7 @@
         <div class="radio">
           <label>
             <input type="radio" name="promotion-option-control" class="promotion-option-control" id="promotion-option-form-2">
-            Áp dụng cho <strong>nhóm sản phẩm</strong>
+            Tặng phí vận chuyển cho đơn hàng có giá trị trên{x} VNĐ
             <span class="rp-arrow"></span>
           </label>
         </div>
@@ -25,7 +25,7 @@
         <div class="radio">
           <label>
             <input type="radio" name="promotion-option-control" class="promotion-option-control" id="promotion-option-form-3">
-            Áp dụng cho <strong>sản phẩm</strong>
+            Tặng quà cho đơn hàng có giá trị trên {x} VNĐ
             <span class="rp-arrow"></span>
           </label>
         </div>
@@ -37,9 +37,9 @@
     <div class="promotion-form-body">
       <ul class="list-group-noline promotion-group">
         <li class="form-group">
-          <label class="col-xs-3 control-label">Tên chương trình tạo mã Coupon:</label>
+          <label class="col-xs-3 control-label">Tên chương trình tặng quà:</label>
           <div class="col-xs-9">
-            <input type="text" class="form-control" id="" placeholder="">
+            <input type="text" class="form-control" id="" placeholder="" value="Mua sắm thả ga, hít hà hít hà">
           </div>
         </li>
         <li class="form-group">
@@ -64,42 +64,11 @@
           </div>
         </li>
         <li class="form-group">
-          <label class="col-xs-3 control-label">Giảm giá:</label>
+          <label class="col-xs-3 control-label">Số sản phẩm trong đơn hàng từ:</label>
           <div class="col-sm-3">
-            <div class="row">
-              <div class="col-xs-4 p-control-left">
-                <select class="form-control p-coupon-control">
-                  <option>VNĐ</option>
-                  <option></option>
-                </select>
-              </div>
-              <div class="col-xs-8 p-control-right">
-                <input type="text" class="form-control" id="" placeholder="" value="50000">
-              </div>
-            </div>
+            <input type="number" min="1" class="form-control" id="" placeholder="" value="2">
           </div>
-        </li>
-        <li class="form-group">
-          <label class="col-xs-3 control-label">Giá trị đơn hàng tối thiểu:</label>
-          <div class="col-sm-3">
-            <input type="text" class="form-control" id="" placeholder="" value="300000">
-          </div>
-          <p class="gray-label">(VNĐ)</p>
-        </li>
-        <li class="form-group">
-          <label class="col-xs-3 control-label">Lượt sử dụng:</label>
-          <div class="col-sm-3">
-            <input type="text" class="form-control" id="" placeholder="" value="01">
-          </div>
-          <p class="gray-label">(Lượt)</p>
-        </li>
-        <li class="form-group">
-          <label class="col-xs-3 control-label">Số lượng mã muốn tạo:</label>
-          <div class="col-sm-3">
-            <input type="text" class="form-control" id="" placeholder="" value="100">
-            <p class="promotion-note">*Tối đa 100 mã /lần tạo</p>
-          </div>
-          <p class="gray-label">(Mã)</p>
+          <p class="gray-label">(Sản phẩm)</p>
         </li>
       </ul>
     </div>
@@ -111,9 +80,9 @@
     <div class="promotion-form-body">
       <ul class="list-group-noline promotion-group">
         <li class="form-group">
-          <label class="col-xs-3 control-label">Tên chương trình tạo mã Coupon:</label>
+          <label class="col-xs-3 control-label">Tên chương trình tặng quà:</label>
           <div class="col-xs-9">
-            <input type="text" class="form-control" id="" placeholder="">
+            <input type="text" class="form-control" id="" placeholder="" value="Mua sắm thả ga, hít hà hít hà">
           </div>
         </li>
         <li class="form-group">
@@ -138,78 +107,11 @@
           </div>
         </li>
         <li class="form-group">
-          <label class="col-xs-3 control-label">Chọn nhóm sản phẩm:</label>
-          <div class="col-xs-6">
-            <select id="" class="form-control st-select-box st-select-product-group" multiple="multiple">
-              <option value="">Nhóm sản phẩm nổi bật</option>
-              <option value="">Nhóm sản phẩm khuyến mãi</option>
-              <option value="">Nhóm sản phẩm đồ dùng em bé</option>
-              <option value="">Nhóm sản phẩm mẹ &amp; bé</option>
-            </select>
-          </div>
-          <div class="col-xs-9 col-xs-offset-3">
-            <label class="st-group-label col-xs-12">Nhóm sản phẩm bạn đã chọn:</label>
-            <div class="form-group">
-              <div class="col-xs-6 st-group-col">
-                <p>Nhóm sản phẩm nổi bật 
-                  <a href="" class="st-remove-btn" title="xóa nhóm sản phẩm"><i class="fa fa-times-circle"></i></a>
-                </p>
-              </div>
-              <div class="col-xs-6 st-group-col">
-                <p>Nhóm sản phẩm khuyến mãi
-                  <a href="" class="st-remove-btn" title="xóa nhóm sản phẩm"><i class="fa fa-times-circle"></i></a>
-                </p>
-              </div>
-              <div class="col-xs-6 st-group-col">
-                <p>Nhóm sản phẩm đồ dùng em bé
-                  <a href="" class="st-remove-btn" title="xóa nhóm sản phẩm"><i class="fa fa-times-circle"></i></a>
-                </p>
-              </div>
-              <div class="col-xs-6 st-group-col">
-                <p>Nhóm sản phẩm mẹ &amp; bé
-                  <a href="" class="st-remove-btn" title="xóa nhóm sản phẩm"><i class="fa fa-times-circle"></i></a>
-                </p>
-              </div>
-            </div>
-          </div>
-        </li>
-        <li class="form-group">
-          <label class="col-xs-3 control-label">Giảm giá:</label>
+          <label class="col-xs-3 control-label">Tổng giá trị đơn hàng từ:</label>
           <div class="col-sm-3">
-            <div class="row">
-              <div class="col-xs-4 p-control-left">
-                <select class="form-control p-coupon-control">
-                  <option>VNĐ</option>
-                  <option></option>
-                </select>
-              </div>
-              <div class="col-xs-8 p-control-right">
-                <input type="text" class="form-control" id="" placeholder="" value="50000">
-              </div>
-            </div>
-          </div>
-        </li>
-        <li class="form-group">
-          <label class="col-xs-3 control-label">Giá trị đơn hàng tối thiểu:</label>
-          <div class="col-sm-3">
-            <input type="text" class="form-control" id="" placeholder="" value="300000">
+            <input type="number" min="1" class="form-control" id="" placeholder="" value="150000">
           </div>
           <p class="gray-label">(VNĐ)</p>
-        </li>
-        <li class="form-group">
-          <label class="col-xs-3 control-label">Lượt sử dụng:</label>
-          <div class="col-sm-3">
-            <input type="text" class="form-control" id="" placeholder="" value="01">
-          </div>
-          <p class="gray-label">(Lượt)</p>
-        </li>
-        <li class="form-group">
-          <label class="col-xs-3 control-label">Số lượng mã muốn tạo:</label>
-          <div class="col-sm-3">
-            <input type="text" class="form-control" id="" placeholder="" value="100">
-            <p class="promotion-note">*Tối đa 100 mã /lần tạo</p>
-          </div>
-          <p class="gray-label">(Mã)</p>
         </li>
       </ul>
     </div>
@@ -221,9 +123,9 @@
     <div class="promotion-form-body">
       <ul class="list-group-noline promotion-group">
         <li class="form-group">
-          <label class="col-xs-3 control-label">Tên chương trình tạo mã Coupon:</label>
+          <label class="col-xs-3 control-label">Tên chương trình tặng quà:</label>
           <div class="col-xs-9">
-            <input type="text" class="form-control" id="" placeholder="">
+            <input type="text" class="form-control" id="" placeholder="" value="Mua sắm thả ga, hít hà hít hà">
           </div>
         </li>
         <li class="form-group">
@@ -248,7 +150,14 @@
           </div>
         </li>
         <li class="form-group">
-          <label class="col-xs-3 control-label">Chọn sản phẩm:</label>
+          <label class="col-xs-3 control-label">Tổng giá trị đơn hàng từ:</label>
+          <div class="col-sm-3">
+            <input type="number" min="1" class="form-control" id="" placeholder="" value="150000">
+          </div>
+          <p class="gray-label">(VNĐ)</p>
+        </li>
+        <li class="form-group">
+          <label class="col-xs-3 control-label">Chọn sản phẩm tặng kèm:</label>
           <div class="col-xs-6">
             <select id="" class="form-control st-select-box st-select-product" multiple="multiple">
               <option value="">Combo 2 Hộp Sữa Bột Ensure Gold Acti M2 400g</option>
@@ -278,44 +187,6 @@
               {% endfor %}
             </ul>
           </div>
-        </li>
-        <li class="form-group">
-          <label class="col-xs-3 control-label">Giảm giá:</label>
-          <div class="col-sm-3">
-            <div class="row">
-              <div class="col-xs-4 p-control-left">
-                <select class="form-control p-coupon-control">
-                  <option>VNĐ</option>
-                  <option></option>
-                </select>
-              </div>
-              <div class="col-xs-8 p-control-right">
-                <input type="text" class="form-control" id="" placeholder="" value="50000">
-              </div>
-            </div>
-          </div>
-        </li>
-        <li class="form-group">
-          <label class="col-xs-3 control-label">Giá trị đơn hàng tối thiểu:</label>
-          <div class="col-sm-3">
-            <input type="text" class="form-control" id="" placeholder="" value="300000">
-          </div>
-          <p class="gray-label">(VNĐ)</p>
-        </li>
-        <li class="form-group">
-          <label class="col-xs-3 control-label">Lượt sử dụng:</label>
-          <div class="col-sm-3">
-            <input type="text" class="form-control" id="" placeholder="" value="01">
-          </div>
-          <p class="gray-label">(Lượt)</p>
-        </li>
-        <li class="form-group">
-          <label class="col-xs-3 control-label">Số lượng mã muốn tạo:</label>
-          <div class="col-sm-3">
-            <input type="text" class="form-control" id="" placeholder="" value="100">
-            <p class="promotion-note">*Tối đa 100 mã /lần tạo</p>
-          </div>
-          <p class="gray-label">(Mã)</p>
         </li>
       </ul>
     </div>

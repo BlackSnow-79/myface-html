@@ -1,0 +1,201 @@
+<div class="promotion-form promotion-form-3">
+  <div class="promotion-form-header">
+    <div class="row">
+      <div class="col-xs-6">
+        <div class="radio">
+          <label>
+            <input type="radio" name="promotion-option-control" class="promotion-option-control" id="promotion-option-form-1" checked="">
+            Mua {x} sản phẩm cùng loại tặng 01 sản phẩm cùng loại 
+            <span class="rp-arrow"></span>
+          </label>
+        </div>
+      </div>
+
+      <div class="col-xs-6">
+        <div class="radio">
+          <label>
+            <input type="radio" name="promotion-option-control" class="promotion-option-control" id="promotion-option-form-2">
+            Mua {x} sản phẩm cùng loại tặng {x} sản phẩm khác
+            <span class="rp-arrow"></span>
+          </label>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--promotion-form-inner-->
+  <div class="promotion-option-form promotion-option-form-1">
+    <div class="promotion-form-body">
+      <ul class="list-group-noline promotion-group">
+        <li class="form-group">
+          <label class="col-xs-3 control-label">Tên chương trình tặng quà:</label>
+          <div class="col-xs-9">
+            <input type="text" class="form-control" id="" placeholder="" value="Mua sắm thả ga, hít hà hít hà">
+          </div>
+        </li>
+        <li class="form-group">
+          <label class="col-xs-3 control-label">Thời gian áp dụng:</label>
+          <div class="col-xs-9">
+            <div class="row">
+              <p class="col-xs-1 date-label">Từ</p>
+              <div class="col-xs-5 date-div">
+                <div class="date-picker-group">
+                  <input type="text" name="date-picker" id="" class="form-control date-picker" placeholder="09/04/2015 10:20">
+                  <span class="calendar-icon l-calendar-icon"><i class="fa fa-calendar"></i></span>
+                </div>
+              </div>
+              <p class="col-xs-1 date-label">Đến</p>
+              <div class="col-xs-5 date-div">
+                <div class="date-picker-group">
+                  <input type="text" name="date-picker" id="" class="form-control date-picker" placeholder="09/04/2015 10:20">
+                  <span class="calendar-icon l-calendar-icon"><i class="fa fa-calendar"></i></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="form-group">
+          <label class="col-xs-3 control-label">Số lượng sản phẩm cùng lại tối thiểu:</label>
+          <div class="col-sm-3">
+            <input type="number" min="1" class="form-control" id="" placeholder="" value="2">
+          </div>
+          <p class="gray-label">(Sản phẩm)</p>
+        </li>
+        <li class="form-group">
+          <label class="col-xs-3 control-label">Chọn quà tặng kèm:</label>
+          <div class="col-xs-6">
+            <select id="" class="form-control st-select-box st-select-product" multiple="multiple">
+              <option value="">Combo 2 Hộp Sữa Bột Ensure Gold Acti M2 400g</option>
+              <option value="">Combo 2 Hộp Sữa Bột Ensure Gold Acti M2 400g</option>
+              <option value="">Combo 2 Hộp Sữa Bột Ensure Gold Acti M2 400g</option>
+              <option value="">Combo 2 Hộp Sữa Bột Ensure Gold Acti M2 400g</option>
+            </select>
+          </div>
+          <div class="col-xs-9 col-xs-offset-3">
+            <label class="st-group-label">Sản phẩm bạn đã chọn:</label>
+            <ul class=" row products-list st-product-list slimscroll297">
+              {% for x in [1,2,3,4,5,6,7]%}
+              <li class="item col-xs-6">
+                <div class="product-item-inner">
+                  <div class="product-img">
+                      <img src="assets/images/product/product-1.jpg" alt="myface">
+                  </div>
+                  <div class="product-info">
+                    <span class="product-title">Combo 2 Hộp Sữa Bột Ensure Gold Acti M2 400g</span>
+                  </div>
+                </div>
+                <button type="button" class="close">
+                  <i class="fa fa-times"></i>
+                </button>
+              </li>
+              <!-- /.item -->
+              {% endfor %}
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="promotion-form-footer clearfix">
+      <input type="button" class="btn btn-lime pull-right" value="Lưu và xuất file Excel">
+    </div>
+  </div><!--/.promotion-option-form-1-->
+  <div class="promotion-option-form promotion-option-form-2">
+    <div class="promotion-form-body">
+      <ul class="list-group-noline promotion-group">
+        <li class="form-group">
+          <label class="col-xs-3 control-label">Tên chương trình tặng quà:</label>
+          <div class="col-xs-9">
+            <input type="text" class="form-control" id="" placeholder="" value="Mua sắm thả ga, hít hà hít hà">
+          </div>
+        </li>
+        <li class="form-group">
+          <label class="col-xs-3 control-label">Thời gian áp dụng:</label>
+          <div class="col-xs-9">
+            <div class="row">
+              <p class="col-xs-1 date-label">Từ</p>
+              <div class="col-xs-5 date-div">
+                <div class="date-picker-group">
+                  <input type="text" name="date-picker" id="" class="form-control date-picker" placeholder="09/04/2015 10:20">
+                  <span class="calendar-icon l-calendar-icon"><i class="fa fa-calendar"></i></span>
+                </div>
+              </div>
+              <p class="col-xs-1 date-label">Đến</p>
+              <div class="col-xs-5 date-div">
+                <div class="date-picker-group">
+                  <input type="text" name="date-picker" id="" class="form-control date-picker" placeholder="09/04/2015 10:20">
+                  <span class="calendar-icon l-calendar-icon"><i class="fa fa-calendar"></i></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="form-group">
+          <label class="col-xs-3 control-label">Chọn sản phẩm áp dụng:</label>
+          <div class="col-xs-6">
+            <select id="" class="form-control st-select-box st-select-product" multiple="multiple">
+              <option value="">Combo 2 Hộp Sữa Bột Ensure Gold Acti M2 400g</option>
+              <option value="">Combo 2 Hộp Sữa Bột Ensure Gold Acti M2 400g</option>
+              <option value="">Combo 2 Hộp Sữa Bột Ensure Gold Acti M2 400g</option>
+              <option value="">Combo 2 Hộp Sữa Bột Ensure Gold Acti M2 400g</option>
+            </select>
+          </div>
+          <div class="col-xs-9 col-xs-offset-3">
+            <label class="st-group-label">Sản phẩm bạn đã chọn:</label>
+            <ul class=" row products-list st-product-list slimscroll297">
+              {% for x in [1,2,3,4,5,6,7]%}
+              <li class="item col-xs-6">
+                <div class="product-item-inner">
+                  <div class="product-img">
+                      <img src="assets/images/product/product-1.jpg" alt="myface">
+                  </div>
+                  <div class="product-info">
+                    <span class="product-title">Combo 2 Hộp Sữa Bột Ensure Gold Acti M2 400g</span>
+                  </div>
+                </div>
+                <button type="button" class="close">
+                  <i class="fa fa-times"></i>
+                </button>
+              </li>
+              <!-- /.item -->
+              {% endfor %}
+            </ul>
+          </div>
+        </li>
+        <li class="form-group">
+          <label class="col-xs-3 control-label">Chọn sản phẩm tặng kèm:</label>
+          <div class="col-xs-6">
+            <select id="" class="form-control st-select-box st-select-product" multiple="multiple">
+              <option value="">Combo 2 Hộp Sữa Bột Ensure Gold Acti M2 400g</option>
+              <option value="">Combo 2 Hộp Sữa Bột Ensure Gold Acti M2 400g</option>
+              <option value="">Combo 2 Hộp Sữa Bột Ensure Gold Acti M2 400g</option>
+              <option value="">Combo 2 Hộp Sữa Bột Ensure Gold Acti M2 400g</option>
+            </select>
+          </div>
+          <div class="col-xs-9 col-xs-offset-3">
+            <label class="st-group-label">Sản phẩm bạn đã chọn:</label>
+            <ul class=" row products-list st-product-list slimscroll297">
+              {% for x in [1,2,3,4,5,6,7]%}
+              <li class="item col-xs-6">
+                <div class="product-item-inner">
+                  <div class="product-img">
+                      <img src="assets/images/product/product-1.jpg" alt="myface">
+                  </div>
+                  <div class="product-info">
+                    <span class="product-title">Combo 2 Hộp Sữa Bột Ensure Gold Acti M2 400g</span>
+                  </div>
+                </div>
+                <button type="button" class="close">
+                  <i class="fa fa-times"></i>
+                </button>
+              </li>
+              <!-- /.item -->
+              {% endfor %}
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="promotion-form-footer clearfix">
+      <input type="button" class="btn btn-lime pull-right" value="Lưu và xuất file Excel">
+    </div>
+  </div><!--/.promotion-option-form-2-->
+</div><!--/.promotion-form-1-->

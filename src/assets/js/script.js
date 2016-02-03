@@ -37,6 +37,11 @@ $(document).ready(function() {
       $('.promotion-form').removeClass('promotion-form-selected');
       $('.'+ checkboxValue).addClass('promotion-form-selected');
     });
+    /*$('.promotion-option-control').click(function(){
+      checkboxValue = $(this).attr('id');
+      $('.promotion-option-form').removeClass('promotion-form-selected');
+      $('.'+ checkboxValue).addClass('promotion-form-selected');
+    });*/
   });
 
   // register form
@@ -134,6 +139,26 @@ $(document).ready(function() {
   });
 
   //multiple
+  $('.st-select-product-group').multiselect({
+    maxHeight: 200,
+    includeSelectAllOption: false,
+    enableFiltering: true,
+    buttonContainer: '<div class="st-btn-group"></div>',
+    buttonClass: 'st-select-toggle',
+    templates: {
+      button: '<span class="multiselect-selected-text dropdown-toggle" data-toggle="dropdown">Chọn nhóm sản phẩm <i class="fa fa-caret-down"></i></span>'
+    }
+  });
+  $('.st-select-product').multiselect({
+    maxHeight: 200,
+    includeSelectAllOption: false,
+    enableFiltering: true,
+    buttonContainer: '<div class="st-btn-group"></div>',
+    buttonClass: 'st-select-toggle',
+    templates: {
+      button: '<span class="multiselect-selected-text dropdown-toggle" data-toggle="dropdown">Chọn sản phẩm <i class="fa fa-caret-down"></i></span>'
+    }
+  });
 
 	// Modal
 	(function ($) {
