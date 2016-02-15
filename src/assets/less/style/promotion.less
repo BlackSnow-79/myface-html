@@ -68,8 +68,34 @@
   display: block;
 }
 .promotion-option-form {
-	/*display: none;*/
+	display: none;
 }
 .promotion-form-selected {
 	display: block;
+}
+.promotion-radio-btn {
+	width: 100%;
+	padding: 10px;
+	padding-left: 30px !important;
+	border: @box-border;
+	border-radius: @box-border-radius;
+	input[type="radio"] {
+		margin-left: -20px;
+	}
+	&.active {
+		border: 2px solid @lime;
+	}
+}
+.promotion-radio-label {
+	padding: 0 10px;
+	padding-left: 30px;
+	input[type="radio"] {
+		margin-left: -20px;
+	}
+	&.active {
+		color: @lime;
+		.yellow-highlight {
+			color: @lime;
+		}
+	}
 }

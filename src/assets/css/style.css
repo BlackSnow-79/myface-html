@@ -439,6 +439,9 @@ label.error {
 .black-highlight {
   color: #212121;
 }
+.yellow-highlight {
+  color: #ffc600;
+}
 /*
  * Component: Form
  * ---------------
@@ -5311,8 +5314,34 @@ main {
   display: block;
 }
 .promotion-option-form {
-  /*display: none;*/
+  display: none;
 }
 .promotion-form-selected {
   display: block;
+}
+.promotion-radio-btn {
+  width: 100%;
+  padding: 10px;
+  padding-left: 30px !important;
+  border: 1px solid #dfdfdf;
+  border-radius: 3px;
+}
+.promotion-radio-btn input[type="radio"] {
+  margin-left: -20px;
+}
+.promotion-radio-btn.active {
+  border: 2px solid #ff5722;
+}
+.promotion-radio-label {
+  padding: 0 10px;
+  padding-left: 30px;
+}
+.promotion-radio-label input[type="radio"] {
+  margin-left: -20px;
+}
+.promotion-radio-label.active {
+  color: #ff5722;
+}
+.promotion-radio-label.active .yellow-highlight {
+  color: #ff5722;
 }

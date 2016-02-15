@@ -29,20 +29,30 @@ $(document).ready(function() {
       $('.'+ checkboxValue).addClass('report-form-selected');
     });
   });
-  //Show promotion form
-  $(function () {
+  //Show promotion form  
+  function radioControlform(rbtn) {
     var checkboxValue;
-    $('.promotion-form-control').click(function(){
+    $(rbtn).click(function(){
+      $('.promotion-radio-btn').removeClass('active');
+      $(this).parent().addClass('active');
       checkboxValue = $(this).attr('id');
       $('.promotion-form').removeClass('promotion-form-selected');
       $('.'+ checkboxValue).addClass('promotion-form-selected');
     });
-    /*$('.promotion-option-control').click(function(){
+  }
+  radioControlform('.promotion-form-control');
+
+  function radioControlOption(roption) {
+    var checkboxValue;
+    $(roption).click(function(){
+      $('.promotion-radio-label').removeClass('active');
+      $(this).parent().addClass('active');
       checkboxValue = $(this).attr('id');
       $('.promotion-option-form').removeClass('promotion-form-selected');
       $('.'+ checkboxValue).addClass('promotion-form-selected');
-    });*/
-  });
+    });
+  }
+  radioControlOption('.promotion-option-control');
 
   // register form
   /*$(function () {
