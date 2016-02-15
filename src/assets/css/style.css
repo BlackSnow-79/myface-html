@@ -4131,6 +4131,67 @@ fieldset[disabled] .btn-yahoo.focus {
     background: #fff;
   }
 }
+/* -------------- Loader1 -------------- */
+.loader {
+  position: absolute;
+  height: 80px;
+  width: 80px;
+  border-radius: 80px;
+  background-image: url('../images/myface-logo.png');
+  background-size: 80%;
+  background-position: center;
+  background-repeat: no-repeat;
+  top: 50%;
+  left: 50%;
+  z-index: 1000;
+  margin: -40px -40px 0;
+}
+.loader.small-loader {
+  height: 40px;
+  width: 40px;
+  margin: -20px -20px 0;
+}
+.loader.small-loader .loader1 {
+  height: 40px;
+  width: 40px;
+  border-radius: 40px;
+}
+.loader1 {
+  height: 80px;
+  width: 80px;
+  border-radius: 80px;
+  border: 3px solid rgba(239, 137, 126, 0.7);
+  -webkit-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+  -webkit-animation: loader1 3s linear infinite;
+  animation: loader1 3s linear infinite;
+}
+.loader1:after {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: 20px;
+  width: 11px;
+  height: 11px;
+  border-radius: 10px;
+  background-color: #ff4408;
+}
+@-webkit-keyframes loader1 {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@keyframes loader1 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 .container {
   min-width: 1170px;
 }
