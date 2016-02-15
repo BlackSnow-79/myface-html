@@ -1442,6 +1442,9 @@ filter {
 .filter .form-control {
   border-color: transparent;
 }
+.product-tb .filter > td > div {
+  padding-left: 0;
+}
 .list-group-noline {
   list-style: none;
   /* Remove list bullets */
