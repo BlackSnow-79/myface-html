@@ -170,6 +170,24 @@ $(document).ready(function() {
     }
   });
 
+  //active search 
+  $(function () {
+    $( '.search-btn-control').click(function(e) {
+      if (!$('.search-dropdown').hasClass('active')) {
+        $('.search-dropdown').addClass('active');
+        $('body').addClass('search-body-overlay');
+      }
+      else {
+        $('.search-dropdown').removeClass('active');
+        $('body').removeClass('search-body-overlay');
+      }
+    });
+    $( '.search-close').click(function(e) {
+      $('.search-dropdown').removeClass('active');
+      $('body').removeClass('search-body-overlay');
+    });
+  });
+
 	// Modal
 	(function ($) {
     "use strict";

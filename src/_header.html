@@ -2,76 +2,92 @@
   <nav class="navbar header-top">
       <div class="container">
           <div class="row">
-              <a href="index.html" class="navbar-brand logo"><img src="assets/images/logo.png" alt="myface"></a>
-              <!--main-menu-->
-              <div class="pull-left main-menu" id="">
-                  <ul class="nav navbar-nav">
-                      <li class="active"><a href="index.html">Quản lý chung</a></li>
-                      <li><a href="4.1-invoice-list.html">Đơn hàng</a></li>
-                      <li><a href="2.1-categories.html">Sản phẩm</a></li>
-                      <li><a href="3.1-customer-list.html">Khách hàng</a></li>
-                      <li><a href="5.1-report.html">Báo cáo</a></li>
-                      <li><a href="6.1-chat-comment.html">Chat & comment</a></li>
-                  </ul>
-                  <form class="navbar-form navbar-left search" role="search">
-                      <div class="form-group input-group">
-                          <input type="text" class="form-control navbar-search-input" id="navbar-search-input" placeholder="Tìm kiếm ...">
-                          <span class="input-group-btn">
-                              <button class="btn" type="submit"><i class="fa fa-search"></i></button>
-                          </span>
-                      </div>
-                  </form>
+            <a href="index.html" class="navbar-brand logo"><img src="assets/images/logo.png" alt="myface"></a>
+            <!--main-menu-->
+            <div class="pull-left main-menu" id="">
+              <ul class="nav navbar-nav">
+                <li class="active"><a href="index.html">Quản lý chung</a></li>
+                <li><a href="4.1-invoice-list.html">Đơn hàng</a></li>
+                <li><a href="2.1-categories.html">Sản phẩm</a></li>
+                <li><a href="3.1-customer-list.html">Khách hàng</a></li>
+                <li><a href="5.1-report.html">Báo cáo</a></li>
+                <li><a href="6.1-chat-comment.html">Chat & comment</a></li>
+              </ul>
+              <div class="dropdown search-div">
+                <button type="button" class="search-btn-control">Tìm kiếm ...<i class="fa fa-search pull-right"></i></button>
               </div>
-              <!--user-menu-->
-              <div class="navbar-custom-menu">
-                  <ul class="nav navbar-nav">
-                      <!-- User Account Menu -->
-                      <li class="dropdown user user-menu">
-                        <!-- Menu Toggle Button -->
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                          <div class="user-label">     
-                              <span class="user-label-1">Chào Thiên</span>
-                              <span class="user-label-2">Cấu hình & quản lý tài khoản</span>
-                          </div>    
-                          <img src="assets/images/user/user.jpg" class="user-image img-circle" alt="myface">
+            </div>
+            <!--user-menu-->
+            <div class="navbar-custom-menu">
+                <ul class="nav navbar-nav">
+                  <!-- User Account Menu -->
+                  <li class="dropdown user user-menu">
+                    <!-- Menu Toggle Button -->
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                      <div class="user-label">     
+                          <span class="user-label-1">Chào Thiên</span>
+                          <span class="user-label-2">Cấu hình & quản lý tài khoản</span>
+                      </div>    
+                      <img src="assets/images/user/user.jpg" class="user-image img-circle" alt="myface">
+                    </a>
+                    <ul class="dropdown-menu account-submenu-dropdown">
+                      <li>
+                        <a href="7.1-shop-info.html">
+                          <i class="fa fa-warning text-yellow"></i>Thông tin chung & tài khoản 
                         </a>
-                        <ul class="dropdown-menu account-submenu-dropdown">
-                          <li>
-                            <a href="7.1-shop-info.html">
-                              <i class="fa fa-warning text-yellow"></i>Thông tin chung & tài khoản 
-                            </a>
-                          </li>
-                          <li>
-                            <a href="8-shop-transform.html">
-                              <i class="fa fa-users text-aqua"></i> Vận chuyển     
-                            </a>
-                          </li>
-                          <li>
-                            <a href="9.1-sales-chanel.html">
-                              <i class="fa fa-users text-red"></i> Kênh bán hàng
-                            </a>
-                          </li>
-                          <li>
-                            <a href="10-promotion.html">
-                              <i class="fa fa-shopping-cart text-green"></i>Khuyến mãi
-                            </a>
-                          </li>
-                          <li>
-                            <a href="11-invisible-comment.html">
-                              <i class="fa fa-user text-red"></i>Ẩn comments
-                            </a>
-                          </li>
-                          <li class="user-footer">
-                            <a href="#">
-                              <i class="fa fa-user text-red"></i>Thoát
-                            </a>
-                          </li>
-                        </ul>
                       </li>
-                  </ul>
-              </div>
+                      <li>
+                        <a href="8-shop-transform.html">
+                          <i class="fa fa-users text-aqua"></i> Vận chuyển     
+                        </a>
+                      </li>
+                      <li>
+                        <a href="9.1-sales-chanel.html">
+                          <i class="fa fa-users text-red"></i> Kênh bán hàng
+                        </a>
+                      </li>
+                      <li>
+                        <a href="10-promotion.html">
+                          <i class="fa fa-shopping-cart text-green"></i>Khuyến mãi
+                        </a>
+                      </li>
+                      <li>
+                        <a href="11-invisible-comment.html">
+                          <i class="fa fa-user text-red"></i>Ẩn comments
+                        </a>
+                      </li>
+                      <li class="user-footer">
+                        <a href="#">
+                          <i class="fa fa-user text-red"></i>Thoát
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+            </div>
           </div>
       </div>
       <!-- /.container-fluid -->
   </nav>
 </header>
+<!--search-dropdown-->
+<div class="dropdown-menu search-dropdown">
+  <div class="input-group search-inner">
+    <input type="text" class="form-control" placeholder="Tìm kiếm nhanh">
+    <div class="input-group-btn">
+      <button type="button" class="btn dropdown-item" data-toggle="dropdown" aria-expanded="false">Sản phẩm <span class="caret"></span></button>
+        <ul class="dropdown-menu dropdown-menu-left" role="menu">
+          <li><a href="#">Sản phẩm</a></li>
+          <li><a href="#">Barcode</a></li>
+          <li><a href="#">Mã sản phẩm</a></li>
+          <li><a href="#">ID đơn hàng</a></li>
+          <li><a href="#">Tên thành viên</a></li>
+        </ul>
+      <button type="submit" class="btn btn-default"><i class="glyphicon glyphicon-search"></i></button>
+    </div>   
+    <div class="search-close">
+      <i class="fa fa-times-circle"></i>
+    </div>
+  </div>
+</div>
+
