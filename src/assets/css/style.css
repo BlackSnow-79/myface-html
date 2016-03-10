@@ -732,6 +732,15 @@ label.error {
   text-align: left;
   padding: 7px 15px 0;
 }
+.radio + .radio,
+.checkbox + .checkbox {
+  margin-top: 10px;
+}
+.radio label.error,
+.checkbox label.error {
+  position: absolute;
+  top: 100%;
+}
 /*
  * Component: Button
  * -----------------
@@ -5100,6 +5109,10 @@ main {
 }
 .report-form .date-picker-group {
   margin-left: -15px;
+}
+.report-form .date-picker-group label.error {
+  position: absolute;
+  top: 100%;
 }
 .report-form-selected {
   display: block;
