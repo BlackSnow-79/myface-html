@@ -732,6 +732,11 @@ label.error {
   text-align: left;
   padding: 7px 15px 0;
 }
+.form-horizontal .radio + .radio,
+.form-horizontal .checkbox + .checkbox {
+  margin-top: 0;
+  margin-bottom: 0;
+}
 .radio + .radio,
 .checkbox + .checkbox {
   margin-top: 10px;
@@ -1433,7 +1438,7 @@ label.error {
  * ----------------
  */
 .modal {
-  background: rgba(0, 0, 0, 0.3);
+  background: rgba(0, 0, 0, 0.6);
 }
 .modal .modal-sm {
   width: 330px;
@@ -1449,6 +1454,9 @@ label.error {
 .modal .btn {
   min-width: 70px;
   padding: 6px 20px;
+}
+.modal-backdrop {
+  background-color: transparent;
 }
 .modal-content {
   border-radius: 2;
