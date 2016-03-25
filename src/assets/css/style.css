@@ -5382,6 +5382,9 @@ main {
   opacity: 1;
   z-index: 1;
 }
+.in-promotion-field {
+  position: relative;
+}
 .shop-store .radio {
   margin-top: 0;
 }
