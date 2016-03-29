@@ -5722,6 +5722,9 @@ main {
   padding: 0 10px;
   padding-left: 30px;
 }
+.promotion-form-2 .radio .promotion-radio-label {
+  min-height: 40px;
+}
 .promotion-radio-label input[type="radio"] {
   margin-left: -20px;
 }

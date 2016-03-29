@@ -38,21 +38,16 @@ $(document).ready(function() {
       checkboxValue = $(this).attr('id');
       $('.promotion-form').removeClass('promotion-form-selected');
       $('.'+ checkboxValue).addClass('promotion-form-selected');
+      $('.promotion-form-selected .promotion-option-control').click(function(){
+        $('.promotion-form-selected .promotion-radio-label').removeClass('active');
+        $(this).parent().addClass('active');
+        var checkboxValue2 = $(this).attr('id');
+        $('.promotion-form-selected .promotion-option-form').removeClass('promotion-form-selected');
+        $('.promotion-form-selected').find('.'+ checkboxValue2).addClass('promotion-form-selected');
+      });
     });
   }
   radioControlform('.promotion-form-control');
-
-  function radioControlOption(roption) {
-    var checkboxValue;
-    $(roption).click(function(){
-      $('.promotion-radio-label').removeClass('active');
-      $(this).parent().addClass('active');
-      checkboxValue = $(this).attr('id');
-      $('.promotion-option-form').removeClass('promotion-form-selected');
-      $('.'+ checkboxValue).addClass('promotion-form-selected');
-    });
-  }
-  radioControlOption('.promotion-option-control');
 
   // register form
   /*$(function () {
