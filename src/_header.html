@@ -6,8 +6,8 @@
             <!--main-menu-->
             <div class="pull-left main-menu" id="">
               <ul class="nav navbar-nav">
-                <li class="active"><a href="index.html">Quản lý chung</a></li>
-                <li><a href="4.1-invoice-list.html">Đơn hàng</a></li>
+                <li class="{% if current_page == 'index' %}active{% endif %}"><a href="index.html">Quản lý chung</a></li>
+                <li class="{% if current_page == 'invoice-list' %}active{% endif %}"><a href="4.1-invoice-list.html">Đơn hàng</a></li>
                 <li><a href="2.1-categories.html">Sản phẩm</a></li>
                 <li><a href="3.1-customer-list.html">Khách hàng</a></li>
                 <li><a href="5.1-report.html">Báo cáo</a></li>

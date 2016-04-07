@@ -15,9 +15,10 @@ header {
         display: block;
         a {
           color: #fff;
+          font-weight: bold;
           border-bottom: 3px solid transparent;
           padding: 20px 0 17px!important;
-          margin: 0 10px;
+          margin: 0 13px;
         }
         a:hover, a:focus{
           color: #fff;
@@ -109,11 +110,12 @@ header {
 }
 .content-header {
   width: 100%;
+  height: 60px;
   margin-top: 60px;
   background-color: @white;
   position: relative;
-  padding: 15px 0 0;
-  margin-bottom: 20px;
+  padding: 10px 0;
+  margin-bottom: 15px;
   box-shadow: @box-boxshadow;
   // Header Text
   h1 {
@@ -121,14 +123,23 @@ header {
     float: left;
     color: @gray-text;
     font-weight: normal;
-    padding: 10px 30px 12px 0;
-    border-right: 1px solid @box-border-color;
+    padding: 12px 15px 0 0;
     margin: 0;
     font-size: 22px;
   }
 
   .breadcrumb {
-
+    position: relative;
+    margin-top: 7px;
+    &:before {
+      content: '';
+      width: 1px;
+      height: 40px;
+      background-color: @gray-line;
+      position: absolute;
+      top: -5px;
+      left: 0;
+    }
   }
 }
 

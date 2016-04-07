@@ -1,3 +1,4 @@
+{% set current_page = 'invoice-list' %}
 {% extends "_layout.html" %}
 {% block page-container %}
 <section class="content-header" id="content-header">
@@ -200,13 +201,13 @@
 					<table class="table table-striped">
 						<thead>
 							<tr>
-								<th class="">ID</th>
-								<th class="">Trạng thái đơn hàng</th>
-								<th class="text-center">Vận chuyển</th>
-								<th class="text-center">Tên khách hàng</th>
-								<th class="text-center">Ngày đặt hàng</th>
-								<th class="text-center">Tổng tiền</th>
-								<th class=""></th>
+								<th class="col-xs-1">ID</th>
+								<th style="width: 235px;">Trạng thái đơn hàng</th>
+								<th class="text-center" style="width: 195px;">Vận chuyển</th>
+								<th class="col-xs-2 text-center">Tên khách hàng</th>
+								<th class="col-xs-2 text-center">Ngày đặt hàng</th>
+								<th class="col-xs-1 text-center">Tổng tiền</th>
+								<th class="col-xs-1"></th>
 							</tr>
 						</thead>
 						<tbody>

@@ -112,12 +112,12 @@ $(document).ready(function() {
         height: '500px',
         size: '5px'
     });
-    $('.new-order-box').slimScroll({
+    /*$('.new-order-box').slimScroll({
         height: '650px',
         size: '5px'
-    });
+    });*/
     $('.direct-chat-messages').slimScroll({
-        height: '416px',
+        height: '375px',
         size: '5px',
         start: 'bottom'
     });

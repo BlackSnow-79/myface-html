@@ -385,6 +385,9 @@ a:focus {
   color: #75d9fa;
 }
 /* No link*/
+p {
+  margin: 0 0 5px;
+}
 img {
   max-width: 100%;
   margin: 0 auto;
@@ -434,9 +437,10 @@ header .main-menu .nav li {
 }
 header .main-menu .nav li a {
   color: #fff;
+  font-weight: bold;
   border-bottom: 3px solid transparent;
   padding: 20px 0 17px!important;
-  margin: 0 10px;
+  margin: 0 13px;
 }
 header .main-menu .nav li a:hover,
 header .main-menu .nav li a:focus {
@@ -525,11 +529,12 @@ header .header-top .user-label .user-label-2 {
 }
 .content-header {
   width: 100%;
+  height: 60px;
   margin-top: 60px;
   background-color: #fff;
   position: relative;
-  padding: 15px 0 0;
-  margin-bottom: 20px;
+  padding: 10px 0;
+  margin-bottom: 15px;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
 }
 .content-header h1 {
@@ -537,10 +542,22 @@ header .header-top .user-label .user-label-2 {
   float: left;
   color: #727272;
   font-weight: normal;
-  padding: 10px 30px 12px 0;
-  border-right: 1px solid #dfdfdf;
+  padding: 12px 15px 0 0;
   margin: 0;
   font-size: 22px;
+}
+.content-header .breadcrumb {
+  position: relative;
+  margin-top: 7px;
+}
+.content-header .breadcrumb:before {
+  content: '';
+  width: 1px;
+  height: 40px;
+  background-color: #dfdfdf;
+  position: absolute;
+  top: -5px;
+  left: 0;
 }
 footer {
   width: 100%;
@@ -559,10 +576,8 @@ footer p {
   background: transparent;
   margin-top: 0;
   margin-bottom: 0;
-  font-size: 12px;
-  padding: 7px 10px 0;
-  top: 15px;
-  right: 10px;
+  font-size: 14px;
+  padding: 0 10px;
   border-radius: 2px;
 }
 .breadcrumb > li > a {
@@ -570,7 +585,7 @@ footer p {
   margin: 0 10px;
   color: #444;
   text-decoration: none;
-  border-bottom: 2px solid transparent;
+  border-bottom: 3px solid transparent;
   display: inline-block;
 }
 .breadcrumb > li > a > .fa,
@@ -581,7 +596,8 @@ footer p {
 .breadcrumb > li > .active,
 .breadcrumb > li > a:hover {
   color: #ff5722;
-  border-bottom: 2px solid #ff5722;
+  font-weight: bold;
+  border-bottom: 3px solid #ff5722;
 }
 .breadcrumb > li + li:before {
   content: '';
@@ -712,6 +728,9 @@ label.error {
 .date-picker-group .date-picker {
   background: transparent;
   cursor: pointer;
+}
+.date-picker-group .form-control[readonly] {
+  background-color: transparent;
 }
 .l-calendar-icon {
   position: absolute;
@@ -2849,6 +2868,9 @@ ul.ss-box a:hover {
 .user-info-box-body {
   padding-top: 10px;
   border-bottom: 1px solid #dfdfdf;
+}
+.user-info-box-body li span {
+  margin-left: 20px;
 }
 .w-invoice-list {
   padding: 0;
