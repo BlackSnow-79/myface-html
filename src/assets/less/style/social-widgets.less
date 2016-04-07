@@ -44,9 +44,9 @@
     }
   }
   .box-footer {
-    padding: 10px 0;
+    padding: 15px 0 5px;
     .btn {
-      width: 116px;
+      width: 150px;
       display: block;
       margin: 0 auto;
     }
@@ -112,16 +112,24 @@
 }
 .user-info-box-footer {
   .info-user-list {
-    margin: 30px 0 20px;   
+    margin: 52px 0 15px;   
     li {
       padding: 0px 15px 10px;
       border-bottom: 1px solid @box-border-color;
+      > span {
+        font-size: 16px;
+        & + a.pull-right {
+          font-size: 12px;
+          font-weight: bold;
+          padding-top: 3px;
+        }
+      }
     }
     li:before {
       width: 16px;
       height: 16px;
       position: absolute;
-      top: 23px;
+      top: 25px;
       left: 25px;
       border: 1px solid @box-border-color;
       border-top: 0;
@@ -139,7 +147,7 @@
   }
 }
 .info-update-btn {
-  padding: 10px 0;
+  padding: 7px 0 15px;
   font-style: italic;
   i {
     width: 26px;
@@ -162,28 +170,75 @@
 }
 .user-info-box-body {
   padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
   border-bottom: 1px solid @box-border-color;
+  .info-user-list {
+    li,
+    li:first-child >a {
+      position: relative;
+      >i {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 25px;
+        height: 25px;
+        &:before {
+          content: "";
+        }
+      }
+      span {
+        margin-left: 30px;
+        display: block;
+      }
+      margin-bottom: 7px;
+    }
+  }
   li {
-    span {
-      margin-left: 20px;
+    &:first-child {
+      i {
+        height: 20px !important;
+        background: url('../images/icon/mes.png') center no-repeat;
+      }
+    }
+    & + li {
+      i { 
+        background: url('../images/icon/phone.png') center no-repeat;
+      }
+    }
+    & + li + li {
+      i {
+        background: url('../images/icon/lo.png') center no-repeat;
+      }
+    }
+    &:last-child {
+      i {
+        background: none;
+      }
     }
   }
 }
 
 .w-invoice-list {
   padding: 0;
+  margin: 0;
   .cate-name {
     font-weight: normal;
-    color: @gray-text;
+    color: @black;
     border-bottom: 0;
   }
   li {
-    height: 34px;
     overflow: hidden;
-    padding: 7px 15px 7px 25px;
+    padding: 10px 15px 7px 25px;
     &:before {
-      top: 13px;
+      top: 15px;
       left: 15px;
+    }
+    &:first-child {
+      padding-top: 0;
+      &:before {
+        top: 6px;
+      }
     }
   }
   li {

@@ -246,6 +246,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-family: 'robotoregular', Helvetica, Arial, sans-serif;
+  line-height: 1.38;
   overflow-x: hidden;
   overflow-y: auto;
 }
@@ -2761,10 +2762,10 @@ ul.ss-box a:hover {
   height: 100%;
 }
 .widget-user .box-footer {
-  padding: 10px 0;
+  padding: 15px 0 5px;
 }
 .widget-user .box-footer .btn {
-  width: 116px;
+  width: 150px;
   display: block;
   margin: 0 auto;
 }
@@ -2818,17 +2819,25 @@ ul.ss-box a:hover {
   color: #2bc5f8;
 }
 .user-info-box-footer .info-user-list {
-  margin: 30px 0 20px;
+  margin: 52px 0 15px;
 }
 .user-info-box-footer .info-user-list li {
   padding: 0px 15px 10px;
   border-bottom: 1px solid #dfdfdf;
 }
+.user-info-box-footer .info-user-list li > span {
+  font-size: 16px;
+}
+.user-info-box-footer .info-user-list li > span + a.pull-right {
+  font-size: 12px;
+  font-weight: bold;
+  padding-top: 3px;
+}
 .user-info-box-footer .info-user-list li:before {
   width: 16px;
   height: 16px;
   position: absolute;
-  top: 23px;
+  top: 25px;
   left: 25px;
   border: 1px solid #dfdfdf;
   border-top: 0;
@@ -2844,7 +2853,7 @@ ul.ss-box a:hover {
   color: #2bc5f8;
 }
 .info-update-btn {
-  padding: 10px 0;
+  padding: 7px 0 15px;
   font-style: italic;
 }
 .info-update-btn i {
@@ -2867,27 +2876,67 @@ ul.ss-box a:hover {
 }
 .user-info-box-body {
   padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
   border-bottom: 1px solid #dfdfdf;
 }
-.user-info-box-body li span {
-  margin-left: 20px;
+.user-info-box-body .info-user-list li,
+.user-info-box-body .info-user-list li:first-child > a {
+  position: relative;
+  margin-bottom: 7px;
+}
+.user-info-box-body .info-user-list li > i,
+.user-info-box-body .info-user-list li:first-child > a > i {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 25px;
+  height: 25px;
+}
+.user-info-box-body .info-user-list li > i:before,
+.user-info-box-body .info-user-list li:first-child > a > i:before {
+  content: "";
+}
+.user-info-box-body .info-user-list li span,
+.user-info-box-body .info-user-list li:first-child > a span {
+  margin-left: 30px;
+  display: block;
+}
+.user-info-box-body li:first-child i {
+  height: 20px !important;
+  background: url('../images/icon/mes.png') center no-repeat;
+}
+.user-info-box-body li + li i {
+  background: url('../images/icon/phone.png') center no-repeat;
+}
+.user-info-box-body li + li + li i {
+  background: url('../images/icon/lo.png') center no-repeat;
+}
+.user-info-box-body li:last-child i {
+  background: none;
 }
 .w-invoice-list {
   padding: 0;
+  margin: 0;
 }
 .w-invoice-list .cate-name {
   font-weight: normal;
-  color: #727272;
+  color: #212121;
   border-bottom: 0;
 }
 .w-invoice-list li {
-  height: 34px;
   overflow: hidden;
-  padding: 7px 15px 7px 25px;
+  padding: 10px 15px 7px 25px;
 }
 .w-invoice-list li:before {
-  top: 13px;
+  top: 15px;
   left: 15px;
+}
+.w-invoice-list li:first-child {
+  padding-top: 0;
+}
+.w-invoice-list li:first-child:before {
+  top: 6px;
 }
 .w-invoice-list li:nth-child(even) {
   background-color: #f9f9fa;
@@ -4881,6 +4930,9 @@ main {
 .login-page .btn-facebook i {
   line-height: 42px;
   width: 60px;
+}
+.login-page #fb-store-modal {
+  background-color: transparent;
 }
 .login-logo,
 .register-logo {
