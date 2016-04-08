@@ -4929,15 +4929,16 @@ main {
 }
 .login-page .btn-facebook i {
   line-height: 42px;
-  width: 60px;
+  width: 62px;
+  font-size: 15px;
 }
 .login-page #fb-store-modal {
   background-color: transparent;
 }
 .login-logo,
 .register-logo {
-  width: 225px;
-  margin: 0 auto 20px;
+  width: 210px;
+  margin: 10px auto 20px;
   position: relative;
 }
 .login-logo a,
@@ -4946,7 +4947,7 @@ main {
 }
 .login-box,
 .register-box {
-  width: 420px;
+  width: 460px;
   padding: 15px;
   margin: 0 auto 30px;
   padding-top: 20px;
@@ -4962,7 +4963,7 @@ main {
 .login-email-mgs {
   color: #fff;
   position: relative;
-  margin: 20px 0;
+  margin: 23px 0;
 }
 .login-email-mgs:before,
 .login-email-mgs:after {
@@ -4988,7 +4989,7 @@ main {
 .login-box-body,
 .register-box-body {
   background: #2bc5f8;
-  padding: 20px;
+  padding: 10px 20px;
   border-top: 0;
   color: #666;
 }
@@ -4999,16 +5000,17 @@ main {
 .login-box-msg,
 .register-box-msg {
   color: #fff;
-  font-size: 19px;
+  font-size: 22px;
   font-weight: lighter;
-  margin: 0 0 25px;
+  text-align: center;
+  margin: 0 0 21px;
   padding: 0;
 }
 .social-auth-links {
   margin: 10px 0;
 }
 .icheck {
-  margin-top: 15px;
+  margin-top: 20px;
   margin-bottom: 15px;
   font-size: 13px;
 }
@@ -5055,10 +5057,11 @@ main {
 }
 .btn-login {
   width: 100%;
-  margin-top: 10px;
+  height: 56px;
+  margin-top: 20px;
 }
 .no-account {
-  margin-top: 30px;
+  margin-top: 37px;
   text-align: center;
   color: #fff;
   font-size: 13px;
