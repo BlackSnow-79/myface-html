@@ -1,3 +1,16 @@
+.report-container {
+  .box-body {
+    padding: 18px 15px 5px;
+    .box-lime {
+      .box-header {
+        padding: 10px 10px 13px;
+      }
+      .box-body {
+        padding: 10px;
+      }
+    }
+  }
+}
 .report-form {
 	width: 100%;
 	min-height: 355px;
@@ -45,4 +58,12 @@
 }
 .report-container .radio > label{
   position: relative;
+}
+.report-invoice-row,
+.report-transport-row,
+.report-custommer-row,
+.report-product-row {
+  > label {
+    color: @lime;
+  }
 }
