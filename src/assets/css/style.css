@@ -238,7 +238,7 @@ body {
 body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-family: 'robotoregular', Helvetica, Arial, sans-serif;
+  font-family: 'Roboto', Helvetica, Arial, sans-serif;
   line-height: 1.38;
   overflow-x: hidden;
   overflow-y: auto;
