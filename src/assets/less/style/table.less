@@ -13,15 +13,18 @@
       > td {
         border-bottom:0;
         border-top: 0;
-        padding: 15px;
+        padding: 10px;
         vertical-align: middle;
+      }
+      &:hover {
+        background-color: @light-gray-bg;
       }
     }
   }
   //thead cells
   > thead > tr > th {
     color: @white;
-    font-size: 13px;
+    font-size: 14px;
     border-bottom: 0;
     background-color: @blue-bg;
   }
@@ -111,12 +114,36 @@ table.text-center {
     text-align: right;
   }
 }
-
-.table-striped > tbody > tr:nth-of-type(odd) {
-  background-color: @white;
-}
-.table-striped > tbody > tr:nth-of-type(even) {
-  background-color: @light-gray-bg;
+.table-striped {
+  > tbody,
+  > tfoot {
+    > tr {
+      > td {
+        padding: 5px 10px;
+      }
+      &:nth-of-type(odd) {
+        background-color: @white;
+      }
+      &:nth-of-type(even) {
+        background-color: @light-gray-bg;
+      }
+      &:hover {
+        background-color: @gray;
+      }
+      &.invoice-sum {
+        background-color: #8fddf8;
+        td:first-child {
+          padding-left: 45px;
+        }
+      }
+      &.sum {
+        background-color: #2bc5f8;
+        td:first-child {
+          padding-left: 45px;
+        }
+      }
+    }
+  }
 }
 
 .table {

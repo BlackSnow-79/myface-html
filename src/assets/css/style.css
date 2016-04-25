@@ -514,6 +514,11 @@ header .header-top .user-label span {
   float: right;
   text-align: right;
 }
+header .header-top .user-label .user-label-1 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
 header .header-top .user-label .user-label-2 {
   font-size: 11px;
 }
@@ -763,6 +768,20 @@ select:-webkit-autofill {
 .checkbox label.error {
   position: absolute;
   top: 100%;
+}
+.checkbox label {
+  position: relative;
+}
+input + .checkbox label:after {
+  content: "\f10c";
+  font: normal normal normal 14px/1 FontAwesome;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+input:checked + .checkbox label:before {
+  content: "\f046";
+  color: #FF851B;
 }
 /*
  * Component: Button
@@ -1542,12 +1561,17 @@ select:-webkit-autofill {
 .table > tfoot > tr > td {
   border-bottom: 0;
   border-top: 0;
-  padding: 15px;
+  padding: 10px;
   vertical-align: middle;
+}
+.table > thead > tr:hover,
+.table > tbody > tr:hover,
+.table > tfoot > tr:hover {
+  background-color: #f0f1f3;
 }
 .table > thead > tr > th {
   color: #fff;
-  font-size: 13px;
+  font-size: 14px;
   border-bottom: 0;
   background-color: #2bc5f8;
 }
@@ -1614,11 +1638,37 @@ table.text-center th {
 .table.align td {
   text-align: right;
 }
-.table-striped > tbody > tr:nth-of-type(odd) {
+.table-striped > tbody > tr > td,
+.table-striped > tfoot > tr > td {
+  padding: 5px 10px;
+}
+.table-striped > tbody > tr:nth-of-type(odd),
+.table-striped > tfoot > tr:nth-of-type(odd) {
   background-color: #fff;
 }
-.table-striped > tbody > tr:nth-of-type(even) {
+.table-striped > tbody > tr:nth-of-type(even),
+.table-striped > tfoot > tr:nth-of-type(even) {
   background-color: #f0f1f3;
+}
+.table-striped > tbody > tr:hover,
+.table-striped > tfoot > tr:hover {
+  background-color: #d2d6de;
+}
+.table-striped > tbody > tr.invoice-sum,
+.table-striped > tfoot > tr.invoice-sum {
+  background-color: #8fddf8;
+}
+.table-striped > tbody > tr.invoice-sum td:first-child,
+.table-striped > tfoot > tr.invoice-sum td:first-child {
+  padding-left: 45px;
+}
+.table-striped > tbody > tr.sum,
+.table-striped > tfoot > tr.sum {
+  background-color: #2bc5f8;
+}
+.table-striped > tbody > tr.sum td:first-child,
+.table-striped > tfoot > tr.sum td:first-child {
+  padding-left: 45px;
 }
 .table a.active {
   color: #3ac562;
@@ -4740,6 +4790,17 @@ main {
 .search-container .control-label {
   padding-top: 7px;
 }
+.advance-search .box-lime .box-header {
+  padding: 10px;
+}
+.advance-search .box-lime .box-header .box-title {
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 1.1;
+}
+.advance-search .box-lime .box-body {
+  padding: 10px;
+}
 .advance-search .row {
   margin-top: 10px;
   margin-bottom: 10px;
@@ -4755,6 +4816,9 @@ main {
   float: none;
   display: block;
   margin: 0 auto;
+}
+.in-num {
+  font-size: 11px;
 }
 .invoice-button-group a:first-child {
   margin-right: 20px;

@@ -162,3 +162,19 @@ select:-webkit-autofill {
     top: 100%;
   }
 }
+.checkbox {
+  label {
+    position: relative;
+    input + &:after {
+      content: "\f10c";
+      font: normal normal normal 14px/1 FontAwesome;
+      position: absolute;
+      top: 0;
+      left: 0;
+    } 
+    input:checked + &:before {
+      content: "\f046";
+      color: @orange;
+    }
+  }
+}
