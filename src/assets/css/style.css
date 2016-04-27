@@ -1564,6 +1564,22 @@ input:checked + .checkbox label:before {
   padding: 10px;
   vertical-align: middle;
 }
+.table > thead > tr > th label,
+.table > tbody > tr > th label,
+.table > tfoot > tr > th label,
+.table > thead > tr > td label,
+.table > tbody > tr > td label,
+.table > tfoot > tr > td label {
+  margin-bottom: 0;
+}
+.table > thead > tr > th ins,
+.table > tbody > tr > th ins,
+.table > tfoot > tr > th ins,
+.table > thead > tr > td ins,
+.table > tbody > tr > td ins,
+.table > tfoot > tr > td ins {
+  font-weight: normal;
+}
 .table > thead > tr:hover,
 .table > tbody > tr:hover,
 .table > tfoot > tr:hover {
@@ -4333,12 +4349,11 @@ fieldset[disabled] .btn-yahoo.focus {
   background-color: transparent;
 }
 .navbar-nav > .user-menu > .dropdown-menu {
-  width: 246px;
+  width: 245px;
   border-top-right-radius: 0;
   border-top-left-radius: 0;
   padding: 1px 0 0 0;
   border-top-width: 0;
-  width: 280px;
 }
 /* Add fade animation to dropdown menus by appending
  the class .animated-dropdown-menu to the .dropdown-menu ul (or ol)*/
@@ -4416,8 +4431,11 @@ fieldset[disabled] .btn-yahoo.focus {
   position: relative;
 }
 .navbar-custom-menu > .navbar-nav > li .account-submenu-dropdown li a {
-  padding: 15px;
+  padding: 10px 15px;
   color: #b6b6b6;
+}
+.navbar-custom-menu > .navbar-nav > li .account-submenu-dropdown li a i {
+  width: 18px;
 }
 .navbar-custom-menu > .navbar-nav > li .account-submenu-dropdown .user-footer {
   position: relative;
@@ -4653,7 +4671,7 @@ main {
 }
 .cate-name {
   color: #212121;
-  font-weight: bold;
+  font-weight: 500;
   padding-bottom: 1px;
   border-bottom: 1px solid #dfdfdf;
 }
@@ -4661,9 +4679,13 @@ main {
   color: #2bc5f8;
   border-bottom: 0;
 }
+.in-view-btn {
+  padding: 5px 16px;
+  float: right;
+}
 .cus-name {
   color: #212121;
-  font-weight: bold;
+  font-weight: 500;
   padding-bottom: 1px;
 }
 .cus-name:hover {
