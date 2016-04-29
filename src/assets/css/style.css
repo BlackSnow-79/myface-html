@@ -601,8 +601,7 @@ footer p {
   border-bottom: 3px solid #ff5722;
 }
 .breadcrumb > li + li:before {
-  content: '';
-  padding: 0;
+  display: none;
 }
 .text-danger,
 label.error {
@@ -1582,6 +1581,11 @@ input:checked + .checkbox label:before {
 .table > tfoot > tr > td ins {
   font-weight: normal;
 }
+.table > thead > tr td,
+.table > tbody > tr td,
+.table > tfoot > tr td {
+  padding: 5px 10px;
+}
 .table > thead > tr:hover,
 .table > tbody > tr:hover,
 .table > tfoot > tr:hover {
@@ -1690,7 +1694,9 @@ table.text-center th {
 }
 .table a.active {
   color: #3ac562;
-  font-weight: bold;
+  font-weight: 500;
+  display: block;
+  margin-right: -20px;
 }
 .table a.active:hover {
   color: #298a45;
@@ -1700,7 +1706,9 @@ table.text-center th {
 }
 .deactive {
   color: #ff5722;
-  font-weight: bold;
+  font-weight: 500;
+  display: block;
+  margin-right: -20px;
 }
 .deactive:hover {
   color: #d43300;
@@ -4321,7 +4329,7 @@ fieldset[disabled] .btn-yahoo.focus {
   border-color: #eee;
 }
 .dropdown-menu > li > a {
-  color: #777;
+  color: #727272;
 }
 .dropdown-menu > li > a > .glyphicon,
 .dropdown-menu > li > a > .fa,
@@ -4438,10 +4446,14 @@ fieldset[disabled] .btn-yahoo.focus {
 }
 .navbar-custom-menu > .navbar-nav > li .account-submenu-dropdown li a {
   padding: 10px 15px;
-  color: #b6b6b6;
+  color: #727272;
 }
 .navbar-custom-menu > .navbar-nav > li .account-submenu-dropdown li a i {
+  color: #b6b6b6;
   width: 18px;
+}
+.navbar-custom-menu > .navbar-nav > li .account-submenu-dropdown li.active a {
+  background-color: #d3eafd;
 }
 .navbar-custom-menu > .navbar-nav > li .account-submenu-dropdown .user-footer {
   position: relative;
@@ -4868,12 +4880,15 @@ main {
 }
 .invoice-row-1 {
   float: left;
-  padding: 15px 0 0;
+  padding: 0;
 }
 .invoice-row-1 p,
 .invoice-row-1 span {
-  float: left;
+  display: inline-block;
   margin: 7px 0;
+}
+.invoice-row-1 > div > div {
+  padding-left: 0;
 }
 .advance-hidden {
   display: none;
@@ -4883,6 +4898,12 @@ main {
 }
 .invoice-row1-inner .pull-right {
   padding: 0;
+}
+.invoice-row1-inner .invoice-row1-inner-1 {
+  width: 235px;
+}
+.invoice-row1-inner .invoice-row1-inner-2 {
+  width: 285px;
 }
 .invoice-row-3 .box-body div.col-xs-6,
 .invoice-row-3 .box-body div.col-xs-5 {

@@ -232,10 +232,15 @@ main {
 }
 .invoice-row-1 {
   float: left;
-  padding: 15px 0 0;
+  padding: 0;
   p, span {
-    float: left;
+    display: inline-block;
     margin: 7px 0;
+  }
+  > div {
+    > div {
+      padding-left: 0;
+    }
   }
 }
 .advance-hidden {
@@ -245,6 +250,12 @@ main {
   padding: 0;
   .pull-right {
     padding: 0;
+  }
+  .invoice-row1-inner-1 {
+    width: 235px;
+  }
+  .invoice-row1-inner-2 {
+    width: 285px;
   }
 }
 .invoice-row-3 {
