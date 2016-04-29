@@ -558,6 +558,9 @@ header .header-top .user-label .user-label-2 {
   top: -5px;
   left: 0;
 }
+.content-header .breadcrumb li {
+  font-weight: bold;
+}
 footer {
   width: 100%;
   height: 50px;
@@ -595,7 +598,6 @@ footer p {
 .breadcrumb > li > .active,
 .breadcrumb > li > a:hover {
   color: #ff5722;
-  font-weight: bold;
   border-bottom: 3px solid #ff5722;
 }
 .breadcrumb > li + li:before {
@@ -4414,21 +4416,25 @@ fieldset[disabled] .btn-yahoo.focus {
   right: 0;
   left: auto;
 }
+.navbar-custom-menu > .navbar-nav > li .account-submenu-dropdown {
+  padding: 5px 0 10px;
+}
 .navbar-custom-menu > .navbar-nav > li .account-submenu-dropdown:before {
   content: '';
-  width: 16px;
-  height: 16px;
+  width: 15px;
+  height: 15px;
   background-color: #fff;
   position: absolute;
   border-bottom: 0;
-  top: -8px;
-  right: 40px;
+  top: -7px;
+  right: 45px;
   -ms-transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
 }
 .navbar-custom-menu > .navbar-nav > li .account-submenu-dropdown li {
   position: relative;
+  font-weight: 300;
 }
 .navbar-custom-menu > .navbar-nav > li .account-submenu-dropdown li a {
   padding: 10px 15px;
