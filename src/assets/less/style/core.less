@@ -180,3 +180,22 @@ img {
     margin-top: 5px;
   }
 }
+.datetimepicker {
+  .md {
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    font-size: 14px;
+    display: inline-block;
+    text-align: right;
+    &:before {
+      content: "\f053";
+    }
+    &.md-keyboard-arrow-right {
+      &:before {
+        content: "\f054";
+      }
+    }
+  }
+}

@@ -405,6 +405,21 @@ img {
   display: block;
   margin-top: 5px;
 }
+.datetimepicker .md {
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font-size: 14px;
+  display: inline-block;
+  text-align: right;
+}
+.datetimepicker .md:before {
+  content: "\f053";
+}
+.datetimepicker .md.md-keyboard-arrow-right:before {
+  content: "\f054";
+}
 header {
   position: fixed;
   width: 100%;
@@ -5322,6 +5337,9 @@ main {
 }
 .report-container .box-body .box-lime .box-body {
   padding: 10px;
+}
+.report-container .checkbox label {
+  width: 100%;
 }
 .report-form {
   width: 100%;
