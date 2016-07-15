@@ -14,26 +14,21 @@
     <!-- /.login-logo -->
     <div class="login-box-body">
       <p class="login-box-msg">Đăng nhập trang quản trị Store của bạn</p>
-      <div class="social-auth-links text-center">
-        <a href="#" class="btn btn-block btn-social btn-facebook"><i class="fa fa-facebook"></i> Đăng nhập bằng Facebook</a>
-        <p class="login-email-mgs">hoặc đăng nhập bằng email</p>
-      </div>
       <form action="" method="post">
-      <div class="login-group">
-          <div class="input-group">
-            <span class="input-group-addon"><i class="fa fa-envelope"></i></span>
-            <input type="text" class="form-control" placeholder="Nhập tên Store của bạn">
-            <span class="input-group-addon domain-span">.myface.vn</span>
-          </div>
+        <div class="login-group">
           <div class="input-group">
             <span class="input-group-addon"><i class="fa fa-envelope-o"></i></span>
-            <input type="email" class="form-control" placeholder="Email">
+            <input type="email" class="form-control" placeholder="Nhập email">
             <!--validate-->
             <label class="login-f-v" style="display:none"><i class="fa fa-exclamation-circle"></i> <span>Địa chỉ Email ko hợp lệ</span></label>
           </div>
           <div class="input-group">
             <span class="input-group-addon"><i class="fa fa-lock"></i></span>
             <input type="password" class="form-control" placeholder="Nhập mật khẩu">
+          </div>
+          <div class="input-group">
+            <span class="input-group-addon"><i class="fa fa-lock"></i></span>
+            <input type="password" class="form-control" placeholder="Nhập lại mật khẩu">
           </div>
         </div><!--/.login-group-->
         <div class="form-group">
@@ -42,7 +37,7 @@
               <label>
                 <input type="checkbox"> <span>Ghi nhớ đăng nhập</span>
               </label>
-              <a href="#" class="forget-pass-mgs"> Quên mật khẩu</a>
+              <a href="" class="forget-pass-mgs" data-toggle="modal" data-target="#forgetpass-modal"> Quên mật khẩu</a>
             </div>
           </div>
           <!-- /.col -->
@@ -59,6 +54,32 @@
   <!-- /.login-box-body -->
 </main>
 <!-- /.login-box -->
+
+<!--forget-pass-->
+<div data-backdrop class="modal forgetpass-modal" id="forgetpass-modal" style="display: none;">
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close remove_text" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="fa fa-close" aria-hidden="true"></i></span></button>
+        <h4 class="modal-title">Quên mật khẩu</h4>
+      </div>
+      <div class="modal-body">
+        <div class="forgetpass-form">
+          <p>Vui lòng nhập Email để cập nhật lại mật khẩu trên hệ thống myFace.</p>
+          <div class="form-group">
+            <input type="email" class="form-control" placeholder="Nhập email của bạn">
+          </div>
+          <div class="form-group">
+            <input type="submit" class="btn btn-primary" value="Lấy lại mật khẩu">
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /.modal-content -->
+  </div>
+  <!-- /.modal-dialog -->
+</div>
+<!--./forget-pass-->
 {% endblock %}
 <!--footer-->
 {% block footer%}

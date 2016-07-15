@@ -29,7 +29,7 @@ $(document).ready(function() {
       $('.'+ checkboxValue).addClass('report-form-selected');
     });
   });
-  //Show promotion form  
+  //Show promotion form
   function radioControlform(rbtn) {
     var checkboxValue;
     $(rbtn).click(function(){
@@ -101,7 +101,7 @@ $(document).ready(function() {
     });
     $(document).click( function(event){
       if ( !$(event.target).closest('.panel-product-dropdown').length ) {
-          closeSidebar();   
+          closeSidebar();
       }
     });
   });
@@ -147,7 +147,7 @@ $(document).ready(function() {
   $('.st-select-product-group').selectpicker();
   $('.st-select-product').selectpicker();
 
-  //active search 
+  //active search
   $(function () {
     $( '.search-btn-control').click(function(e) {
       if (!$('.search-dropdown').hasClass('active')) {
@@ -165,8 +165,11 @@ $(document).ready(function() {
     });
   });
 
+  //link-shop
+  // $('.link-shop-text').text($('.name-store').val());
+
 	// Modal
-	(function ($) {
+  (function ($) {
     "use strict";
     function centerModal() {
         $(this).css('display', 'block');
@@ -183,5 +186,5 @@ $(document).ready(function() {
     $(window).on("resize", function () {
         $('.modal:visible').each(centerModal);
     });
-	}(jQuery));
+  }(jQuery));
 });
