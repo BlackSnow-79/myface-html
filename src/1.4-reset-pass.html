@@ -1,0 +1,38 @@
+{% extends "_layout-base.html" %}
+{% block bodyclass%}login-page{% endblock %}
+<!--page-container-->
+{% block page-container %}
+<main class="resetting-pass">
+  <div class="login-bg">
+  </div>
+
+  <!--forgetpass-form-->
+  <div class="forgetpass-form">
+    <div class="logo-icon">
+    </div>
+    <h2 class="form-title">Đặt lại mật khẩu</h2>
+    <div class="form-inner">
+      <div class="form-group">
+        <label for="" class="control-label">Nhập mật khẩu mới</label>
+        <input type="password" class="form-control">
+      </div>
+      <div class="form-group">
+        <label for="" class="control-label">Nhập lại mật khẩu mới</label>
+        <input type="password" class="form-control">
+      </div>
+      <div class="form-group">
+        <input type="submit" class="btn btn-primary" value="Đặt lại mật khẩu">
+      </div>
+    </div>
+    <div class="form-group cancel-btn">
+      <a href="index.html">Hủy</a>
+    </div>
+  </div>
+  <!-- /.login-box-body -->
+</main>
+<!-- /.forgetpass-form -->
+{% endblock %}
+<!--footer-->
+{% block footer%}
+{% include "_footer.html" %}
+{% endblock %}

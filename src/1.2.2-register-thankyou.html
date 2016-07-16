@@ -1,0 +1,35 @@
+{% extends "_layout-base.html" %}
+{% block bodyclass%}login-page{% endblock %}
+<!--page-container-->
+{% block page-container %}
+<main>
+  <div class="login-bg">
+  </div>
+
+  <!--login-box-->
+  <div  class="login-box thankyou-box">
+    <div class="login-logo">
+      <a href="1-login.html"><img src="assets/images/myface-logo.png" alt="myface"></a>
+    </div>
+    <!-- /.login-logo -->
+    <!--register-step-1-->
+    <div class="login-box-body" id="step-1-f">
+      <p class="login-box-msg">Cảm ơn bạn đã đăng ký sử dụng myFace, giải pháp quản lý bán hàng hiệu quả trên Facebook, Zalo & các nền tảng web khác.</p>
+      <div class="thankyou-content">
+        <p>Nhằm phục vụ và hỗ trợ bạn tốt hơn trong thời gian bạn sử dụng myFace, myFace rất mong bạn sẽ khai báo thêm thông tin shop bán hàng của bước tiếp theo.</p>
+        <div class="form-group">
+          <!-- /.col -->
+          <button id="step-2-btn" type="button" class="btn btn-lg btn-blackblue btn-login" onclick="location.href='7.1-shop-info.html'">Tiếp tục</button>
+          <!-- /.col -->
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /.login-box-body -->
+</main>
+<!-- /.login-box -->
+{% endblock %}
+<!--footer-->
+{% block footer%}
+{% include "_footer.html" %}
+{% endblock %}

@@ -141,6 +141,17 @@ $(document).ready(function() {
         height: '155px',
         size: '5px'
     });
+    //termofuse
+    $('.termofuse-inner').slimScroll({
+      color: '#c1c1c1',
+      height: '300px',
+      size: '7px',
+      opacity: 1,
+      railVisible: true,
+      railOpacity: 1,
+      railColor: '#ebebeb',
+      alwaysVisible: true
+    });
   });
 
   //multiple
@@ -166,8 +177,9 @@ $(document).ready(function() {
   });
 
   //link-shop
-  // $('.link-shop-text').text($('.name-store').val());
-
+  $(".name-store").keyup(function() {
+    $('.link-shop-text').text($('.name-store').val());
+  });
 	// Modal
   (function ($) {
     "use strict";

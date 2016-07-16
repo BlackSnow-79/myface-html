@@ -69,7 +69,7 @@
     }
     .login-box-msg,
     .register-box-msg {
-      font-size: 14px;
+      font-size: 16px;
     }
     .login-email-mgs{
       margin: 15px 0;
@@ -126,7 +126,7 @@
 .login-box-msg,
 .register-box-msg {
 	color: @white;
-	font-size: 21px;
+	font-size: 19px;
 	text-align: left;
 	margin: 0 0 21px;
 	padding: 0;
@@ -137,8 +137,8 @@
 }
 
 .icheck {
-	margin-top: 17px;
-	margin-bottom: 10px;
+	margin-top: 20px;
+	margin-bottom: 20px;
 	font-size: 14px;
 	input[type="checkbox"]{
 		margin-left: -15px;
@@ -155,7 +155,7 @@
       color: rgba(255, 255, 255, 0.5);
       font-size: 22px;
       position: absolute;
-      top: 1px;
+      top: 2px;
       left: -15px;
     }
 	}
@@ -202,11 +202,10 @@
 }
 .btn-login {
 	width: 100%;
-	height: 56px;
-  margin-top: 22px;
+	height: 47px;
 }
 .no-account {
-	margin-top: 37px;
+	margin-top: 20px;
 	text-align: center;
 	color: @white;
 	font-size: 13px;
@@ -401,11 +400,153 @@
     border-color: @mf-color;
   }
 }
+.resetting-pass {
+  .logo-icon {
+    width: 100%;
+    &:before {
+      content: "";
+      width: 119px;
+      height: 41px;
+      display: block;
+      margin: 0 auto;
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-image: url('../images/icon/logo-icon.png');
+    }
+  }
+  .forgetpass-form {
+    position: relative;
+    width: 100%;
+    margin: 127px auto 0;
+    .form-title {
+      width: 100%;
+      display: block;
+      text-align: center;
+      font-size: 24px;
+      margin-bottom: 30px;
+      margin-top: 16px;
+    }
+    .form-inner {
+      background-color: #fff;
+      padding: 15px 10px 10px;
+      border-radius: 4px;
+      .control-label {
+        color: @gray-text;
+        font-weight: normal;
+      }
+    }
+    .form-group {
+      margin-bottom: 10px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+      input[type="password"] {
+        padding-left: 36px;
+        background-image: url('../images/icon/pass.png');
+        background-repeat: no-repeat;
+        background-position: 13px 13px;
+      }
+    }
+    .cancel-btn {
+      text-align: center;
+      margin-top: 18px;
+      font-size: 16px;
+      a {
+        color: @gray-text;
+        &:hover {
+          color: @orange;
+        }
+      }
+    }
+    @media (min-width: @screen-md-min) {
+      width: 320px;
+    }
+  }
+}
 .link-shop {
   width: 100%;
   color: white;
-  margin-top: 21px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  p {
+    margin-bottom: 0;
+  }
 }
-.link-shop-text {
+.link-text {
   font-weight: bold;
+}
+.termofuse-box {
+  .login-group {
+    line-height: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-right: 5px;
+    h4 {
+      font-weight: 600;
+      color: @black;
+      font-size: 16px;
+      margin-top: 0;
+    }
+    b {
+      color: @black;
+    }
+    ol {
+      padding-left: 20px;
+    }
+  }
+  .termofuse-inner {
+    width: 100%;
+    height: 300px;
+    padding-right: 15px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .checkbox {
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+  @media (min-width: @screen-sm-min) {
+    width: 555px;
+    padding-left: 0;
+    padding-right: 0;
+    .login-box-body {
+      padding-left: 0;
+      padding-right: 0;
+    }
+    .login-email-mgs {
+      &:before, &:after {
+        width: 160px;
+      }
+    }
+  }
+}
+.thankyou-box {
+  @media (min-width: @screen-sm-min) {
+    width: 555px;
+    padding-left: 0;
+    padding-right: 0;
+    .login-box-body {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+  .login-box-msg {
+    margin-bottom: 20px;
+  }
+}
+.thankyou-content {
+  width: 100%;
+  p {
+    color: white;
+    margin-bottom: 20px;
+  }
+}
+.termofuse-box, .thankyou-box {
+  .btn-login {
+    max-width: 320px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
