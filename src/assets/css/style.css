@@ -560,7 +560,7 @@ header .header-top .user-label .user-label-2 {
 }
 .content-header .breadcrumb {
   position: relative;
-  margin-top: 7px;
+  margin-top: 8px;
 }
 .content-header .breadcrumb:before {
   content: '';
@@ -1147,12 +1147,13 @@ input:checked + .checkbox label:before {
   box-shadow: none;
 }
 .box .box-lime .box-header {
-  padding: 10px 15px 6px;
+  padding: 10px 15px;
 }
 .box .box-lime .box-header .box-title {
   color: #ff5722;
   font-size: 14px;
   font-weight: bold;
+  margin: 0;
 }
 .box .box-gray {
   border: 1px solid #dfdfdf;
