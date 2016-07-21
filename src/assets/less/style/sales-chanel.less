@@ -18,7 +18,7 @@
 	}
 	.chanel-account-control {
 		color: rgba(255, 255, 255, 0.8);
-		span {	
+		span {
 			font-size: 13px;
 			font-weight: lighter;
 			border-bottom: solid 1px rgba(255, 255, 255, 0.8);
@@ -27,7 +27,7 @@
 		}
 		&:hover {
 			color: rgba(255, 255, 255, 1);
-			span {	
+			span {
 				border-bottom: solid 1px transparent;
 			}
 		}
@@ -154,7 +154,7 @@
 .st-select-box {
 	width: 100%;
 	margin: 5px 0;
-	li {	
+	li {
 		padding: 0;
 		.checkbox {
 			padding: 5px 0;
@@ -178,8 +178,160 @@
 		padding-right: 0;
 	}
 }
-.st-product-form-row {
-	>div {
-		padding-left: 35px;
-	}
+
+//fanpage-setting
+.fanpage-setting {
+  .box {
+    .box-lime {
+      padding-bottom: 0;
+      margin-bottom: 15px;
+    }
+  }
+}
+.setting-box {
+  padding: 0 15px;
+}
+.fanpage-control,
+.fanpage-review {
+  .radio,
+  .checkbox {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    label {
+      color: @black;
+    }
+  }
+}
+.setting-form-control:checked ~ .rp-arrow {
+  display: block;
+  left: 65px;
+  top: 100%;
+  margin-top: 25px;
+}
+.setting-form-wrap {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  .report-title {
+    div {
+      width: auto;
+      display: inline-block;
+    }
+  }
+  h4 {
+    &.report-title {
+      font-size: 14px;
+      font-weight: bold;
+    }
+  }
+  .products-list {
+    li {
+      > div {
+        background-color: #fff;
+      }
+    }
+  }
+  .st-select-toggle {
+    border-color: transparent;
+    .filter-option {
+      color: @light-gray;
+      font-style: italic;
+    }
+  }
+  .st-label {
+    margin-top: 10px;
+  }
+}
+.fb-link {
+  float: right;
+  color: @gray-text;
+  font-size: 14px;
+  line-height: 18px;
+  &:hover {
+    color: @lime;
+  }
+}
+.setting-fanpage-info {
+  border-bottom: 1px solid #fff;
+  > p {
+    margin-bottom: 25px;
+  }
+  .col-md-6 {
+    &:last-child {
+      border-left: @box-border;
+    }
+    &:first-child {
+      .list-group-noline {
+        margin-top: 0;
+      }
+    }
+    p {
+      i {
+        font-style: normal;
+      }
+    }
+  }
+  .list-group-noline,
+  p {
+    width: 100%;
+    float: left;
+  }
+  .form-control {
+    border-color: transparent;
+  }
+  .sales-chanel-setting-group {
+    .control-label {
+      width: 145px;
+      padding-top: 0;
+    }
+    li {
+      &:before {
+        top: 8px;
+      }
+    }
+  }
+}
+.setting-form {
+  width: 100%;
+  min-height: 355px;
+  background-color: @gray-bg;
+  border-radius: 3px;
+}
+.setting-form-db {
+  display: none;
+}
+.setting-content {
+  width: 100%;
+  padding: 20px;
+  color: @black;
+}
+.non-setting {
+  span {
+    color: @gray-text;
+    font-style: italic;
+    text-decoration: underline;
+  }
+  &:hover {
+    color: @lime !important;
+    span {
+      color: @lime !important;
+    }
+  }
+}
+.fanpage-setting {
+  .setting-form {
+    background-color: transparent;
+    border:@box-border;
+  }
+  .report-title {
+    border-bottom: @box-border;
+  }
+}
+.review-title {
+  color: #ff5722;
+  font-size: 14px;
+  font-weight: bold;
+  margin: 0;
+  border-top: @box-border;
+  border-bottom: @box-border;
+  padding: 20px;
 }

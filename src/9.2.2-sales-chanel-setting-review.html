@@ -2,7 +2,7 @@
 {% block page-container %}
 {% include "_shop-setting-header.html" %}
 <main class="sales-chanel fanpage-setting">
-	<div class="container">
+  <div class="container">
     <div class="row">
       <div class="box">
         <div class="box-header with-border">
@@ -16,39 +16,40 @@
             </div>
             <div class="setting-box">
               <!--fanpage-control-->
-              <div class="row fanpage-control">
+              <div class="row fanpage-review">
                 <div class="col-xs-4">
-                  <div class="radio">
+                  <div class="checkbox">
                     <label>
-                      <input type="radio" name="optionsRadios" class="setting-form-control">
+                      <input type="checkbox" name="optionscheckboxs" class="">
                       Fanpage Facebook 1
-                      <span class="rp-arrow"></span>
                     </label>
                   </div>
                 </div>
                 <div class="col-xs-4">
-                  <div class="radio">
+                  <div class="checkbox">
                     <label>
-                      <input type="radio" name="optionsRadios" class="setting-form-control">
+                      <input type="checkbox" name="optionscheckboxs" class="">
                       Fanpage Facebook 2
-                      <span class="rp-arrow"></span>
                     </label>
                   </div>
                 </div>
                 <div class="col-xs-4">
-                  <div class="radio">
-                    <label>
-                      <input type="radio" name="optionsRadios" class="setting-form-control">
+                  <div class="checkbox">
+                    <label class="non-setting" onclick="location.href='9.2-sales-chanel-setting.html'">
+                      <input type="checkbox" name="optionscheckboxs" class="">
                       Fanpage Facebook 3
-                      <span class="rp-arrow"></span>
+                      <span>(Chưa được cấu hình)</span>
                     </label>
                   </div>
                 </div>
               </div><!--/.fanpage-control-->
+            </div>
+          </div>
 
-              <!--fanpage-setting-content-->
+          <!--fanpage-review-->
+          <!--fanpage-setting-content-->
               <div class="setting-form-wrap">
-                <div class="setting-form setting-form-db">
+                <div class="setting-form">
                   <h3 class="report-title">
                     <div>Fanpage: <span class="lime-highlight">Tên Fanpage 1</span></div>
                     <a class="fb-link" href="#" target="_blank">Xem cửa hàng trên Facebook store</a>
@@ -61,7 +62,7 @@
                           <li class="form-group">
                             <label class="col-xs-2 control-label">Tiêu đề Tab </label>
                             <div class="col-sm-8">
-                              <input type="text" class="form-control" id="" placeholder="Nhập tiêu đề Tab">
+                            <label class="tab-title">Khuyến mãi giá sốc</label>
                             </div>
                           </li>
                           <li class="form-group">
@@ -69,10 +70,8 @@
                             <div class="col-sm-8">
                               <div class="product-img-thumb tab-img-upload">
                                 <div class="img-box">
-                                  <!--<img src="assets/images/myface.png" alt="myface" title="up hình sản phẩm">-->
-                                  <input class="upload-btn" id="upload-img-btn" type="file" accept="image/*" title="up hình ảnh đại diện Tab">
+                                  <img src="assets/images/myface.png" alt="myface" title="up hình sản phẩm">
                                 </div>
-                                <a href="#" class="close img-remove-btn" title="xóa ảnh"><i class="fa fa-trash-o"></i></a>
                               </div>
                             </div>
                           </li>
@@ -88,10 +87,8 @@
                             <div class="col-sm-8">
                               <div class="product-img-thumb banner-img-upload">
                                 <div class="img-box">
-                                  <!--<img src="assets/images/myface.png" alt="myface" title="up hình sản phẩm">-->
-                                  <input class="upload-btn" id="upload-img-btn" type="file" name="pic" accept="image/*" title="up hình sản phẩm">
+                                  <img src="assets/images/myface.png" alt="myface" title="up hình sản phẩm">
                                 </div>
-                                <a href="#" class="close img-remove-btn" title="xóa ảnh"><i class="fa fa-trash-o"></i></a>
                               </div>
                             </div>
                           </li>
@@ -99,61 +96,42 @@
                       </div>
                     </div>
                   </div>
-                  <h4 class="report-title">
-                    <span class="lime-highlight">Chọn sản phẩm bán trên Fanpage này:</span>
+                  <h4 class="review-title">
+                    <span class="lime-highlight">Danh sách sản phẩm</span>
                   </h4>
                   <div class="setting-content setting-product">
-                    <div class="st-product-form-group">
-                      <div class="row">
-                        <div class="col-md-2">
-                          <label class="st-label">Sản phẩm</label>
-                        </div>
-                        <div class="col-md-4">
-                          <div class="st-product-form-group">
-                            <select id="" class="st-select-box st-select-product" data-style="st-select-toggle" data-live-search="true" multiple title='Chọn sản phẩm' >
-                              <option value="">Combo 2 Hộp Sữa Bột Ensure Gold Acti M2 400g</option>
-                              <option value="">Combo 2 Hộp Sữa Bột Ensure Gold Acti M2 400g</option>
-                              <option value="">Combo 2 Hộp Sữa Bột Ensure Gold Acti M2 400g</option>
-                              <option value="">Combo 2 Hộp Sữa Bột Ensure Gold Acti M2 400g</option>
-                            </select>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <!--sản phẩm được chọn-->
-                    <div class="st-product-form-row">
-                      <div class="row">
-                        <div class="col-md-8 col-md-offset-2">
-                          <label class="st-group-label">Sản phẩm bạn đã chọn:</label>
-                          <ul class=" row products-list st-product-list slimscroll297">
-                            {% for x in [1,2,3,4,5,6,7]%}
-                            <li class="item col-sm-6">
-                              <div class="product-item-inner">
-                                <div class="product-img">
-                                    <img src="assets/images/product/product-1.jpg" alt="myface">
-                                </div>
-                                <div class="product-info">
-                                  <span class="product-title">Combo 2 Hộp Sữa Bột Ensure Gold Acti M2 400g</span>
-                                </div>
-                              </div>
-                              <button type="button" class="close">
-                                <i class="fa fa-times"></i>
-                              </button>
-                            </li>
-                            <!-- /.item -->
-                            {% endfor %}
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
+                    <table class="table table-striped">
+                      <thead>
+                        <tr>
+                          <th class="col-md-1">ID</th>
+                          <th class="col-md-3">Tên danh mục</th>
+                          <th class="col-md-3">Ngành hàng</th>
+                          <th class="col-md-3">Trạng thái</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        {% for x in [1,2,3,4,5,6]%}
+                        <tr>
+                          <td>169</td>
+                          <td><a href="2.2-create-category.html" class="cate-name">Tai Nghe Bluetooth</a></td>
+                          <td>Thiết bị số</td>
+                          <td><a href="#" class="active" data-toggle="modal" data-target="#nontifi-modal">Kích hoạt</a></td>
+                        </tr>
+                        <tr>
+                          <td>269</td>
+                          <td><a href="2.2-create-category.html" class="cate-name">Sơ mi nam</a></td>
+                          <td>Thời trang nam</td>
+                          <td><a href="#" class="deactive" data-toggle="modal" data-target="#nontifi-modal">Chưa kích hoạt</a></td>
+                        </tr>
+                        {% endfor %}
+                      </tbody>
+                    </table>
                   </div>
                   <div class="setting-content clearfix">
                     <input type="button" class="btn btn-lime pull-right" value="Kích hoạt và lưu kết nối Facebook" onclick="location.href='9.2.2-sales-chanel-setting-review.html'">
                   </div>
                 </div><!--/.report-form-1-->
               </div> <!--fanpage-setting-content-->
-            </div>
-          </div>
         </div>
         <!-- /.box-body -->
       </div>

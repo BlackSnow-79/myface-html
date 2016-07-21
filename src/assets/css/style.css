@@ -6114,8 +6114,136 @@ main {
   width: 19%;
   padding-right: 0;
 }
-.st-product-form-row > div {
-  padding-left: 35px;
+.fanpage-setting .box .box-lime {
+  padding-bottom: 0;
+  margin-bottom: 15px;
+}
+.setting-box {
+  padding: 0 15px;
+}
+.fanpage-control .radio,
+.fanpage-review .radio,
+.fanpage-control .checkbox,
+.fanpage-review .checkbox {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.fanpage-control .radio label,
+.fanpage-review .radio label,
+.fanpage-control .checkbox label,
+.fanpage-review .checkbox label {
+  color: #212121;
+}
+.setting-form-control:checked ~ .rp-arrow {
+  display: block;
+  left: 65px;
+  top: 100%;
+  margin-top: 25px;
+}
+.setting-form-wrap {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.setting-form-wrap .report-title div {
+  width: auto;
+  display: inline-block;
+}
+.setting-form-wrap h4.report-title {
+  font-size: 14px;
+  font-weight: bold;
+}
+.setting-form-wrap .products-list li > div {
+  background-color: #fff;
+}
+.setting-form-wrap .st-select-toggle {
+  border-color: transparent;
+}
+.setting-form-wrap .st-select-toggle .filter-option {
+  color: #b6b6b6;
+  font-style: italic;
+}
+.setting-form-wrap .st-label {
+  margin-top: 10px;
+}
+.fb-link {
+  float: right;
+  color: #727272;
+  font-size: 14px;
+  line-height: 18px;
+}
+.fb-link:hover {
+  color: #ff5722;
+}
+.setting-fanpage-info {
+  border-bottom: 1px solid #fff;
+}
+.setting-fanpage-info > p {
+  margin-bottom: 25px;
+}
+.setting-fanpage-info .col-md-6:last-child {
+  border-left: 1px solid #dfdfdf;
+}
+.setting-fanpage-info .col-md-6:first-child .list-group-noline {
+  margin-top: 0;
+}
+.setting-fanpage-info .col-md-6 p i {
+  font-style: normal;
+}
+.setting-fanpage-info .list-group-noline,
+.setting-fanpage-info p {
+  width: 100%;
+  float: left;
+}
+.setting-fanpage-info .form-control {
+  border-color: transparent;
+}
+.setting-fanpage-info .sales-chanel-setting-group .control-label {
+  width: 145px;
+  padding-top: 0;
+}
+.setting-fanpage-info .sales-chanel-setting-group li:before {
+  top: 8px;
+}
+.setting-form {
+  width: 100%;
+  min-height: 355px;
+  background-color: #ebebeb;
+  border-radius: 3px;
+}
+.setting-form-db {
+  display: none;
+}
+.setting-content {
+  width: 100%;
+  padding: 20px;
+  color: #212121;
+}
+.non-setting span {
+  color: #727272;
+  font-style: italic;
+  text-decoration: underline;
+}
+.non-setting:hover {
+  color: #ff5722 !important;
+}
+.non-setting:hover span {
+  color: #ff5722 !important;
+}
+.fanpage-setting .setting-form {
+  background-color: transparent;
+  border: 1px solid #dfdfdf;
+}
+.fanpage-setting .report-title {
+  border-bottom: 1px solid #dfdfdf;
+}
+.review-title {
+  color: #ff5722;
+  font-size: 14px;
+  font-weight: bold;
+  margin: 0;
+  border-top: 1px solid #dfdfdf;
+  border-bottom: 1px solid #dfdfdf;
+  padding: 20px;
 }
 .promotion-form {
   width: 100%;

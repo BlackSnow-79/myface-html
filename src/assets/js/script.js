@@ -180,6 +180,13 @@ $(document).ready(function() {
   $(".name-store").keyup(function() {
     $('.link-shop-text').text($('.name-store').val());
   });
+  //fanpage-setting
+  $(function () {
+    $( '.setting-form-control').click(function() {
+      $( ".setting-form-db" ).show('fast');
+    });
+  });
+
 	// Modal
   (function ($) {
     "use strict";
