@@ -1,7 +1,7 @@
 {% extends "_layout.html" %}
 {% block page-container %}
 {% include "_shop-setting-header.html" %}
-<main class="sales-chanel fanpage-setting">
+<main class="sales-chanel fanpage-review">
   <div class="container">
     <div class="row">
       <div class="box">
@@ -20,7 +20,7 @@
                 <div class="col-xs-4">
                   <div class="checkbox">
                     <label>
-                      <input type="checkbox" name="optionscheckboxs" class="">
+                      <input type="checkbox" name="optionscheckboxs" class="" checked="">
                       Fanpage Facebook 1
                     </label>
                   </div>
@@ -28,7 +28,7 @@
                 <div class="col-xs-4">
                   <div class="checkbox">
                     <label>
-                      <input type="checkbox" name="optionscheckboxs" class="">
+                      <input type="checkbox" name="optionscheckboxs" class="" checked="">
                       Fanpage Facebook 2
                     </label>
                   </div>
@@ -48,90 +48,107 @@
 
           <!--fanpage-review-->
           <!--fanpage-setting-content-->
-              <div class="setting-form-wrap">
-                <div class="setting-form">
-                  <h3 class="report-title">
-                    <div>Fanpage: <span class="lime-highlight">Tên Fanpage 1</span></div>
-                    <a class="fb-link" href="#" target="_blank">Xem cửa hàng trên Facebook store</a>
-                  </h3>
-                  <div class="setting-content setting-fanpage-info">
-                    <p>Cửa hàng của bạn trên Facebook sẽ được hiển thị dưới dạng 1 Tab. Hãy tùy chỉnh tiêu đề và ảnh cho Tab này. </p>
-                    <div class="row">
-                      <div class="col-md-6">
-                        <ul class="list-group-noline sales-chanel-setting-group">
-                          <li class="form-group">
-                            <label class="col-xs-2 control-label">Tiêu đề Tab </label>
-                            <div class="col-sm-8">
-                            <label class="tab-title">Khuyến mãi giá sốc</label>
+          <div class="setting-form-wrap">
+            {% for x in [1,2]%}
+            <div class="setting-form">
+              <h3 class="report-title">
+                <div>Fanpage: <span class="lime-highlight">Tên Fanpage 1</span></div>
+                <a class="fb-link" href="#" target="_blank">Xem cửa hàng trên Facebook store</a>
+              </h3>
+              <div class="setting-content setting-fanpage-info">
+                <p>Cửa hàng của bạn trên Facebook sẽ được hiển thị dưới dạng 1 Tab. Hãy tùy chỉnh tiêu đề và ảnh cho Tab này. </p>
+                <div class="row">
+                  <div class="col-md-6">
+                    <ul class="list-group-noline sales-chanel-setting-group">
+                      <li class="form-group">
+                        <label class="col-xs-2 control-label">Tiêu đề Tab </label>
+                        <div class="col-sm-8">
+                        <label class="tab-title">Khuyến mãi giá sốc</label>
+                        </div>
+                      </li>
+                      <li class="form-group">
+                        <label class="col-xs-2 control-label">Ảnh đại diện Tab</label>
+                        <div class="col-sm-8">
+                          <div class="product-img-thumb tab-img-upload">
+                            <div class="img-box">
+                              <img src="assets/images/myface.png" alt="myface" title="up hình sản phẩm">
                             </div>
-                          </li>
-                          <li class="form-group">
-                            <label class="col-xs-2 control-label">Ảnh đại diện Tab</label>
-                            <div class="col-sm-8">
-                              <div class="product-img-thumb tab-img-upload">
-                                <div class="img-box">
-                                  <img src="assets/images/myface.png" alt="myface" title="up hình sản phẩm">
-                                </div>
-                              </div>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                    <p><i>(Kích cỡ hình ảnh lớn hơn 111x74 pixel sẽ được tự động điều chỉnh lại cho phù hợp)</i></p>
+                  </div>
+                  <div class="col-md-6">
+                    <p>Tải hình ảnh banner cho cửa hàng của bạn.</p>
+                    <p><i>(Kích cỡ hình ảnh lớn hơn 808x200 pixel sẽ được tự động điều chỉnh lại cho phù hợp)</i></p>
+                    <ul class="list-group-noline sales-chanel-setting-group">
+                      <li class="form-group">
+                        <label class="col-xs-2 control-label">Ảnh banner Tab</label>
+                        <div class="col-sm-8">
+                          <div class="product-img-thumb banner-img-upload">
+                            <div class="img-box">
+                              <img src="assets/images/myface.png" alt="myface" title="up hình sản phẩm">
                             </div>
-                          </li>
-                        </ul>
-                        <p><i>(Kích cỡ hình ảnh lớn hơn 111x74 pixel sẽ được tự động điều chỉnh lại cho phù hợp)</i></p>
-                      </div>
-                      <div class="col-md-6">
-                        <p>Tải hình ảnh banner cho cửa hàng của bạn.</p>
-                        <p><i>(Kích cỡ hình ảnh lớn hơn 808x200 pixel sẽ được tự động điều chỉnh lại cho phù hợp)</i></p>
-                        <ul class="list-group-noline sales-chanel-setting-group">
-                          <li class="form-group">
-                            <label class="col-xs-2 control-label">Ảnh banner Tab</label>
-                            <div class="col-sm-8">
-                              <div class="product-img-thumb banner-img-upload">
-                                <div class="img-box">
-                                  <img src="assets/images/myface.png" alt="myface" title="up hình sản phẩm">
-                                </div>
-                              </div>
-                            </div>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
                   </div>
-                  <h4 class="review-title">
-                    <span class="lime-highlight">Danh sách sản phẩm</span>
-                  </h4>
-                  <div class="setting-content setting-product">
-                    <table class="table table-striped">
-                      <thead>
-                        <tr>
-                          <th class="col-md-1">ID</th>
-                          <th class="col-md-3">Tên danh mục</th>
-                          <th class="col-md-3">Ngành hàng</th>
-                          <th class="col-md-3">Trạng thái</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        {% for x in [1,2,3,4,5,6]%}
-                        <tr>
-                          <td>169</td>
-                          <td><a href="2.2-create-category.html" class="cate-name">Tai Nghe Bluetooth</a></td>
-                          <td>Thiết bị số</td>
-                          <td><a href="#" class="active" data-toggle="modal" data-target="#nontifi-modal">Kích hoạt</a></td>
-                        </tr>
-                        <tr>
-                          <td>269</td>
-                          <td><a href="2.2-create-category.html" class="cate-name">Sơ mi nam</a></td>
-                          <td>Thời trang nam</td>
-                          <td><a href="#" class="deactive" data-toggle="modal" data-target="#nontifi-modal">Chưa kích hoạt</a></td>
-                        </tr>
-                        {% endfor %}
-                      </tbody>
-                    </table>
-                  </div>
-                  <div class="setting-content clearfix">
-                    <input type="button" class="btn btn-lime pull-right" value="Kích hoạt và lưu kết nối Facebook" onclick="location.href='9.2.2-sales-chanel-setting-review.html'">
-                  </div>
-                </div><!--/.report-form-1-->
-              </div> <!--fanpage-setting-content-->
+                </div>
+              </div>
+              <h4 class="review-title">
+                <span class="lime-highlight">Danh sách sản phẩm</span>
+              </h4>
+              <div class="setting-content setting-product">
+                <table class="table table-striped review-table">
+                  <thead>
+                    <tr>
+                      <th class="col-md-1">STT</th>
+                      <th class="col-md-5">Tên sản phẩm</th>
+                      <th class="col-md-4">Giá bán</th>
+                      <th class="col-md-2">Số lượng</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {% for x in [1,2,3,4,5]%}
+                    <tr>
+                      <td>1</td>
+                      <td class="item">
+                        <div class="product-item-inner">
+                          <div class="product-img">
+                            <img src="assets/images/product/product-1.jpg" alt="myface">
+                          </div>
+                          <div class="product-info">
+                            <span class="product-title">Áo thun nam Armani Exchange</span>
+                          </div>
+                        </div>
+                      </td>
+                      <td>500,000 VND</td>
+                      <td>15 cái</td>
+                    </tr>
+                    {% endfor %}
+                  </tbody>
+                </table>
+              </div>
+              <h4 class="review-title">
+                <label class="lime-highlight">Tổng sản phẩm: <span>5</span></label>
+                <div class="st-pagi">
+                  <ul class="pagination pagination-sm no-margin">
+                    <li><a href="#" class="first"><i class="fa fa-step-backward"></i></a></li>
+                    <li><a href="#" class="prev">Trước</a></li>
+                    <li><span class="current-pages">Trang 1/1623</span></li>
+                    <li><a href="#" class="next">Sau</a></li>
+                    <li><a href="#" class="last"><i class="fa fa-step-forward"></i></a></li>
+                  </ul>                  
+                </div>
+              </h4>
+              <div class="setting-content clearfix">
+                <a href="9.2-sales-chanel-setting.html" class="btn btn-lime pull-right">Cập nhật danh sách sản phẩm & thông tin trên store</a>
+              </div>
+            </div><!--/.setting-form-->
+            {% endfor %}
+          </div> <!--fanpage-setting-content-->
         </div>
         <!-- /.box-body -->
       </div>

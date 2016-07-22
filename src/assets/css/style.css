@@ -6229,11 +6229,15 @@ main {
 .non-setting:hover span {
   color: #ff5722 !important;
 }
-.fanpage-setting .setting-form {
+.fanpage-review .setting-form {
   background-color: transparent;
   border: 1px solid #dfdfdf;
+  margin-top: 20px;
 }
-.fanpage-setting .report-title {
+.fanpage-review .setting-form:first-child {
+  margin-top: 0;
+}
+.fanpage-review .report-title {
   border-bottom: 1px solid #dfdfdf;
 }
 .review-title {
@@ -6244,6 +6248,43 @@ main {
   border-top: 1px solid #dfdfdf;
   border-bottom: 1px solid #dfdfdf;
   padding: 20px;
+}
+.review-title label.lime-highlight {
+  margin-bottom: 0;
+}
+.st-pagi {
+  float: right;
+  margin-top: -6px;
+}
+.review-table .product-item-inner {
+  display: table-row;
+}
+.review-table .product-img {
+  display: table-cell;
+}
+.review-table .product-img img {
+  width: 60px;
+  height: 40px;
+}
+.review-table .product-info {
+  display: table-cell;
+  padding-left: 20px;
+}
+.review-table > thead > tr > th,
+.review-table > tbody > tr > th,
+.review-table > tfoot > tr > th {
+  padding: 20px 15px;
+  border-left: 1px solid #fff;
+}
+.review-table > thead > tr > th:first-child,
+.review-table > tbody > tr > th:first-child,
+.review-table > tfoot > tr > th:first-child {
+  border-left: 0;
+}
+.review-table > thead > tr > td,
+.review-table > tbody > tr > td,
+.review-table > tfoot > tr > td {
+  padding: 10px 15px;
 }
 .promotion-form {
   width: 100%;

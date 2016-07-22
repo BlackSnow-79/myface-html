@@ -317,13 +317,17 @@
     }
   }
 }
-.fanpage-setting {
+.fanpage-review {
   .setting-form {
     background-color: transparent;
     border:@box-border;
+    margin-top: 20px;
+    &:first-child {
+      margin-top: 0;
+    }
   }
   .report-title {
-    border-bottom: @box-border;
+    border-bottom: @box-border;    
   }
 }
 .review-title {
@@ -334,4 +338,43 @@
   border-top: @box-border;
   border-bottom: @box-border;
   padding: 20px;
+  label.lime-highlight {
+    margin-bottom: 0;
+  }
+}
+.st-pagi {
+  float: right;
+  margin-top: -6px;
+}
+.review-table {
+  .product-item-inner {
+    display: table-row;
+  }
+  .product-img {
+    display: table-cell;
+    img {
+      width: 60px;
+      height: 40px;
+    }
+  }
+  .product-info {
+    display: table-cell;
+    padding-left: 20px;
+  }
+  > thead,
+  > tbody,
+  > tfoot {
+    > tr {
+      > th {
+        padding: 20px 15px;
+        border-left: 1px solid #fff;
+        &:first-child {
+          border-left: 0;
+        }
+      }
+      > td {
+        padding: 10px 15px;
+      }
+    }
+  }
 }
