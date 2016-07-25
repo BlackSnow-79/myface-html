@@ -5980,7 +5980,7 @@ main {
 .tab-img-upload {
   width: 111px;
   height: 74px;
-  background-color: #ffc600;
+  background: url('../images/icon/upload-1.jpg') center no-repeat;
   border-radius: 3px;
 }
 .tab-img-upload .img-box {
@@ -5995,11 +5995,11 @@ main {
 }
 .banner-img-upload {
   width: 111px;
-  background-color: #ffc600;
+  background: url('../images/icon/upload-1.jpg') center no-repeat;
   border-radius: 3px;
   width: 300px;
   height: 74px;
-  background-color: #2bc5f8;
+  background: url('../images/icon/upload-2.jpg') center no-repeat;
 }
 .banner-img-upload .img-box {
   width: 100%;
@@ -6186,9 +6186,6 @@ main {
 .setting-fanpage-info .col-md-6:first-child .list-group-noline {
   margin-top: 0;
 }
-.setting-fanpage-info .col-md-6 p i {
-  font-style: normal;
-}
 .setting-fanpage-info .list-group-noline,
 .setting-fanpage-info p {
   width: 100%;
@@ -6285,6 +6282,67 @@ main {
 .review-table > tbody > tr > td,
 .review-table > tfoot > tr > td {
   padding: 10px 15px;
+}
+.chosen-chanel .box.box-lime {
+  padding-bottom: 0;
+}
+.chosen-chanel .box-body {
+  padding: 15px;
+}
+.chosen-chanel .chanel-label {
+  color: #212121;
+}
+.chosen-chanel .col-md-4:first-child {
+  border-left: 0;
+}
+.fanpage-list {
+  list-style: none;
+  padding-left: 25px;
+}
+.date-picker-group.col-md-6.form-group {
+  padding: 0;
+  margin-left: 15px;
+}
+.alert-chanel-modal {
+  color: #212121;
+}
+.alert-chanel-modal .chanel-md-title {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.alert-chanel-modal .modal-body {
+  padding: 0;
+}
+.alert-chanel-modal .chanel-label {
+  margin-bottom: 0;
+}
+.alert-chanel-modal .list-group-noline.fanpage-list {
+  margin-top: 0;
+}
+.alert-chanel-modal .list-group-noline.fanpage-list li {
+  padding-left: 10px;
+  padding-bottom: 0;
+}
+.alert-chanel-modal .list-group-noline.fanpage-list li:before {
+  font-size: 4px;
+  color: #212121;
+}
+.chanel-row {
+  width: 100%;
+  border-bottom: 1px solid #dfdfdf;
+  padding: 15px;
+}
+.hd-link {
+  border-bottom: 0;
+}
+.hd-link a {
+  font-weight: bold;
+  color: #ff5722;
+  text-decoration: underline;
+}
+.hd-link a:hover {
+  color: #FF851B;
+  text-decoration: none;
 }
 .promotion-form {
   width: 100%;
