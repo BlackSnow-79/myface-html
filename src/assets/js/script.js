@@ -49,18 +49,6 @@ $(document).ready(function() {
   }
   radioControlform('.promotion-form-control');
 
-  // register form
-  /*$(function () {
-    $( '#step-2-btn').click(function(e) {
-      $( "#step-1-f" ).hide('fast');
-      $( "#step-2-f" ).show('slow');
-    });
-    $( '#step-1-btn').click(function(e) {
-      $( "#step-2-f" ).hide('fast');
-      $( "#step-1-f" ).show('fast');
-    });
-  });*/
-
   // add item-active for inbox-list
   $(function () {
     $( '.fb-chat-list li.item').click(function(e) {
@@ -179,12 +167,6 @@ $(document).ready(function() {
   //link-shop
   $(".name-store").keyup(function() {
     $('.link-shop-text').text($('.name-store').val());
-  });
-  //fanpage-setting
-  $(function () {
-    $( '.setting-form-control').click(function() {
-      $( ".setting-form-db" ).show('fast');
-    });
   });
 
 	// Modal

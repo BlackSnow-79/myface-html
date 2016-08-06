@@ -4806,6 +4806,7 @@ main {
   z-index: 9;
   width: 100%;
   height: 100%;
+  cursor: pointer;
 }
 .noted {
   font-size: 11px;
@@ -6121,24 +6122,22 @@ main {
 .setting-box {
   padding: 0 15px;
 }
+.fanpage-control {
+  margin-top: 10px;
+}
 .fanpage-control .radio,
-.fanpage-review .radio,
+.fanpage-review .radio {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
 .fanpage-control .checkbox,
 .fanpage-review .checkbox {
   margin-top: 20px;
   margin-bottom: 20px;
 }
-.fanpage-control .radio label,
-.fanpage-review .radio label,
 .fanpage-control .checkbox label,
 .fanpage-review .checkbox label {
   color: #212121;
-}
-.setting-form-control:checked ~ .rp-arrow {
-  display: block;
-  left: 65px;
-  top: 100%;
-  margin-top: 25px;
 }
 .setting-form-wrap {
   margin-top: 15px;
