@@ -6214,6 +6214,29 @@ main {
   padding: 20px;
   color: #212121;
 }
+.setting-content .lime-highlight {
+  font-family: 'robotoregular', Helvetica, Arial, sans-serif;
+  margin-bottom: 0;
+  font-size: 14px;
+  line-height: 34px;
+}
+.setting-product {
+  border-bottom: 1px solid #dfdfdf;
+  max-height: 725px;
+  overflow-y: auto;
+}
+.setting-product::-webkit-scrollbar {
+  width: 5px;
+}
+.setting-product::-webkit-scrollbar-track {
+  height: 100px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+.setting-product::-webkit-scrollbar-thumb {
+  background-color: #949393;
+  border-radius: 7px;
+  outline: 1px solid slategrey;
+}
 .non-setting span {
   color: #727272;
   font-style: italic;
