@@ -1,0 +1,61 @@
+{% set current_page = 'auto-reply' %}
+{% extends "_layout.html" %}
+{% block page-container %}
+{% include "_shop-setting-header.html" %}
+<main class="auto-reply">
+  <div class="container">
+    <div class="row">
+      <div class="box">
+        <div class="box-header with-border">
+          <h3 class="box-title">Trả lời tự động</h3>
+        </div>
+        <!-- /.box-header -->
+        <div class="box-body">
+          <div class="row">
+            <div class="col-md-6 sale-chanel-col">
+              <div class="box box-lime">
+                <div class="box-header with-border">
+                  <h4 class="box-title">Kết nối tài khoản Facebook</h4>
+                </div>
+                <!-- /.box-header -->
+                <div class="box-body">
+                  <div class="row sale-chanel-info-col">
+                    <div class="sale-chanel-img">
+                      <img src="assets/images/chanel/fb.jpg" alt="myface" class="img-responsive">
+                    </div>
+                    <div class="sale-chanel-info">
+                      <a href="12.2-auto-reply-setting.html" class="btn btn-lime">Cài đặt Facebook</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- /.box -->
+            </div>
+
+            <div class="col-md-6 sale-chanel-col">
+              <div class="box box-lime">
+                <div class="box-header with-border">
+                  <h4 class="box-title">Kết nối tài khoản Zalo</h4>
+                </div>
+                <!-- /.box-header -->
+                <div class="box-body">
+                  <div class="row sale-chanel-info-col">
+                    <div class="sale-chanel-img">
+                      <img src="assets/images/chanel/zalo-logo.jpg" alt="myface" class="img-responsive">
+                    </div>
+                    <div class="sale-chanel-info">
+                      <a href="12.2-auto-reply-setting.html" class="btn btn-lime">Cài đặt Zalo</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- /.box -->
+            </div>
+          </div>
+        </div>
+        <!-- /.box-body -->
+      </div>
+    </div>
+  </div>
+</main>
+{% endblock %}

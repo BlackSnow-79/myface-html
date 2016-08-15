@@ -2,13 +2,7 @@
 {% block page-container %}
 <section class="content-header" id="content-header">
   <div class="container">
-    <div class="row">
-      <h1 class="page-title">Đơn hàng</h1>
-      <ol class="breadcrumb">
-        <li><a href="4.1-invoice-list.html" class="active">Xem đơn hàng</a></li>
-        <li><a href="4.4-invoice-help.html">Yêu cầu hỗ trợ đơn hàng</a></li>
-      </ol>
-    </div>
+    {% include "_invoice-header.html" %}
   </div>
 </section>
 <main>
@@ -24,7 +18,7 @@
             <a href="4.3.1-invoice-detail-edit-1.html" class="btn btn-lime">In đơn hàng</a>
             <a href="4.3.1-invoice-detail-edit-1.html" class="btn btn-lime">Sửa đơn hàng</a>
           </div>
-          
+
           <!--progress-row-->
           <div class="progress-row">
             <div class="progress-row-content">
@@ -34,7 +28,7 @@
               </a>
               <div class="progress sm progress-light-blue">
                 <div class="progress-bar progress-bar-lightblue"></div>
-              </div>  
+              </div>
               <a href="4.3.2-invoice-detail-edit-2.html" class="progress-link activeted">
                 <span class="label label-default">2</span>
                 <p>Thông tin giao hàng</p>
@@ -266,7 +260,7 @@
                         </div>
                         <input type="submit" id="insert-btn-active" class="col-xs-2 btn btn-lime" value="Thêm">
                       </div>
-                    </div> 
+                    </div>
                   </div><!--/.insert-product-content-->
 
                 </div>

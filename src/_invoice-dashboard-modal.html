@@ -61,28 +61,132 @@
           </table>
         </div>
         <div class="clearfix">
-          <label>2. Phương thức thanh toán:</label>
-          <div class="radio">
-            <label class="radio-material-blue">
-              <input type="radio" name="address" id="" value="" checked=""><span class="circle"></span><span class="check">Thanh toán khi giao hàng</span>                               
-            </label>
-          </div>
-          <div class="radio">
-            <label class="radio-material-blue">
-              <input type="radio" name="address" id="" value="" checked=""><span class="circle"></span><span class="check">Thanh toán online (internet banking)</span>                               
-            </label>
+          <label>2. Chọn địa điểm lấy hàng(sản phẩm):</label>
+          <div class="col-md-12 address-get-product">
+            <div class="radio">
+              <label class="radio-material-blue">
+                <input checked="checked" name="shop_address" type="radio" value="118"> Địa chỉ 1 : Taodan, Số 121/11, Đường Hưng Phú, Phường Mỹ Quý, Thành Phố Long Xuyên, Tỉnh An Giang
+              </label>
+            </div>
+            <div class="radio">
+              <label class="radio-material-blue">
+                <input checked="checked" name="shop_address" type="radio" value="118"> Địa chỉ 2 : Taodan, Số 122/11, Đường Hưng Phú, Phường Mỹ Quý, Thành Phố Long Xuyên, Tỉnh An Giang
+              </label>
+            </div>
           </div>
         </div>
         <div class="clearfix">
-          <label>3. Tổng tiền thanh toán:</label>
-          <div class="col-xs-12">
-            <h4 class="pull-right green-highlight">2.000.000<ins>đ</ins></h4>
+          <label>3. Phương thức thanh toán:</label>
+          <div class="form-horizontal ship-options">
+            <div class="radio">
+              <label class="radio-material-blue">
+                <input type="radio" id="radio_payment_1" checked="checked" name="payment_method" value="1">
+                <span class="check">1. Người mua hàng trả tiền sản phẩm + phí vận chuyển :</span>
+              </label>
+              <div class="form-horizontal invoice-promotion-box">
+                <div class="col-md-4">
+                  <label class="radio-material-blue">
+                    <input type="radio" name="" id="" value="">
+                    <span class="check">Tiết kiệm</span>
+                    <p class="lime-highlight">
+                      <strong id="strong_text_fee">13.000</strong>
+                      <ins> đ</ins>
+                    </p>
+                  </label>
+                </div>
+                <div class="col-md-4">
+                  <label class="radio-material-blue">
+                    <input type="radio" name="" id="" value="">
+                    <span class="check">Bình thường</span>
+                    <p class="lime-highlight">
+                      <strong id="strong_text_fee">19.000</strong>
+                      <ins> đ</ins>
+                    </p>
+                  </label>
+                </div>
+                <div class="col-md-4">
+                  <label class="radio-material-blue">
+                    <input type="radio" name="" id="" value="">
+                    <span class="check">Miễn phí vận chuyển</span>
+                  </label>
+                </div>
+                <div class="col-md-12">
+                  <label class="radio-material-blue">
+                    <input type="radio" name="" id="" value="">
+                    <span class="check">Tùy chỉnh</span>
+                  </label>
+                  <div class="custom-ship">
+                    <p class="color-label">VNĐ</p>
+                    <input type="number" class="form-control" id="" placeholder="Nhập số tiền muốn thu">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="radio">
+              <label class="radio-material-blue">
+                <input class="radio_payment" type="radio" id="radio_payment_2" name="payment_method" value="2">
+                <span class="check">2. Người mua hàng không trả tiền sản phẩm. Người mua hàng trả phí vận chuyển</span>
+              </label>
+              <div class="form-horizontal invoice-promotion-box">
+                <div class="col-md-4">
+                  <label class="radio-material-blue">
+                    <input type="radio" name="" id="" value="">
+                    <span class="check">Tiết kiệm</span>
+                    <p class="lime-highlight">
+                      <strong id="strong_text_fee">13.000</strong>
+                      <ins> đ</ins>
+                    </p>
+                  </label>
+                </div>
+                <div class="col-md-4">
+                  <label class="radio-material-blue">
+                    <input type="radio" name="" id="" value="">
+                    <span class="check">Bình thường</span>
+                    <p class="lime-highlight">
+                      <strong id="strong_text_fee">15.000</strong>
+                      <ins> đ</ins>
+                    </p>
+                  </label>
+                </div>
+                <div class="col-md-4">
+                  <label class="radio-material-blue">
+                    <input type="radio" name="" id="" value="">
+                    <span class="check">Hỏa tốc</span>
+                    <p class="lime-highlight">
+                      <strong id="strong_text_fee">27.000</strong>
+                      <ins> đ</ins>
+                    </p>
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="radio">
+              <label class="radio-material-blue">
+                <input class="radio_payment" type="radio" id="radio_payment_3" name="payment_method" value="3">
+                <span class="check">3. Người bán hàng đã thu tiền hàng. Người bán hàng trả phí vận chuyển</span>
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="clearfix">
+          <label>4. Cước vận chuyển (trả cho công ty vận chuyển):</label>
+          <div class="transport">
+            <div class="form-horizontal">
+              <div class="form-group">
+                <div class="col-xs-12">
+                  <span>Phương thức giao hàng:
+                    <strong>Hỏa tốc</strong>
+                  </span>
+                  <input readonly="" type="text" class="form-control" id="" placeholder="27.000">
+                  <p class="color-label">VND</p>
+                </div>
+              </div><!--/.form-group-->
+            </div>
           </div>
         </div>
       </div>
       <div class="modal-footer">
-        <input type="submit" class="btn btn-lime" value="Hoàn tất đơn hàng">
-        <a href="" class="btn btn-default">Đóng</a>
+        <input type="submit" class="btn btn-lime" value="Tiếp tục">
       </div>
     </div>
   <!-- /.modal-content -->

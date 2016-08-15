@@ -63,6 +63,13 @@ main {
   float: left;
   img {
     max-width: 100%;
+    max-height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
   }
   .img-box {
     overflow: hidden;
@@ -73,7 +80,7 @@ main {
   padding: 15px 7px;
   .img-box {
     width: 180px;
-    height: 180px;
+    height: 135px;
   }
   .lime-highlight {
     display: block;
@@ -85,7 +92,7 @@ main {
   padding: 0 10px;
   .img-box {
     width: 100px;
-    height: 100px;
+    height: 75px;
     margin: 5px;
   }
   label {
@@ -97,7 +104,7 @@ main {
 }
 .img-box {
   border-radius: @box-border-radius;
-  border: @box-border;
+  box-shadow: 0px 0px 0px 1px rgba(0,0,0,0.07);
   position: relative;
   float: left;
   span {
@@ -107,7 +114,7 @@ main {
     top: 0;
     left: 0;
     text-align: center;
-    font-size: 70px;
+    font-size: 54px;
     color: @gray-text;
   }
 }
@@ -375,8 +382,53 @@ main {
 }
 .invoice-promotion-box {
   padding-bottom: 15px;
+  padding-left: 0;
+  padding-right: 0;
   .radio {
     margin-bottom: 10px;
+  }
+  .label-wrap {
+    & + div {
+      padding-left: 5px;
+    }
+  }
+}
+.shipping {
+  color: @black;
+}
+.transport {
+  .form-control {
+    display: inline-block;
+    width: auto;
+  }
+}
+.ship-and-pay {
+  .invoice-promotion-box {
+    width: 100%;
+    float: left;
+    margin-top: 5px;
+    padding: 10px 15px;
+    background-color: @light-gray-bg;
+    border-radius: 3px;
+    .col-md-4,
+    .col-md-12 {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+  .radio {
+    float: left;
+  }
+  .lime-highlight {
+    margin-bottom: 0;
+  }
+}
+.custom-ship {
+  padding-left: 20px;
+  padding-right: 15px;
+  input {
+    width: auto;
+    display: inline-block;
   }
 }
 
@@ -385,4 +437,35 @@ main {
 }
 .img-remove-btn {
   z-index: 10;
+}
+#invoice-dashboard-modal {
+  .modal-body {
+    padding-bottom: 0;
+  }
+  .clearfix {
+    margin-bottom: 10px;
+  }
+  .invoice-promotion-box {
+    width: 100%;
+    margin: 5px 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    float: left;
+    background-color: #f0f1f3;
+    border-radius: 3px;
+  }
+  .radio {
+    float: left;
+  }
+  .transport {
+    padding-top: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .table {
+    margin-bottom: 0;
+  }
+  .ship-options {
+    padding: 0 15px;
+  }
 }

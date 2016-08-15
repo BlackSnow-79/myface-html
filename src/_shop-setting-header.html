@@ -3,11 +3,12 @@
     <div class="row">
       <h1 class="page-title">Cấu hình & quản lý tài khoản</h1>
       <ol class="breadcrumb">
-        <li><a href="7.1-shop-info.html" class="active">Thông tin chung & tài khoản</a></li>
+        <li><a href="7.1-shop-info.html" class="{% if current_page == 'shop-info' %}active{% endif %}">Thông tin chung & tài khoản</a></li>
         <li><a href="8-shop-transform.html">Vận chuyển</a></li>
         <li><a href="9.1-sales-chanel.html">Kênh bán hàng</a></li>
         <li><a href="10-promotion.html">Khuyến mãi</a></li>
         <li><a href="11-invisible-comment.html">Ẩn comments</a></li>
+        <li><a href="12.1-auto-reply.html" class="{% if current_page == 'auto-reply' %}active{% endif %}">Trả lời tự động</a></li>
       </ol>
     </div>
   </div>

@@ -2,13 +2,7 @@
 {% block page-container %}
 <section class="content-header" id="content-header">
   <div class="container">
-    <div class="row">
-      <h1 class="page-title">Đơn hàng</h1>
-      <ol class="breadcrumb">
-        <li><a href="4.1-invoice-list.html" class="active">Xem đơn hàng</a></li>
-        <li><a href="4.4-invoice-help.html">Yêu cầu hỗ trợ đơn hàng</a></li>
-      </ol>
-    </div>
+    {% include "_invoice-header.html" %}
   </div>
 </section>
 <main>
@@ -331,7 +325,7 @@
                       <!-- /.box-header -->
                       <div class="box-body">
                         <p>Mình muốn chọn áo màu đen, nhưng khi đăng ký mua thì không hiện lên áo màu đen???</p>
-                        <div class="callout"> 
+                        <div class="callout">
                           <textarea class="form-control" rows="3" placeholder=""></textarea>
                         </div>
                         <div class="clearfix">
@@ -351,7 +345,7 @@
                       <!-- /.box-header -->
                       <div class="box-body">
                         <p>Mình muốn chọn áo màu đen, nhưng khi đăng ký mua thì không hiện lên áo màu đen???</p>
-                        <div class="callout"> 
+                        <div class="callout">
                           <p><strong>Team hỗ trợ MyFace</strong>  - Đã trả lời lúc:  04/11/2015 - 13:00:15</p>
                           <p>Chào bạn! Bạn có thể liên hệ tổng đài 06 2700 3838 phím 0 để được hỗ trợ nha bạn. Cảm ơn bạn.</p>
                         </div>
