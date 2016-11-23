@@ -186,6 +186,24 @@ $(document).ready(function() {
   $(".name-store").keyup(function() {
     $('.link-shop-text').text($('.name-store').val());
   });
+
+  //edit-address
+  $(".edit-address").click(function(){
+    $('.create-new-address').show();
+    $('.edit-address-form').hide();
+    $(this).closest('.box').children('.edit-address-form').slideDown("slow");
+  });
+  $(".cancel-edit").click(function(e){
+    e.preventDefault();
+    $(this).closest('.edit-address-form').slideUp("slow");
+  });
+  //create-address
+  $(".create-new-address").click(function(){
+    $('.edit-address-form').slideUp("fast");
+    $(this).slideUp();
+    $(this).closest('div').children('.new-address-form').slideDown("slow");
+  });
+
 	// Modal
   (function ($) {
     "use strict";

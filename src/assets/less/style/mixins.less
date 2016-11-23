@@ -313,3 +313,10 @@
     }
   }
 }
+
+.placeholder(@color: @input-color-placeholder, @font-style) {
+  &:-moz-placeholder            { color: @color; font-style: @font-style; }
+  &::-moz-placeholder           { color: @color; font-style: @font-style; }
+  &:-ms-input-placeholder       { color: @color; font-style: @font-style; }
+  &::-webkit-input-placeholder  { color: @color; font-style: @font-style; }
+}

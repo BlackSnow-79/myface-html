@@ -25,4 +25,19 @@ $(document).ready(function() {
       $( ".setting-form-db" ).show('fast');
     });
   });
+  $(function () {
+    $( '.order-next-step').click(function() {
+      $( '#invoice-dashboard-modal' ).hide();
+      $( '#invoice-complete-modal' ).show();
+    });
+    $( '.back-action').click(function() {
+      $( '#invoice-complete-modal' ).hide();
+      $( '#invoice-dashboard-modal' ).show();
+    });
+  });
+  $('.invoiceStatuschange').on('change', function() {
+    $('#confirmModal').modal({
+      show: true
+    })
+  });
 });

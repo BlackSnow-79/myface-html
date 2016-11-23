@@ -144,6 +144,52 @@ main {
 .noted {
   font-size: 11px;
 }
+
+.export-products {
+  .report-invoice-row {
+    & + .report-invoice-row {
+      .form-group {
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+      .control-label {
+        line-height: 34px;
+        float: left;
+        display: inline-block;
+      }
+    }
+    .form-group,
+    .call-action {
+      width: 100%;
+      float: left;
+    }
+    .field-control {
+      input[type="radio"] {
+        margin-top: 10px;
+      }
+      label {
+        width: 100%;
+        > .form-control,
+        > .bootstrap-select {
+          float: none;
+          width: 200px;
+          display: inline-block;
+          margin: 0 0 0 15px;
+        }
+      }
+    }
+  }
+  .ss-box {
+    max-width: 100%;
+  }
+  input + .caret {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    pointer-events: none;
+  }
+}
+
 .black-label {
   color: @black;
   a {
@@ -170,6 +216,110 @@ main {
     margin: 0;
   }
 }
+.box-address {
+  padding: 15px;
+  .email,
+  .phonenumber {
+    a {
+      color: @gray-text;
+      &:hover {
+        color: @lime-text;
+      }
+    }
+  }
+}
+.title-address {
+  font-weight: bold;
+  padding-bottom: 6px;
+  margin-bottom: 20px;
+  border-bottom: @box-border;
+  color: @lime-text;
+  font-size: 16px;
+}
+.name-person {
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: @black;
+  font-size: 16px;
+}
+.update-address {
+  text-align: right;
+  margin-top: 15px;
+  margin-bottom: 0;
+}
+.link-btn,
+.cancel-btn {
+  text-decoration: underline;
+  padding: 0 10px;
+}
+.link-btn {
+  color: @red;
+}
+.cancel-btn {
+  color: @gray-text;
+}
+.edit-address-form {
+  display: none;
+  padding-top: 20px;
+  width: 100%;
+  .form-group {
+    .row {
+      margin-left: -7px;
+      margin-right: -7px;
+    }
+    &.row {
+      margin-left: -7px;
+      margin-right: -7px;
+    }
+    .col-md-6,
+    .col-md-3,
+    .col-md-9 {
+      padding-left: 7px;
+      padding-right: 7px;
+    }
+    .block-row {
+      &.row {
+        margin: 0;
+      }
+    }
+  }
+  .control-label {
+    color: @black;
+    margin-bottom: 5px;
+    span {
+      font-weight: normal;
+      font-style: italic;
+    }
+  }
+  .rg-group-1-1 {
+    width: 15%;
+    float: left;
+  }
+  .rg-group-1-2 {
+    width: 82%;
+    float: right;
+  }
+  .update-action {
+    text-align: right;
+  }
+  .form-control {
+    color: @gray-text;
+    .placeholder(@gray-text, italic);
+  }
+  .update-action {
+    margin-top: 10px;
+  }
+  &.new-address-form {
+    width: 100%;
+    padding: 15px;
+    position: relative;
+    border-radius: 3px;
+    background: #ffffff;
+    border: 1px solid #dfdfdf;
+    margin-bottom: 20px;
+  }
+}
+
 .search-container {
   width: 100%;
   padding: 0 0 30px;
@@ -269,7 +419,7 @@ main {
 .invoice-row-3 {
   .box-body {
     div.col-xs-6, div.col-xs-5{
-      padding: 0 20px 0 0 ;
+      padding: 0 ;
       .control-label {
         text-align: left;
       }
@@ -333,6 +483,9 @@ main {
       }
     }
   }
+  .lime-highlight {
+    font-size: 18px;
+  }
 }
 .invoice-tab-2, .callout {
   textarea {
@@ -369,6 +522,50 @@ main {
     }
   }
 }
+.invoice-tab-4 {
+    .table-invoice-information {
+        thead,
+        tbody,
+        tfoot {
+            tr {
+                td,
+                th {
+                    padding-top:15px;
+                    padding-bottom: 15px;
+                }
+            }
+        }
+        tbody {
+            tr {
+                td {
+                    background-color: #f7f8f9;
+                }
+            }
+        }
+        tfoot {
+            tr {
+                background-color: #d5f3fe;
+                td {
+                    padding-top: 20px;
+                    padding-bottom: 20px;
+                    font-size: 18px;
+                    .lime-highlight;
+                }
+            }
+        }
+    }
+    .table-invoice-info-full {
+        thead {
+            tr {
+                th {
+                    background-color: @gray-bg;
+                    color: @black;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}
 
 #insert-product-form {
   display: none;
@@ -402,6 +599,10 @@ main {
     width: auto;
   }
 }
+.pay-money {
+  width: 100%;
+  float: left;
+}
 .ship-and-pay {
   .invoice-promotion-box {
     width: 100%;
@@ -414,6 +615,12 @@ main {
     .col-md-12 {
       padding-left: 0;
       padding-right: 0;
+    }
+    > div {
+      margin-bottom: 10px;
+      &:last-child {
+        margin-bottom: 0;
+      }
     }
   }
   .radio {
@@ -438,12 +645,68 @@ main {
 .img-remove-btn {
   z-index: 10;
 }
-#invoice-dashboard-modal {
+.invoice-dashboard-modal {
   .modal-body {
     padding-bottom: 0;
+    .clearfix {
+      > label {
+        color: @black;
+      }
+    }
   }
   .clearfix {
     margin-bottom: 10px;
+  }
+  .table {
+    thead {
+      tr {
+        th {
+          text-align: right;
+          &:first-child {
+            text-align: center;
+          }
+        }
+      }
+    }
+    tbody {
+      tr {
+        border-bottom: @box-border;
+        td {
+          padding-top: 15px;
+          padding-bottom: 15px;
+          text-align: right;
+          vertical-align: top;
+          &:first-child {
+            text-align: left;
+          }
+          .item {
+            padding: 0;
+          }
+        }
+      }
+    }
+  }
+  .invoice-total-price {
+    width: 100%;
+    float: left;
+    margin-top: 15px;
+  }
+  .price-table {
+    width: 100%;
+    tbody {
+      tr {
+        th {
+          text-align: left;
+          padding: 5px 15px;
+        }
+        td {
+          text-align: right;
+          padding: 5px 15px;
+          .green-highlight;
+          font-size: 18px;
+        }
+      }
+    }
   }
   .invoice-promotion-box {
     width: 100%;
@@ -453,6 +716,12 @@ main {
     float: left;
     background-color: #f0f1f3;
     border-radius: 3px;
+    > div {
+      margin-bottom: 10px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
   }
   .radio {
     float: left;
@@ -468,4 +737,28 @@ main {
   .ship-options {
     padding: 0 15px;
   }
+}
+.edit-action {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    font-style: italic;
+    color: @red;
+    text-decoration: underline;
+    &:hover {
+        color: @gray-text;
+        text-decoration: none;
+    }
+}
+.invoice-row-4 {
+  color: @black;
+  .products-list {
+    .product-title {
+      color: @black;
+    }
+  }
+}
+.product-properties {
+  font-size: 13px;
+  color: @gray-text;
 }

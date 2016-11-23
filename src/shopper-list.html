@@ -1,0 +1,211 @@
+{% extends "_layout.html" %}
+{% block page-container %}
+<header class="main-header" id="main-header">
+    <!--Start menu navigation-->
+    <nav class="navbar header-top">
+        <div class="container">
+            <div class="row">
+                <a class="navbar-brand logo" href="/admin/management"><img src="assets/images/logo.png" alt="myface"></a> <!--main-menu-->
+                <div class="pull-left main-menu" id="">
+                    <ul class="nav navbar-nav">
+                        <li>
+                            <a href="/admin/management">Quản lý chung</a>
+                        </li>
+                        <li class="active">
+                            <a href="/admin/management_shopper">Quản lý shop</a>
+                        </li>
+                        <li>
+                            <a href="/admin/order">Đơn hàng</a>
+                        </li>
+                        <li>
+                            <a href="/admin/product/product">Sản phẩm</a>
+                        </li>
+                        <li>
+                            <a href="/admin/customer/index">Khách hàng</a>
+                        </li>
+                        <li>
+                            <a href="/admin/report">Báo cáo</a>
+                        </li>
+                        <li>
+                            <a href="/admin/myface_vn/list_content">myFace.vn</a>
+                        </li>
+                        <li>
+                            <a href="/admin/shop_myface/list_banner">Shop myFace</a>
+                        </li>
+                    </ul>
+                    <div class="dropdown search-div small-search-div">
+                        <button class="search-btn-control" type="button"><i class="fa fa-search"></i></button>
+                    </div>
+                </div><!--user-menu-->
+                <div class="navbar-custom-menu">
+                    <ul class="nav navbar-nav">
+                        <!-- User Account Menu -->
+                        <li class="dropdown user user-menu">
+                            <!-- Menu Toggle Button -->
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                <div class="user-label">
+                                    <span class="user-label-1" data-original-title="" title="">Chào lee.le</span> <span class="user-label-2" data-original-title="Cấu hình &amp; quản lý tài khoản"
+                                    data-placement="bottom" title="">Cấu hình &amp; quản lý tài khoản</span>
+                                </div>
+                                <img src="assets/images/user/user.jpg" class="user-image img-circle" alt="myface">
+                            </a>
+                            <ul class="dropdown-menu account-submenu-dropdown">
+                                <li class="user-footer">
+                                    <a href="/admin/auth/change_password"><i class="fa fa-user text-red"></i>Đổi mật khẩu</a>
+                                </li>
+                                <li class="user-footer">
+                                    <a href="#" onclick="logout()"><i class="fa fa-user text-red"></i>Thoát</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <script>
+        $(document).ready(function ()
+        {
+        $('span').tooltip();
+        });
+        </script>
+    </nav><!--End menu navigation-->
+</header>
+<section class="content-header" id="content-header">
+    <div class="container">
+        <div class="row">
+            <h1 class="page-title">Danh sách shop</h1>
+            <ol class="breadcrumb">
+                <li><a href="https://cms.myface.vn/admin/management_shopper">Danh sách Shop</a></li>
+                <li><a href="shopper-list.html" class="active">Báo cáo danh sách Shop</a></li>
+            </ol>
+        </div>
+    </div>
+</section>
+<main>
+    <div class="container">
+        <div class="row">
+            <div class="box">
+                <div class="box-header with-border">
+                    <h3 class="box-title">Báo cáo danh sách Shop</h3>
+                </div><!-- /.box-header -->
+                <!--Báo cáo danh sách Shop-->
+                <div class="box-body">
+                    <div class="form-horizontal management-shopper-list">
+                        <div class="row shopper-list-filter">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label class="col-sm-4 control-label" for="">Chọn tỉnh thành phố</label>
+                                    <div class="col-sm-8">
+                                        <select class="form-control">
+                                            <option>
+                                                Tất cả
+                                            </option>
+                                            <option>
+                                                Rose Mai
+                                            </option>
+                                            <option>
+                                                Oliver Đông
+                                            </option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label class="col-sm-4 control-label" for="">Sales phụ trách</label>
+                                    <div class="col-sm-8">
+                                        <select class="form-control">
+                                            <option>
+                                                Tất cả
+                                            </option>
+                                            <option>
+                                                Rose Mai
+                                            </option>
+                                            <option>
+                                                Oliver Đông
+                                            </option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label class="col-sm-4 control-label" for="">Sales phụ trách</label>
+                                    <div class="col-sm-8">
+                                        <select class="form-control">
+                                            <option>
+                                                Tất cả
+                                            </option>
+                                            <option>
+                                                Rose Mai
+                                            </option>
+                                            <option>
+                                                Oliver Đông
+                                            </option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label class="col-sm-4 control-label" for="">Hợp đồng</label>
+                                    <div class="col-sm-8">
+                                        <select class="form-control">
+                                            <option>
+                                                Tất cả
+                                            </option>
+                                            <option>
+                                                Rose Mai
+                                            </option>
+                                            <option>
+                                                Oliver Đông
+                                            </option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row shopper-list-filter">
+                            <label class="col-md-2 control-label">
+                                Chọn thời gian
+                            </label>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label class="col-md-2 control-label" >Từ</label>
+                                    <div class="col-md-10">
+                                        <div class="date-picker-group">
+                                            <input class="form-control date-picker" id="" name="" placeholder="Chọn ngày-tháng-năm" readonly type="text">
+                                            <span class="calendar-icon l-calendar-icon">
+                                                <i class="fa fa-calendar"></i>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-offset-1 col-md-5">
+                                <div class="form-group">
+                                    <label class="col-md-4 control-label" >Đến</label>
+                                    <div class="col-md-8">
+                                        <div class="date-picker-group">
+                                            <input class="form-control date-picker" id="" name="" placeholder="Chọn ngày-tháng-năm" readonly type="text">
+                                            <span class="calendar-icon l-calendar-icon">
+                                                <i class="fa fa-calendar"></i>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- /.box-body -->
+                <!--./Báo cáo danh sách Shop-->
+                <div class="box-footer clearfix">
+                    <div class="form-group clearfix">
+                        <input class="btn btn-lime pull-right" type="button" value="Xuất Excel">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+{% endblock %}

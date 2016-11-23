@@ -302,7 +302,7 @@
   padding: 20px;
   color: @black;
   .lime-highlight {
-    font-family: 'robotoregular', Helvetica, Arial, sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
     margin-bottom: 0;
     font-size: 14px;
     line-height: 34px;
@@ -472,7 +472,7 @@
       margin-bottom: 100px;
     }
     .btn {
-      width: 165px;
+      min-width: 165px;
       height: 40px;
       line-height: 28px;
     }
@@ -507,7 +507,22 @@
     }
   }
   .callout {
-    padding: 0 0 0 10px;
+    padding: 0 0 0 15px;
     margin-bottom: 0;
+    border-left: 0;
+  }
+  .auto-reply-time {
+    width: 100%;
+    float: left;
+    padding: 15px 15px 0;
+    .control-label {
+      line-height: 34px;
+      float: left;
+      display: inline-block;
+    }
+    .form-group {
+      margin-top: 10px;
+      margin-bottom: 0;
+    }
   }
 }

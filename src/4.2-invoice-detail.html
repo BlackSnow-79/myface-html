@@ -29,6 +29,7 @@
               <li class="active"><a href="#tab_1" data-toggle="tab" aria-expanded="false">Thông tin đơn hàng</a></li>
               <li class=""><a href="#tab_2" data-toggle="tab" aria-expanded="false">Yêu cầu hỗ trợ</a></li>
               <li class=""><a href="#tab_3" data-toggle="tab" aria-expanded="true">Lịch sử đơn hàng</a></li>
+              <li class=""><a href="#tab_4" data-toggle="tab" aria-expanded="true">Lịch sử giao hàng</a></li>
             </ul>
             <div class="tab-content invoice-tab-content form-horizontal">
               <!--tab-1-->
@@ -167,7 +168,7 @@
                             </div>
                           </div><!--/.form-group-->
 
-                          <div class="form-group">
+                          <div class="code-ship-group">
                             <p for="" class="col-xs-6 control-label">Mã vận chuyển</p>
                             <div class="col-xs-6">
                               <input type="text" class="form-control" id="" placeholder="MF011509242345">
@@ -181,15 +182,16 @@
 
                   <div class="row invoice-row-4">
                     <div class="col-xs-12">
-                      <table class="table table-striped">
+                      <table class="table table-striped order-product-table">
                         <thead>
                           <tr>
                             <th class="col-xs-1">STT</th>
-                            <th class="col-xs-5">Tên sản phẩm</th>
+                            <th class="col-xs-4">Tên sản phẩm</th>
                             <th class="col-xs-2 text-center">Giá bán</th>
                             <th class="col-xs-1 text-center">Số lượng</th>
+                            <th class="col-xs-2 text-center">Khối lượng (gram)</th>
                             <th class="col-xs-2 text-center">Thành tiền</th>
-                            <th class="col-xs-1"></th>
+                            <th class=""></th>
                           </tr>
                         </thead>
                         <tbody>
@@ -202,13 +204,17 @@
                                 </div>
                                 <div class="product-info">
                                   <a href="#" class="product-title">Combo 2 Hộp Sữa Bột Ensure Gold Acti M2 400g</a>
+                                  <p class="product-properties">
+                                    (Màu sắc: Xanh rêu, Size: M)
+                                  </p>
                                 </div>
                               </div>
                             </td>
                             <td class="text-center">
                               <span>1.000.000<ins>đ</ins></span>
                             </td>
-                            <td class="text-right">01</td>
+                            <td class="text-center">01</td>
+                            <td class="text-center">2000</td>
                             <td class="text-center">
                               <label>1.000.000<ins>đ</ins></label>
                             </td>
@@ -231,7 +237,8 @@
                             <td class="text-center">
                               <span>1.000.000<ins>đ</ins></span>
                             </td>
-                            <td class="text-right">01</td>
+                            <td class="text-center">01</td>
+                            <td class="text-center">2000</td>
                             <td class="text-center">
                               <label>1.000.000<ins>đ</ins></label>
                             </td>
@@ -282,7 +289,11 @@
                             </tr>
                             <tr>
                               <th>Phí vận chuyển và thu tiền tận nơi: </th>
-                              <td>0<ins>đ</ins></td>
+                              <td>44<ins>đ</ins></td>
+                            </tr>
+                            <tr>
+                              <th>Phí thu tiền hộ: </th>
+                              <td>15.000<ins>đ</ins></td>
                             </tr>
                             <tr>
                               <th>Giảm giá khuyến mãi:</th>
@@ -298,7 +309,7 @@
                             </tr>
                             <tr class="invoice-price-footer">
                               <th>Tổng tiền đơn hàng:</th>
-                              <td><label class="lime-highlight">2.000.000<ins>đ</ins></label></td>
+                              <td><label class="lime-highlight">2.059.000<ins>đ</ins></label></td>
                             </tr>
                           </tbody>
                         </table>
@@ -358,23 +369,286 @@
               <!-- /.tab-pane -->
               <!--tab-3-->
               <div class="invoice-tab-3 tab-pane" id="tab_3">
-                <table class="table">
+                <table class="table table-striped">
+                  <thead>
+                    <tr>
+                      <th class="text-center col-xs-2">Thời gian</th>
+                      <th class="text-center col-xs-2">User</th>
+                      <th class="text-center col-xs-2">Thao tác</th>
+                      <th class="col-xs-4">Chi tiết</th>
+                      <th class="text-center col-xs-2">Tổng tiền đơn hàng</th>
+                    </tr>
+                  </thead>
                   <tbody>
                     <tr>
-                      <td class="col-xs-3"><i class="fa fa-clock-o"></i> 04/11/2015 - 15:00:35</td>
-                      <td class="col-xs-9"><strong>Pax Thiên</strong> đã <strong><i>Thêm sản phẩm mới</i> </strong></td>
+                      <td class="text-center">
+                        <p>11:07:05 01-11-2016</p>
+                      </td>
+                      <td class="text-center">
+                        <p>myFace</p>
+                      </td>
+                      <td class="text-center">
+                        <p>Chuyển đơn hàng</p>
+                      </td>
+                      <td>
+                        <p>Chuyển đơn hàng sang công ty vận chuyển</p>
+                      </td>
+                      <td class="text-center">
+                        <p>100,000đ</p>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td class="text-center">
+                        <p>11:00:05 01-11-2016</p>
+                      </td>
+                      <td class="text-center">
+                        <p>Hồng Ánh</p>
+                      </td>
+                      <td class="text-center">
+                        <p>Sửa đơn hàng</p>
+                      </td>
+                      <td>
+                        <p>Đặt hàng thành công -> Đã đóng gói <br>(<strong>Quantium</strong> giao hàng)</p>
+                      </td>
+                      <td class="text-center">
+                        <p>100,000đ</p>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td class="text-center">
+                        <p>11:00:05 01-11-2016</p>
+                      </td>
+                      <td class="text-center">
+                        <p>Hồng Ánh</p>
+                      </td>
+                      <td class="text-center">
+                        <p>Sửa đơn hàng</p>
+                      </td>
+                      <td>
+                        <p>Điểu chỉnh địa chỉ giao hàng: <br><strong><địa chỉ giao hàng cũ></strong> => <strong><địa chỉ giao hàng mới></strong> </p>
+                      </td>
+                      <td class="text-center">
+                        <p>100,000đ</p>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td class="text-center">
+                        <p>11:00:04 01-11-2016</p>
+                      </td>
+                      <td class="text-center">
+                        <p>Hồng Ánh</p>
+                      </td>
+                      <td class="text-center">
+                        <p>Sửa đơn hàng</p>
+                      </td>
+                      <td>
+                        <p>Điểu chỉnh số lượng sản phẩm: <br>(<strong>sku sản phẩm</strong>)  (<strong>+ số lượng sản phẩm</strong>)</p>
+                      </td>
+                      <td class="text-center">
+                        <p>100,000đ</p>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td class="text-center">
+                        <p>11:00:03 01-11-2016</p>
+                      </td>
+                      <td class="text-center">
+                        <p>Hồng Ánh</p>
+                      </td>
+                      <td class="text-center">
+                        <p>Sửa đơn hàng</p>
+                      </td>
+                      <td>
+                        <p>Thêm sản phẩm: <br>(<strong>sku sản phẩm</strong>)  (<strong>- số lượng sản phẩm</strong>)</p>
+                      </td>
+                      <td class="text-center">
+                        <p>200,000đ</p>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td class="text-center">
+                        <p>11:00:02 01-11-2016</p>
+                      </td>
+                      <td class="text-center">
+                        <p>Hồng Ánh</p>
+                      </td>
+                      <td class="text-center">
+                        <p>Sửa đơn hàng</p>
+                      </td>
+                      <td>
+                      <p>Xóa sản phẩm: (<strong>sku sản phẩm</strong>)</p>
+                      </td>
+                      <td class="text-center">
+                        <p>100,000đ</p>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td class="text-center">
+                        <p>10:50:05 01-11-2016</p>
+                      </td>
+                      <td class="text-center">
+                        <p>Minh Hoàng</p>
+                      </td>
+                      <td class="text-center">
+                        <p>Tạo đơn hàng</p>
+                      </td>
+                      <td>
+                        <p>Đặt đơn hàng cho khách hàng</p>
+                      </td>
+                      <td class="text-center">
+                        <p>200,000đ</p>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <!--tab-4-->
+              <div class="invoice-tab-4 tab-pane" id="tab_4">
+                <h4>Thông tin đơn hàng của công ty vận chuyển</h4>
+                <table class="table table-invoice-information">
+                  <thead>
+                    <tr>
+                      <th class="text-center">Đơn hàng</th>
+                      <th class="text-center">Mã vận tải</th>
+                      <th class="text-center">Ngày đặt hàng</th>
+                      <th class="col-xs-4">Hình thức thanh toán - gói dịch vụ</th>
+                      <th class="col-xs-4">Thông tin giao hàng</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="text-center">
+                        <p>201610182743</p>
+                      </td>
+                      <td class="text-center">
+                        <p>QSVN...</p>
+                      </td>
+                      <td class="text-center">
+                        <p>11:07:05 01-11-2016</p>
+                      </td>
+                      <td>
+                        <p>Người mua hàng không trả tiền sản phẩm. Người mua hàng trả phí vận chuyển - Giao bình thường</p>
+                      </td>
+                      <td>
+                        <p>(Chị)<strong>Phạm Ngọc Thiên Thư</strong></p>
+                        <p>281/25/5, Đường Lê Văn Sỹ, Phường 12, Quận Phú Nhuận, Thành phố Hồ Chí Minh</p>
+                        <p>Điện thoại liên lạc: <strong>0902148489</strong></p>
+                      </td>
+                    </tr>
+                  </tbody>
+                  <tfoot>
+                    <tr>
+                      <td colspan="3"></td>
+                      <td>
+                        <label>Tổng thanh toán</label>
+                      </td>
+                      <td>
+                        <label>12.356.000<ins>đ</ins></label>
+                      </td>
+                    </tr>
+                  </tfoot>
+                </table>
+
+                <table class="table table-striped table-invoice-info-full">
+                  <thead>
+                    <tr>
+                      <th class="">stt</th>
+                      <th class="text-center">Thời gian</th>
+                      <th class="text-center">Trạng thái</th>
+                      <th class="col-xs-4">Diễn giải</th>
+                      <th class="col-xs-4">Mô tả chi tiết</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <p>1</p>
+                      </td>
+                      <td class="text-center">
+                        <p>11:07:05 01-11-2016</p>
+                      </td>
+                      <td class="text-center">
+                        <p>Picked up</p>
+                      </td>
+                      <td>
+                        <p>Đã nhận hàng</p>
+                      </td>
+                      <td>
+                        <p>Tên GSA</p>
+                      </td>
                     </tr>
                     <tr>
-                      <td class="col-xs-3"><i class="fa fa-clock-o"></i> 04/11/2015 - 11:00:35</td>
-                      <td class="col-xs-9"><strong>Yuky Thiên</strong> đã <strong><i>Thêm sản phẩm khuyến mãi</i></strong></td>
+                      <td>
+                        <p>2</p>
+                      </td>
+                      <td class="text-center">
+                        <p>11:07:05 01-11-2016</p>
+                      </td>
+                      <td class="text-center">
+                        <p>Handovered</p>
+                      </td>
+                      <td>
+                        <p>Bưu điện bàn giao cho hub</p>
+                      </td>
+                      <td>
+                      </td>
                     </tr>
                     <tr>
-                      <td class="col-xs-3"><i class="fa fa-clock-o"></i> 04/11/2015 - 10:00:35</td>
-                      <td class="col-xs-9"><strong>Angelina</strong> đã <strong><i>Thay đổi địa chỉ giao hàng</i></strong></td>
+                      <td>
+                        <p>3</p>
+                      </td>
+                      <td class="text-center">
+                        <p>11:07:05 01-11-2016</p>
+                      </td>
+                      <td class="text-center">
+                        <p>Detained</p>
+                      </td>
+                      <td>
+                        <p>Người nhận yêu cầu phát trễ</p>
+                      </td>
+                      <td>
+                        <p>Gọi điện nhiều lần không bắt máy, mai phát lại lúc 10h sáng</p>
+                      </td>
                     </tr>
                     <tr>
-                      <td class="col-xs-3"><i class="fa fa-clock-o"></i> 04/11/2015 - 00:00:35</td>
-                      <td class="col-xs-9"><strong>Pax Thiên</strong> đã <strong><i>Thêm sản phẩm mới</i></strong></td>
+                      <td>
+                        <p>4</p>
+                      </td>
+                      <td class="text-center">
+                        <p>11:07:05 01-11-2016</p>
+                      </td>
+                      <td class="text-center">
+                        <p>Retured</p>
+                      </td>
+                      <td>
+                        <p>Hoàn theo yêu cầu người gửi</p>
+                      </td>
+                      <td>
+                        <p>Khách báo không đặt hàng</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <p>5</p>
+                      </td>
+                      <td class="text-center">
+                        <p>11:07:05 01-11-2016</p>
+                      </td>
+                      <td class="text-center">
+                        <p>Deliveried</p>
+                      </td>
+                      <td>
+                        <p>Đã phát thành công</p>
+                      </td>
+                      <td>
+                        <p>Đã hoàn lại về cho shop. Hoa đã nhận</p>
+                      </td>
                     </tr>
                   </tbody>
                 </table>

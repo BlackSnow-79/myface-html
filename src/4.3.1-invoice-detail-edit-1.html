@@ -46,7 +46,7 @@
           <!--form-row-->
           <div class="row invoice-row-4">
             <div class="col-xs-12">
-              <table class="table table-striped">
+              <table class="table table-striped order-product-table">
                 <thead>
                   <tr>
                     <th class="col-xs-1">STT</th>
@@ -67,6 +67,9 @@
                         </div>
                         <div class="product-info">
                           <a href="#" class="product-title">Combo 2 Hộp Sữa Bột Ensure Gold Acti M2 400g</a>
+                          <p class="product-properties">
+                            (Màu sắc: Xanh rêu, Size: M)
+                          </p>
                         </div>
                       </div>
                     </td>
@@ -118,11 +121,17 @@
                 <div class="col-xs-6">
                   <div id="insert-product-form" class="row insert-product-form">
                     <div class="col-xs-10">
-                      <input type="text" id="insert-input-active" class="form-control" >
+                      <input type="text" id="insert-input-active" class="form-control" onclick="openSSbox()">
+                      <script type="text/javascript">
+                        //open insert-product
+                        function openSSbox() {
+                          $('.ss-box').show();
+                        }
+                      </script>
                       <!--product-table-->
                       <ul class="ss-box" id="">
                         <li class="ss-result">
-                          <a href="javascript: void(0);">
+                          <a href="javascript: void(0);" data-toggle="modal" data-target=".product-properties-modal">
                             <table width="100%">
                               <tbody>
                                 <tr>
@@ -136,7 +145,7 @@
                           </a>
                         </li>
                         <li class="ss-result">
-                          <a href="javascript: void(0);">
+                          <a href="javascript: void(0);" data-toggle="modal" data-target=".product-properties-modal">
                             <table border="0" cellspacing="0" cellpadding="0" width="100%">
                               <tbody>
                                 <tr>
@@ -177,4 +186,66 @@
   </div>
 </main>
 
+<!--product-properties-modal-->
+<div class="modal product-properties-modal">
+  <div class="modal-dialog modal-md">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">Chọn thuộc tính</h4>
+      </div>
+      <div class="modal-body">
+        <div class="col-md-12 product-properties-row">
+          <p class="product-properties-md-title">Chọn thuộc tính của sản phẩm</p>
+          <div class="product-properties-item">
+            <label class="product-properties-label">Màu sắc</label>
+            <div class="col-md-12 properties-values">
+              <div class="col-xs-4">
+                <div class="radio">
+                   <input type="radio" name="optionsRadios" class="report-form-control" id="report-invoice-form-1">
+                   <span>Vàng</span>
+                </div>
+              </div>
+              <div class="col-xs-4">
+                <div class="radio">
+                   <input type="radio" name="optionsRadios" class="report-form-control" id="report-invoice-form-1">
+                   <span>Xanh</span>
+                </div>
+              </div>
+              <div class="col-xs-4">
+                <div class="radio">
+                   <input type="radio" name="optionsRadios" class="report-form-control" id="report-invoice-form-1">
+                   <span>đỏ</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="product-properties-item">
+            <label class="product-properties-label">Kích thước</label>
+            <div class="col-md-12 properties-values">
+              <div class="col-xs-4">
+                <div class="radio">
+                   <input type="radio" name="optionsRadios" class="report-form-control" id="report-invoice-form-1">
+                   <span>M</span>
+                </div>
+              </div>
+              <div class="col-xs-4">
+                <div class="radio">
+                   <input type="radio" name="optionsRadios" class="report-form-control" id="report-invoice-form-1">
+                   <span>XL</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <a href="2.3-product.html" class="btn btn-lime">Chọn</a>
+      </div>
+    </div>
+  <!-- /.modal-content -->
+  </div>
+  <!-- /.modal-dialog -->
+</div>
 {% endblock %}

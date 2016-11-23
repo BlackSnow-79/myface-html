@@ -104,8 +104,8 @@
 .form-group-sm .form-control + .form-control-feedback.fa {
   line-height: @input-height-small;
 }
-input:-webkit-autofill, 
-textarea:-webkit-autofill, 
+input:-webkit-autofill,
+textarea:-webkit-autofill,
 select:-webkit-autofill {
   background-color: transparent;
 }
@@ -142,7 +142,7 @@ select:-webkit-autofill {
   .control-label {
     text-align: left;
     padding: 7px 15px 0;
-  } 
+  }
 }
 .form-horizontal {
   .radio + .radio,
@@ -171,10 +171,13 @@ select:-webkit-autofill {
       position: absolute;
       top: 0;
       left: 0;
-    } 
+    }
     input:checked + &:before {
       content: "\f046";
       color: @orange;
     }
   }
+}
+.ui-state-default {
+    border-radius: 3px;
 }
