@@ -5120,12 +5120,10 @@ main {
 .box-address {
   padding: 15px;
 }
-.box-address .email a,
-.box-address .phonenumber a {
+.box-address .address-infor a {
   color: #727272;
 }
-.box-address .email a:hover,
-.box-address .phonenumber a:hover {
+.box-address .address-infor a:hover {
   color: #ff5722;
 }
 .title-address {
