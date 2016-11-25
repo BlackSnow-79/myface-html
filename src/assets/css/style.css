@@ -5126,6 +5126,31 @@ main {
 .box-address .address-infor a:hover {
   color: #ff5722;
 }
+.box-address .address-infor .link-btn {
+  color: #f44336;
+}
+.box-address .shop-address-item {
+  border: 0;
+}
+.box-address .shop-address-item:after {
+  content: '';
+  display: block;
+  width: 50%;
+  height: 1px;
+  border-top: 1px dashed #dfdfdf;
+  margin: 20px auto 0;
+}
+.box-address .shop-address-item:last-child {
+  margin-bottom: 0;
+}
+.box-address .shop-address-item:last-child:after {
+  display: none;
+}
+.box-address .shop-address-item .title-address {
+  color: #212121;
+  border: 0;
+  margin-bottom: 9px;
+}
 .title-address {
   font-weight: bold;
   padding-bottom: 6px;
@@ -5150,16 +5175,85 @@ main {
   text-decoration: underline;
   padding: 0 10px;
 }
-.link-btn {
-  color: #f44336;
-}
 .cancel-btn {
   color: #727272;
+}
+.create-address-form {
+  width: 100%;
+  padding: 15px;
+  position: relative;
+  border-radius: 3px;
+  background: #ffffff;
+  border: 1px solid #dfdfdf;
+  margin-bottom: 20px;
+}
+.create-address-form .form-group .row {
+  margin-left: -7px;
+  margin-right: -7px;
+}
+.create-address-form .form-group.row {
+  margin-left: -7px;
+  margin-right: -7px;
+}
+.create-address-form .form-group .col-md-6,
+.create-address-form .form-group .col-md-3,
+.create-address-form .form-group .col-md-9 {
+  padding-left: 7px;
+  padding-right: 7px;
+}
+.create-address-form .form-group .block-row.row {
+  margin: 0;
+}
+.create-address-form .control-label {
+  color: #212121;
+  margin-bottom: 5px;
+}
+.create-address-form .control-label span {
+  font-weight: normal;
+  font-style: italic;
+}
+.create-address-form .rg-group-1-1 {
+  width: 15%;
+  float: left;
+}
+.create-address-form .rg-group-1-2 {
+  width: 82%;
+  float: right;
+}
+.create-address-form .form-control {
+  color: #727272;
+}
+.create-address-form .form-control:-moz-placeholder {
+  color: #727272;
+  font-style: italic;
+}
+.create-address-form .form-control::-moz-placeholder {
+  color: #727272;
+  font-style: italic;
+}
+.create-address-form .form-control:-ms-input-placeholder {
+  color: #727272;
+  font-style: italic;
+}
+.create-address-form .form-control::-webkit-input-placeholder {
+  color: #727272;
+  font-style: italic;
+}
+.create-address-form .update-action {
+  text-align: right;
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+.create-address-form .form-note label {
+  color: #f44336;
+  margin-bottom: 0;
+}
+.create-address-form .form-note label span {
+  color: #212121;
 }
 .edit-address-form {
   display: none;
   padding-top: 20px;
-  width: 100%;
 }
 .edit-address-form .form-group .row {
   margin-left: -7px;
@@ -5194,9 +5288,6 @@ main {
   width: 82%;
   float: right;
 }
-.edit-address-form .update-action {
-  text-align: right;
-}
 .edit-address-form .form-control {
   color: #727272;
 }
@@ -5217,16 +5308,28 @@ main {
   font-style: italic;
 }
 .edit-address-form .update-action {
+  text-align: right;
   margin-top: 10px;
+  margin-bottom: 0;
+}
+.edit-address-form .form-note label {
+  color: #f44336;
+  margin-bottom: 0;
+}
+.edit-address-form .form-note label span {
+  color: #212121;
 }
 .edit-address-form.new-address-form {
-  width: 100%;
   padding: 15px;
   position: relative;
   border-radius: 3px;
   background: #ffffff;
   border: 1px solid #dfdfdf;
   margin-bottom: 20px;
+}
+.create-new-address {
+  margin-right: 15px;
+  float: right;
 }
 .search-container {
   width: 100%;
@@ -7031,7 +7134,6 @@ main {
 .list-group-noline.promotion-group .control-label {
   color: #212121;
   padding: 7px 0 0 0;
-  font-size: 13px;
 }
 .list-group-noline.promotion-group .date-label {
   padding-top: 7px;
@@ -7096,4 +7198,20 @@ main {
 }
 .promotion-radio-label.active .yellow-highlight {
   color: #ff5722;
+}
+.create-coupon-id label {
+  display: inline-block;
+  width: 100%;
+}
+.create-coupon-id div {
+  display: inline-block;
+  float: none;
+  padding-right: 2px;
+}
+.create-coupon-id input[type="radio"] {
+  margin-top: 11px;
+}
+.noted-text {
+  font-weight: normal;
+  font-style: italic;
 }

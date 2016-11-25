@@ -2,66 +2,44 @@
 {% block page-container %}
 {% include "_shop-setting-header.html" %}
 <main class="promotion">
-	<div class="container">
-    <div class="row">
-      <div class="box">
-        <div class="box-header with-border">
-          <h3 class="box-title">Khuyến Mãi</h3>
-          <a href="https://myface.vn/support/promotion" target="_blank" class="pull-right hdsd-link">
-            <i class="fa fa-question-circle"></i>
-            <span>Hướng dẫn sử dụng</span>
-          </a>
+    <div class="container">
+        <div class="row">
+            <div class="box">
+                <div class="box-header with-border">
+                    <h3 class="box-title">Khuyến Mãi</h3><a class="pull-right hdsd-link" href="https://myface.vn/support/promotion" target="_blank"><i class="fa fa-question-circle"></i> <span>Hướng dẫn sử dụng</span></a>
+                </div><!-- /.box-header -->
+                <div class="box-body">
+                    <!--Đơn hàng-->
+                    <div class="promotion-row">
+                        <p class="black-highlight">Tạo các chương trình khuyến mãi cho khách hàng mua sản phẩm của bạn.</p>
+                        <div class="form-group">
+                            <div class="row">
+                                <div class="col-xs-4">
+                                    <div class="radio">
+                                        <label class="promotion-radio-btn"><input class="promotion-form-control" id="promotion-form-1" name="optionsRadios" type="radio"> Tạo mã Coupon</label>
+                                    </div>
+                                </div>
+                                <div class="col-xs-4">
+                                    <div class="radio">
+                                        <label class="promotion-radio-btn"><input class="promotion-form-control" id="promotion-form-2" name="optionsRadios" type="radio"> Tặng quà cho đơn hàng</label>
+                                    </div>
+                                </div>
+                                <div class="col-xs-4">
+                                    <div class="radio">
+                                        <label class="promotion-radio-btn"><input class="promotion-form-control" id="promotion-form-3" name="optionsRadios" type="radio"> Tặng quà cho sản phẩm</label>
+                                    </div>
+                                </div>
+                            </div><!--promotion-form-->
+                            <div class="row">
+                                {% include "_form-promotion-1.html" %}<!--/.promotion-form-1-->
+                                {% include "_form-promotion-2.html" %}<!--/.promotion-form-2-->
+                                {% include "_form-promotion-3.html" %}<!--/.promotion-form-3-->
+                            </div><!--/.promotion-form-->
+                        </div><!--/.form-group-->
+                    </div><!--/.Đơn hàng-->
+                </div><!-- /.box-body -->
+            </div>
         </div>
-        <!-- /.box-header -->
-        <div class="box-body">
-          <!--Đơn hàng-->
-          <div class="promotion-row">
-            <p class="black-highlight">Tạo các chương trình khuyến mãi cho khách hàng mua sản phẩm của bạn.</p>
-            <div class="form-group">
-              <div class="row">
-                <div class="col-xs-4">
-                  <div class="radio">
-                    <label class="promotion-radio-btn">
-                      <input type="radio" name="optionsRadios" class="promotion-form-control" id="promotion-form-1">
-                      Tạo mã Coupon
-                    </label>
-                  </div>
-                </div>
-
-                <div class="col-xs-4">
-                  <div class="radio">
-                    <label class="promotion-radio-btn">
-                      <input type="radio" name="optionsRadios" class="promotion-form-control" id="promotion-form-2">
-                      Tặng quà cho đơn hàng
-                    </label>
-                  </div>
-                </div>
-
-                <div class="col-xs-4">
-                  <div class="radio">
-                    <label class="promotion-radio-btn">
-                      <input type="radio" name="optionsRadios" class="promotion-form-control" id="promotion-form-3">
-                      Tặng quà cho sản phẩm
-                    </label>
-                  </div>
-                </div>
-              </div>
-
-              <!--promotion-form-->
-              <div class="row">
-                {% include "_form-promotion-1.html" %}<!--/.promotion-form-1-->
-
-                {% include "_form-promotion-2.html" %}<!--/.promotion-form-2-->
-
-                {% include "_form-promotion-3.html" %}<!--/.promotion-form-3-->
-              </div><!--/.promotion-form-->
-            </div><!--/.form-group-->
-          </div><!--/.Đơn hàng-->
-        </div>
-        <!-- /.box-body -->
-      </div>
     </div>
-  </div>
-
 </main>
 {% endblock %}

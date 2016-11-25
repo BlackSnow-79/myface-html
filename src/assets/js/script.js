@@ -180,10 +180,11 @@ $(document).ready(function() {
     //edit-address
     $(".edit-address").click(function() {
         $('.create-new-address').show();
+        $('.address-infor').show();
         $('.edit-address-form').hide();
         $(this).closest('.box').children('.edit-address-form').slideDown("slow");
     });
-    $(".cancel-edit").click(function(e) {
+    $(".cancel-edit, .cancel-update").click(function(e) {
         e.preventDefault();
         $(this).closest('.edit-address-form').slideUp("slow");
         $(".create-new-address").show();

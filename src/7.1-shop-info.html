@@ -72,7 +72,7 @@
                                     </div>
                                     <div class="form-group">
                                         <label class="control-label">Email <span>(Khi có việc gấp myFace liên hệ ngay)</span></label>
-                                        <input class="form-control" type="email" placeholder="Điền email">
+                                        <input class="form-control" type="email" placeholder="Điền địa chỉ email">
                                     </div>
                                     <div class="form-group update-action">
                                         <a class="cancel-btn cancel-update" href="">Hủy bỏ</a>
@@ -80,13 +80,13 @@
                                     </div>
                                 </div>
                             </div>
-
                             <div class="box box-lime box-address">
                                 <p class="title-address">Thông tin shop</p>
                                 <div class="address-infor">
                                     <p class="name-person">
                                         Amy Shop
                                     </p>
+                                    <p class="info-row">Mã shop: 09090909099090</p>
                                     <p class="address">Số 120, Lê Đức Thọ, Phường 17, Quận Gò Vấp, Thành Phố Hồ Chí Minh</p>
                                     <p class="phonenumber">
                                         Điện thoại
@@ -106,30 +106,77 @@
                                 </div>
 
                                 <div class="edit-address-form">
-                                    <div class="form-group row">
-                                        <div class="col-md-3">
-                                            <label class="control-label">Danh xưng</label>
-                                            <select class="form-control">
-                                                <option>
-                                                    Anh
-                                                </option>
-                                                <option>
-                                                    Chị
-                                                </option>
-                                            </select>
-                                        </div>
-                                        <div class="col-md-9">
-                                            <label class="control-label">Họ tên chủ shop</label>
-                                            <input class="form-control" placeholder="Điền họ tên chủ shop" type="text">
-                                        </div>
+                                    <div class="form-group">
+                                        <label class="control-label">Tên shop</label>
+                                        <input class="form-control" type="text" value="Amy Shop" disabled="">
                                     </div>
                                     <div class="form-group">
-                                        <label class="control-label">Điện thoại <span>(Khi có việc gấp myFace liên hệ ngay)</span></label>
+                                        <label class="control-label">Mã shop</label>
+                                        <input class="form-control" type="text" value="09090909099090" disabled="">
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="control-label">Điện thoại <span>(Dùng để tiếp nhận thông tin / nhận cuộc gọi từ người mua hàng, ...)</span></label>
                                         <input class="form-control" type="text" placeholder="Điền số điện thoại">
                                     </div>
                                     <div class="form-group">
-                                        <label class="control-label">Email <span>(Khi có việc gấp myFace liên hệ ngay)</span></label>
-                                        <input class="form-control" type="email" placeholder="Điền email">
+                                        <label class="control-label">Email <span>(Nhận thông báo từ myFace, thống báo hoàn trả tiền hàng, ...)</span></label>
+                                        <input class="form-control" type="email" placeholder="Điền địa chỉ email">
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="control-label">Địa chỉ</label>
+                                        <select class="form-control">
+                                            <option>Chọn Tỉnh/Thành Phố</option>
+                                            <option>Thành phố Hồ Chí Minh</option>
+                                            <option>Đà Nẵng</option>
+                                            <option>Nghệ An</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group row">
+                                        <div class="col-md-6 district">
+                                            <select class="form-control">
+                                                <option>
+                                                    Chọn Quận/Huyện
+                                                </option>
+                                                <option>
+                                                    Quỳnh Lưu
+                                                </option>
+                                            </select>
+                                        </div>
+                                        <div class="col-md-6 village">
+                                            <select class="form-control">
+                                                <option>
+                                                    Chọn Phường/Xã
+                                                </option>
+                                                <option>
+                                                    Quỳnh Lộc
+                                                </option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <input class="form-control street" type="text" placeholder="Điền địa chỉ shop">
+                                    </div>
+                                    <p class="form-group form-note">
+                                        <label class="control-label">
+                                            Thông tin tài khoản ngân hàng
+                                            <span>(Dùng để nhận tiền hàng / tiền C.O.D từ công ty vận chuyển / Nhận tiền thưởng từ myFace khi shop có tham gia chương trình khuyến mãi)</span>
+                                        </label>
+                                    </p>
+                                    <div class="form-group">
+                                        <label class="control-label">Ngân hàng</label>
+                                        <select class="form-control">
+                                            <option>Chọn ngân hàng</option>
+                                            <option>Vietcombank</option>
+                                            <option>Sacombank</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="control-label">Số tài khoản</label>
+                                        <input class="form-control" type="text" placeholder="Điền số tài khoản ngân hàng">
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="control-label">Người thừa hưởng</label>
+                                        <input class="form-control" type="text" placeholder="Điền thông tin người thừa hưởng">
                                     </div>
                                     <div class="form-group update-action">
                                         <a class="cancel-btn cancel-update" href="">Hủy bỏ</a>
@@ -139,176 +186,261 @@
                             </div>
                         </div>
                         <div class="col-md-6">
-                            <div class="box box-lime">
-                                <div class="box-header with-border">
-                                    <h4 class="box-title">Địa chỉ cửa hàng</h4>
-                                </div><!-- /.box-header -->
-                                <div class="box-body">
-                                    <div class="box box-gray">
-                                        <div class="box-header with-border">
-                                            <h4 class="box-title">Cửa hàng chính</h4>
-                                        </div><!-- form start -->
-                                        <div class="form-horizontal form-horizontal-right">
-                                            <div class="box-body">
-                                                <div class="form-group">
-                                                    <label class="col-sm-4 control-label" for="">Tên địa điểm:</label>
-                                                    <div class="col-sm-8">
-                                                        <input class="form-control" id="" placeholder="" type="text">
-                                                    </div>
-                                                </div>
-                                                <div class="form-group">
-                                                    <label class="col-sm-4 control-label" for="">Số điện thoại</label>
-                                                    <div class="col-sm-8">
-                                                        <input class="form-control" id="" placeholder="" type="text">
-                                                    </div>
-                                                </div>
-                                                <div class="form-group">
-                                                    <label class="col-sm-4 control-label" for="">Tỉnh / Thành phố</label>
-                                                    <div class="col-sm-8">
-                                                        <select class="form-control">
-                                                            <option>
-                                                                Chọn Tỉnh / Thành phố
-                                                            </option>
-                                                            <option>
-                                                                Hồ Chí Minh
-                                                            </option>
-                                                            <option>
-                                                                Hà Nội
-                                                            </option>
-                                                        </select>
-                                                    </div>
-                                                </div>
-                                                <div class="form-group">
-                                                    <label class="col-sm-4 control-label" for="">Quận / Huyện</label>
-                                                    <div class="col-sm-8">
-                                                        <select class="form-control">
-                                                            <option>
-                                                                Chọn Quận / Huyện
-                                                            </option>
-                                                            <option>
-                                                                abc
-                                                            </option>
-                                                            <option>
-                                                                xyz
-                                                            </option>
-                                                        </select>
-                                                    </div>
-                                                </div>
-                                                <div class="form-group">
-                                                    <label class="col-sm-4 control-label" for="">Phường / Xã</label>
-                                                    <div class="col-sm-8">
-                                                        <select class="form-control">
-                                                            <option>
-                                                                Chọn Phường / Xã
-                                                            </option>
-                                                            <option>
-                                                                abc
-                                                            </option>
-                                                            <option>
-                                                                xyz
-                                                            </option>
-                                                        </select>
-                                                    </div>
-                                                </div>
-                                                <div class="form-group">
-                                                    <label class="col-sm-4 control-label" for="">Đường / Phố</label>
-                                                    <div class="col-sm-8">
-                                                        <input class="form-control" id="" placeholder="" type="text">
-                                                    </div>
-                                                </div>
-                                                <div class="form-group">
-                                                    <label class="col-sm-4 control-label" for="">Số Nhà / Ngõ / Hẻm</label>
-                                                    <div class="col-sm-8">
-                                                        <input class="form-control" id="" placeholder="" type="text">
-                                                    </div>
-                                                </div>
-                                            </div><!-- /.box-body -->
-                                        </div>
+                            <div class="box box-lime box-address">
+                                <p class="title-address">Thông tin kho hàng cửa hàng</p>
+                                <div class="box box-gray shop-address-item">
+                                    <p class="title-address">Cửa hàng chính</p>
+                                    <div class="address-infor">
+                                        <p class="info-row">Tên địa điểm: Trung tâm</p>
+                                        <p class="address">Số 120, Lê Đức Thọ, Phường 17, Quận Gò Vấp, Thành Phố Hồ Chí Minh</p>
+                                        <p class="phonenumber">
+                                            Điện thoại
+                                            <a href="tel:+84902559591">0902559591</a>
+                                        </p>
+                                        <p class="update-address">
+                                            <a class="link-btn remove-address" href="">Xóa địa chỉ</a>
+                                            <button class="btn btn-default edit-address" type="button">Sửa địa chỉ</button>
+                                        </p>
                                     </div>
-                                    <div class="box box-gray">
-                                        <div class="box-header with-border">
-                                            <h4 class="box-title">Cửa hàng phụ</h4>
-                                            <input class="btn btn-default pull-right" type="button" value="+ Thêm cửa hàng">
-                                        </div><!-- form start -->
-                                        <div class="form-horizontal form-horizontal-right">
-                                            <div class="box-body">
-                                                <div class="form-group">
-                                                    <label class="col-sm-4 control-label" for="">Tên địa điểm:</label>
-                                                    <div class="col-sm-8">
-                                                        <input class="form-control" id="" placeholder="" type="text">
-                                                    </div>
-                                                </div>
-                                                <div class="form-group">
-                                                    <label class="col-sm-4 control-label" for="">Số điện thoại</label>
-                                                    <div class="col-sm-8">
-                                                        <input class="form-control" id="" placeholder="" type="text">
-                                                    </div>
-                                                </div>
-                                                <div class="form-group">
-                                                    <label class="col-sm-4 control-label" for="">Tỉnh / Thành phố</label>
-                                                    <div class="col-sm-8">
-                                                        <select class="form-control">
-                                                            <option>
-                                                                Chọn Tỉnh / Thành phố
-                                                            </option>
-                                                            <option>
-                                                                Hồ Chí Minh
-                                                            </option>
-                                                            <option>
-                                                                Hà Nội
-                                                            </option>
-                                                        </select>
-                                                    </div>
-                                                </div>
-                                                <div class="form-group">
-                                                    <label class="col-sm-4 control-label" for="">Quận / Huyện</label>
-                                                    <div class="col-sm-8">
-                                                        <select class="form-control">
-                                                            <option>
-                                                                Chọn Quận / Huyện
-                                                            </option>
-                                                            <option>
-                                                                abc
-                                                            </option>
-                                                            <option>
-                                                                xyz
-                                                            </option>
-                                                        </select>
-                                                    </div>
-                                                </div>
-                                                <div class="form-group">
-                                                    <label class="col-sm-4 control-label" for="">Phường / Xã</label>
-                                                    <div class="col-sm-8">
-                                                        <select class="form-control">
-                                                            <option>
-                                                                Chọn Phường / Xã
-                                                            </option>
-                                                            <option>
-                                                                abc
-                                                            </option>
-                                                            <option>
-                                                                xyz
-                                                            </option>
-                                                        </select>
-                                                    </div>
-                                                </div>
-                                                <div class="form-group">
-                                                    <label class="col-sm-4 control-label" for="">Đường / Phố</label>
-                                                    <div class="col-sm-8">
-                                                        <input class="form-control" id="" placeholder="" type="text">
-                                                    </div>
-                                                </div>
-                                                <div class="form-group">
-                                                    <label class="col-sm-4 control-label" for="">Số Nhà / Ngõ / Hẻm</label>
-                                                    <div class="col-sm-8">
-                                                        <input class="form-control" id="" placeholder="" type="text">
-                                                    </div>
-                                                </div>
-                                            </div><!-- /.box-body -->
+                                    <div class="form-horizontal form-horizontal-right edit-address-form">
+                                        <div class="form-group">
+                                            <label class="col-sm-4 control-label" for="">Tên địa điểm:</label>
+                                            <div class="col-sm-8">
+                                                <input class="form-control" id="" type="text" value="Trung tâm">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-sm-4 control-label" for="">Số điện thoại</label>
+                                            <div class="col-sm-8">
+                                                <input class="form-control" id="" placeholder="" type="text">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-sm-4 control-label" for="">Tỉnh / Thành phố</label>
+                                            <div class="col-sm-8">
+                                                <select class="form-control">
+                                                    <option>
+                                                        Chọn Tỉnh / Thành phố
+                                                    </option>
+                                                    <option>
+                                                        Hồ Chí Minh
+                                                    </option>
+                                                    <option>
+                                                        Hà Nội
+                                                    </option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-sm-4 control-label" for="">Quận / Huyện</label>
+                                            <div class="col-sm-8">
+                                                <select class="form-control">
+                                                    <option>
+                                                        Chọn Quận / Huyện
+                                                    </option>
+                                                    <option>
+                                                        abc
+                                                    </option>
+                                                    <option>
+                                                        xyz
+                                                    </option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-sm-4 control-label" for="">Phường / Xã</label>
+                                            <div class="col-sm-8">
+                                                <select class="form-control">
+                                                    <option>
+                                                        Chọn Phường / Xã
+                                                    </option>
+                                                    <option>
+                                                        abc
+                                                    </option>
+                                                    <option>
+                                                        xyz
+                                                    </option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-sm-4 control-label" for="">Địa chỉ</label>
+                                            <div class="col-sm-8">
+                                                <input class="form-control street" type="text" placeholder="Điền địa chỉ cửa hàng">
+                                            </div>
+                                        </div>
+                                        <div class="update-action">
+                                            <a class="cancel-btn cancel-update" href="">Hủy bỏ</a>
+                                            <button class="btn btn-lime" type="button">Cập nhật thông tin</button>
                                         </div>
                                     </div>
                                 </div>
-                            </div><!-- /.box -->
+                                <div class="box box-gray shop-address-item">
+                                    <p class="title-address">Cửa hàng phụ 01</p>
+                                    <div class="address-infor">
+                                        <p class="info-row">Tên địa điểm: Trung tâm</p>
+                                        <p class="address">Số 120, Lê Đức Thọ, Phường 17, Quận Gò Vấp, Thành Phố Hồ Chí Minh</p>
+                                        <p class="phonenumber">
+                                            Điện thoại
+                                            <a href="tel:+84902559591">0902559591</a>
+                                        </p>
+                                        <p class="update-address">
+                                            <a class="link-btn remove-address" href="">Xóa địa chỉ</a>
+                                            <button class="btn btn-default edit-address" type="button">Sửa địa chỉ</button>
+                                        </p>
+                                    </div>
+                                    <div class="form-horizontal form-horizontal-right edit-address-form">
+                                        <div class="form-group">
+                                            <label class="col-sm-4 control-label" for="">Tên địa điểm:</label>
+                                            <div class="col-sm-8">
+                                                <input class="form-control" id="" type="text" value="Trung tâm">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-sm-4 control-label" for="">Số điện thoại</label>
+                                            <div class="col-sm-8">
+                                                <input class="form-control" id="" placeholder="" type="text">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-sm-4 control-label" for="">Tỉnh / Thành phố</label>
+                                            <div class="col-sm-8">
+                                                <select class="form-control">
+                                                    <option>
+                                                        Chọn Tỉnh / Thành phố
+                                                    </option>
+                                                    <option>
+                                                        Hồ Chí Minh
+                                                    </option>
+                                                    <option>
+                                                        Hà Nội
+                                                    </option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-sm-4 control-label" for="">Quận / Huyện</label>
+                                            <div class="col-sm-8">
+                                                <select class="form-control">
+                                                    <option>
+                                                        Chọn Quận / Huyện
+                                                    </option>
+                                                    <option>
+                                                        abc
+                                                    </option>
+                                                    <option>
+                                                        xyz
+                                                    </option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-sm-4 control-label" for="">Phường / Xã</label>
+                                            <div class="col-sm-8">
+                                                <select class="form-control">
+                                                    <option>
+                                                        Chọn Phường / Xã
+                                                    </option>
+                                                    <option>
+                                                        abc
+                                                    </option>
+                                                    <option>
+                                                        xyz
+                                                    </option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-sm-4 control-label" for="">Địa chỉ</label>
+                                            <div class="col-sm-8">
+                                                <input class="form-control street" type="text" placeholder="Điền địa chỉ cửa hàng">
+                                            </div>
+                                        </div>
+                                        <div class="update-action">
+                                            <a class="cancel-btn cancel-update" href="">Hủy bỏ</a>
+                                            <button class="btn btn-lime" type="button">Cập nhật thông tin</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <input class="btn btn-lime create-new-address" type="button" value="Thêm cửa hàng">
+                            </div>
+                            <!--create new store address-->
+                            <div class="form-horizontal form-horizontal-right edit-address-form new-address-form">
+                                <p class="title-address">Thêm cửa hàng</p>
+                                <div class="form-group">
+                                    <label class="col-sm-4 control-label" for="">Tên địa điểm:</label>
+                                    <div class="col-sm-8">
+                                        <input class="form-control" id="" type="text" value="Trung tâm">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-sm-4 control-label" for="">Số điện thoại</label>
+                                    <div class="col-sm-8">
+                                        <input class="form-control" id="" placeholder="" type="text">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-sm-4 control-label" for="">Tỉnh / Thành phố</label>
+                                    <div class="col-sm-8">
+                                        <select class="form-control">
+                                            <option>
+                                                Chọn Tỉnh / Thành phố
+                                            </option>
+                                            <option>
+                                                Hồ Chí Minh
+                                            </option>
+                                            <option>
+                                                Hà Nội
+                                            </option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-sm-4 control-label" for="">Quận / Huyện</label>
+                                    <div class="col-sm-8">
+                                        <select class="form-control">
+                                            <option>
+                                                Chọn Quận / Huyện
+                                            </option>
+                                            <option>
+                                                abc
+                                            </option>
+                                            <option>
+                                                xyz
+                                            </option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-sm-4 control-label" for="">Phường / Xã</label>
+                                    <div class="col-sm-8">
+                                        <select class="form-control">
+                                            <option>
+                                                Chọn Phường / Xã
+                                            </option>
+                                            <option>
+                                                abc
+                                            </option>
+                                            <option>
+                                                xyz
+                                            </option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-sm-4 control-label" for="">Địa chỉ</label>
+                                    <div class="col-sm-8">
+                                        <input class="form-control street" type="text" placeholder="Điền địa chỉ cửa hàng">
+                                    </div>
+                                </div>
+                                <div class="update-action">
+                                    <a class="cancel-btn cancel-update" href="">Hủy bỏ</a>
+                                    <button class="btn btn-lime" type="button">Thêm</button>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div><!-- /.box-body -->

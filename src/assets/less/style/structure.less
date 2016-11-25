@@ -225,6 +225,31 @@ main {
         color: @lime-text;
       }
     }
+    .link-btn {
+      color: @red;
+    }
+  }
+  .shop-address-item {
+    &:after {
+      content: '';
+      display: block;
+      width: 50%;
+      height: 1px;
+      border-top: 1px dashed @gray-line;
+      margin: 20px auto 0;
+    }
+    &:last-child {
+      margin-bottom: 0;
+      &:after {
+        display: none;
+      }
+    }
+    border: 0;
+    .title-address {
+      color: @black;
+      border: 0;
+      margin-bottom: 9px;
+    }
   }
 }
 .title-address {
@@ -251,16 +276,18 @@ main {
   text-decoration: underline;
   padding: 0 10px;
 }
-.link-btn {
-  color: @red;
-}
 .cancel-btn {
   color: @gray-text;
 }
-.edit-address-form {
-  display: none;
-  padding-top: 20px;
+
+.create-address-form {
   width: 100%;
+  padding: 15px;
+  position: relative;
+  border-radius: 3px;
+  background: #ffffff;
+  border: 1px solid #dfdfdf;
+  margin-bottom: 20px;
   .form-group {
     .row {
       margin-left: -7px;
@@ -298,18 +325,84 @@ main {
     width: 82%;
     float: right;
   }
+  .form-control {
+    color: @gray-text;
+    .placeholder(@gray-text, italic);
+  }
   .update-action {
     text-align: right;
+    margin-top: 10px;
+    margin-bottom: 0;
+  }
+  .form-note {
+    label {
+      color: @red;
+      margin-bottom: 0;
+      span {
+        color: @black;
+      }
+    }
+  }
+}
+.edit-address-form {
+  display: none;
+  padding-top: 20px;
+  .form-group {
+    .row {
+      margin-left: -7px;
+      margin-right: -7px;
+    }
+    &.row {
+      margin-left: -7px;
+      margin-right: -7px;
+    }
+    .col-md-6,
+    .col-md-3,
+    .col-md-9 {
+      padding-left: 7px;
+      padding-right: 7px;
+    }
+    .block-row {
+      &.row {
+        margin: 0;
+      }
+    }
+  }
+  .control-label {
+    color: @black;
+    margin-bottom: 5px;
+    span {
+      font-weight: normal;
+      font-style: italic;
+    }
+  }
+  .rg-group-1-1 {
+    width: 15%;
+    float: left;
+  }
+  .rg-group-1-2 {
+    width: 82%;
+    float: right;
   }
   .form-control {
     color: @gray-text;
     .placeholder(@gray-text, italic);
   }
   .update-action {
+    text-align: right;
     margin-top: 10px;
+    margin-bottom: 0;
+  }
+  .form-note {
+    label {
+      color: @red;
+      margin-bottom: 0;
+      span {
+        color: @black;
+      }
+    }
   }
   &.new-address-form {
-    width: 100%;
     padding: 15px;
     position: relative;
     border-radius: 3px;
@@ -317,6 +410,10 @@ main {
     border: 1px solid #dfdfdf;
     margin-bottom: 20px;
   }
+}
+.create-new-address {
+  margin-right: 15px;
+  float: right;
 }
 
 .search-container {
