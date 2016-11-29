@@ -5699,6 +5699,37 @@ main {
   font-size: 13px;
   color: #727272;
 }
+.invoice-edit-step-1,
+.invoice-edit-step-2 {
+  opacity: 0.5;
+  pointer-events: none;
+}
+.invoice-edit-step-1.active,
+.invoice-edit-step-2.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+.invoice-edit-step-1.active .invoice-step-title,
+.invoice-edit-step-2.active .invoice-step-title {
+  color: #ff5722;
+  font-weight: bold;
+}
+.invoice-edit-step-1.active .invoice-step-title .label-default,
+.invoice-edit-step-2.active .invoice-step-title .label-default {
+  background-color: #ff5722;
+  color: #fff;
+}
+.invoice-step-title {
+  padding: 5px 15px 15px;
+  margin-bottom: 0;
+  color: #727272;
+}
+.invoice-step-title .label-default {
+  margin-right: 5px;
+}
+.goto-next-step {
+  margin-bottom: 0;
+}
 /*
  * Page: Login & Register
  * ----------------------
@@ -7207,6 +7238,7 @@ main {
   display: inline-block;
   float: none;
   padding-right: 2px;
+  vertical-align: middle;
 }
 .create-coupon-id input[type="radio"] {
   margin-top: 11px;

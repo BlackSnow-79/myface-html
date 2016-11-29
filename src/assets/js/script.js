@@ -207,6 +207,18 @@ $(document).ready(function() {
         $(this).closest('.edit-address-form').slideUp("slow");
         $(this).closest('.box').children('.address-infor').slideDown("slow");
     });
+    //goto-next-step in create invoice
+    $(".goto-invoice-step-2").click(function() {
+        $('.invoice-edit-step-1').removeClass('active');
+        $('.invoice-edit-step-2').addClass('active');
+        $('html,body').animate({scrollTop: ($('.'+'invoice-edit-step-2').offset().top - 80)},'slow');
+    });
+    $(".cancel-invoice-step-2").click(function(e) {
+        event.preventDefault();
+        $('.invoice-edit-step-2').removeClass('active');
+        $('.invoice-edit-step-1').addClass('active');
+        $('html, body').animate({scrollTop: 0}, 600);
+    });
 
     // Modal
     (function($) {

@@ -3,17 +3,29 @@
         <div class="row">
             <div class="col-xs-4">
                 <div class="radio">
-                    <label class="promotion-radio-label active"><input checked class="promotion-option-control" id="promotion-option-form-1" name="promotion-option-control-1" type="radio"> Áp dụng cho <strong>tất cả đơn hàng</strong> <span class="rp-arrow"></span></label>
+                    <label class="promotion-radio-label active">
+                        <input checked class="promotion-option-control" id="promotion-option-form-1" name="promotion-option-control-1" type="radio">
+                        Áp dụng cho <strong>tất cả đơn hàng</strong>
+                        <span class="rp-arrow"></span>
+                    </label>
                 </div>
             </div>
             <div class="col-xs-4">
                 <div class="radio">
-                    <label class="promotion-radio-label"><input class="promotion-option-control" id="promotion-option-form-2" name="promotion-option-control-1" type="radio"> Áp dụng cho <strong>nhóm sản phẩm</strong> <span class="rp-arrow"></span></label>
+                    <label class="promotion-radio-label">
+                        <input class="promotion-option-control" id="promotion-option-form-2" name="promotion-option-control-1" type="radio">
+                        Áp dụng cho <strong>nhóm sản phẩm</strong>
+                        <span class="rp-arrow"></span>
+                    </label>
                 </div>
             </div>
             <div class="col-xs-4">
                 <div class="radio">
-                    <label class="promotion-radio-label"><input class="promotion-option-control" id="promotion-option-form-3" name="promotion-option-control-1" type="radio"> Áp dụng cho <strong>sản phẩm</strong> <span class="rp-arrow"></span></label>
+                    <label class="promotion-radio-label">
+                        <input class="promotion-option-control" id="promotion-option-form-3" name="promotion-option-control-1" type="radio">
+                        Áp dụng cho <strong>sản phẩm</strong>
+                        <span class="rp-arrow"></span>
+                    </label>
                 </div>
             </div>
         </div>
@@ -35,14 +47,18 @@
                             <div class="col-xs-5 date-div">
                                 <div class="date-picker-group">
                                     <input class="form-control date-picker" id="" name="date-picker" placeholder="09/04/2015 10:20" type="text">
-                                    <span class="calendar-icon l-calendar-icon"><i class="fa fa-calendar"></i></span>
+                                    <span class="calendar-icon l-calendar-icon">
+                                        <i class="fa fa-calendar"></i>
+                                    </span>
                                 </div>
                             </div>
                             <p class="col-xs-1 date-label">Đến</p>
                             <div class="col-xs-5 date-div">
                                 <div class="date-picker-group">
                                     <input class="form-control date-picker" id="" name="date-picker" placeholder="09/04/2015 10:20" type="text">
-                                    <span class="calendar-icon l-calendar-icon"><i class="fa fa-calendar"></i></span>
+                                    <span class="calendar-icon l-calendar-icon">
+                                        <i class="fa fa-calendar"></i>
+                                    </span>
                                 </div>
                             </div>
                         </div>
@@ -72,13 +88,13 @@
                     <div class="col-sm-9">
                         <div class="radio">
                             <label>
-                                <input checked id="optionsRadios1" name="optionsRadios" type="radio" value="option1">
+                                <input checked name="optionsRadios1" type="radio">
                                 Mặc định
                             </label>
                         </div>
                         <div class="radio create-coupon-id">
                             <label>
-                                <input id="optionsRadios2" name="optionsRadios" type="radio" value="option2">
+                                <input name="optionsRadios1" type="radio">
                                 Tự đặt
                                 <div class="col-xs-5">
                                     <input class="form-control" placeholder="Nhập mã coupon muốn tạo" type="text">
@@ -226,6 +242,27 @@
                     </div>
                 </li>
                 <li class="form-group">
+                    <label class="col-xs-3 control-label">Mã coupon:</label>
+                    <div class="col-sm-9">
+                        <div class="radio">
+                            <label>
+                                <input checked name="optionsRadios2" type="radio">
+                                Mặc định
+                            </label>
+                        </div>
+                        <div class="radio create-coupon-id">
+                            <label>
+                                <input name="optionsRadios2" type="radio">
+                                Tự đặt
+                                <div class="col-xs-5">
+                                    <input class="form-control" placeholder="Nhập mã coupon muốn tạo" type="text">
+                                </div>
+                                <span class="noted-text">(Tối thiểu 4 kí tự. tối đa 12 kí tự. Bao gồm chữ và số)</span>
+                            </label>
+                        </div>
+                    </div>
+                </li>
+                <li class="form-group">
                     <label class="col-xs-3 control-label">Giá trị đơn hàng tối thiểu:</label>
                     <div class="col-sm-3">
                         <input class="form-control" id="" placeholder="" type="text" value="300000">
@@ -343,6 +380,27 @@
                             <div class="col-xs-8 p-control-right">
                                 <input class="form-control" id="" placeholder="" type="text" value="50000">
                             </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="form-group">
+                    <label class="col-xs-3 control-label">Mã coupon:</label>
+                    <div class="col-sm-9">
+                        <div class="radio">
+                            <label>
+                                <input checked name="optionsRadios3" type="radio">
+                                Mặc định
+                            </label>
+                        </div>
+                        <div class="radio create-coupon-id">
+                            <label>
+                                <input name="optionsRadios3" type="radio">
+                                Tự đặt
+                                <div class="col-xs-5">
+                                    <input class="form-control" placeholder="Nhập mã coupon muốn tạo" type="text">
+                                </div>
+                                <span class="noted-text">(Tối thiểu 4 kí tự. tối đa 12 kí tự. Bao gồm chữ và số)</span>
+                            </label>
                         </div>
                     </div>
                 </li>

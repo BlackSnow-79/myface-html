@@ -858,3 +858,31 @@ main {
   font-size: 13px;
   color: @gray-text;
 }
+.invoice-edit-step-1,
+.invoice-edit-step-2 {
+  opacity: 0.5;
+  pointer-events: none;
+  &.active {
+    opacity: 1;
+    pointer-events: auto;
+    .invoice-step-title {
+      color: @lime-text;
+      font-weight: bold;
+      .label-default {
+        background-color: @lime;
+        color: #fff;
+      }
+    }
+  }
+}
+.invoice-step-title {
+  padding: 5px 15px 15px;
+  margin-bottom: 0;
+  color: @gray-text;
+  .label-default {
+    margin-right: 5px;
+  }
+}
+.goto-next-step {
+  margin-bottom: 0;
+}

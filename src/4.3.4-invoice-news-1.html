@@ -1,4 +1,5 @@
-{% extends "_layout.html" %} {% block page-container %}
+{% extends "_layout.html" %}
+{% block page-container %}
 <section class="content-header" id="content-header">
     <div class="container">
         {% include "_invoice-header.html" %}
@@ -9,37 +10,207 @@
         <div class="row">
             <div class="box">
                 <div class="box-header with-border">
-                    <h3 class="box-title">Đơn hàng 123456789</h3>
+                    <h3 class="box-title">Tạo đơn hàng mới</h3>
                 </div><!-- /.box-header -->
                 <div class="box-body">
-                    <div class="btn-group form-group">
-                        <button class="btn btn-gray" type="button">In đơn hàng</button>
-                        <a class="btn btn-lime" href="4.3.1-invoice-detail-edit-1.html">Sửa đơn hàng</a>
-                    </div><!--progress-row-->
-                    <div class="progress-row">
-                        <div class="progress-row-content">
-                            <a class="progress-link activeted" href="4.3.1-invoice-detail-edit-1.html">
-                                <span class="label label-default">1</span>
-                            <p>Thông tin đơn hàng</p></a>
-                            <div class="progress sm progress-light-blue">
-                                <div class="progress-bar"></div>
-                            </div><a class="progress-link active" href="4.3.2-invoice-detail-edit-2.html"><span class="label label-default">2</span>
-                            <p>Thông tin giao hàng</p></a>
-                            <div class="progress sm">
-                                <div class="progress-bar"></div>
-                            </div><a class="progress-link" href="4.3.3-invoice-detail-edit-3.html"><span class="label label-default">3</span>
-                            <p>Tóm tắt đơn hàng</p></a>
+                    <!--form-row-->
+                    <div class="row invoice-row-4 invoice-edit-step-1 active">
+                        <p class="invoice-step-title">
+                            <span class="label label-default">1</span> Chọn sản phẩm
+                        </p>
+                        <div class="col-xs-12">
+                            <table class="table table-striped order-product-table">
+                                <thead>
+                                    <tr>
+                                        <th class="col-xs-1">STT</th>
+                                        <th class="col-xs-5">Tên sản phẩm</th>
+                                        <th class="col-xs-2 text-center">Giá bán</th>
+                                        <th class="col-xs-1 text-center">Số lượng</th>
+                                        <th class="col-xs-2 text-center">Thành tiền</th>
+                                        <th class="col-xs-1"></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>01</td>
+                                        <td class="products-list">
+                                            <div class="item">
+                                                <div class="product-img">
+                                                    <a href="#">
+                                                        <img alt="myface" src="assets/images/product/product-2.jpg">
+                                                    </a>
+                                                </div>
+                                                <div class="product-info">
+                                                    <a class="product-title" href="#">Combo 2 Hộp Sữa Bột Ensure Gold Acti M2 400g</a>
+                                                    <p class="product-properties">(Màu sắc: Xanh rêu, Size: M)</p>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="text-center">
+                                            <span>1.000.000<ins>đ</ins></span>
+                                        </td>
+                                        <td class="text-right">
+                                            <input class="form-control" min="1" name="quantity" type="number" value="1">
+                                        </td>
+                                        <td class="text-center">
+                                            <label>1.000.000<ins>đ</ins></label>
+                                        </td>
+                                        <td>
+                                            <a class="btn-action" data-target="#nontifi-modal" data-toggle="modal" href="#" title="xóa">
+                                                <i class="fa fa-trash-o"></i>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>02</td>
+                                        <td class="products-list">
+                                            <div class="item">
+                                                <div class="product-img">
+                                                    <a href="#">
+                                                        <img alt="myface" src="assets/images/product/product-2.jpg">
+                                                    </a>
+                                                </div>
+                                                <div class="product-info">
+                                                    <a class="product-title" href="#">Combo 2 Hộp Sữa Bột Ensure Gold Acti M2 400g</a>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="text-center">
+                                            <span>1.000.000<ins>đ</ins></span>
+                                        </td>
+                                        <td class="text-right">
+                                            <input class="form-control" min="1" name="quantity" type="number" value="1">
+                                        </td>
+                                        <td class="text-center">
+                                            <label>1.000.000<ins>đ</ins></label>
+                                        </td>
+                                        <td>
+                                            <a class="btn-action" data-target="#nontifi-modal" data-toggle="modal" href="#" title="xóa">
+                                                <i class="fa fa-trash-o"></i>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="row">
+                                <div class="col-xs-2">
+                                    <input class="btn btn-default" id="insert-product-btn" type="button" value="+ Thêm sản phẩm">
+                                </div>
+                                <div class="col-xs-6">
+                                    <div class="row insert-product-form" id="insert-product-form">
+                                        <div class="col-xs-10">
+                                            <input class="form-control" id="insert-input-active" onclick="openSSbox()" type="text">
+                                            <script type="text/javascript">
+                                                //open insert-product
+                                                function openSSbox() {
+                                                    $('.ss-box').show();
+                                                }
+                                            </script> <!--product-table-->
+                                            <ul class="ss-box" id="">
+                                                <li class="ss-result">
+                                                    <a data-target=".product-properties-modal" data-toggle="modal" href="javascript:void(0);">
+                                                    <table width="100%">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td class="product-box-img">
+                                                                    <img src="assets/images/product/product-1.jpg">
+                                                                </td>
+                                                                <td class="product-box-des">
+                                                                    <p>iPhone 6s Plus 64GB Quốc Tế</p>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table></a>
+                                                </li>
+                                                <li class="ss-result">
+                                                    <a data-target=".product-properties-modal" data-toggle="modal" href="javascript:void(0);">
+                                                    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td class="product-box-img">
+                                                                    <img src="assets/images/product/product-1.jpg">
+                                                                </td>
+                                                                <td class="product-box-des">
+                                                                    <p>iPhone 6s Plus 64GB Quốc Tế</p>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table></a>
+                                                </li>
+                                            </ul><!--/.product-table-->
+                                        </div><input class="col-xs-2 btn btn-lime" id="insert-btn-active" type="submit" value="Thêm">
+                                    </div>
+                                </div>
+                                <div class="col-xs-3 col-xs-offset-1">
+                                    <table class="table temp-price">
+                                        <tbody>
+                                            <tr>
+                                                <th>Tổng tiền đơn hàng:</th>
+                                                <td class="text-right">
+                                                    <label class="lime-highlight">2.000.000<ins>đ</ins></label>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="col-xs-12 text-right goto-next-step">
+                                    <a class="cancel-btn" href="4.1-invoice-list.html">Hủy bỏ</a>
+                                    <input class="btn btn-lime goto-invoice-step-2" type="button" value="Tiếp tục">
+                                </div>
+                            </div><!--/.row-->
                         </div>
-                    </div><!--form-row-->
+                    </div>
+                </div><!-- /.box-body -->
+            </div>
+
+            <!--step-2-->
+            <div class="box invoice-edit-step-2">
+                <div class="box-body">
                     <div class="row invoice-row-2">
+                        <p class="invoice-step-title">
+                            <span class="label label-default">2</span> Thông tin giao hàng
+                        </p>
                         <div class="col-md-6 customer">
                             <div class="box box-lime">
                                 <div class="box-header with-border">
-                                    <h4 class="box-title">Địa chỉ thu tiền</h4>
+                                    <h4 class="box-title">Chọn địa điểm lấy hàng (sản phẩm)</h4>
+                                </div><!-- /.box-header -->
+                                <div class="box-body form-horizontal">
+                                    <div class="clearfix">
+                                        <div class="radio">
+                                            <label class="radio-material-blue">
+                                                <input checked="checked" name="shop_address" type="radio">
+                                                Địa chỉ 1 : Taodan, Số 121/11, Đường Hưng Phú, Phường Mỹ Quý, Thành Phố Long Xuyên, Tỉnh An Giang
+                                            </label>
+                                        </div>
+                                        <div class="radio">
+                                            <label class="radio-material-blue">
+                                                <input name="shop_address" type="radio">
+                                                Địa chỉ 1 : Taodan, Số 121/11, Đường Hưng Phú, Phường 8, Thành Phố Hồ Chí Minh
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div><!-- /.box -->
+                            <div class="box box-lime">
+                                <div class="box-header with-border">
+                                    <h4 class="box-title">Địa chỉ giao hàng</h4>
                                 </div><!-- /.box-header -->
                                 <!-- form start -->
                                 <div class="form-horizontal">
                                     <div class="box-body product-form">
+                                        <div class="form-group">
+                                            <label class="col-sm-4 control-label" for="">Số điện thoại</label>
+                                            <div class="col-sm-8">
+                                                <input class="form-control" id="" placeholder="" type="text">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-sm-4 control-label" for="">Email</label>
+                                            <div class="col-sm-8">
+                                                <input class="form-control" id="" placeholder="" type="email">
+                                            </div>
+                                        </div>
                                         <div class="form-group">
                                             <label class="col-sm-4 control-label" for="">Họ tên</label>
                                             <div class="col-sm-8">
@@ -50,7 +221,7 @@
                                             <div class="col-sm-8 col-sm-offset-4">
                                                 <div class="col-sm-4 form-group radio">
                                                     <label class="radio-material-blue">
-                                                        <input id="" name="gender" type="radio" value="">
+                                                        <input id="" name="gender" type="radio" value="" checked="">
                                                         <span class="circle"></span>
                                                         <span class="check">Anh</span>
                                                     </label>
@@ -62,19 +233,6 @@
                                                         <span class="check">Chị</span>
                                                     </label>
                                                 </div>
-                                                <div class="col-md-4 form-group radio">
-                                                    <label class="radio-material-blue">
-                                                        <input checked id="" name="gender" type="radio" value="">
-                                                        <span class="circle"></span>
-                                                        <span class="check">Chưa biết</span>
-                                                    </label>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="form-group">
-                                            <label class="col-sm-4 control-label" for="">Số điện thoại</label>
-                                            <div class="col-sm-8">
-                                                <input class="form-control" id="" placeholder="" type="text">
                                             </div>
                                         </div>
                                         <div class="form-group">
@@ -134,150 +292,8 @@
                                     </div><!-- /.box-body -->
                                 </div>
                             </div><!-- /.box -->
-                            <div class="box box-lime">
-                                <div class="box-header with-border">
-                                    <h4 class="box-title">Địa chỉ giao hàng</h4>
-                                </div><!-- /.box-header -->
-                                <!-- form start -->
-                                <div class="form-horizontal">
-                                    <div class="box-body product-form" style="min-height: 0;">
-                                        <div class="form-group">
-                                            <div class="col-sm-8 col-sm-offset-4">
-                                                <div class="radio">
-                                                    <label class="radio-material-blue">
-                                                        <input checked id="" name="address" type="radio" value="">
-                                                        <span class="circle"></span>
-                                                        <span class="check">Địa chỉ giao hàng là địa chỉ thu tiền</span>
-                                                    </label>
-                                                </div>
-                                                <div class="radio">
-                                                    <label class="radio-material-blue">
-                                                        <input id="" name="address" type="radio" value="">
-                                                        <span class="circle"></span>
-                                                        <span class="check">Địa chỉ giao hàng không phải là địa chỉ thu tiền</span>
-                                                    </label>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="is-same" style="display: none">
-                                            <div class="form-group">
-                                                <label class="col-sm-4 control-label" for="">Người nhận</label>
-                                                <div class="col-sm-8">
-                                                    <input class="form-control" id="" placeholder="" type="text">
-                                                </div>
-                                            </div>
-                                            <div class="form-group">
-                                                <div class="col-sm-8 col-sm-offset-4">
-                                                    <div class="col-sm-4 form-group radio">
-                                                        <label class="radio-material-blue">
-                                                            <input id="" name="gender2" type="radio" value="">
-                                                            <span class="circle"></span>
-                                                            <span class="check">Anh</span>
-                                                        </label>
-                                                    </div>
-                                                    <div class="col-md-4 form-group radio">
-                                                        <label class="radio-material-blue">
-                                                            <input id="" name="gender2" type="radio" value="">
-                                                            <span class="circle"></span>
-                                                            <span class="check">Chị</span>
-                                                        </label>
-                                                    </div>
-                                                    <div class="col-md-4 form-group radio">
-                                                        <label class="radio-material-blue">
-                                                            <input checked id="" name="gender2" type="radio" value="">
-                                                            <span class="circle"></span>
-                                                            <span class="check">Chưa biết</span>
-                                                        </label>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="form-group">
-                                                <label class="col-sm-4 control-label" for="">Số điện thoại</label>
-                                                <div class="col-sm-8">
-                                                    <input class="form-control" id="" placeholder="" type="text">
-                                                </div>
-                                            </div>
-                                            <div class="form-group">
-                                                <label class="col-sm-4 control-label" for="">Tỉnh / Thành phố</label>
-                                                <div class="col-sm-8">
-                                                    <select class="form-control">
-                                                        <option>
-                                                            Chọn Tỉnh / Thành phố
-                                                        </option>
-                                                        <option>
-                                                            Hồ Chí Minh
-                                                        </option>
-                                                        <option>
-                                                            Hà Nội
-                                                        </option>
-                                                    </select>
-                                                </div>
-                                            </div>
-                                            <div class="form-group">
-                                                <label class="col-sm-4 control-label" for="">Quận / Huyện</label>
-                                                <div class="col-sm-8">
-                                                    <select class="form-control">
-                                                        <option>
-                                                            Chọn Quận / Huyện
-                                                        </option>
-                                                        <option>
-                                                            abc
-                                                        </option>
-                                                        <option>
-                                                            xyz
-                                                        </option>
-                                                    </select>
-                                                </div>
-                                            </div>
-                                            <div class="form-group">
-                                                <label class="col-sm-4 control-label" for="">Phường / Xã</label>
-                                                <div class="col-sm-8">
-                                                    <select class="form-control">
-                                                        <option>
-                                                            Chọn Phường / Xã
-                                                        </option>
-                                                        <option>
-                                                            abc
-                                                        </option>
-                                                        <option>
-                                                            xyz
-                                                        </option>
-                                                    </select>
-                                                </div>
-                                            </div>
-                                            <div class="form-group">
-                                                <label class="col-sm-4 control-label" for="">Đường / Phố</label>
-                                                <div class="col-sm-8">
-                                                    <input class="form-control" id="" placeholder="" type="text">
-                                                </div>
-                                            </div>
-                                            <div class="form-group">
-                                                <label class="col-sm-4 control-label" for="">Số Nhà / Ngõ / Hẻm</label>
-                                                <div class="col-sm-8">
-                                                    <input class="form-control" id="" placeholder="" type="text">
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div><!-- /.box-body -->
-                                </div>
-                            </div><!-- /.box -->
                         </div>
                         <div class="col-md-6 shipping">
-                            <div class="box box-lime">
-                                <div class="box-header with-border">
-                                    <h4 class="box-title">Chọn địa điểm lấy hàng (sản phẩm)</h4>
-                                </div><!-- /.box-header -->
-                                <div class="box-body form-horizontal">
-                                    <div class="clearfix">
-                                        <div class="radio">
-                                            <label class="radio-material-blue">
-                                                <input checked="checked" name="shop_address" type="radio" value="118">
-                                                Địa chỉ 1 : Taodan, Số 121/11, Đường Hưng Phú, Phường Mỹ Quý, Thành Phố Long Xuyên, Tỉnh An Giang
-                                            </label>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
                             <div class="box box-lime ship-and-pay">
                                 <div class="box-header with-border">
                                     <h4 class="box-title">Vận chuyển và Thanh toán</h4>
@@ -511,37 +527,109 @@
                                             <label class="radio-material-blue">
                                                 <input id="" name="address" type="radio" value="">
                                                 <span class="circle"></span>
-                                                <span class="check">Giảm giá đơn hàng này theo</span>
+                                                <span class="check">Giảm giá đơn hàng này theo <strong>VNĐ</strong></span>
                                             </label>
                                         </div>
                                         <div class="label-group">
-                                            <p class="color-label">VND</p>
-                                            <input class="form-control" id="" placeholder="Nhập số tiền giảm..." type="text">
+                                            <p class="color-label">VNĐ</p>
+                                            <input class="form-control" placeholder="Nhập số tiền giảm..." type="text">
                                         </div>
                                     </div><!--/.form-group-->
                                     <div class="col-xs-10">
                                         <div class="radio">
                                             <label class="radio-material-blue">
-                                                <input id="" name="address" type="radio" value="">
+                                                <input name="address" type="radio" value="">
                                                 <span class="circle"></span>
-                                                <span class="check">Giảm giá đơn hàng này theo</span>
+                                                <span class="check">Giảm giá đơn hàng này theo <strong>%</strong></span>
                                             </label>
                                         </div>
                                         <div class="label-group">
                                             <p class="color-label">%</p>
-                                            <input class="form-control" id="" placeholder="Nhập % giảm..." type="text">
+                                            <input class="form-control" placeholder="Nhập % giảm..." type="text">
                                         </div>
                                     </div><!--/.form-group-->
+                                    <div class="col-xs-10">
+                                        <div class="radio">
+                                            <label class="radio-material-blue">
+                                                <input name="address" type="radio" value="">
+                                                <span class="circle"></span>
+                                                <span class="check">Tặng sản phẩm</span>
+                                            </label>
+                                        </div>
+                                        <input class="form-control" placeholder="Nhập mã coupon" type="text">
+                                    </div>
                                 </div><!--/.box-body-->
                             </div><!-- /.box -->
-                            <div class="col-xs-12">
-                                <input class="btn btn-lime pull-right" onclick="location.href='4.3.3-invoice-detail-edit-3.html'" type="submit" value="Tiếp tục">
-                            </div>
+                        </div>
+                        <div class="col-xs-12 text-right goto-next-step">
+                            <a class="cancel-btn cancel-invoice-step-2" href="">Hủy bỏ</a>
+                            <input class="btn btn-lime" type="button" value="Tiếp tục" onclick="location.href='4.3.5-invoice-news-2.html'">
                         </div>
                     </div>
-                </div><!-- /.box-body -->
+                </div>
             </div>
         </div>
     </div>
 </main>
+<!--product-properties-modal-->
+<div class="modal product-properties-modal">
+    <div class="modal-dialog modal-md">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button aria-label="Close" class="close" data-dismiss="modal" type="button">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <h4 class="modal-title">Chọn thuộc tính</h4>
+            </div>
+            <div class="modal-body">
+                <div class="col-md-12 product-properties-row">
+                    <p class="product-properties-md-title">Chọn thuộc tính của sản phẩm</p>
+                    <div class="product-properties-item">
+                        <label class="product-properties-label">Màu sắc</label>
+                        <div class="col-md-12 properties-values">
+                            <div class="col-xs-4">
+                                <div class="radio">
+                                    <input class="report-form-control" id="report-invoice-form-1" name="optionsRadios" type="radio">
+                                    <span>Vàng</span>
+                                </div>
+                            </div>
+                            <div class="col-xs-4">
+                                <div class="radio">
+                                    <input class="report-form-control" id="report-invoice-form-1" name="optionsRadios" type="radio">
+                                    <span>Xanh</span>
+                                </div>
+                            </div>
+                            <div class="col-xs-4">
+                                <div class="radio">
+                                    <input class="report-form-control" id="report-invoice-form-1" name="optionsRadios" type="radio">
+                                    <span>đỏ</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-properties-item">
+                        <label class="product-properties-label">Kích thước</label>
+                        <div class="col-md-12 properties-values">
+                            <div class="col-xs-4">
+                                <div class="radio">
+                                    <input class="report-form-control" id="report-invoice-form-1" name="optionsRadios" type="radio">
+                                    <span>M</span>
+                                </div>
+                            </div>
+                            <div class="col-xs-4">
+                                <div class="radio">
+                                    <input class="report-form-control" id="report-invoice-form-1" name="optionsRadios" type="radio">
+                                    <span>XL</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <a class="btn btn-lime" href="2.3-product.html">Chọn</a>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div>
 {% endblock %}
