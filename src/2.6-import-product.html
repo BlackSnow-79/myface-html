@@ -1,0 +1,113 @@
+{% extends "_layout.html" %}
+{% block page-container %}
+<section class="content-header" id="content-header">
+    <div class="container">
+        <div class="row">
+            <h1 class="page-title">Sản phẩm</h1>
+            <ol class="breadcrumb">
+                <li>
+                    <a href="2.1-categories.html">Danh mục sản phẩm</a>
+                </li>
+                <li>
+                    <a href="2.3-product.html">Sản phẩm</a>
+                </li>
+                <li>
+                    <a class="active" href="2.6-import-product.html">Nhập (import) sản phẩm</a>
+                </li>
+                <li>
+                    <a href="2.5-export-product.html">Xuất (export) sản phẩm</a>
+                </li>
+            </ol>
+        </div>
+    </div>
+</section>
+<main>
+    <div class="container export-products">
+        <div class="row">
+            <div class="box">
+                <div class="box-header with-border">
+                    <h3 class="box-title">Nhập (import) sản phẩm</h3>
+                </div><!-- /.box-header -->
+                <div class="box-body import-products">
+                    <div class="row">
+                        <div class="col-md-6 import-from-excel">
+                            <div class="box box-lime">
+                                <div class="box-header with-border">
+                                    <h4 class="box-title">Nhập (import) sản phẩm mới từ file excel</h4>
+                                </div>
+                                <div class="box-body">
+                                    <p>
+                                        <span>Hướng dẫn nhập (import) sản phẩm mới từ file excel</span>
+                                        <a class="hdsd-link" href="#" target="_blank"><span>Xem hướng dẫn</span></a>
+                                    </p>
+                                    <p>
+                                        <span>File excel mẫu nhập (import) sản phẩm mới</span>
+                                        <a class="hdsd-link" href="#" target="_blank"><span>Tải (download) file tại đây</span></a>
+                                    </p>
+                                    <p class="cta text-center">
+                                        <input class="btn btn-lime " type="file" accept="">
+                                    </p>
+                                    <div class="note-div">
+                                        <p class="note-title">Lưu ý:</p>
+                                        <ul class="notes">
+                                            <li>
+                                                <p>Định dạng file excel nhập (import) sản phẩm là <strong>*.xls</strong>, <strong>*.xlsx</strong></p>
+                                            </li>
+                                            <li>
+                                                <p>Mỗi file excel nhập (import) sản phẩm chỉ giới hạn 200 dòng, nếu nhiều hơn thì tách ra làm nhiều file nhập (import) sản phẩm.</p>
+                                            </li>
+                                            <li>
+                                                <p>File excel nhập (import) sản phẩm phải được điền đầy đủ thông tin.</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 import-from-orther-chanel">
+                            <div class="box box-lime">
+                                <div class="box-header with-border">
+                                    <h4 class="box-title">Nhập (import) sản phẩm mới từ kênh bán hàng khác</h4>
+                                </div>
+                                <div class="box-body">
+                                    <p>myFace cho phép bạn chuyển dữ liệu sản phẩm, từ các kênh bán hàng khác. Bạn chọn kênh bán hàng để nhập (import) sản phẩm</p>
+                                    <div class="other-chanel haravan-chanel">
+                                        <p class="lime-text">Nhập (import) sản phẩm từ hệ thống Haravan</p>
+                                        <div class="box-body">
+                                            <p>
+                                                <span>Hướng dẫn nhập (import) sản phẩm từ hệ thống Haravan</span>
+                                                <a class="hdsd-link" href="#" target="_blank"><span>Xem hướng dẫn</span></a>
+                                                <span class="pull-right">
+                                                    <img src="assets/images/chanel/logo-haravan.png" alt="myface">
+                                                </span>
+                                            </p>
+                                            <p class="cta text-center">
+                                                <input class="btn btn-lime " type="file" accept="">
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="other-chanel haravan-chanel">
+                                        <p class="lime-text">Nhập (import) sản phẩm từ hệ thống Bizweb</p>
+                                        <div class="box-body">
+                                            <p>
+                                                <span>Hướng dẫn nhập (import) sản phẩm từ hệ thống Bizweb</span>
+                                                <a class="hdsd-link" href="#" target="_blank"><span>Xem hướng dẫn</span></a>
+                                                <span class="pull-right">
+                                                    <img src="assets/images/chanel/logo-bizweb.png" alt="myface">
+                                                </span>
+                                            </p>
+                                            <p class="cta text-center">
+                                                <input class="btn btn-lime " type="file" accept="">
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- /.box-body -->
+            </div>
+        </div>
+    </div>
+</main>
+{% endblock %}

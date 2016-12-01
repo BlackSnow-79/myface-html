@@ -1,213 +1,200 @@
 {% extends "_layout.html" %}
 {% block page-container %}
 <section class="content-header" id="content-header">
-  <div class="container">
-    <div class="row">
-      <h1 class="page-title">Sản phẩm</h1>
-      <ol class="breadcrumb">
-        <li><a href="2.1-categories.html">Danh mục sản phẩm</a></li>
-        <li><a href="2.3-product.html">Sản phẩm</a></li>
-        <li><a href="2.6-import-product.html">Nhập (import) sản phẩm</a></li>
-        <li><a href="2.5-export-product.html" class="active">Xuất (export) sản phẩm</a></li>
-      </ol>
-      <a href="https://myface.vn/support/create_product" target="_blank" class="pull-right hdsd-link">
-        <i class="fa fa-question-circle"></i>
-        <span>Hướng dẫn sử dụng</span>
-      </a>
+    <div class="container">
+        <div class="row">
+            <h1 class="page-title">Sản phẩm</h1>
+            <ol class="breadcrumb">
+                <li>
+                    <a href="2.1-categories.html">Danh mục sản phẩm</a>
+                </li>
+                <li>
+                    <a href="2.3-product.html">Sản phẩm</a>
+                </li>
+                <li>
+                    <a href="2.6-import-product.html">Nhập (import) sản phẩm</a>
+                </li>
+                <li>
+                    <a class="active" href="2.5-export-product.html">Xuất (export) sản phẩm</a>
+                </li>
+            </ol>
+            <a class="pull-right hdsd-link" href="https://myface.vn/support/create_product" target="_blank">
+                <i class="fa fa-question-circle"></i> <span>Hướng dẫn sử dụng</span>
+            </a>
+        </div>
     </div>
-  </div>
 </section>
 <main>
-  <div class="container export-products">
-    <div class="row">
-      <div class="box">
-        <div class="box-header with-border">
-          <h3 class="box-title">Xuất (export) sản phẩm từ hệ thống ra file excel</h3>
-          <a href="#" target="_blank" class="hdsd-link">
-            <span>Xem hướng dẫn</span>
-          </a>
-        </div>
-        <!-- /.box-header -->
-        <div class="box-body export-products">
-          <div class="report-invoice-row">
-            <label>Chọn kiểu xuất (export) file sản phẩm</label>
-            <div class="form-group">
-              <div class="row">
-                <div class="col-xs-4">
-                  <div class="radio">
-                    <label>
-                      <input type="radio" name="optionsRadios">
-                      Tất cả sản phẩm (Đã kích hoạt & Chưa kích hoạt)
-                    </label>
-                  </div>
-                </div>
-
-                <div class="col-xs-4">
-                  <div class="radio">
-                    <label>
-                      <input type="radio" name="optionsRadios">
-                      Tất cả sản phẩm (Đã kích hoạt)
-                    </label>
-                  </div>
-                </div>
-
-                <div class="col-xs-4">
-                  <div class="radio">
-                    <label>
-                      <input type="radio" name="optionsRadios">
-                      Tất cả sản phẩm (Chưa kích hoạt)
-                    </label>
-                  </div>
-                </div>
-
-                <div class="col-xs-4">
-                  <div class="radio field-control">
-                    <label>
-                      <input type="radio" name="optionsRadios">
-                      <span class="control-label">Theo SKU</span>
-                      <input type="text" class="form-control" placeholder="Nhập mã SKU sản phẩm">
-                    </label>
-                  </div>
-                </div>
-
-                <div class="col-xs-4">
-                  <div class="radio field-control">
-                    <label>
-                      <input type="radio" name="optionsRadios">
-                      <span class="control-label">Theo ngành hàng</span>
-                      <select class="st-select-box st-select-product-group" data-actions-box="true" data-live-search="true" data-style="st-select-toggle" id= "product_category_by_order" multiple name="product_category_by_order[]" title="Chọn ngành hàng">
-                        <optgroup label="Thời Trang">
-                          <option value="2">
-                            Áo so mi nam
-                          </option>
-                          <option value="139">
-                            hhh
-                          </option>
-                          <option value="184">
-                            dfsa
-                          </option>
-                          <option value="188">
-                            Thời trang nữ xinh
-                          </option>
-                          <option value="189">
-                            Áo nữ
-                          </option>
-                          <option value="191">
-                            qq
-                          </option>
-                        </optgroup>
-                        <optgroup label="Phụ kiện điện thoại">
-                          <option value="77">
-                            Máy giặt cao cấp
-                          </option>
-                          <option value="131">
-                            11
-                          </option>
-                          <option value="133">
-                            aaaaaaa
-                          </option>
-                          <option value="140">
-                            sfd
-                          </option>
-                          <option value="141">
-                            fdsa
-                          </option>
-                          <option value="173">
-                            bb
-                          </option>
-                          <option value="182">
-                            Điện thoại
-                          </option>
-                          <option value="183">
-                            sad
-                          </option>
-                          <option value="186">
-                            hihi
-                          </option>
-                          <option value="190">
-                            11
-                          </option>
-                        </optgroup>
-                      </select>
-                    </label>
-                  </div>
-                </div>
-
-                <div class="col-xs-4">
-                  <div class="radio field-control">
-                    <label>
-                      <input type="radio" name="optionsRadios">
-                      <span class="control-label">Theo tên sản phẩm</span>
-                      <input type="text" id="insert-input-active" class="form-control" onclick="openSSbox()" placeholder="Chọn sản phẩm">
-                      <span class="caret"></span>
-                      <script type="text/javascript">
-                        //open insert-product
-                        function openSSbox() {
-                          $('.ss-box').show();
-                        }
-                      </script>
-                      <ul class="ss-box" id="">
-                        <li class="ss-result">
-                          <a href="javascript: void(0);" data-toggle="modal" data-target=".product-properties-modal">
-                            <table width="100%">
-                              <tbody>
-                                <tr>
-                                  <td class="product-box-img"><img src="assets/images/product/product-1.jpg"></td>
-                                  <td class="product-box-des">
-                                    <p>iPhone 6s Plus 64GB Quốc Tế</p>
-                                  </td>
-                                </tr>
-                              </tbody>
-                            </table>
-                          </a>
-                        </li>
-                        <li class="ss-result">
-                          <a href="javascript: void(0);" data-toggle="modal" data-target=".product-properties-modal">
-                            <table border="0" cellspacing="0" cellpadding="0" width="100%">
-                              <tbody>
-                                <tr>
-                                  <td class="product-box-img"><img src="assets/images/product/product-1.jpg"></td>
-                                  <td class="product-box-des">
-                                    <p>iPhone 6s Plus 64GB Quốc Tế</p>
-                                  </td>
-                                </tr>
-                              </tbody>
-                            </table>
-                          </a>
-                        </li>
-                      </ul>
-                    </label>
-                  </div>
-                </div>
-              </div>
-            </div><!--/.form-group-->
-          </div>
-          <div class="report-invoice-row">
-            <label>Chọn thời gian</label>
-            <div class="form-group">
-              <span class="control-label">Từ ngày</span>
-              <div class="col-xs-4">
-                <div class="date-picker-group">
-                  <input type="text" name="" id="" class="form-control date-picker" placeholder="Chọn ngày-tháng-năm" readonly="">
-                  <span class="calendar-icon l-calendar-icon"><i class="fa fa-calendar"></i></span>
-                </div>
-              </div>
-              <span class="control-label">Đến ngày</span>
-              <div class="col-xs-4">
-                <div class="date-picker-group">
-                  <input type="text" name="" id="" class="form-control date-picker" placeholder="Chọn ngày-tháng-năm" readonly="">
-                  <span class="calendar-icon l-calendar-icon"><i class="fa fa-calendar"></i></span>
-                </div>
-              </div>
+    <div class="container export-products">
+        <div class="row">
+            <div class="box">
+                <div class="box-header with-border">
+                    <h3 class="box-title">Xuất (export) sản phẩm từ hệ thống ra file excel</h3>
+                    <a class="hdsd-link" href="#" target="_blank"><span>Xem hướng dẫn</span></a>
+                </div><!-- /.box-header -->
+                <div class="box-body export-products">
+                    <div class="report-invoice-row">
+                        <label>Chọn kiểu xuất (export) file sản phẩm</label>
+                        <div class="form-group">
+                            <div class="row">
+                                <div class="col-xs-4">
+                                    <div class="radio">
+                                        <label><input name="optionsRadios" type="radio"> Tất cả sản phẩm (Đã kích hoạt & Chưa kích hoạt)</label>
+                                    </div>
+                                </div>
+                                <div class="col-xs-4">
+                                    <div class="radio">
+                                        <label><input name="optionsRadios" type="radio"> Tất cả sản phẩm (Đã kích hoạt)</label>
+                                    </div>
+                                </div>
+                                <div class="col-xs-4">
+                                    <div class="radio">
+                                        <label><input name="optionsRadios" type="radio"> Tất cả sản phẩm (Chưa kích hoạt)</label>
+                                    </div>
+                                </div>
+                                <div class="col-xs-4">
+                                    <div class="radio field-control">
+                                        <label>
+                                            <input name="optionsRadios" type="radio">
+                                            <span class="control-label">Theo SKU</span>
+                                            <input class="form-control" placeholder="Nhập mã SKU sản phẩm" type="text">
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-xs-4">
+                                    <div class="radio field-control">
+                                        <label>
+                                            <input name="optionsRadios" type="radio">
+                                            <span class="control-label">Theo ngành hàng</span>
+                                            <select class="st-select-box st-select-product-group" data-actions-box="true" data-live-search="true" data-style="st-select-toggle" id="product_category_by_order" multiple name="product_category_by_order[]" title="Chọn ngành hàng">
+                                                <optgroup label="Thời Trang">
+                                                    <option value="2">
+                                                        Áo so mi nam
+                                                    </option>
+                                                    <option value="139">
+                                                        hhh
+                                                    </option>
+                                                    <option value="184">
+                                                        dfsa
+                                                    </option>
+                                                    <option value="188">
+                                                        Thời trang nữ xinh
+                                                    </option>
+                                                    <option value="189">
+                                                        Áo nữ
+                                                    </option>
+                                                    <option value="191">
+                                                        qq
+                                                    </option>
+                                                </optgroup>
+                                                <optgroup label="Phụ kiện điện thoại">
+                                                    <option value="77">
+                                                        Máy giặt cao cấp
+                                                    </option>
+                                                    <option value="131">
+                                                        11
+                                                    </option>
+                                                    <option value="133">
+                                                        aaaaaaa
+                                                    </option>
+                                                    <option value="140">
+                                                        sfd
+                                                    </option>
+                                                    <option value="141">
+                                                        fdsa
+                                                    </option>
+                                                    <option value="173">
+                                                        bb
+                                                    </option>
+                                                    <option value="182">
+                                                        Điện thoại
+                                                    </option>
+                                                    <option value="183">
+                                                        sad
+                                                    </option>
+                                                    <option value="186">
+                                                        hihi
+                                                    </option>
+                                                    <option value="190">
+                                                        11
+                                                    </option>
+                                                </optgroup>
+                                            </select>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-xs-4">
+                                    <div class="radio field-control">
+                                        <label>
+                                            <input name="optionsRadios" type="radio"> <span class="control-label">Theo tên sản phẩm</span>
+                                            <input class="form-control" id="insert-input-active" onclick="openSSbox()" placeholder="Chọn sản phẩm" type="text">
+                                            <span class="caret"></span>
+                                            <script type="text/javascript">
+                                                //open insert-product
+                                                function openSSbox() {
+                                                    $('.ss-box').show();
+                                                }
+                                            </script>
+                                       </label>
+                                        <ul class="ss-box" id="">
+                                            <li class="ss-result">
+                                                <a data-target=".product-properties-modal" data-toggle="modal" href="javascript:%20void(0);">
+                                                    <table width="100%">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td class="product-box-img"><img src="assets/images/product/product-1.jpg"></td>
+                                                                <td class="product-box-des">
+                                                                    <p>iPhone 6s Plus 64GB Quốc Tế</p>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </a>
+                                            </li>
+                                            <li class="ss-result">
+                                                <a data-target=".product-properties-modal" data-toggle="modal" href="javascript:%20void(0);">
+                                                    <table width="100%">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td class="product-box-img"><img src="assets/images/product/product-1.jpg"></td>
+                                                                <td class="product-box-des">
+                                                                    <p>iPhone 6s Plus 64GB Quốc Tế</p>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!--/.form-group-->
+                    </div>
+                    <div class="report-invoice-row">
+                        <label>Chọn thời gian</label>
+                        <div class="form-group">
+                            <span class="control-label">Từ ngày</span>
+                            <div class="col-xs-4">
+                                <div class="date-picker-group">
+                                    <input class="form-control date-picker" id="" name="" placeholder="Chọn ngày-tháng-năm" readonly type="text">
+                                    <span class="calendar-icon l-calendar-icon"><i class="fa fa-calendar"></i></span>
+                                </div>
+                            </div><span class="control-label">Đến ngày</span>
+                            <div class="col-xs-4">
+                                <div class="date-picker-group">
+                                    <input class="form-control date-picker" id="" name="" placeholder="Chọn ngày-tháng-năm" readonly type="text">
+                                    <span class="calendar-icon l-calendar-icon"><i class="fa fa-calendar"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clearfix call-action">
+                        <input class="btn btn-lime pull-right" type="submit" value="Xuất Excel">
+                    </div>
+                </div><!-- /.box-body -->
             </div>
-          </div>
-          <div class="clearfix call-action">
-            <input type="submit" class="btn btn-lime pull-right" value="Xuất Excel">
-          </div>
         </div>
-        <!-- /.box-body -->
-      </div>
     </div>
-  </div>
 </main>
 {% endblock %}
