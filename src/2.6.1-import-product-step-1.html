@@ -1,0 +1,137 @@
+{% extends "_layout.html" %}
+{% block page-container %}
+<section class="content-header" id="content-header">
+    <div class="container">
+        <div class="row">
+            <h1 class="page-title">Sản phẩm</h1>
+            <ol class="breadcrumb">
+                <li>
+                    <a href="2.1-categories.html">Danh mục sản phẩm</a>
+                </li>
+                <li>
+                    <a href="2.3-product.html">Sản phẩm</a>
+                </li>
+                <li>
+                    <a class="active" href="2.6-import-product.html">Nhập (import) sản phẩm</a>
+                </li>
+                <li>
+                    <a href="2.5-export-product.html">Xuất (export) sản phẩm</a>
+                </li>
+            </ol>
+        </div>
+    </div>
+</section>
+<main>
+    <div class="container export-products">
+        <div class="row">
+            <div class="box">
+                <div class="box-header with-border">
+                    <h3 class="box-title">Nhập (import) sản phẩm</h3>
+                </div><!-- /.box-header -->
+                <div class="box-body import-products">
+                    <div class="progress-row">
+                        <div class="progress-row-content">
+                            <a class="progress-link activeted" href="2.6.1-import-product-step-1.html">
+                                <span class="label label-default">1</span>
+                                <p>Sửa thông tin sản phẩm</p>
+                            </a>
+                            <div class="progress sm progress-light-blue">
+                                <div class="progress-bar"></div>
+                            </div>
+                            <a class="progress-link active" href="2.6.2-import-product-step-2.html">
+                                <span class="label label-default">2</span>
+                                <p>Thêm hình sản phẩm</p>
+                            </a>
+                            <div class="progress sm">
+                                <div class="progress-bar"></div>
+                            </div>
+                                <a class="progress-link" href="2.6.3-import-product-step-3.html.html">
+                                <span class="label label-default">3</span>
+                                <p>Xác nhận và đăng sản phẩm</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="import-steps-nav">
+                        <span class="lime-text products-number">Bạn đã chọn <strong>5</strong> sản phẩm</span>
+                        <div class="pull-right">
+                            <button class="btn btn-default">Xóa sản phẩm đã chọn khỏi danh sách nhập (import)</button>
+                            <input type="button" class="btn btn-lime" value="Bước tiếp theo" onclick="location.href='2.6.2-import-product-step-2.html'">
+                        </div>
+                    </div>
+                    <div class="table-div import-products-list">
+                        <table class="table product-tb">
+                            <thead>
+                                <tr>
+                                    <th><input type="checkbox"></th>
+                                    <th>Mã sản phẩm</th>
+                                    <th class="col-xs-3">Tên sản phẩm</th>
+                                    <th class="col-xs-2">Danh mục</th>
+                                    <th class="col-xs-1">Giá thị trường (vnđ)</th>
+                                    <th class="col-xs-1">Giá bán (vnđ)</th>
+                                    <th class="col-xs-1 text-left">Khối lượng (gram)</th>
+                                    <th class="col-xs-1 text-right">Số lượng (cái)</th>
+                                    <th class="col-xs-1 text-right">Sửa/Xóa</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><input type="checkbox"></td>
+                                    <td>
+                                        <a class="cate-name" href="#">TNBTMF001758</a>
+                                    </td>
+                                    <td>Tai Nghe Bluetooth GH-1752 trắng</td>
+                                    <td>Thiết bị số</td>
+                                    <td class="text-right">120</td>
+                                    <td>
+                                        350.000<ins>đ</ins>
+                                    </td>
+                                    <td>Facebook</td>
+                                    <td>
+                                        <a class="active" data-target="#nontifi-modal" data-toggle="modal" href="#">Kích hoạt</a>
+                                    </td>
+                                    <td class="text-right">
+                                        <span class="action">
+                                            <a class="btn-action" href="2.2-create-category.html" title="sửa">
+                                                <i class="fa fa-cog"></i>
+                                            </a>
+                                            <a class="btn-action" data-target="#nontifi-modal" data-toggle="modal" href="#" title="xóa">
+                                                <i class="fa fa-trash-o"></i>
+                                            </a>
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox"></td>
+                                    <td>
+                                        <a class="cate-name" href="#">TNBTMF001758</a>
+                                    </td>
+                                    <td>Tai Nghe Bluetooth GH-1752 trắng</td>
+                                    <td>Thiết bị số</td>
+                                    <td class="text-right">120</td>
+                                    <td>
+                                        350.000<ins>đ</ins>
+                                    </td>
+                                    <td>Facebook</td>
+                                    <td>
+                                        <a class="active" data-target="#nontifi-modal" data-toggle="modal" href="#">Kích hoạt</a>
+                                    </td>
+                                    <td class="text-right">
+                                        <span class="action">
+                                            <a class="btn-action" href="2.2-create-category.html" title="sửa">
+                                                <i class="fa fa-cog"></i>
+                                            </a>
+                                            <a class="btn-action" data-target="#nontifi-modal" data-toggle="modal" href="#" title="xóa">
+                                                <i class="fa fa-trash-o"></i>
+                                            </a>
+                                        </span>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div><!-- /.box-body -->
+            </div>
+        </div>
+    </div>
+</main>
+{% endblock %}

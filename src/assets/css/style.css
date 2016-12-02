@@ -5057,6 +5057,11 @@ main {
 .noted {
   font-size: 11px;
 }
+.import-steps-nav {
+  width: 100%;
+  float: left;
+  margin-bottom: 20px;
+}
 .export-products .report-invoice-row + .report-invoice-row .form-group {
   margin-top: 10px;
   margin-bottom: 10px;
@@ -5289,7 +5294,7 @@ main {
   float: right;
 }
 .edit-address-form .form-control {
-  color: #727272;
+  color: #212121;
 }
 .edit-address-form .form-control:-moz-placeholder {
   color: #727272;
