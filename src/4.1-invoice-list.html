@@ -191,12 +191,12 @@
                             <tr>
                                 <th></th>
                                 <th class="col-xs-1">ID</th>
-                                <th style="width: 235px;">Trạng thái đơn hàng</th>
-                                <th class="text-center" style="width: 195px;">Vận chuyển</th>
-                                <th class="col-xs-2 text-center">Người nhận hàng</th>
+                                <th>Trạng thái đơn hàng</th>
+                                <th class="text-center">Vận chuyển</th>
+                                <th class="text-center">Người nhận hàng</th>
                                 <th class="col-xs-2 text-center">Ngày đặt hàng</th>
                                 <th class="col-xs-1 text-center">Tổng tiền</th>
-                                <th class="col-xs-1"></th>
+                                <th class="in-view-action"></th>
                             </tr>
                         </thead>
                         <tbody>
@@ -296,7 +296,69 @@
                                     <label>1.000.000<ins>đ</ins></label>
                                 </td>
                                 <td>
-                                    <a class="btn btn-default in-view-btn" href="4.2-invoice-detail.html">Xem</a>
+                                    <button class="btn btn-primary fast-view-btn collapse-toggle">Xem nhanh</button>
+                                    <a class="btn btn-lime in-view-btn" href="4.2-invoice-detail.html">Xem</a>
+                                </td>
+                            </tr>
+                            <tr class="collapse-row fast-view-content">
+                                <td class="collapse-inner" colspan="9">
+                                    <div class="collapse-div">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="box box-lime">
+                                                    <div class="box-header with-border">
+                                                        <h4 class="box-title">Chọn địa điểm lấy hàng (sản phẩm)</h4>
+                                                    </div><!-- /.box-header -->
+                                                    <div class="box-body form-horizontal">
+                                                        <p class="info-row">
+                                                            Địa chỉ 1 : Taodan, Số 121/11, Đường Hưng Phú, Phường Mỹ Quý, Thành Phố Long Xuyên, Tỉnh An Giang
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="box box-lime">
+                                                    <div class="box-header with-border">
+                                                        <h4 class="box-title">Chọn địa điểm lấy hàng (sản phẩm)</h4>
+                                                    </div><!-- /.box-header -->
+                                                    <div class="box-body form-horizontal">
+                                                        <p class="info-row">
+                                                            Địa chỉ 1 : Taodan, Số 121/11, Đường Hưng Phú, Phường Mỹ Quý, Thành Phố Long Xuyên, Tỉnh An Giang
+                                                        </p>
+                                                    </div>
+                                                </div><!-- /.box -->
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="box box-lime">
+                                                    <div class="box-header with-border">
+                                                        <h4 class="box-title">Thông tin giới thiệu sản phẩm</h4>
+                                                    </div><!-- /.box-header -->
+                                                    <!-- form start -->
+                                                    <div class="form-horizontal">
+                                                        <div class="box-body product-form editor-form">
+                                                            <div class="form-group"></div>
+                                                        </div><!-- /.box-body -->
+                                                    </div>
+                                                </div><!-- /.box -->
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="box box-lime">
+                                                    <div class="box-header with-border">
+                                                        <h4 class="box-title">Thông số sản phẩm</h4>
+                                                    </div><!-- /.box-header -->
+                                                    <!-- form start -->
+                                                    <div class="form-horizontal">
+                                                        <div class="box-body product-form"></div><!-- /.box-body -->
+                                                    </div>
+                                                </div><!-- /.box -->
+                                            </div>
+                                        </div>
+                                        <div class="form-group text-right last-row">
+                                            <input type="button" class="btn btn-lime" data-toggle="modal" data-target="#alert-chanel-modal" value="Lưu thông tin sản phẩm">
+                                        </div>
+                                    </div>
                                 </td>
                             </tr>
                             <tr>
@@ -352,7 +414,8 @@
                                     <label>4.000.000<ins>đ</ins></label>
                                 </td>
                                 <td>
-                                    <a class="btn btn-default in-view-btn" href="4.2-invoice-detail.html">Xem</a>
+                                    <button class="btn btn-primary fast-view-btn collapse-toggle">Xem nhanh</button>
+                                    <a class="btn btn-lime in-view-btn" href="4.2-invoice-detail.html">Xem</a>
                                 </td>
                             </tr>
                             {% endfor %}

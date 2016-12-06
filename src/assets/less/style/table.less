@@ -2,7 +2,6 @@
  * Component: Table
  * ----------------
  */
-
 .table {
   //Cells
   > thead,
@@ -202,4 +201,19 @@ table.text-center {
 .status-label {
     padding-top: 10px;
     float: left
+}
+
+//collapse-table
+.collapse-row {
+    .collapse-inner {
+        padding: 0 !important;
+        background-color: @gray-bg;
+    }
+}
+.collapse-div {
+    display: none;
+    padding: 20px;
+    .last-row {
+        margin-bottom: 0;
+    }
 }

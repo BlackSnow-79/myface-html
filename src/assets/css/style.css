@@ -345,6 +345,7 @@ body.hold-transition .main-header > .navbar,
 body.hold-transition .main-header .logo {
   /* Fix for IE */
   -webkit-transition: none;
+  -moz-transition: none;
   -o-transition: none;
   transition: none;
 }
@@ -855,6 +856,8 @@ input:checked + .checkbox label:before {
  * -----------------
  */
 .btn {
+  height: 32px;
+  padding: 5px 12px;
   border-radius: 3px;
   -webkit-box-shadow: none;
   box-shadow: none;
@@ -917,19 +920,19 @@ input:checked + .checkbox label:before {
 .btn-primary:active,
 .btn-primary:focus {
   color: #fff;
-  background-color: #12bef7;
-  border-color: #12bef7;
+  background-color: #08b0e8;
+  border-color: #08b0e8;
 }
 .btn-lime {
   color: #fff;
   background-color: #ff5722;
-  border-color: #ff4408;
+  border-color: #ee3900;
 }
 .btn-lime:hover,
 .btn-lime:active,
 .btn-lime:focus {
   color: #fff;
-  background-color: #ff4408;
+  background-color: #ee3900;
 }
 .btn-blackblue {
   color: #fff;
@@ -987,13 +990,13 @@ input:checked + .checkbox label:before {
 .btn-chossen {
   color: #fff;
   background-color: #ff5722;
-  border-color: #ff4408;
+  border-color: #ee3900;
 }
 .btn-chossen:hover,
 .btn-chossen:active,
 .btn-chossen:focus {
   color: #fff;
-  background-color: #ff4408;
+  background-color: #ee3900;
 }
 .btn-chossen:before {
   font-family: FontAwesome;
@@ -1805,6 +1808,17 @@ filter {
 .status-label {
   padding-top: 10px;
   float: left;
+}
+.collapse-row .collapse-inner {
+  padding: 0 !important;
+  background-color: #ebebeb;
+}
+.collapse-div {
+  display: none;
+  padding: 20px;
+}
+.collapse-div .last-row {
+  margin-bottom: 0;
 }
 .list-group-noline {
   list-style: none;
@@ -4944,14 +4958,21 @@ main {
   color: #212121;
   font-weight: 500;
   padding-bottom: 1px;
-  border-bottom: 1px solid #dfdfdf;
+  text-decoration: underline;
 }
 .cate-name:hover {
   color: #2bc5f8;
   border-bottom: 0;
 }
+.in-view-action {
+  width: 210px;
+}
+.in-view-action .in-view-btn {
+  width: 92px;
+}
 .in-view-btn {
-  padding: 5px 16px;
+  width: 92px;
+  padding: 5px 12px;
   float: right;
 }
 .cus-name {

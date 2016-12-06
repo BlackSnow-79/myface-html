@@ -320,3 +320,9 @@
   &:-ms-input-placeholder       { color: @color; font-style: @font-style; }
   &::-webkit-input-placeholder  { color: @color; font-style: @font-style; }
 }
+.transition(@transition) {
+    -webkit-transition: @transition;
+    -moz-transition: @transition;
+    -o-transition: @transition;
+    transition: @transition;
+}

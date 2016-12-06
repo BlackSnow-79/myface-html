@@ -219,6 +219,11 @@ $(document).ready(function() {
         $('.invoice-edit-step-1').addClass('active');
         $('html, body').animate({scrollTop: 0}, 600);
     });
+    //collapse-table
+    $(".collapse-toggle").click(function(e) {
+        e.preventDefault();
+        $('.collapse-div').slideDown();
+    });
 
     // Modal
     (function($) {

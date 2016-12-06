@@ -66,32 +66,28 @@
                                     <th>Mã sản phẩm</th>
                                     <th class="col-xs-3">Tên sản phẩm</th>
                                     <th class="col-xs-2">Danh mục</th>
-                                    <th class="col-xs-1">Giá thị trường (vnđ)</th>
-                                    <th class="col-xs-1">Giá bán (vnđ)</th>
-                                    <th class="col-xs-1 text-left">Khối lượng (gram)</th>
-                                    <th class="col-xs-1 text-right">Số lượng (cái)</th>
-                                    <th class="col-xs-1 text-right">Sửa/Xóa</th>
+                                    <th class="text-center">Giá thị trường (vnđ)</th>
+                                    <th class="text-center">Giá bán (vnđ)</th>
+                                    <th class="text-center">Khối lượng (gram)</th>
+                                    <th class="text-center">Số lượng (cái)</th>
+                                    <th class="text-right">Sửa/Xóa</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
                                     <td><input type="checkbox"></td>
                                     <td>
-                                        <a class="cate-name" href="#">TNBTMF001758</a>
+                                        TNBTMF001758
                                     </td>
                                     <td>Tai Nghe Bluetooth GH-1752 trắng</td>
                                     <td>Thiết bị số</td>
-                                    <td class="text-right">120</td>
-                                    <td>
-                                        350.000<ins>đ</ins>
-                                    </td>
-                                    <td>Facebook</td>
-                                    <td>
-                                        <a class="active" data-target="#nontifi-modal" data-toggle="modal" href="#">Kích hoạt</a>
-                                    </td>
+                                    <td class="text-center">200000</td>
+                                    <td class="text-center">200000</td>
+                                    <td class="text-center">120</td>
+                                    <td class="text-center">120</td>
                                     <td class="text-right">
                                         <span class="action">
-                                            <a class="btn-action" href="2.2-create-category.html" title="sửa">
+                                            <a class="btn-action collapse-toggle" href="" title="sửa">
                                                 <i class="fa fa-cog"></i>
                                             </a>
                                             <a class="btn-action" data-target="#nontifi-modal" data-toggle="modal" href="#" title="xóa">
@@ -100,30 +96,198 @@
                                         </span>
                                     </td>
                                 </tr>
+                                <tr class="collapse-row">
+                                    <td class="collapse-inner" colspan="9">
+                                        <div class="collapse-div">
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="box box-lime">
+                                                        <div class="box-header with-border">
+                                                            <h4 class="box-title">Thông tin sản phẩm</h4>
+                                                        </div><!-- /.box-header -->
+                                                        <!-- form start -->
+                                                        <div class="form-horizontal">
+                                                            <div class="box-body product-form">
+                                                                <div class="form-group">
+                                                                    <label class="col-sm-4 control-label" for="">Tên sản phẩm</label>
+                                                                    <div class="col-sm-8">
+                                                                        <input class="form-control" id="" placeholder="" type="text">
+                                                                        <label class="error">Vui lòng nhập tên sản phẩm</label>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="form-group">
+                                                                    <label class="col-sm-4 control-label" for="">Nhóm sản phẩm</label>
+                                                                    <div class="col-sm-8">
+                                                                        <select class="form-control">
+                                                                            <option>
+                                                                                Chọn nhóm sản phẩm
+                                                                            </option>
+                                                                            <option>
+                                                                                Thiết bị số
+                                                                            </option>
+                                                                            <option>
+                                                                                Thời trang nam
+                                                                            </option>
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="form-group">
+                                                                    <label class="col-sm-4 control-label" for="">Mã sản phẩm</label>
+                                                                    <div class="col-sm-8">
+                                                                        <input class="form-control" id="" placeholder="Nhập mã sản phẩm" type="text">
+                                                                        <label class="error">Vui lòng nhập mã sản phẩm</label>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="form-group">
+                                                                    <label class="col-sm-4 control-label" for="">Giá thị trường (VND)</label>
+                                                                    <div class="col-sm-8">
+                                                                        <input class="form-control" id="" placeholder="Nhập giá thị trường" type="text">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="form-group">
+                                                                    <label class="col-sm-4 control-label" for="">Giá bán sản phẩm (VND)</label>
+                                                                    <div class="col-sm-8">
+                                                                        <input class="form-control" id="" placeholder="Nhập giá sản phẩm" type="text">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="form-group">
+                                                                    <label class="col-sm-4 control-label" for="">Số lượng sản phẩm (Cái)</label>
+                                                                    <div class="col-sm-8">
+                                                                        <input class="form-control" id="" placeholder="Nhập số lượng sản phẩm" type="text">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="form-group">
+                                                                    <label class="col-sm-4 control-label" for="">Khối lượng sản phẩm (Gram)</label>
+                                                                    <div class="col-sm-8">
+                                                                        <input class="form-control" id="" placeholder="Nhập khối lượng sản phẩm" type="text">
+                                                                    </div>
+                                                                </div>
+                                                            </div><!-- /.box-body -->
+                                                        </div>
+                                                    </div><!-- /.box -->
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="box box-lime">
+                                                        <div class="box-header with-border">
+                                                            <h4 class="box-title">Thuộc tính sản phẩm</h4>
+                                                        </div><!-- /.box-header -->
+                                                        <!-- form start -->
+                                                        <div class="form-horizontal">
+                                                            <div class="box-body">
+                                                                <div class="form-group">
+                                                                    <span class="col-md-4" for="">Chọn nhóm thuộc tính:</span>
+                                                                    <div class="col-md-8">
+                                                                        <div class="row">
+                                                                            <div class="col-md-12">
+                                                                                <select aria-invalid="false" class="form-control valid" id="option_ids" name="option_ids">
+                                                                                    <option value="">
+                                                                                        Chọn thuộc tính
+                                                                                    </option>
+                                                                                    <option value="1">
+                                                                                        Màu sắc
+                                                                                    </option>
+                                                                                    <option value="2">
+                                                                                        Giá
+                                                                                    </option>
+                                                                                    <option value="53">
+                                                                                        Size
+                                                                                    </option>
+                                                                                </select>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="row list-check">
+                                                                    <div class="col-md-12" id="list-check">
+                                                                        <div class="opt_group_1"></div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="block-grey block-selected">
+                                                                    <span class="title-line">Các thuộc tính đã chọn:</span>
+                                                                </div>
+                                                            </div><!-- /.box-body -->
+                                                        </div>
+                                                    </div><!-- /.box -->
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="box box-lime">
+                                                        <div class="box-header with-border">
+                                                            <h4 class="box-title">Thông tin giới thiệu sản phẩm</h4>
+                                                        </div><!-- /.box-header -->
+                                                        <!-- form start -->
+                                                        <div class="form-horizontal">
+                                                            <div class="box-body product-form editor-form">
+                                                                <div class="form-group"></div>
+                                                            </div><!-- /.box-body -->
+                                                        </div>
+                                                    </div><!-- /.box -->
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="box box-lime">
+                                                        <div class="box-header with-border">
+                                                            <h4 class="box-title">Thông số sản phẩm</h4>
+                                                        </div><!-- /.box-header -->
+                                                        <!-- form start -->
+                                                        <div class="form-horizontal">
+                                                            <div class="box-body product-form"></div><!-- /.box-body -->
+                                                        </div>
+                                                    </div><!-- /.box -->
+                                                </div>
+                                            </div>
+                                            <div class="form-group text-right last-row">
+                                                <input type="button" class="btn btn-lime" data-toggle="modal" data-target="#alert-chanel-modal" value="Lưu thông tin sản phẩm">
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
                                 <tr>
                                     <td><input type="checkbox"></td>
                                     <td>
-                                        <a class="cate-name" href="#">TNBTMF001758</a>
+                                        TNBTMF001758
                                     </td>
                                     <td>Tai Nghe Bluetooth GH-1752 trắng</td>
                                     <td>Thiết bị số</td>
-                                    <td class="text-right">120</td>
-                                    <td>
-                                        350.000<ins>đ</ins>
-                                    </td>
-                                    <td>Facebook</td>
-                                    <td>
-                                        <a class="active" data-target="#nontifi-modal" data-toggle="modal" href="#">Kích hoạt</a>
-                                    </td>
+                                    <td class="text-center">200000</td>
+                                    <td class="text-center">200000</td>
+                                    <td class="text-center">120</td>
+                                    <td class="text-center">120</td>
                                     <td class="text-right">
                                         <span class="action">
-                                            <a class="btn-action" href="2.2-create-category.html" title="sửa">
+                                            <a class="btn-action" href="" title="sửa">
                                                 <i class="fa fa-cog"></i>
                                             </a>
                                             <a class="btn-action" data-target="#nontifi-modal" data-toggle="modal" href="#" title="xóa">
                                                 <i class="fa fa-trash-o"></i>
                                             </a>
                                         </span>
+                                    </td>
+                                </tr>
+                                <tr class="collapse" data-parent="bs-example-navbar-collapse-1" id="collapseOne">
+                                    <td colspan="9">
+                                        <div>
+                                            <div class="panel-body">
+                                                <div class="row">
+                                                    <div class="col-xs-6 col-xs-offset-3 col-md-3 col-md-offset-3">
+                                                        <form role="form">
+                                                            <div class="form-group">
+                                                                <label for="exampleInputFile">Visuel</label> <input id="exampleInputFile" type="file">
+                                                            </div>
+                                                        </form><a class="thumbnail" href="#"><img alt="..." data-src="holder.js/100%x180"></a>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-xs-6 col-xs-offset-3 col-md-3 col-md-offset-3">
+                                                        <ul class="list-group">
+                                                            <li class="list-group-item"><span class="badge">50</span> Valeur</li>
+                                                            <li class="list-group-item">Valeur-min</li>
+                                                            <li class="list-group-item">Valeur-max</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </td>
                                 </tr>
                             </tbody>
