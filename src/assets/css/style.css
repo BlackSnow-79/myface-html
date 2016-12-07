@@ -818,7 +818,18 @@ select:-webkit-autofill {
 }
 .form-horizontal-right .control-label {
   text-align: left;
-  padding: 7px 15px 0;
+  padding: 7px 0 0 15px;
+}
+.form-horizontal-right .form-group {
+  margin-bottom: 10px;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+.form-horizontal-right .form-group:before,
+.form-horizontal-right .form-group:after {
+  display: table;
+  content: " ";
+  clear: both;
 }
 .form-horizontal .radio + .radio,
 .form-horizontal .checkbox + .checkbox {
@@ -1816,9 +1827,15 @@ filter {
 .collapse-div {
   display: none;
   padding: 20px;
+  color: #212121;
 }
 .collapse-div .last-row {
   margin-bottom: 0;
+}
+.collapse-div .title {
+  font-weight: bold;
+  color: #ff5722;
+  margin-bottom: 5px;
 }
 .list-group-noline {
   list-style: none;
@@ -5755,6 +5772,23 @@ main {
 }
 .goto-next-step {
   margin-bottom: 0;
+}
+.block-selected .item {
+  margin-bottom: 5px;
+}
+.block-selected .item .title {
+  color: #212121;
+  margin-bottom: 0;
+}
+.block-selected .selected-list {
+  width: 100%;
+}
+.block-selected .selected-list span {
+  margin-right: 10px;
+  color: #727272;
+}
+.block-selected .list-removes {
+  padding-top: 10px;
 }
 /*
  * Page: Login & Register

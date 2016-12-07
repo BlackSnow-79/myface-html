@@ -222,7 +222,19 @@ $(document).ready(function() {
     //collapse-table
     $(".collapse-toggle").click(function(e) {
         e.preventDefault();
-        $('.collapse-div').slideDown();
+        if (!$(this).closest('.collapse-toggle-nav').hasClass('show-collapse')) {
+            $('.collapse-div').slideUp("slow");
+            $('.collapse-toggle-nav').removeClass('show-collapse');
+            $(this).closest('.collapse-toggle-nav').addClass('show-collapse');
+            $(this).closest('.collapse-toggle-nav').next('.collapse-row').find('.collapse-div').slideDown("slow");
+        } else {
+            $(this).closest('.collapse-toggle-nav').removeClass('show-collapse');
+            $(this).closest('.collapse-toggle-nav').next('.collapse-row').find('.collapse-div').slideUp("slow");
+        }
+    });
+    $(".collapse-close").click(function(e) {
+        e.preventDefault();
+        $(this).closest('.collapse-row').find('.collapse-div').slideUp("slow");
     });
 
     // Modal
