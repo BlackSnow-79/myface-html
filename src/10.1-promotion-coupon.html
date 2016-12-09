@@ -1,0 +1,200 @@
+{% extends "_layout.html" %}
+{% block page-container %}
+{% include "_shop-setting-header.html" %}
+<main class="promotion">
+    <div class="container">
+        <div class="row">
+            <div class="box">
+                <div class="box-header with-border">
+                    <h3 class="box-title">Danh sách chương trình khuyến mãi</h3>
+                    <a class="btn btn-default pull-right" href="10-promotion.html">+ Tạo chương trình khuyến mãi mới</a>
+                </div><!-- /.box-header -->
+                <div class="box-body">
+                    <div class="nav-tabs-custom">
+                        <ul class="nav nav-tabs">
+                            <li class="active">
+                                <a href="10.1-promotion-coupon.html">Khuyến mãi code coupon</a>
+                            </li>
+                            <li>
+                                <a href="10.2-promotion-for-order.html">Tặng quà cho đơn hàng</a>
+                            </li>
+                            <li>
+                                <a aria-expanded="true" href="10.3-promotion-for-product.html">Tặng quà cho sản phẩm</a>
+                            </li>
+                        </ul>
+                        <div class="promotion-table invoice-tab-content">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th class="input"></th>
+                                        <th>Tên chương trình</th>
+                                        <th class="text-center">Loại coupon</th>
+                                        <th class="text-center">Tên coupon</th>
+                                        <th class="text-center">Thời gian áp dụng</th>
+                                        <th class="text-center">Trạng thái</th>
+                                        <th class="text-right">Số lần sử dụng</th>
+                                        <th class="text-center">Dừng sử dụng</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    {% for x in [1,2]%}
+                                    <tr class="collapse-toggle-nav">
+                                        <td>
+                                            1
+                                        </td>
+                                        <td>
+                                            Mừng noel
+                                        </td>
+                                        <td>
+                                            Áp dụng cho tất cả đơn hàng
+                                        </td>
+                                        <td class="text-center">
+                                            NOEL 2016
+                                        </td>
+                                        <td class="text-center">
+                                            04/11/2015 - 11:00:35 đến 04/11/2015 - 11:00:35
+                                        </td>
+                                        <td class="text-center">Kích hoạt</td>
+                                        <td class="text-right">
+                                            100/120
+                                        </td>
+                                        <td class="text-center">
+                                            <button class="btn btn-lime collapse-toggle">Dừng sử dụng</button>
+                                        </td>
+                                    </tr>
+                                    <tr class="collapse-row fast-view-content">
+                                        <td class="collapse-inner" colspan="9">
+                                            <div class="collapse-div">
+                                                <div class="row invoice-info">
+                                                    <div class="col-sm-4 invoice-col">
+                                                        <p class="title">
+                                                            Địa điểm lấy hàng (sản phẩm)
+                                                        </p>
+                                                        <p class="info-row">
+                                                            <address>
+                                                                <strong>Địa chỉ 1:</strong> Taodan, Số 121/11, Đường Hưng Phú, Phường Mỹ Quý, Thành Phố Long Xuyên, Tỉnh An Giang
+                                                            </address>
+                                                        </p>
+                                                    </div><!-- /.col -->
+                                                    <div class="col-sm-4 invoice-col">
+                                                        <p class="title">
+                                                            Địa điểm giao hàng
+                                                        </p>
+                                                        <p class="info-row">
+                                                            <address>
+                                                                <strong>Phan Thị Lê</strong><br>
+                                                                <strong>Địa chỉ:</strong> Taodan, Số 121/11, Đường Hưng Phú, Phường Mỹ Quý, Thành Phố Long Xuyên, Tỉnh An Giang
+                                                            </address>
+                                                        </p>
+                                                    </div><!-- /.col -->
+                                                    <div class="col-sm-4 invoice-col">
+                                                        <p class="title">
+                                                            Cước vận chuyển (trả cho công ty vận chuyển)
+                                                        </p>
+                                                        <p class="info-row">
+                                                            Phương thức giao hàng:
+                                                            <strong>Tiết kiệm </strong>
+                                                            <span class="lime-text">13000</span>
+                                                            (VNĐ)
+                                                        </p>
+                                                    </div><!-- /.col -->
+                                                </div>
+                                                <div class="row invoice-info">
+                                                    <div class="col-sm-8 invoice-col">
+                                                        <table class="table table-striped order-product-table">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th class="col-xs-4">Tên sản phẩm</th>
+                                                                    <th class="col-xs-2 text-center">Giá bán</th>
+                                                                    <th class="col-xs-2 text-center">Số lượng</th>
+                                                                    <th class="col-xs-2 text-center">Khối lượng (gram)</th>
+                                                                    <th class="col-xs-2 text-center">Thành tiền</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td class="products-list">
+                                                                        <div class="item">
+                                                                            <div class="product-img">
+                                                                                <a href="#">
+                                                                                    <img alt="myface" src="assets/images/product/product-2.jpg">
+                                                                                </a>
+                                                                            </div>
+                                                                            <div class="product-info">
+                                                                                <a class="product-title" href="#">Combo 2 Hộp Sữa Bột Ensure Gold Acti M2 400g</a>
+                                                                                <p class="product-properties">(Màu sắc: Xanh rêu, Size: M)</p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td class="text-center">
+                                                                        <span>1.000.000<ins>đ</ins></span>
+                                                                    </td>
+                                                                    <td class="text-center">2</td>
+                                                                    <td class="text-center">2000</td>
+                                                                    <td class="text-center">
+                                                                        <label>1.000.000<ins>đ</ins></label>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                    <div class="col-sm-4 invoice-col">
+                                                        <div class="table-responsive">
+                                                            <table class="table">
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <th>Tiền sản phẩm:</th>
+                                                                        <td>
+                                                                            2.000.000<ins>đ</ins>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <th>Phí vận chuyển và thu tiền tận nơi:</th>
+                                                                        <td>
+                                                                            0<ins>đ</ins>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <th>Giảm giá khuyến mãi:</th>
+                                                                        <td>
+                                                                            0<ins>đ</ins>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <th>Giảm giá coupon:</th>
+                                                                        <td>
+                                                                            0<ins>đ</ins>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <th>Mã coupon sử dụng:</th>
+                                                                        <td>Chưa có</td>
+                                                                    </tr>
+                                                                    <tr class="invoice-price-footer">
+                                                                        <th>Tổng tiền đơn hàng:</th>
+                                                                        <td>
+                                                                            <label class="lime-highlight">2.000.000<ins>đ</ins></label>
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group text-right last-row">
+                                                    <a class="btn btn-lime" href="4.3.1-invoice-detail-edit-1.html">Sửa đơn hàng</a>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    {% endfor %}
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div><!-- /.box-body -->
+            </div>
+        </div>
+    </div>
+</main>
+{% endblock %}

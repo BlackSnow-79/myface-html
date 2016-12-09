@@ -8,42 +8,27 @@
   padding: 13px 0;
   text-align: center;
   > * {
-    display: inline-block;
+    display: inline;
+    vertical-align: middle;
+  }
+  .next-icon {
+    font-size: 40px;
   }
 }
-.progress-link, .progress-link:focus {
-  position: relative;
-  color: @light-gray;
-  p {
-    position: absolute;
-    left: -60px;
-    right: -60px;
-  }
-  &:hover, &.active {
-    color: @blue;
-    span {
-      background-color: @blue; 
-    }
-  }
-  &.activeted {
-    color: @light-blue-bg;
-    span {
-      background-color: @light-blue-bg; 
-    }
-  }
-}
-
-.progress {
-  height: 3px;
-  width: 140px;
+.progress-step-title {
+  padding: 5px 15px 15px;
   margin-bottom: 0;
-  background-color: @light-gray;
-  &.progress-light-blue {
-    background-color: @light-blue-bg;
+  color: @gray-text;
+  .label-default {
+    margin-right: 5px;
+    font-size: 100%;
+  }
+  &.active {
+    color: #ff5722;
+    font-weight: bold;
+    .label-default {
+        background-color: #ff5722;
+        color: #fff;
+      }
   }
 }
-.progress-bar {
-  color: @white;
-  .box-shadow(none);
-}
-

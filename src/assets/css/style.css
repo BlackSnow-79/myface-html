@@ -459,6 +459,12 @@ img {
 .is-same label {
   font-weight: normal;
 }
+.input-col {
+  width: 36px;
+}
+.product-id-col {
+  width: 120px;
+}
 header {
   position: fixed;
   width: 100%;
@@ -2233,52 +2239,28 @@ ul.ss-box a:hover {
   text-align: center;
 }
 .progress-row-content > * {
-  display: inline-block;
+  display: inline;
+  vertical-align: middle;
 }
-.progress-link,
-.progress-link:focus {
-  position: relative;
-  color: #b6b6b6;
+.progress-row-content .next-icon {
+  font-size: 40px;
 }
-.progress-link p,
-.progress-link:focus p {
-  position: absolute;
-  left: -60px;
-  right: -60px;
-}
-.progress-link:hover,
-.progress-link:focus:hover,
-.progress-link.active,
-.progress-link:focus.active {
-  color: #2bc5f8;
-}
-.progress-link:hover span,
-.progress-link:focus:hover span,
-.progress-link.active span,
-.progress-link:focus.active span {
-  background-color: #2bc5f8;
-}
-.progress-link.activeted,
-.progress-link:focus.activeted {
-  color: #8fddf8;
-}
-.progress-link.activeted span,
-.progress-link:focus.activeted span {
-  background-color: #8fddf8;
-}
-.progress {
-  height: 3px;
-  width: 140px;
+.progress-step-title {
+  padding: 5px 15px 15px;
   margin-bottom: 0;
-  background-color: #b6b6b6;
+  color: #727272;
 }
-.progress.progress-light-blue {
-  background-color: #8fddf8;
+.progress-step-title .label-default {
+  margin-right: 5px;
+  font-size: 100%;
 }
-.progress-bar {
+.progress-step-title.active {
+  color: #ff5722;
+  font-weight: bold;
+}
+.progress-step-title.active .label-default {
+  background-color: #ff5722;
   color: #fff;
-  -webkit-box-shadow: none;
-  box-shadow: none;
 }
 .timeline {
   list-style: none;
@@ -4930,6 +4912,7 @@ body.search-body-overlay:before {
   outline: none;
 }
 .search-inner button.btn[type="submit"] {
+  height: 42px;
   padding: 10px 40px;
   border-radius: 0;
   background-color: #2BC5F8;
@@ -5061,7 +5044,7 @@ main {
   position: relative;
   float: left;
 }
-.img-box span {
+.img-box > span {
   width: 100%;
   height: 100%;
   position: absolute;
@@ -5789,6 +5772,145 @@ main {
 }
 .block-selected .list-removes {
   padding-top: 10px;
+}
+.img-box {
+  background-color: #fafafa;
+}
+.img-box .upload-img-label {
+  width: 100%;
+  position: absolute;
+  top: 8px;
+  left: 0;
+  text-align: center;
+  color: #dfdfdf;
+}
+.img-box .upload-img-label span {
+  font-size: 12px;
+  width: 100%;
+  display: block;
+}
+.img-box .upload-img-label span.icon {
+  font-size: 28px;
+  font-weight: lighter;
+}
+.img-box img {
+  max-width: 100%;
+  max-height: 100%;
+}
+.img-box span.label {
+  font-size: 12px;
+  width: auto;
+  height: 16px;
+  background-color: #80dfd2;
+  color: #fff;
+  line-height: 12px;
+  font-size: 11px;
+  font-weight: normal;
+  border-radius: 0;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  top: auto;
+  left: -1px;
+  right: -1px;
+}
+.img-box:hover .upload-img-label {
+  color: #727272;
+}
+.import-products-list .img-box {
+  width: 80px;
+  height: 80px;
+  text-align: center;
+  margin: 5px;
+}
+.products-img-row .img-box {
+  width: 40px;
+  height: 40px;
+  margin-left: 0;
+}
+.import-choosen-chanel {
+  width: 100%;
+  float: left;
+  padding: 15px 0;
+}
+.import-products {
+  margin-bottom: 0;
+}
+.import-from-excel .hdsd-link,
+.import-from-other-chanel .hdsd-link {
+  height: auto;
+  padding: 0;
+  text-decoration: underline;
+}
+.import-from-excel .hdsd-link:hover,
+.import-from-other-chanel .hdsd-link:hover {
+  text-decoration: none;
+}
+.other-chanel .title {
+  color: #212121;
+  font-weight: bold;
+}
+.other-chanel + .other-chanel .import-cta {
+  margin-bottom: 0;
+}
+.other-chanel-row {
+  width: 100%;
+  float: left;
+}
+.other-text {
+  margin-bottom: 20px;
+}
+.import-cta {
+  width: 100%;
+  float: left;
+  margin-bottom: 20px;
+}
+.import-cta .other-chanel-img {
+  width: 100px;
+  display: inline-block;
+  line-height: 40px;
+}
+.import-file-btn {
+  width: 266px;
+  height: 40px;
+  display: inline-block;
+  color: #fff;
+  background-color: #ff5722;
+  text-align: center;
+  position: relative;
+  border-radius: 4px;
+  font-size: 18px;
+  line-height: 40px;
+  text-transform: uppercase;
+}
+.import-file-btn:hover {
+  background-color: #ff7e55;
+}
+.next-step-import {
+  text-align: center;
+}
+.next-step-import .line-1,
+.next-step-import .line-3 {
+  margin-bottom: 10px;
+}
+.next-step-import .line-2 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.next-step-import .line-3 {
+  font-size: 15px;
+}
+.next-step-import .fa {
+  font-size: 50px;
+  color: #3ac562;
+}
+.products-remove-number {
+  line-height: 30px;
+  font-size: 16px;
+}
+.remove-products {
+  color: #f44336;
 }
 /*
  * Page: Login & Register

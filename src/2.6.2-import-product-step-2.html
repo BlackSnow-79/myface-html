@@ -27,38 +27,131 @@
             <div class="box">
                 <div class="box-header with-border">
                     <h3 class="box-title">Nhập (import) sản phẩm</h3>
+                    <span class="pull-right lime-text products-remove-number">Bạn đã nhập (import) <strong>5</strong> sản phẩm lên hệ thống</span>
                 </div><!-- /.box-header -->
                 <div class="box-body import-products">
                     <div class="progress-row">
                         <div class="progress-row-content">
-                            <a class="progress-link activeted" href="2.6.1-import-product-step-1.html">
-                                <span class="label label-default">1</span>
-                                <p>Sửa thông tin sản phẩm</p>
+                            <a class="progress-step-title" href="2.6.1-import-product-step-1.html" title="Quay lại bước 1">
+                                <span class="label label-default">1</span> Sửa thông tin sản phẩm
                             </a>
-                            <div class="progress sm progress-light-blue">
-                                <div class="progress-bar"></div>
-                            </div>
-                            <a class="progress-link active" href="2.6.2-import-product-step-2.html">
-                                <span class="label label-default">2</span>
-                                <p>Thêm hình sản phẩm</p>
+                            <span class="next-icon">
+                                <i class="fa fa-angle-right" aria-hidden="true"></i>
+                            </span>
+                            <a class="progress-step-title active"  href="2.6.2-import-product-step-2.html" title="Quay lại bước 2">
+                                <span class="label label-default">2</span> Thêm hình sản phẩm
                             </a>
-                            <div class="progress sm">
-                                <div class="progress-bar"></div>
-                            </div>
-                                <a class="progress-link" href="2.6.3-import-product-step-3.html.html">
-                                <span class="label label-default">3</span>
-                                <p>Xác nhận và đăng sản phẩm</p>
+                            <span class="next-icon">
+                                <i class="fa fa-angle-right" aria-hidden="true"></i>
+                            </span>
+                            <a class="progress-step-title"  href="2.6.3-import-product-step-3.html" title="Quay lại bước 3">
+                                <span class="label label-default">1</span> Xác nhận và đăng sản phẩm
                             </a>
                         </div>
                     </div>
                     <div class="import-steps-nav">
-                        <span class="lime-text products-number">Bạn đã chọn <strong>5</strong> sản phẩm</span>
+                        <span class="lime-text products-remove-number">Bạn đã chọn <strong>5</strong> sản phẩm</span>
                         <div class="pull-right">
-                            <button class="btn btn-default">Xóa sản phẩm đã chọn khỏi danh sách nhập (import)</button>
-                            <input type="button" class="btn btn-lime" value="Bước tiếp theo" onclick="location.href='2.6.2-import-product-step-2.html'">
+                            <a class="link-btn remove-products" data-target="#nontifi-modal" data-toggle="modal" href="#">Xóa sản phẩm đã chọn khỏi danh sách nhập (import)</a>
+                            <input type="button" class="btn btn-lime" value="Bước tiếp theo" onclick="location.href='2.6.3-import-product-step-3.html'">
                         </div>
                     </div>
+                    <div class="table-div import-products-list">
+                        <table class="table product-tb">
+                            <thead>
+                                <tr>
+                                    <th class="input-col">
+                                        <input type="checkbox">
+                                    </th>
+                                    <th class="product-id-col">Mã sản phẩm</th>
+                                    <th class="col-xs-2">Tên sản phẩm</th>
+                                    <th>Hình sản phẩm</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><input type="checkbox"></td>
+                                    <td>TNBTMF001758</td>
+                                    <td>Tai Nghe Bluetooth GH-1752 trắng</td>
+                                    <td>
+                                        <div class="img-box img-upload">
+                                            <div class="upload-img-label">
+                                                <span class="icon">+</span>
+                                                <span>Tải hình lên</span>
+                                            </div>
+                                            <input class="upload-btn" id="upload-img-btn" type="file" name="pic" accept="image/*">
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox"></td>
+                                    <td>TNBTMF001758</td>
+                                    <td>Tai Nghe Bluetooth GH-1752 trắng</td>
+                                    <td>
+                                        <div class="img-box">
+                                            <img src="assets/images/product/product-1.jpg" alt="myface">
+                                            <a href="#" data-toggle="modal" data-target="#nontifi-modal" class="close img-remove-btn" title="xóa ảnh">
+                                                <i class="fa fa-times"></i>
+                                            </a>
+                                            <span class="label">Ảnh bìa</span>
+                                        </div>
+                                        <div class="img-box">
+                                            <img src="assets/images/product/product-1.jpg" alt="myface">
+                                            <a href="#" data-toggle="modal" data-target="#nontifi-modal" class="close img-remove-btn" title="xóa ảnh">
+                                                <i class="fa fa-times"></i>
+                                            </a>
+                                        </div>
+                                        <div class="img-box">
+                                            <img src="assets/images/product/product-1.jpg" alt="myface">
+                                            <a href="#" data-toggle="modal" data-target="#nontifi-modal" class="close img-remove-btn" title="xóa ảnh">
+                                                <i class="fa fa-times"></i>
+                                            </a>
+                                        </div>
+                                        <div class="img-box img-upload">
+                                            <div class="upload-img-label">
+                                                <span class="icon">+</span>
+                                                <span>Tải hình lên</span>
+                                            </div>
+                                            <input class="upload-btn" id="upload-img-btn" type="file" name="pic" accept="image/*">
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                 </div><!-- /.box-body -->
+                <div class="box-footer clearfix">
+                    <div class="pull-right">
+                        <ul class="pagination pagination-sm no-margin">
+                            <li>
+                                <a class="first" href="#"><i class="fa fa-step-backward"></i></a>
+                            </li>
+                            <li>
+                                <a class="prev" href="#">Trước</a>
+                            </li>
+                            <li><span class="current-pages">Trang 1/1623</span></li>
+                            <li>
+                                <a class="next" href="#">Sau</a>
+                            </li>
+                            <li>
+                                <a class="last" href="#"><i class="fa fa-step-forward"></i></a>
+                            </li>
+                        </ul>
+                        <form class="pagi-form" id="pagi-form" method="get" name="pagi-form">
+                            <label><select class="form-control form-select" name="">
+                                <option selected="selected" value="10">
+                                    10 dòng/trang
+                                </option>
+                                <option value="50">
+                                    50 dòng/trang
+                                </option>
+                                <option value="100">
+                                    100 dòng/trang
+                                </option>
+                            </select></label>
+                        </form>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

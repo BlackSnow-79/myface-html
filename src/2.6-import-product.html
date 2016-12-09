@@ -44,9 +44,12 @@
                                         <span>File excel mẫu nhập (import) sản phẩm mới</span>
                                         <a class="hdsd-link" href="#" target="_blank"><span>Tải (download) file tại đây</span></a>
                                     </p>
-                                    <p class="cta text-center">
-                                        <input class="btn btn-lime " type="file" accept="">
-                                    </p>
+                                    <div class="import-cta">
+                                        <div class="import-file-btn">
+                                            Nhập (import) sản phẩm
+                                            <input class="upload-btn" type="file" name="" accept="">
+                                        </div>
+                                    </div>
                                     <div class="note-div">
                                         <p class="note-title">Lưu ý:</p>
                                         <ul class="notes">
@@ -64,41 +67,47 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-6 import-from-orther-chanel">
+                        <div class="col-md-6 import-from-other-chanel">
                             <div class="box box-lime">
                                 <div class="box-header with-border">
                                     <h4 class="box-title">Nhập (import) sản phẩm mới từ kênh bán hàng khác</h4>
                                 </div>
                                 <div class="box-body">
-                                    <p>myFace cho phép bạn chuyển dữ liệu sản phẩm, từ các kênh bán hàng khác. Bạn chọn kênh bán hàng để nhập (import) sản phẩm</p>
+                                    <p class="other-text">myFace cho phép bạn chuyển dữ liệu sản phẩm, từ các kênh bán hàng khác. Bạn chọn kênh bán hàng để nhập (import) sản phẩm</p>
                                     <div class="other-chanel haravan-chanel">
-                                        <p class="lime-text">Nhập (import) sản phẩm từ hệ thống Haravan</p>
-                                        <div class="box-body">
+                                        <p class="title">Nhập (import) sản phẩm từ hệ thống Haravan</p>
+                                        <div class="other-chanel-row">
                                             <p>
                                                 <span>Hướng dẫn nhập (import) sản phẩm từ hệ thống Haravan</span>
                                                 <a class="hdsd-link" href="#" target="_blank"><span>Xem hướng dẫn</span></a>
-                                                <span class="pull-right">
+                                            </p>
+                                            <div class="import-cta">
+                                                <div class="import-file-btn">
+                                                    Nhập (import) sản phẩm
+                                                    <input class="upload-btn" type="file" name="" accept="">
+                                                </div>
+                                                <span class="other-chanel-img pull-right">
                                                     <img src="assets/images/chanel/logo-haravan.png" alt="myface">
                                                 </span>
-                                            </p>
-                                            <p class="cta text-center">
-                                                <input class="btn btn-lime " type="file" accept="">
-                                            </p>
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="other-chanel haravan-chanel">
-                                        <p class="lime-text">Nhập (import) sản phẩm từ hệ thống Bizweb</p>
-                                        <div class="box-body">
+                                        <p class="title">Nhập (import) sản phẩm từ hệ thống Bizweb</p>
+                                        <div class="other-chanel-row">
                                             <p>
                                                 <span>Hướng dẫn nhập (import) sản phẩm từ hệ thống Bizweb</span>
                                                 <a class="hdsd-link" href="#" target="_blank"><span>Xem hướng dẫn</span></a>
-                                                <span class="pull-right">
+                                            </p>
+                                            <div class="import-cta">
+                                                <div class="import-file-btn">
+                                                    Nhập (import) sản phẩm
+                                                    <input class="upload-btn" type="file" name="" accept="">
+                                                </div>
+                                                <span class="other-chanel-img pull-right">
                                                     <img src="assets/images/chanel/logo-bizweb.png" alt="myface">
                                                 </span>
-                                            </p>
-                                            <p class="cta text-center">
-                                                <input class="btn btn-lime " type="file" accept="">
-                                            </p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -106,8 +115,29 @@
                         </div>
                     </div>
                 </div><!-- /.box-body -->
+                <div class="box-footer clearfix">
+                    <div class="form-group clearfix">
+                        <input type="button" class="btn btn-lime pull-right" data-toggle="modal" data-target="#next-step-import" value="Bước tiếp theo">
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 </main>
+<div class="modal next-step-import" id="next-step-import" data-backdrop="static">
+    <div class="modal-dialog modal-md">
+        <div class="modal-content">
+            <div class="modal-body">
+                <p class="line-1">
+                    <i class="fa fa-check-circle"></i>
+                </p>
+                <p class="lime-text line-2">Xin chúc mừng!</p>
+                <p class="line-3">Bạn đã nhập (import) 10 sản phẩm vào hệ thống. Bạn sửa thông tin sản phẩm ngay nhé!</p>
+            </div>
+            <div class="modal-footer text-center">
+                <a class="btn btn-lime" href="2.6.1-import-product-step-1.html">Sửa</a>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div>
 {% endblock %}
