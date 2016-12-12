@@ -465,6 +465,13 @@ img {
 .product-id-col {
   width: 120px;
 }
+.action-text {
+  color: #ff5722;
+  text-decoration: underline;
+}
+.action-text:hover {
+  text-decoration: none;
+}
 header {
   position: fixed;
   width: 100%;
@@ -7428,4 +7435,50 @@ main {
 .noted-text {
   font-weight: normal;
   font-style: italic;
+}
+.promotion-table {
+  padding: 15px 0;
+}
+.promotion-table > .table {
+  margin-bottom: 0;
+}
+.promotion-table > .table tbody tr th,
+.promotion-table > .table tbody tr td {
+  vertical-align: top;
+}
+.promotion-row p {
+  margin-bottom: 5px;
+}
+.promotion-row .promotion-title span {
+  color: #3ac562;
+}
+.promotion-row .promotion-content table {
+  margin-bottom: 0;
+}
+.promotion-row .promotion-content table tbody tr th,
+.promotion-row .promotion-content table tbody tr td {
+  padding-left: 15px;
+}
+.promotion-row .promotion-date-picker span {
+  color: #727272;
+}
+.promotion-coupon {
+  float: none;
+  margin: 0 auto;
+}
+.promotion-coupon .promotion-detail td {
+  text-align: right;
+}
+.promotion-coupon .promotion-date table {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.promotion-coupon .promotion-date table tbody tr th,
+.promotion-coupon .promotion-date table tbody tr td {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.promotion-coupon .turn {
+  margin-left: 5px;
+  font-size: 16px;
 }

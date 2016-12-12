@@ -235,8 +235,26 @@ $(document).ready(function() {
     $(".collapse-close").click(function(e) {
         e.preventDefault();
         $(this).closest('.collapse-row').find('.collapse-div').slideUp("slow");
+        $('.collapse-toggle-nav').removeClass('show-collapse');
     });
-
+    //promotion
+    function radioControlform(rbtn) {
+        var checkboxValue;
+        $(rbtn).click(function() {
+            $('.promotion-radio-btn').removeClass('active');
+            $(this).parent().addClass('active');
+            checkboxValue = $(this).attr('id');
+            $('.promotion-form').removeClass('promotion-form-selected');
+            $('.' + checkboxValue).addClass('promotion-form-selected');
+            $('.promotion-form-selected .promotion-option-control').click(function() {
+                $('.promotion-form-selected .promotion-radio-label').removeClass('active');
+                $(this).parent().addClass('active');
+                var checkboxValue2 = $(this).attr('id');
+                $('.promotion-form-selected .promotion-option-form').removeClass('promotion-form-selected');
+                $('.promotion-form-selected').find('.' + checkboxValue2).addClass('promotion-form-selected');
+            });
+        });
+    }
     // Modal
     (function($) {
         "use strict";

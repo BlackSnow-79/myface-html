@@ -22,18 +22,18 @@
                                 <a aria-expanded="true" href="10.3-promotion-for-product.html">Tặng quà cho sản phẩm</a>
                             </li>
                         </ul>
-                        <div class="promotion-table invoice-tab-content">
-                            <table class="table">
+                        <div class="promotion-table">
+                            <table class="table table-promotion-coupon">
                                 <thead>
                                     <tr>
                                         <th class="input"></th>
                                         <th>Tên chương trình</th>
-                                        <th class="text-center">Loại coupon</th>
+                                        <th class="col-md-2 text-center">Loại coupon</th>
                                         <th class="text-center">Tên coupon</th>
-                                        <th class="text-center">Thời gian áp dụng</th>
+                                        <th class="col-md-2 text-center">Thời gian áp dụng</th>
                                         <th class="text-center">Trạng thái</th>
                                         <th class="text-right">Số lần sử dụng</th>
-                                        <th class="text-center">Dừng sử dụng</th>
+                                        <th class="text-right">Dừng sử dụng</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -50,139 +50,210 @@
                                         </td>
                                         <td class="text-center">
                                             NOEL 2016
+                                            <p class="toggle-row">
+                                                <a class="action-text show-promotion-detail" href="">Xem chi tiết</a>
+                                            </p>
                                         </td>
                                         <td class="text-center">
-                                            04/11/2015 - 11:00:35 đến 04/11/2015 - 11:00:35
+                                            <p class="date">04/11/2015 - 11:00:35</p>
+                                            <p class="date">12/11/2015 - 11:00:35</p>
+                                            <p class="toggle-row">
+                                                <a class="action-text show-promotion-date" href="">Gia hạn</a>
+                                            </p>
                                         </td>
                                         <td class="text-center">Kích hoạt</td>
                                         <td class="text-right">
                                             100/120
+                                            <p class="toggle-row">
+                                                <a class="action-text show-promotion-turns" href="">Thêm lượt sử dụng</a>
+                                            </p>
                                         </td>
-                                        <td class="text-center">
-                                            <button class="btn btn-lime collapse-toggle">Dừng sử dụng</button>
+                                        <td class="text-right">
+                                            <button class="btn btn-lime stop-promotion-btn">Dừng</button>
                                         </td>
                                     </tr>
-                                    <tr class="collapse-row fast-view-content">
+                                    <tr class="collapse-row">
                                         <td class="collapse-inner" colspan="9">
                                             <div class="collapse-div">
-                                                <div class="row invoice-info">
-                                                    <div class="col-sm-4 invoice-col">
-                                                        <p class="title">
-                                                            Địa điểm lấy hàng (sản phẩm)
-                                                        </p>
-                                                        <p class="info-row">
-                                                            <address>
-                                                                <strong>Địa chỉ 1:</strong> Taodan, Số 121/11, Đường Hưng Phú, Phường Mỹ Quý, Thành Phố Long Xuyên, Tỉnh An Giang
-                                                            </address>
-                                                        </p>
-                                                    </div><!-- /.col -->
-                                                    <div class="col-sm-4 invoice-col">
-                                                        <p class="title">
-                                                            Địa điểm giao hàng
-                                                        </p>
-                                                        <p class="info-row">
-                                                            <address>
-                                                                <strong>Phan Thị Lê</strong><br>
-                                                                <strong>Địa chỉ:</strong> Taodan, Số 121/11, Đường Hưng Phú, Phường Mỹ Quý, Thành Phố Long Xuyên, Tỉnh An Giang
-                                                            </address>
-                                                        </p>
-                                                    </div><!-- /.col -->
-                                                    <div class="col-sm-4 invoice-col">
-                                                        <p class="title">
-                                                            Cước vận chuyển (trả cho công ty vận chuyển)
-                                                        </p>
-                                                        <p class="info-row">
-                                                            Phương thức giao hàng:
-                                                            <strong>Tiết kiệm </strong>
-                                                            <span class="lime-text">13000</span>
-                                                            (VNĐ)
-                                                        </p>
-                                                    </div><!-- /.col -->
-                                                </div>
-                                                <div class="row invoice-info">
-                                                    <div class="col-sm-8 invoice-col">
-                                                        <table class="table table-striped order-product-table">
-                                                            <thead>
-                                                                <tr>
-                                                                    <th class="col-xs-4">Tên sản phẩm</th>
-                                                                    <th class="col-xs-2 text-center">Giá bán</th>
-                                                                    <th class="col-xs-2 text-center">Số lượng</th>
-                                                                    <th class="col-xs-2 text-center">Khối lượng (gram)</th>
-                                                                    <th class="col-xs-2 text-center">Thành tiền</th>
-                                                                </tr>
-                                                            </thead>
-                                                            <tbody>
-                                                                <tr>
-                                                                    <td class="products-list">
-                                                                        <div class="item">
-                                                                            <div class="product-img">
-                                                                                <a href="#">
-                                                                                    <img alt="myface" src="assets/images/product/product-2.jpg">
-                                                                                </a>
-                                                                            </div>
-                                                                            <div class="product-info">
-                                                                                <a class="product-title" href="#">Combo 2 Hộp Sữa Bột Ensure Gold Acti M2 400g</a>
-                                                                                <p class="product-properties">(Màu sắc: Xanh rêu, Size: M)</p>
-                                                                            </div>
-                                                                        </div>
-                                                                    </td>
-                                                                    <td class="text-center">
-                                                                        <span>1.000.000<ins>đ</ins></span>
-                                                                    </td>
-                                                                    <td class="text-center">2</td>
-                                                                    <td class="text-center">2000</td>
-                                                                    <td class="text-center">
-                                                                        <label>1.000.000<ins>đ</ins></label>
-                                                                    </td>
-                                                                </tr>
-                                                            </tbody>
-                                                        </table>
-                                                    </div>
-                                                    <div class="col-sm-4 invoice-col">
-                                                        <div class="table-responsive">
-                                                            <table class="table">
-                                                                <tbody>
-                                                                    <tr>
-                                                                        <th>Tiền sản phẩm:</th>
-                                                                        <td>
-                                                                            2.000.000<ins>đ</ins>
-                                                                        </td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <th>Phí vận chuyển và thu tiền tận nơi:</th>
-                                                                        <td>
-                                                                            0<ins>đ</ins>
-                                                                        </td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <th>Giảm giá khuyến mãi:</th>
-                                                                        <td>
-                                                                            0<ins>đ</ins>
-                                                                        </td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <th>Giảm giá coupon:</th>
-                                                                        <td>
-                                                                            0<ins>đ</ins>
-                                                                        </td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <th>Mã coupon sử dụng:</th>
-                                                                        <td>Chưa có</td>
-                                                                    </tr>
-                                                                    <tr class="invoice-price-footer">
-                                                                        <th>Tổng tiền đơn hàng:</th>
-                                                                        <td>
-                                                                            <label class="lime-highlight">2.000.000<ins>đ</ins></label>
-                                                                        </td>
-                                                                    </tr>
-                                                                </tbody>
-                                                            </table>
+                                                <div class="col-sm-6 promotion-row promotion-coupon">
+                                                    <div class="box box-lime promotion-detail">
+                                                        <div class="box-header with-border">
+                                                            <h4 class="box-title promotion-title">Chi tiết mã coupon <span>MC1234567</span></h4>
+                                                        </div><!-- /.box-header -->
+                                                        <div class="box-body promotion-content">
+                                                            <div class="row">
+                                                                <table class="table">
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <th class="col-md-6">
+                                                                                Tên coupon
+                                                                            </th>
+                                                                            <td class="col-md-6">
+                                                                                Tháng 11 - SMS 1500 user lần 3
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <th class="col-md-6">
+                                                                                Loại coupon
+                                                                            </th>
+                                                                            <td class="col-md-6">
+                                                                                Áp dụng cho nhiều ngành hàng
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <th class="col-md-6">
+                                                                                ID áp dụng coupon
+                                                                            </th>
+                                                                            <td class="col-md-6">
+                                                                                1, 12 ,34, 136
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <th class="col-md-6">
+                                                                                Số tiền giảm giá
+                                                                            </th>
+                                                                            <td class="col-md-6">
+                                                                                100.000 VNĐ
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <th class="col-md-6">
+                                                                                Kiểu giảm giá
+                                                                            </th>
+                                                                            <td class="col-md-6">
+                                                                                VNĐ
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <th class="col-md-6">
+                                                                                Giá trị đơn hàng tối thiểu được giảm giá
+                                                                            </th>
+                                                                            <td class="col-md-6">
+                                                                                200.000 VNĐ
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <th class="col-md-6">
+                                                                                Ngày áp dụng mã coupon
+                                                                            </th>
+                                                                            <td class="col-md-6">
+                                                                                04/11/2015 - 11:00:35
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <th class="col-md-6">
+                                                                                Ngày kết thúc mã coupon
+                                                                            </th>
+                                                                            <td class="col-md-6">
+                                                                                12/11/2015 - 11:00:35
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <th class="col-md-6">
+                                                                                Số lượt sử dụng mã coupon
+                                                                            </th>
+                                                                            <td class="col-md-6">
+                                                                                12/100
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <th class="col-md-6">
+                                                                                Số lượt sử dụng mã coupon cho một khách hàng
+                                                                            </th>
+                                                                            <td class="col-md-6">
+                                                                                1
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <th class="col-md-6">
+                                                                                Ngày tạo mã coupon
+                                                                            </th>
+                                                                            <td class="col-md-6">
+                                                                                01/11/2015 - 11:00:35
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <th class="col-md-6">
+                                                                                Người tạo mã coupon
+                                                                            </th>
+                                                                            <td class="col-md-6">
+                                                                                Pax Thiên
+                                                                            </td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </div>
                                                         </div>
                                                     </div>
-                                                </div>
-                                                <div class="form-group text-right last-row">
-                                                    <a class="btn btn-lime" href="4.3.1-invoice-detail-edit-1.html">Sửa đơn hàng</a>
+                                                    <div class="text-right promotion-action">
+                                                        <button class="btn btn-lime collapse-close">Đóng</button>
+                                                    </div>
+                                                    <div class="box box-lime promotion-date">
+                                                        <div class="box-header with-border">
+                                                            <h4 class="box-title promotion-title">Gia hạn thời gian sử dụng mã coupon <span>MC1234567</span></h4>
+                                                        </div><!-- /.box-header -->
+                                                        <div class="box-body promotion-content">
+                                                            <p>
+                                                                Thời gian áp dụng của mã coupon <strong>MC1234567</strong> hiện tại là:
+                                                            </p>
+                                                            <div class="row">
+                                                                <table class="table">
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <th class="col-md-6">
+                                                                                Ngày áp dụng mã coupon
+                                                                            </th>
+                                                                            <td class="col-md-6">
+                                                                                04/11/2015 - 11:00:35
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <th class="col-md-6">
+                                                                                Ngày kết thúc mã coupon
+                                                                            </th>
+                                                                            <td class="col-md-6">
+                                                                                12/11/2015 - 11:00:35
+                                                                            </td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </div>
+                                                            <p>
+                                                                Bạn muốn gia hạn thời gian áp dụng của mã coupon <strong>MC1234567</strong> đến ngày:
+                                                            </p>
+                                                            <div class="date-picker-group promotion-date-picker">
+                                                                <input class="form-control date-picker" id="" name="date-picker" placeholder="Chọn ngày-tháng-năm" readonly="" type="text">
+                                                                <span class="calendar-icon l-calendar-icon">
+                                                                    <i class="fa fa-calendar"></i>
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="text-right promotion-action">
+                                                        <a class="cancel-btn collapse-close" href="">Hủy bỏ</a>
+                                                        <input  class="btn btn-lime" type="button" name="" value="Đồng ý">
+                                                    </div>
+                                                    <div class="box box-lime promotion-turns">
+                                                        <div class="box-header with-border">
+                                                            <h4 class="box-title promotion-title">Thêm lượt sử dụng cho mã coupon <span>MC1234567</span></h4>
+                                                        </div><!-- /.box-header -->
+                                                        <div class="box-body promotion-content">
+                                                            <p>
+                                                                Lượt sử dụng cho mã coupon hiện tại là:
+                                                                <label class="lime-text turn">1 lượt sử dụng</label>
+                                                            </p>
+                                                            <p>
+                                                                Bạn muốn thêm bao nhiêu lượt sử dụng cho mã coupon <strong>MC1234567</strong>:
+                                                            </p>
+                                                            <div class="date-picker-group promotion-date-picker">
+                                                                <input class="form-control" type="text">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="text-right promotion-action">
+                                                        <a class="cancel-btn collapse-close" href="">Hủy bỏ</a>
+                                                        <input  class="btn btn-lime" type="button" name="" value="Đồng ý">
+                                                    </div>
                                                 </div>
                                             </div>
                                         </td>
