@@ -1,0 +1,449 @@
+{% set current_page = 'invoice-create-multi' %}
+{% extends "_layout.html" %}
+{% block page-container %}
+<section class="content-header" id="content-header">
+    <div class="container">
+        {% include "_invoice-header.html" %}
+    </div>
+</section>
+<main>
+    <div class="container">
+        <div class="row">
+            <div class="box">
+                <div class="box-header with-border">
+                    <h3 class="box-title">Tạo nhanh nhiều đơn hàng</h3>
+                </div><!-- /.box-header -->
+                <div class="box-body">
+                    <table class="table create-multi-invoice">
+                        <thead>
+                            <tr>
+                                <th class="col-md-3">Sản phẩm</th>
+                                <th class="col-md-2 text-center">Nơi lấy hàng</th>
+                                <th class="col-md-3">Thông tin giao hàng</th>
+                                <th class="col-md-3">Thanh toán vận chuyển</th>
+                                <th class="col-md-1">Tổng tiền</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <div class="invoice-product-list">
+                                        <ul class="products-list row">
+                                            <li class="item">
+                                                <div class="product-img">
+                                                    <img alt="myface" src="assets/images/product/product-1.jpg">
+                                                </div>
+                                                <div class="product-info">
+                                                    <a class="product-title" href="#" target="_blank">Combo 2 Hộp Sữa Bột Ensure Gold Acti M2 400g</a>
+                                                    <div class="p-subtotal">
+                                                        <span class="product-p">16,000,000<ins>đ</ins></span>
+                                                        <span>x</span>
+                                                        <input class="form-control inline_block" value="1">
+                                                        <span>=</span>
+                                                        <span class="green-highlight">16,000,000<ins>đ</ins></span>
+                                                    </div>
+                                                </div>
+                                                <button class="close" type="button"><span aria-hidden="true">×</span></button>
+                                            </li><!-- /.item -->
+                                        </ul>
+                                    </div>
+                                    <div class="add-product-control">
+                                        <input class="form-control" id="insert-input-active" onclick="openSSbox()" type="text" placeholder="Nhập tên hoặc SKU sản phẩm">
+                                        <ul class="ss-box" id="">
+                                            <li class="ss-result">
+                                                <a data-target=".product-properties-modal" data-toggle="modal" href="javascript:void(0);">
+                                                    <table width="100%">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td class="product-box-img">
+                                                                    <img src="assets/images/product/product-1.jpg">
+                                                                </td>
+                                                                <td class="product-box-des">
+                                                                    <p>iPhone 6s Plus 64GB Quốc Tế</p>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </a>
+                                            </li>
+                                            <li class="ss-result">
+                                                <a data-target=".product-properties-modal" data-toggle="modal" href="javascript:void(0);">
+                                                <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td class="product-box-img">
+                                                                <img src="assets/images/product/product-1.jpg">
+                                                            </td>
+                                                            <td class="product-box-des">
+                                                                <p>iPhone 6s Plus 64GB Quốc Tế</p>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table></a>
+                                            </li>
+                                        </ul>
+                                        <script type="text/javascript">
+                                            //open insert-product
+                                            function openSSbox() {
+                                                $('.ss-box').show();
+                                            }
+                                        </script>
+                                    </div>
+                                </td>
+                                <td class="text-center">
+                                    <div class="invoice-info">
+                                        <p class="info-row">Kho trung tâm</p>
+                                        <p class="toggle-row">
+                                            <a class="action-text" href="">Sửa</a>
+                                        </p>
+                                    </div>
+                                    <div class="edit-invoice-info">
+                                        <div class="edit-info-inner">
+                                            <div class="radio">
+                                                <label class="radio-material-blue">
+                                                    <input checked="checked" name="shop_address" type="radio">
+                                                    Kho trung tâm : Taodan, Số 121/11, Đường Hưng Phú, Phường Mỹ Quý, Thành Phố Long Xuyên, Tỉnh An Giang
+                                                </label>
+                                            </div>
+                                            <div class="radio">
+                                                <label class="radio-material-blue">
+                                                    <input name="shop_address" type="radio">
+                                                    Địa chỉ 1 : Taodan, Số 121/11, Đường Hưng Phú, Phường 8, Thành Phố Hồ Chí Minh
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="invoice-info">
+                                        <p class="info-row">281/25/5, Đường Lê Văn Sỹ, Phường 12, Quận Phú Nhuận, Thành phố Hồ Chí Minh</p>
+                                        <p class="toggle-row text-center">
+                                            <a class="action-text" href="">Sửa</a>
+                                        </p>
+                                    </div>
+                                    <div class="edit-invoice-info">
+                                        <div class="edit-info-inner">
+                                            <div class="form-group">
+                                                <input class="form-control" id="" placeholder="Số điện thoại" type="text">
+                                            </div>
+                                            <div class="form-group">
+                                                <input class="form-control" id="" placeholder="Email" type="email">
+                                            </div>
+                                            <div class="form-group">
+                                                <input class="form-control" id="" placeholder="Họ và Tên" type="text">
+                                            </div>
+                                            <div class="form-group">
+                                                <select class="form-control">
+                                                    <option>
+                                                        Chọn Tỉnh / Thành phố
+                                                    </option>
+                                                    <option>
+                                                        Hồ Chí Minh
+                                                    </option>
+                                                    <option>
+                                                        Hà Nội
+                                                    </option>
+                                                </select>
+                                            </div>
+                                            <div class="form-group">
+                                                <select class="form-control">
+                                                    <option>
+                                                        Chọn Quận / Huyện
+                                                    </option>
+                                                    <option>
+                                                        abc
+                                                    </option>
+                                                    <option>
+                                                        xyz
+                                                    </option>
+                                                </select>
+                                            </div>
+                                            <div class="form-group">
+                                                <select class="form-control">
+                                                    <option>
+                                                        Chọn Phường / Xã
+                                                    </option>
+                                                    <option>
+                                                        abc
+                                                    </option>
+                                                    <option>
+                                                        xyz
+                                                    </option>
+                                                </select>
+                                            </div>
+                                            <div class="form-group">
+                                                <input class="form-control" id="" placeholder="Địa chỉ" type="text">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="invoice-info">
+                                        <p class="info-row">Người mua hàng không trả tiền sản phẩm. Người mua hàng trả phí vận chuyển</p>
+                                        <p class="toggle-row text-center">
+                                            <a class="action-text" href="">Sửa</a>
+                                        </p>
+                                    </div>
+                                    <div class="edit-invoice-info">
+                                        <div class="edit-info-inner ship-and-pay form-horizontal">
+                                            <div class="radio">
+                                                <label class="radio-material-blue">
+                                                    <input checked="checked" id="radio_payment_1" name="payment_method" type="radio" value="1">
+                                                    <span class="check">1. Người mua hàng trả tiền sản phẩm + phí vận chuyển :</span>
+                                                </label>
+                                                <div class="form-horizontal invoice-promotion-box">
+                                                    <div class="pay-money">
+                                                        <div class="col-md-4">
+                                                            <label class="radio-material-blue">
+                                                                <input id="" name="" type="radio" value="">
+                                                                <span class="check">Tiết kiệm</span>
+                                                            </label>
+                                                            <p class="lime-highlight">
+                                                                <label class="radio-material-blue">
+                                                                    <strong id="strong_text_fee">13.000</strong> <ins>đ</ins>
+                                                                </label>
+                                                            </p>
+                                                            <label class="radio-material-blue"></label>
+                                                        </div>
+                                                        <div class="col-md-4">
+                                                            <label class="radio-material-blue">
+                                                                <input id="" name="" type="radio" value="">
+                                                                <span class="check">Bình thường</span>
+                                                            </label>
+                                                            <p class="lime-highlight">
+                                                                <label class="radio-material-blue">
+                                                                    <strong id="strong_text_fee">19.000</strong> <ins>đ</ins>
+                                                                </label>
+                                                            </p>
+                                                            <label class="radio-material-blue"></label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-12 pay-custom">
+                                                        <label class="radio-material-blue">
+                                                            <input id="" name="" type="radio" value="">
+                                                            <span class="check">Tùy chỉnh</span>
+                                                        </label>
+                                                        <div class="custom-ship">
+                                                            <p class="color-label">VNĐ</p>
+                                                            <input class="form-control" id="" placeholder="Nhập số tiền muốn thu" type="number">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="radio">
+                                                <label class="radio-material-blue">
+                                                    <input class="radio_payment" id="radio_payment_2" name="payment_method" type="radio" value="2">
+                                                    <span class="check">2. Người mua hàng không trả tiền sản phẩm. Người mua hàng trả phí vận chuyển</span>
+                                                </label>
+                                                <div class="form-horizontal invoice-promotion-box">
+                                                    <div class="pay-money">
+                                                        <div class="col-md-4">
+                                                            <label class="radio-material-blue">
+                                                                <input id="" name="" type="radio" value="">
+                                                                <span class="check">Tiết kiệm</span>
+                                                            </label>
+                                                            <p class="lime-highlight">
+                                                                <label class="radio-material-blue">
+                                                                    <strong id="strong_text_fee">13.000</strong> <ins>đ</ins>
+                                                                </label>
+                                                            </p>
+                                                            <label class="radio-material-blue"></label>
+                                                        </div>
+                                                        <div class="col-md-4">
+                                                            <label class="radio-material-blue">
+                                                                <input id="" name="" type="radio" value="">
+                                                                <span class="check">Bình thường</span>
+                                                            </label>
+                                                            <p class="lime-highlight">
+                                                                <label class="radio-material-blue">
+                                                                    <strong id="strong_text_fee">15.000</strong> <ins>đ</ins>
+                                                                </label>
+                                                            </p>
+                                                            <label class="radio-material-blue"></label>
+                                                        </div>
+                                                        <div class="col-md-4">
+                                                            <label class="radio-material-blue">
+                                                                <input id="" name="" type="radio" value="">
+                                                                <span class="check">Hỏa tốc</span>
+                                                            </label>
+                                                            <p class="lime-highlight">
+                                                                <label class="radio-material-blue">
+                                                                    <strong id="strong_text_fee">27.000</strong> <ins>đ</ins>
+                                                                </label>
+                                                            </p>
+                                                            <label class="radio-material-blue"></label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="radio">
+                                                <label class="radio-material-blue">
+                                                    <input class="radio_payment" id="radio_payment_3" name="payment_method" type="radio" value="3">
+                                                    <span class="check">3. Người bán hàng đã thu tiền hàng. Người bán hàng trả phí vận chuyển</span>
+                                                </label>
+                                                <div class="form-horizontal invoice-promotion-box">
+                                                    <div class="pay-money">
+                                                        <div class="col-md-4">
+                                                            <label class="radio-material-blue">
+                                                                <input id="" name="" type="radio" value="">
+                                                                <span class="check">Tiết kiệm</span>
+                                                            </label>
+                                                            <p class="lime-highlight">
+                                                                <label class="radio-material-blue">
+                                                                    <strong id="strong_text_fee">13.200</strong> <ins>đ</ins>
+                                                                </label>
+                                                            </p>
+                                                            <label class="radio-material-blue"></label>
+                                                        </div>
+                                                        <div class="col-md-4">
+                                                            <label class="radio-material-blue">
+                                                                <input id="" name="" type="radio" value="">
+                                                                <span class="check">Bình thường</span>
+                                                            </label>
+                                                            <p class="lime-highlight">
+                                                                <label class="radio-material-blue">
+                                                                    <strong id="strong_text_fee">15.400</strong> <ins>đ</ins>
+                                                                </label>
+                                                            </p>
+                                                            <label class="radio-material-blue"></label>
+                                                        </div>
+                                                        <div class="col-md-4">
+                                                            <label class="radio-material-blue">
+                                                                <input id="" name="" type="radio" value="">
+                                                                <span class="check">Hỏa tốc</span>
+                                                            </label>
+                                                            <p class="lime-highlight">
+                                                                <label class="radio-material-blue">
+                                                                    <strong id="strong_text_fee">26.400</strong> <ins>đ</ins>
+                                                                </label>
+                                                            </p>
+                                                            <label class="radio-material-blue"></label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="radio">
+                                                <label class="radio-material-blue">
+                                                    <input class="radio_payment" id="radio_payment_2" name="payment_method" type="radio" value="2">
+                                                    <span class="check">4. Người mua hàng trả tiền sản phẩm. Người bán hàng (chủ shop) trả phí vận chuyển</span>
+                                                </label>
+                                                <div class="form-horizontal invoice-promotion-box">
+                                                    <div class="pay-money">
+                                                        <div class="col-md-4">
+                                                            <label class="radio-material-blue">
+                                                                <input id="" name="" type="radio" value="">
+                                                                <span class="check">Tiết kiệm</span>
+                                                            </label>
+                                                            <p class="lime-highlight">
+                                                                <label class="radio-material-blue">
+                                                                    <strong id="strong_text_fee">13.200</strong> <ins>đ</ins>
+                                                                </label>
+                                                            </p>
+                                                            <label class="radio-material-blue"></label>
+                                                        </div>
+                                                        <div class="col-md-4">
+                                                            <label class="radio-material-blue">
+                                                                <input id="" name="" type="radio" value="">
+                                                                <span class="check">Bình thường</span>
+                                                            </label>
+                                                            <p class="lime-highlight">
+                                                                <label class="radio-material-blue">
+                                                                    <strong id="strong_text_fee">15.400</strong> <ins>đ</ins>
+                                                                </label>
+                                                            </p>
+                                                            <label class="radio-material-blue"></label>
+                                                        </div>
+                                                        <div class="col-md-4">
+                                                            <label class="radio-material-blue">
+                                                                <input id="" name="" type="radio" value="">
+                                                                <span class="check">Hỏa tốc</span>
+                                                            </label>
+                                                            <p class="lime-highlight">
+                                                                <label class="radio-material-blue">
+                                                                    <strong id="strong_text_fee">26.400</strong> <ins>đ</ins>
+                                                                </label>
+                                                            </p>
+                                                            <label class="radio-material-blue"></label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <label>1.000.000<ins>đ</ins></label>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div><!-- /.box-body -->
+                <div class="box-footer clearfix text-right">
+                    <input  class="btn btn-link" type="button" name="" value="Lưu & tiếp tục tạo sản phẩm khác">
+                    <input  class="btn btn-lime" type="button" name="" value="Hoàn thành & Xem danh sách đơn hàng">
+                </div>
+            </div>
+        </div>
+    </div>
+</main><!--product-properties-modal-->
+<div class="modal product-properties-modal">
+    <div class="modal-dialog modal-md">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button aria-label="Close" class="close" data-dismiss="modal" type="button">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <h4 class="modal-title">Chọn thuộc tính</h4>
+            </div>
+            <div class="modal-body">
+                <div class="col-md-12 product-properties-row">
+                    <p class="product-properties-md-title">Chọn thuộc tính của sản phẩm</p>
+                    <div class="product-properties-item">
+                        <label class="product-properties-label">Màu sắc</label>
+                        <div class="col-md-12 properties-values">
+                            <div class="col-xs-4">
+                                <div class="radio">
+                                    <input class="report-form-control" id="report-invoice-form-1" name="optionsRadios" type="radio">
+                                    <span>Vàng</span>
+                                </div>
+                            </div>
+                            <div class="col-xs-4">
+                                <div class="radio">
+                                    <input class="report-form-control" id="report-invoice-form-1" name="optionsRadios" type="radio">
+                                    <span>Xanh</span>
+                                </div>
+                            </div>
+                            <div class="col-xs-4">
+                                <div class="radio">
+                                    <input class="report-form-control" id="report-invoice-form-1" name="optionsRadios" type="radio">
+                                    <span>đỏ</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-properties-item">
+                        <label class="product-properties-label">Kích thước</label>
+                        <div class="col-md-12 properties-values">
+                            <div class="col-xs-4">
+                                <div class="radio">
+                                    <input class="report-form-control" id="report-invoice-form-1" name="optionsRadios" type="radio">
+                                    <span>M</span>
+                                </div>
+                            </div>
+                            <div class="col-xs-4">
+                                <div class="radio">
+                                    <input class="report-form-control" id="report-invoice-form-1" name="optionsRadios" type="radio">
+                                    <span>XL</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <a class="btn btn-lime" href="4.6-invoice-create-multi.html">Chọn</a>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div>
+{% endblock %}

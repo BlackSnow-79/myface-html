@@ -5919,6 +5919,26 @@ main {
 .remove-products {
   color: #f44336;
 }
+.create-multi-invoice tbody tr td {
+  vertical-align: top;
+}
+.create-multi-invoice .invoice-product-list + .add-product-control {
+  margin-top: 5px;
+}
+.add-product-control {
+  width: 100%;
+  position: relative;
+}
+.add-product-control ul.ss-box {
+  left: 0;
+}
+.edit-invoice-info {
+  text-align: left;
+}
+.edit-info-inner {
+  width: 500px;
+  display: none;
+}
 /*
  * Page: Login & Register
  * ----------------------
@@ -6658,25 +6678,25 @@ main {
   border: 1px solid #dfdfdf;
   border-radius: 3px;
 }
-.invoice-product-list .product-list-in-box .item {
+.invoice-product-list .products-list .item {
   padding: 10px 5px;
   position: relative;
   background-color: #f0f1f3;
 }
-.invoice-product-list .product-list-in-box .item .close {
+.invoice-product-list .products-list .item .close {
   position: absolute;
   right: 5px;
   top: 7px;
 }
-.invoice-product-list .product-list-in-box .item .product-info {
+.invoice-product-list .products-list .item .product-info {
   margin-left: 55px;
   line-height: 1.2;
-  padding-right: 5px;
+  padding-right: 12px;
 }
-.invoice-product-list .product-list-in-box .item .product-info .product-title {
+.invoice-product-list .products-list .item .product-info .product-title {
   font-size: 13px;
 }
-.invoice-product-list .product-list-in-box .item .product-info .product-title:hover {
+.invoice-product-list .products-list .item .product-info .product-title:hover {
   color: #2bc5f8;
 }
 .p-subtotal {

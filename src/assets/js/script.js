@@ -238,23 +238,64 @@ $(document).ready(function() {
         $('.collapse-toggle-nav').removeClass('show-collapse');
     });
     //promotion
-    function radioControlform(rbtn) {
-        var checkboxValue;
-        $(rbtn).click(function() {
-            $('.promotion-radio-btn').removeClass('active');
-            $(this).parent().addClass('active');
-            checkboxValue = $(this).attr('id');
-            $('.promotion-form').removeClass('promotion-form-selected');
-            $('.' + checkboxValue).addClass('promotion-form-selected');
-            $('.promotion-form-selected .promotion-option-control').click(function() {
-                $('.promotion-form-selected .promotion-radio-label').removeClass('active');
-                $(this).parent().addClass('active');
-                var checkboxValue2 = $(this).attr('id');
-                $('.promotion-form-selected .promotion-option-form').removeClass('promotion-form-selected');
-                $('.promotion-form-selected').find('.' + checkboxValue2).addClass('promotion-form-selected');
-            });
-        });
-    }
+    $(".multi-collapse-toggle").click(function(e) {
+        e.preventDefault();
+        if (!$(this).closest('.collapse-toggle-nav').hasClass('show-collapse')) {
+            $('.collapse-div').slideUp("slow");
+            $('.collapse-toggle-nav').removeClass('show-collapse');
+            $(this).closest('.collapse-toggle-nav').addClass('show-collapse');
+            if ($(this).closest('.multi-collapse-toggle').hasClass('show-promotion-detail')) {
+                $('.collapse-div').slideUp("slow");
+                $(this).closest('.collapse-toggle-nav').next('.collapse-row').find('.collapse-promotion-detail').slideDown("slow");
+            }
+            if ($(this).closest('.multi-collapse-toggle').hasClass('show-promotion-date')) {
+                $('.collapse-div').slideUp("slow");
+                $(this).closest('.collapse-toggle-nav').next('.collapse-row').find('.collapse-promotion-date').slideDown("slow");
+            }
+            if ($(this).closest('.multi-collapse-toggle').hasClass('show-promotion-turns')) {
+                $('.collapse-div').slideUp("slow");
+                $(this).closest('.collapse-toggle-nav').next('.collapse-row').find('.collapse-promotion-turns').slideDown("slow");
+            }
+        } else {
+            $(this).closest('.collapse-toggle-nav').removeClass('show-collapse');
+            if ($(this).closest('.multi-collapse-toggle').hasClass('show-promotion-detail')) {
+                $('.collapse-div').slideUp("slow");
+                $(this).closest('.collapse-toggle-nav').next('.collapse-row').find('.collapse-promotion-detail').slideDown("slow");
+            }
+            if ($(this).closest('.multi-collapse-toggle').hasClass('show-promotion-date')) {
+                $('.collapse-div').slideUp("slow");
+                $(this).closest('.collapse-toggle-nav').next('.collapse-row').find('.collapse-promotion-date').slideDown("slow");
+            }
+            if ($(this).closest('.multi-collapse-toggle').hasClass('show-promotion-turns')) {
+                $('.collapse-div').slideUp("slow");
+                $(this).closest('.collapse-toggle-nav').next('.collapse-row').find('.collapse-promotion-turns').slideDown("slow");
+            }
+        }
+    });
+    // $(".show-promotion-date").click(function(e) {
+    //     e.preventDefault();
+    //     if (!$(this).closest('.collapse-toggle-nav').hasClass('show-collapse')) {
+    //         $('.collapse-div').slideUp("slow");
+    //         $('.collapse-toggle-nav').removeClass('show-collapse');
+    //         $(this).closest('.collapse-toggle-nav').addClass('show-collapse');
+    //         $(this).closest('.collapse-toggle-nav').next('.collapse-row').find('.collapse-promotion-date').slideDown("slow");
+    //     } else {
+    //         $(this).closest('.collapse-toggle-nav').removeClass('show-collapse');
+    //         $(this).closest('.collapse-toggle-nav').next('.collapse-row').find('.collapse-promotion-date').slideUp("slow");
+    //     }
+    // });
+    // $(".show-promotion-turns").click(function(e) {
+    //     e.preventDefault();
+    //     if (!$(this).closest('.collapse-toggle-nav').hasClass('show-collapse')) {
+    //         $('.collapse-div').slideUp("slow");
+    //         $('.collapse-toggle-nav').removeClass('show-collapse');
+    //         $(this).closest('.collapse-toggle-nav').addClass('show-collapse');
+    //         $(this).closest('.collapse-toggle-nav').next('.collapse-row').find('.collapse-promotion-turns').slideDown("slow");
+    //     } else {
+    //         $(this).closest('.collapse-toggle-nav').removeClass('show-collapse');
+    //         $(this).closest('.collapse-toggle-nav').next('.collapse-row').find('.collapse-promotion-turns').slideUp("slow");
+    //     }
+    // });
     // Modal
     (function($) {
         "use strict";

@@ -1070,4 +1070,34 @@ main {
 .remove-products {
   color: @red;
 }
-
+//create-multi-invoice
+.create-multi-invoice {
+  tbody {
+    tr {
+      td {
+        vertical-align: top;
+      }
+    }
+  }
+  .invoice-product-list {
+    & + .add-product-control {
+      margin-top: 5px;
+    }
+  }
+}
+.add-product-control {
+  width: 100%;
+  position: relative;
+  ul {
+    &.ss-box {
+      left: 0;
+    }
+  }
+}
+.edit-invoice-info {
+  text-align: left;
+}
+.edit-info-inner {
+  width: 500px;
+  display: none;
+}

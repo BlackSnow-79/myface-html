@@ -29,7 +29,7 @@
                                         <th class="input"></th>
                                         <th>Tên chương trình</th>
                                         <th class="col-md-2 text-center">Loại coupon</th>
-                                        <th class="text-center">Tên coupon</th>
+                                        <th class="text-center">Mã coupon</th>
                                         <th class="col-md-2 text-center">Thời gian áp dụng</th>
                                         <th class="text-center">Trạng thái</th>
                                         <th class="text-right">Số lần sử dụng</th>
@@ -37,7 +37,6 @@
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    {% for x in [1,2]%}
                                     <tr class="collapse-toggle-nav">
                                         <td>
                                             1
@@ -49,23 +48,23 @@
                                             Áp dụng cho tất cả đơn hàng
                                         </td>
                                         <td class="text-center">
-                                            NOEL 2016
+                                            MC1234567
                                             <p class="toggle-row">
-                                                <a class="action-text show-promotion-detail" href="">Xem chi tiết</a>
+                                                <a class="action-text multi-collapse-toggle show-promotion-detail" href="">Xem chi tiết</a>
                                             </p>
                                         </td>
                                         <td class="text-center">
                                             <p class="date">04/11/2015 - 11:00:35</p>
                                             <p class="date">12/11/2015 - 11:00:35</p>
                                             <p class="toggle-row">
-                                                <a class="action-text show-promotion-date" href="">Gia hạn</a>
+                                                <a class="action-text multi-collapse-toggle show-promotion-date" href="">Gia hạn</a>
                                             </p>
                                         </td>
                                         <td class="text-center">Kích hoạt</td>
                                         <td class="text-right">
                                             100/120
                                             <p class="toggle-row">
-                                                <a class="action-text show-promotion-turns" href="">Thêm lượt sử dụng</a>
+                                                <a class="action-text multi-collapse-toggle show-promotion-turns" href="">Thêm lượt sử dụng</a>
                                             </p>
                                         </td>
                                         <td class="text-right">
@@ -74,7 +73,7 @@
                                     </tr>
                                     <tr class="collapse-row">
                                         <td class="collapse-inner" colspan="9">
-                                            <div class="collapse-div">
+                                            <div class="collapse-div collapse-promotion-detail">
                                                 <div class="col-sm-6 promotion-row promotion-coupon">
                                                     <div class="box box-lime promotion-detail">
                                                         <div class="box-header with-border">
@@ -86,10 +85,10 @@
                                                                     <tbody>
                                                                         <tr>
                                                                             <th class="col-md-6">
-                                                                                Tên coupon
+                                                                                Tên chương trình
                                                                             </th>
                                                                             <td class="col-md-6">
-                                                                                Tháng 11 - SMS 1500 user lần 3
+                                                                                Mừng noel
                                                                             </td>
                                                                         </tr>
                                                                         <tr>
@@ -102,10 +101,10 @@
                                                                         </tr>
                                                                         <tr>
                                                                             <th class="col-md-6">
-                                                                                ID áp dụng coupon
+                                                                                Mã coupon
                                                                             </th>
                                                                             <td class="col-md-6">
-                                                                                1, 12 ,34, 136
+                                                                                MC1234567
                                                                             </td>
                                                                         </tr>
                                                                         <tr>
@@ -188,6 +187,10 @@
                                                     <div class="text-right promotion-action">
                                                         <button class="btn btn-lime collapse-close">Đóng</button>
                                                     </div>
+                                                </div>
+                                            </div>
+                                            <div class="collapse-div collapse-promotion-date">
+                                                <div class="col-sm-6 promotion-row promotion-coupon">
                                                     <div class="box box-lime promotion-date">
                                                         <div class="box-header with-border">
                                                             <h4 class="box-title promotion-title">Gia hạn thời gian sử dụng mã coupon <span>MC1234567</span></h4>
@@ -233,6 +236,10 @@
                                                         <a class="cancel-btn collapse-close" href="">Hủy bỏ</a>
                                                         <input  class="btn btn-lime" type="button" name="" value="Đồng ý">
                                                     </div>
+                                                </div>
+                                            </div>
+                                            <div class="collapse-div collapse-promotion-turns">
+                                                <div class="col-sm-6 promotion-row promotion-coupon">
                                                     <div class="box box-lime promotion-turns">
                                                         <div class="box-header with-border">
                                                             <h4 class="box-title promotion-title">Thêm lượt sử dụng cho mã coupon <span>MC1234567</span></h4>
@@ -258,7 +265,234 @@
                                             </div>
                                         </td>
                                     </tr>
-                                    {% endfor %}
+                                    <tr class="collapse-toggle-nav">
+                                        <td>
+                                            2
+                                        </td>
+                                        <td>
+                                            Mừng năm mới
+                                        </td>
+                                        <td>
+                                            Áp dụng cho tất cả đơn hàng
+                                        </td>
+                                        <td class="text-center">
+                                            NEW2016
+                                            <p class="toggle-row">
+                                                <a class="action-text multi-collapse-toggle show-promotion-detail" href="">Xem chi tiết</a>
+                                            </p>
+                                        </td>
+                                        <td class="text-center">
+                                            <p class="date">04/11/2015 - 11:00:35</p>
+                                            <p class="date">12/11/2015 - 11:00:35</p>
+                                            <p class="toggle-row">
+                                                <a class="action-text multi-collapse-toggle show-promotion-date" href="">Gia hạn</a>
+                                            </p>
+                                        </td>
+                                        <td class="text-center">Đã dừng</td>
+                                        <td class="text-right">
+                                            100/120
+                                            <p class="toggle-row">
+                                                <a class="action-text multi-collapse-toggle show-promotion-turns" href="">Thêm lượt sử dụng</a>
+                                            </p>
+                                        </td>
+                                        <td class="text-right">
+                                            <button class="btn btn-primary on-promotion-btn">Kích hoạt</button>
+                                        </td>
+                                    </tr>
+                                    <tr class="collapse-row">
+                                        <td class="collapse-inner" colspan="9">
+                                            <div class="collapse-div collapse-promotion-detail">
+                                                <div class="col-sm-6 promotion-row promotion-coupon">
+                                                    <div class="box box-lime promotion-detail">
+                                                        <div class="box-header with-border">
+                                                            <h4 class="box-title promotion-title">Chi tiết mã coupon <span>NEW2016</span></h4>
+                                                        </div><!-- /.box-header -->
+                                                        <div class="box-body promotion-content">
+                                                            <div class="row">
+                                                                <table class="table">
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <th class="col-md-6">
+                                                                                Tên chương trình
+                                                                            </th>
+                                                                            <td class="col-md-6">
+                                                                                Mừng năm mới
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <th class="col-md-6">
+                                                                                Loại coupon
+                                                                            </th>
+                                                                            <td class="col-md-6">
+                                                                                Áp dụng cho nhiều ngành hàng
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <th class="col-md-6">
+                                                                                Mã coupon
+                                                                            </th>
+                                                                            <td class="col-md-6">
+                                                                                NEW2016
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <th class="col-md-6">
+                                                                                Số tiền giảm giá
+                                                                            </th>
+                                                                            <td class="col-md-6">
+                                                                                100.000 VNĐ
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <th class="col-md-6">
+                                                                                Kiểu giảm giá
+                                                                            </th>
+                                                                            <td class="col-md-6">
+                                                                                VNĐ
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <th class="col-md-6">
+                                                                                Giá trị đơn hàng tối thiểu được giảm giá
+                                                                            </th>
+                                                                            <td class="col-md-6">
+                                                                                200.000 VNĐ
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <th class="col-md-6">
+                                                                                Ngày áp dụng mã coupon
+                                                                            </th>
+                                                                            <td class="col-md-6">
+                                                                                04/11/2015 - 11:00:35
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <th class="col-md-6">
+                                                                                Ngày kết thúc mã coupon
+                                                                            </th>
+                                                                            <td class="col-md-6">
+                                                                                12/11/2015 - 11:00:35
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <th class="col-md-6">
+                                                                                Số lần sử dụng mã coupon
+                                                                            </th>
+                                                                            <td class="col-md-6">
+                                                                                12/100
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <th class="col-md-6">
+                                                                                Số lượt sử dụng mã coupon cho một khách hàng
+                                                                            </th>
+                                                                            <td class="col-md-6">
+                                                                                1
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <th class="col-md-6">
+                                                                                Ngày tạo mã coupon
+                                                                            </th>
+                                                                            <td class="col-md-6">
+                                                                                01/11/2015 - 11:00:35
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <th class="col-md-6">
+                                                                                Người tạo mã coupon
+                                                                            </th>
+                                                                            <td class="col-md-6">
+                                                                                Pax Thiên
+                                                                            </td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="text-right promotion-action">
+                                                        <button class="btn btn-lime collapse-close">Đóng</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="collapse-div collapse-promotion-date">
+                                                <div class="col-sm-6 promotion-row promotion-coupon">
+                                                    <div class="box box-lime promotion-date">
+                                                        <div class="box-header with-border">
+                                                            <h4 class="box-title promotion-title">Gia hạn thời gian sử dụng mã coupon <span>MC1234567</span></h4>
+                                                        </div><!-- /.box-header -->
+                                                        <div class="box-body promotion-content">
+                                                            <p>
+                                                                Thời gian áp dụng của mã coupon <strong>MC1234567</strong> hiện tại là:
+                                                            </p>
+                                                            <div class="row">
+                                                                <table class="table">
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <th class="col-md-6">
+                                                                                Ngày áp dụng mã coupon
+                                                                            </th>
+                                                                            <td class="col-md-6">
+                                                                                04/11/2015 - 11:00:35
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <th class="col-md-6">
+                                                                                Ngày kết thúc mã coupon
+                                                                            </th>
+                                                                            <td class="col-md-6">
+                                                                                12/11/2015 - 11:00:35
+                                                                            </td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </div>
+                                                            <p>
+                                                                Bạn muốn gia hạn thời gian áp dụng của mã coupon <strong>MC1234567</strong> đến ngày:
+                                                            </p>
+                                                            <div class="date-picker-group promotion-date-picker">
+                                                                <input class="form-control date-picker" id="" name="date-picker" placeholder="Chọn ngày-tháng-năm" readonly="" type="text">
+                                                                <span class="calendar-icon l-calendar-icon">
+                                                                    <i class="fa fa-calendar"></i>
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="text-right promotion-action">
+                                                        <a class="cancel-btn collapse-close" href="">Hủy bỏ</a>
+                                                        <input  class="btn btn-lime" type="button" name="" value="Đồng ý">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="collapse-div collapse-promotion-turns">
+                                                <div class="col-sm-6 promotion-row promotion-coupon">
+                                                    <div class="box box-lime promotion-turns">
+                                                        <div class="box-header with-border">
+                                                            <h4 class="box-title promotion-title">Thêm lượt sử dụng cho mã coupon <span>MC1234567</span></h4>
+                                                        </div><!-- /.box-header -->
+                                                        <div class="box-body promotion-content">
+                                                            <p>
+                                                                Lượt sử dụng cho mã coupon hiện tại là:
+                                                                <label class="lime-text turn">1 lượt sử dụng</label>
+                                                            </p>
+                                                            <p>
+                                                                Bạn muốn thêm bao nhiêu lượt sử dụng cho mã coupon <strong>MC1234567</strong>:
+                                                            </p>
+                                                            <div class="date-picker-group promotion-date-picker">
+                                                                <input class="form-control" type="text">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="text-right promotion-action">
+                                                        <a class="cancel-btn collapse-close" href="">Hủy bỏ</a>
+                                                        <input  class="btn btn-lime" type="button" name="" value="Đồng ý">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
                                 </tbody>
                             </table>
                         </div>
