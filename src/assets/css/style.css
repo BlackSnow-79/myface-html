@@ -4996,8 +4996,8 @@ main {
 }
 .product-form > .form-group > label {
   color: #212121;
+  text-align: left;
   font-weight: normal;
-  padding: 7px 0 0;
 }
 .product-img-left,
 .product-img-right {
@@ -5919,10 +5919,15 @@ main {
 .remove-products {
   color: #f44336;
 }
-.create-multi-invoice tbody tr td {
+.create-multi-invoice > tbody > tr:hover {
+  background-color: #fff;
+}
+.create-multi-invoice > tbody > tr td {
+  padding-top: 10px;
+  padding-bottom: 10px;
   vertical-align: top;
 }
-.create-multi-invoice .invoice-product-list + .add-product-control {
+.create-multi-invoice .add-product-control {
   margin-top: 5px;
 }
 .add-product-control {
@@ -5934,10 +5939,14 @@ main {
 }
 .edit-invoice-info {
   text-align: left;
+  display: none;
 }
 .edit-info-inner {
   width: 500px;
-  display: none;
+}
+.save-continue-btn {
+  color: #212121;
+  font-weight: bold;
 }
 /*
  * Page: Login & Register

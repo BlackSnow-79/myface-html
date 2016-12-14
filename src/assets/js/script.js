@@ -272,30 +272,22 @@ $(document).ready(function() {
             }
         }
     });
-    // $(".show-promotion-date").click(function(e) {
-    //     e.preventDefault();
-    //     if (!$(this).closest('.collapse-toggle-nav').hasClass('show-collapse')) {
-    //         $('.collapse-div').slideUp("slow");
-    //         $('.collapse-toggle-nav').removeClass('show-collapse');
-    //         $(this).closest('.collapse-toggle-nav').addClass('show-collapse');
-    //         $(this).closest('.collapse-toggle-nav').next('.collapse-row').find('.collapse-promotion-date').slideDown("slow");
-    //     } else {
-    //         $(this).closest('.collapse-toggle-nav').removeClass('show-collapse');
-    //         $(this).closest('.collapse-toggle-nav').next('.collapse-row').find('.collapse-promotion-date').slideUp("slow");
-    //     }
-    // });
-    // $(".show-promotion-turns").click(function(e) {
-    //     e.preventDefault();
-    //     if (!$(this).closest('.collapse-toggle-nav').hasClass('show-collapse')) {
-    //         $('.collapse-div').slideUp("slow");
-    //         $('.collapse-toggle-nav').removeClass('show-collapse');
-    //         $(this).closest('.collapse-toggle-nav').addClass('show-collapse');
-    //         $(this).closest('.collapse-toggle-nav').next('.collapse-row').find('.collapse-promotion-turns').slideDown("slow");
-    //     } else {
-    //         $(this).closest('.collapse-toggle-nav').removeClass('show-collapse');
-    //         $(this).closest('.collapse-toggle-nav').next('.collapse-row').find('.collapse-promotion-turns').slideUp("slow");
-    //     }
-    // });
+    //Create-multi-invoice
+    $(".show-add-product-control").click(function(e) {
+        e.preventDefault();
+        $(this).hide();
+        $('.edit-invoice-info').hide("slow");
+        $('.invoice-info').show("slow");
+        $(this).closest('.product-col').find('.add-product-control').show();
+    });
+    $(".edit-invoice-control").click(function(e) {
+        e.preventDefault();
+        $('.edit-invoice-info').hide("slow");
+        $('.invoice-info').show("slow");
+        $(this).closest('.invoice-info').hide("slow");
+        $(this).closest('.invoice-info').next('.edit-invoice-info').show("slow");
+    });
+
     // Modal
     (function($) {
         "use strict";

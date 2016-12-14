@@ -61,8 +61,8 @@ main {
   > .form-group {
     > label{
       color: @black;
+      text-align: left;
       font-weight: normal;
-      padding: 7px 0 0;
     }
   }
 }
@@ -1072,17 +1072,20 @@ main {
 }
 //create-multi-invoice
 .create-multi-invoice {
-  tbody {
-    tr {
+  > tbody {
+    > tr {
+      &:hover {
+        background-color: #fff;
+      }
       td {
+        padding-top: 10px;
+        padding-bottom: 10px;
         vertical-align: top;
       }
     }
   }
-  .invoice-product-list {
-    & + .add-product-control {
-      margin-top: 5px;
-    }
+  .add-product-control {
+    margin-top: 5px;
   }
 }
 .add-product-control {
@@ -1096,8 +1099,12 @@ main {
 }
 .edit-invoice-info {
   text-align: left;
+  display: none;
 }
 .edit-info-inner {
   width: 500px;
-  display: none;
+}
+.save-continue-btn {
+  color: @black;
+  font-weight: bold;
 }
