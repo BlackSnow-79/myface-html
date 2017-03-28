@@ -682,19 +682,14 @@ footer p {
 }
 .text-danger,
 label.error {
-  color: #f44336;
+  color: #f44336 !important;
   padding: 0;
   margin: 0;
   font-size: 11px;
 }
-a.text-danger:hover,
-alabel.error:hover,
-a.text-danger:focus,
-alabel.error:focus {
-  color: #ea1c0d;
-}
 label.error {
   font-weight: normal;
+  color: #f44336 !important;
 }
 .lime-highlight {
   color: #ff5722;
@@ -716,6 +711,7 @@ label.error {
  * ---------------
  */
 .form-control {
+  height: 32px;
   border-radius: 3px;
   box-shadow: none;
   border-color: #d2d6de;
@@ -5919,16 +5915,19 @@ main {
 .remove-products {
   color: #f44336;
 }
-.create-multi-invoice > tbody > tr:hover {
-  background-color: #fff;
+.multi-invoice {
+  padding-bottom: 0;
 }
 .create-multi-invoice > tbody > tr td {
   padding-top: 10px;
   padding-bottom: 10px;
   vertical-align: top;
 }
-.create-multi-invoice .add-product-control {
-  margin-top: 5px;
+.create-multi-invoice > tbody > tr.collapse-toggle-nav td {
+  border-bottom: 1px solid #dfdfdf;
+}
+.create-multi-invoice .invoice-product-list {
+  margin-bottom: 5px;
 }
 .add-product-control {
   width: 100%;
@@ -5942,7 +5941,8 @@ main {
   display: none;
 }
 .edit-info-inner {
-  width: 500px;
+  float: none;
+  margin: 0 auto;
 }
 .save-continue-btn {
   color: #212121;

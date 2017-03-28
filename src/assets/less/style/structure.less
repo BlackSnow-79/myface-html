@@ -1071,21 +1071,26 @@ main {
   color: @red;
 }
 //create-multi-invoice
+.multi-invoice {
+  padding-bottom: 0;
+}
 .create-multi-invoice {
   > tbody {
     > tr {
-      &:hover {
-        background-color: #fff;
-      }
       td {
         padding-top: 10px;
         padding-bottom: 10px;
         vertical-align: top;
       }
+      &.collapse-toggle-nav {
+        td {
+          border-bottom: 1px solid #dfdfdf;
+        }
+      }
     }
   }
-  .add-product-control {
-    margin-top: 5px;
+  .invoice-product-list {
+    margin-bottom: 5px;
   }
 }
 .add-product-control {
@@ -1102,7 +1107,8 @@ main {
   display: none;
 }
 .edit-info-inner {
-  width: 500px;
+  float: none;
+  margin: 0 auto;
 }
 .save-continue-btn {
   color: @black;

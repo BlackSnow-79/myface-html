@@ -40,4 +40,23 @@ $(document).ready(function() {
       show: true
     })
   });
+  //goto-next-step in create invoice
+  $(".goto-invoice-step-2").click(function() {
+      $('.invoice-edit-step-1').removeClass('active');
+      $('.invoice-edit-step-2').addClass('active');
+      $('html,body').animate({scrollTop: ($('.'+'invoice-edit-step-2').offset().top - 80)},'slow');
+  });
+  //collapse-table
+  $(".collapse-toggle").click(function(e) {
+      e.preventDefault();
+      if (!$(this).closest('.collapse-toggle-nav').hasClass('show-collapse')) {
+          $('.collapse-div').slideUp("slow");
+          $('.collapse-toggle-nav').removeClass('show-collapse');
+          $(this).closest('.collapse-toggle-nav').addClass('show-collapse');
+          $(this).closest('.collapse-toggle-nav').next('.collapse-row').find('.collapse-div').slideDown("slow");
+      } else {
+          $(this).closest('.collapse-toggle-nav').removeClass('show-collapse');
+          $(this).closest('.collapse-toggle-nav').next('.collapse-row').find('.collapse-div').slideUp("slow");
+      }
+  });
 });

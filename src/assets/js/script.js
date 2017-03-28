@@ -207,12 +207,6 @@ $(document).ready(function() {
         $(this).closest('.edit-address-form').slideUp("slow");
         $(this).closest('.box').children('.address-infor').slideDown("slow");
     });
-    //goto-next-step in create invoice
-    $(".goto-invoice-step-2").click(function() {
-        $('.invoice-edit-step-1').removeClass('active');
-        $('.invoice-edit-step-2').addClass('active');
-        $('html,body').animate({scrollTop: ($('.'+'invoice-edit-step-2').offset().top - 80)},'slow');
-    });
     $(".cancel-invoice-step-2").click(function(e) {
         event.preventDefault();
         $('.invoice-edit-step-2').removeClass('active');
@@ -220,18 +214,6 @@ $(document).ready(function() {
         $('html, body').animate({scrollTop: 0}, 600);
     });
     //collapse-table
-    $(".collapse-toggle").click(function(e) {
-        e.preventDefault();
-        if (!$(this).closest('.collapse-toggle-nav').hasClass('show-collapse')) {
-            $('.collapse-div').slideUp("slow");
-            $('.collapse-toggle-nav').removeClass('show-collapse');
-            $(this).closest('.collapse-toggle-nav').addClass('show-collapse');
-            $(this).closest('.collapse-toggle-nav').next('.collapse-row').find('.collapse-div').slideDown("slow");
-        } else {
-            $(this).closest('.collapse-toggle-nav').removeClass('show-collapse');
-            $(this).closest('.collapse-toggle-nav').next('.collapse-row').find('.collapse-div').slideUp("slow");
-        }
-    });
     $(".collapse-close").click(function(e) {
         e.preventDefault();
         $(this).closest('.collapse-row').find('.collapse-div').slideUp("slow");
@@ -256,6 +238,20 @@ $(document).ready(function() {
                 $('.collapse-div').slideUp("slow");
                 $(this).closest('.collapse-toggle-nav').next('.collapse-row').find('.collapse-promotion-turns').slideDown("slow");
             }
+
+            //multi-invoice
+            if ($(this).closest('.multi-collapse-toggle').hasClass('show-store-address-control')) {
+                $('.collapse-div').slideUp("slow");
+                $(this).closest('.collapse-toggle-nav').next('.collapse-row').find('.store-address-info').slideDown("slow");
+            }
+            if ($(this).closest('.multi-collapse-toggle').hasClass('show-address-control')) {
+                $('.collapse-div').slideUp("slow");
+                $(this).closest('.collapse-toggle-nav').next('.collapse-row').find('.address-info').slideDown("slow");
+            }
+            if ($(this).closest('.multi-collapse-toggle').hasClass('show-ship-control')) {
+                $('.collapse-div').slideUp("slow");
+                $(this).closest('.collapse-toggle-nav').next('.collapse-row').find('.ship-info').slideDown("slow");
+            }
         } else {
             $(this).closest('.collapse-toggle-nav').removeClass('show-collapse');
             if ($(this).closest('.multi-collapse-toggle').hasClass('show-promotion-detail')) {
@@ -270,22 +266,28 @@ $(document).ready(function() {
                 $('.collapse-div').slideUp("slow");
                 $(this).closest('.collapse-toggle-nav').next('.collapse-row').find('.collapse-promotion-turns').slideDown("slow");
             }
+
+            //multi-invoice
+            if ($(this).closest('.multi-collapse-toggle').hasClass('show-store-address-control')) {
+                $('.collapse-div').slideUp("slow");
+                $(this).closest('.collapse-toggle-nav').next('.collapse-row').find('.store-address-info').slideDown("slow");
+            }
+            if ($(this).closest('.multi-collapse-toggle').hasClass('show-address-control')) {
+                $('.collapse-div').slideUp("slow");
+                $(this).closest('.collapse-toggle-nav').next('.collapse-row').find('.address-info').slideDown("slow");
+            }
+            if ($(this).closest('.multi-collapse-toggle').hasClass('show-ship-control')) {
+                $('.collapse-div').slideUp("slow");
+                $(this).closest('.collapse-toggle-nav').next('.collapse-row').find('.ship-info').slideDown("slow");
+            }
         }
     });
     //Create-multi-invoice
     $(".show-add-product-control").click(function(e) {
         e.preventDefault();
         $(this).hide();
-        $('.edit-invoice-info').hide("slow");
-        $('.invoice-info').show("slow");
+        $('.collapse-div').hide("slow");
         $(this).closest('.product-col').find('.add-product-control').show();
-    });
-    $(".edit-invoice-control").click(function(e) {
-        e.preventDefault();
-        $('.edit-invoice-info').hide("slow");
-        $('.invoice-info').show("slow");
-        $(this).closest('.invoice-info').hide("slow");
-        $(this).closest('.invoice-info').next('.edit-invoice-info').show("slow");
     });
 
     // Modal
