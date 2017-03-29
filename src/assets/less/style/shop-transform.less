@@ -34,12 +34,20 @@
 	}
 	.img-shipping-thumb {
 		width: 150px;
-		max-height: 70px;
 		overflow: hidden;
 		display: inline-block;
+		position: relative;
+		height: 75px;
 		border: @box-border;
 		img {
-			width: 100%;
+			position: absolute;
+		    top: -100%;
+		    left: -100%;
+		    right: -100%;
+		    bottom: -100%;
+		    margin: auto;
+		    width: auto;
+		    height: auto;
 		}
 	}
 }

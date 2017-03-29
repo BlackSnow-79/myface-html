@@ -6889,13 +6889,21 @@ main {
 }
 .col-shipping-add .img-shipping-thumb {
   width: 150px;
-  max-height: 70px;
   overflow: hidden;
   display: inline-block;
+  position: relative;
+  height: 75px;
   border: 1px solid #dfdfdf;
 }
 .col-shipping-add .img-shipping-thumb img {
-  width: 100%;
+  position: absolute;
+  top: -100%;
+  left: -100%;
+  right: -100%;
+  bottom: -100%;
+  margin: auto;
+  width: auto;
+  height: auto;
 }
 .shipping-form-control {
   width: 120px;
