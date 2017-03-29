@@ -5608,8 +5608,10 @@ main {
 }
 .ship-and-pay .second_choice .wrap_radio .title-choice {
   font-weight: bold;
-  margin-top: 10px;
+  margin-top: 12px;
   margin-bottom: 0;
+  display: inline-block;
+  width: 100%;
 }
 .ship-and-pay .second_choice .wrap_radio .note {
   font-size: 13px;
@@ -5617,11 +5619,11 @@ main {
   color: #777777;
 }
 .ship-and-pay .second_choice .wrap_radio .block {
-  display: inline-block;
+  display: none;
   margin-left: 15px;
 }
 .ship-and-pay .invoice-promotion-box {
-  width: 100%;
+  width: 98%;
   float: left;
   margin-top: 5px;
   padding: 10px 15px;
@@ -5686,7 +5688,7 @@ main {
   color: #777;
 }
 .invoice-dashboard-modal .clearfix .second_choice .wrap_radio .block {
-  display: inline-block;
+  display: none;
   margin-left: 15px;
 }
 .invoice-dashboard-modal .clearfix .second_choice .wrap_radio .block .invoice-promotion-box {
@@ -5732,7 +5734,7 @@ main {
   font-size: 18px;
 }
 .invoice-dashboard-modal .invoice-promotion-box {
-  width: 100%;
+  width: 98%;
   margin: 5px 0;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -5997,6 +5999,12 @@ main {
 .edit-info-inner {
   float: none;
   margin: 0 auto;
+}
+.edit-info-inner .second_choice .wrap_radio {
+  display: inline-block;
+}
+.edit-info-inner .second_choice .wrap_radio .block {
+  /*display: inline-block;*/
 }
 .save-continue-btn {
   color: #212121;

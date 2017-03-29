@@ -228,6 +228,14 @@ $(document).ready(function() {
         $(".wrap_radio").slideUp();
         $(".first_choice .invoice-promotion-box").slideDown();
     });
+
+    $('input:radio[name="payment_method1"]').change(
+    function(){
+        if ($(this).is(':checked')) {
+            $(".radio .block").slideUp();
+            $(this).parent().parent().find(".block").slideDown();
+        }
+    });
     //promotion
     $(".multi-collapse-toggle").click(function(e) {
         e.preventDefault();

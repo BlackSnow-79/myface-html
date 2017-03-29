@@ -735,8 +735,10 @@ main {
       display: none;
       .title-choice {
         font-weight: bold;
-        margin-top: 10px;
+        margin-top: 12px;
         margin-bottom: 0;
+        display: inline-block;
+        width: 100%;
       }
       .note {
         font-size: 13px;
@@ -744,13 +746,13 @@ main {
         color: #777777;
       }
       .block {
-        display: inline-block;
+        display: none;
         margin-left: 15px;
       }
     }
   }
   .invoice-promotion-box {
-    width: 100%;
+    width: 98%;
     float: left;
     margin-top: 5px;
     padding: 10px 15px;
@@ -821,7 +823,7 @@ main {
           color: #777;
         }
         .block {
-          display: inline-block;
+          display: none;
           margin-left: 15px;
           .invoice-promotion-box {
             margin-left: 8px;
@@ -882,7 +884,7 @@ main {
     }
   }
   .invoice-promotion-box {
-    width: 100%;
+    width: 98%;
     margin: 5px 0;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -1173,6 +1175,14 @@ main {
 .edit-info-inner {
   float: none;
   margin: 0 auto;
+  .second_choice {
+    .wrap_radio {
+      display: inline-block;
+      .block {
+        /*display: inline-block;*/
+      }
+    }
+  }
 }
 .save-continue-btn {
   color: @black;
