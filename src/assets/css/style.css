@@ -5618,13 +5618,14 @@ main {
 }
 .ship-and-pay .second_choice .wrap_radio .block {
   display: inline-block;
-  margin-left: 20px;
+  margin-left: 15px;
 }
 .ship-and-pay .invoice-promotion-box {
   width: 100%;
   float: left;
   margin-top: 5px;
   padding: 10px 15px;
+  margin-left: 8px;
   background-color: #f0f1f3;
   border-radius: 3px;
 }
@@ -5686,7 +5687,10 @@ main {
 }
 .invoice-dashboard-modal .clearfix .second_choice .wrap_radio .block {
   display: inline-block;
-  margin-left: 20px;
+  margin-left: 15px;
+}
+.invoice-dashboard-modal .clearfix .second_choice .wrap_radio .block .invoice-promotion-box {
+  margin-left: 8px;
 }
 .invoice-dashboard-modal .table thead tr th {
   text-align: right;
