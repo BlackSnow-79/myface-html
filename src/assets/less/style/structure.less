@@ -660,6 +660,12 @@ main {
                     font-size: 18px;
                     .lime-highlight;
                 }
+                &:last-child {
+                  td {
+                    background: rgba(58, 197, 98, 0.51);
+                    font-weight: bold;
+                  }
+                }
             }
         }
     }
@@ -713,6 +719,36 @@ main {
   float: left;
 }
 .ship-and-pay {
+  input[type="radio"] {
+    position: relative;
+    top: 2px;
+  }
+  .first_choice {
+    .invoice-promotion-box {
+      margin-left: 20px;
+      width: 96%;
+    }
+  }
+  .second_choice {
+    .wrap_radio {
+      margin-left: 20px;
+      display: none;
+      .title-choice {
+        font-weight: bold;
+        margin-top: 10px;
+        margin-bottom: 0;
+      }
+      .note {
+        font-size: 13px;
+        font-style: italic;
+        color: #777777;
+      }
+      .block {
+        display: inline-block;
+        margin-left: 20px;
+      }
+    }
+  }
   .invoice-promotion-box {
     width: 100%;
     float: left;
@@ -765,6 +801,30 @@ main {
   }
   .clearfix {
     margin-bottom: 10px;
+    .first_choice {
+      .invoice-promotion-box {
+        margin-left: 20px;
+        width: 96%;
+      }
+    }
+    .second_choice {
+      .wrap_radio {
+        display: none;
+        margin-left: 20px;
+        .title-choice {
+          font-weight: bold;
+        }
+        .note {
+          font-size: 12px;
+          font-style: italic;
+          color: #777;
+        }
+        .block {
+          display: inline-block;
+          margin-left: 20px;
+        }
+      }
+    }
   }
   .table {
     thead {

@@ -64,168 +64,250 @@
         <div class="clearfix">
           <label>3. Phương thức thanh toán + giao hàng:</label>
           <div class="form-horizontal ship-options">
-            <div class="radio">
-              <label class="radio-material-blue">
-                <input type="radio" id="radio_payment_1" checked="checked" name="payment_method" value="1">
-                <span class="check">1. Người mua hàng trả tiền sản phẩm + phí vận chuyển :</span>
+            <div class="first_choice">
+              <label class="radio-material-blue" >
+                  <input checked id="radio_shop" name="payment_method" type="radio"  >
+                  <span class="check">1. Shop tự giao hàng</span>
               </label>
               <div class="form-horizontal invoice-promotion-box">
-                <div class="pay-money">
-                  <div class="col-md-4">
-                    <label class="radio-material-blue">
-                      <input type="radio" name="" id="" value="">
-                      <span class="check">Tiết kiệm</span>
-                      <p class="lime-highlight">
-                        <strong id="strong_text_fee">13.000</strong>
-                        <ins> đ</ins>
-                      </p>
-                    </label>
+                  <div class="col-md-12 pay-custom">
+                      <label class="radio-material-blue">
+                          <input id="" name="" type="radio" value="">
+                          <span class="check">Tùy chỉnh</span>
+                      </label>
+                      <div class="custom-ship">
+                          <p class="color-label">VNĐ</p>
+                          <input class="form-control" id="" placeholder="Nhập số tiền muốn thu" type="number">
+                      </div>
                   </div>
-                  <div class="col-md-4">
-                    <label class="radio-material-blue">
-                      <input type="radio" name="" id="" value="">
-                      <span class="check">Bình thường</span>
-                      <p class="lime-highlight">
-                        <strong id="strong_text_fee">19.000</strong>
-                        <ins> đ</ins>
-                      </p>
-                    </label>
-                  </div>
-                </div>
-                <div class="col-md-12 pay-custom">
-                  <label class="radio-material-blue">
-                    <input type="radio" name="" id="" value="">
-                    <span class="check">Tùy chỉnh</span>
-                  </label>
-                  <div class="custom-ship">
-                    <p class="color-label">VNĐ</p>
-                    <input type="number" class="form-control" id="" placeholder="Nhập số tiền muốn thu">
-                  </div>
-                </div>
               </div>
-            </div>
-            <div class="radio">
-              <label class="radio-material-blue">
-                <input class="radio_payment" type="radio" id="radio_payment_2" name="payment_method" value="2">
-                <span class="check">2. Người mua hàng không trả tiền sản phẩm. Người mua hàng trả phí vận chuyển</span>
+          </div>
+          <div class="second_choice">
+              <label class="radio-material-blue" >
+                  <input id="radio_company" name="payment_method" type="radio" >
+                  <span class="check">2. Công ty vận chuyển giao hàng</span>
               </label>
-              <div class="form-horizontal invoice-promotion-box">
-                <div class="pay-money">
-                  <div class="col-md-4">
-                    <label class="radio-material-blue">
-                      <input type="radio" name="" id="" value="">
-                      <span class="check">Tiết kiệm</span>
-                      <p class="lime-highlight">
-                        <strong id="strong_text_fee">13.000</strong>
-                        <ins> đ</ins>
-                      </p>
-                    </label>
+              <div class="wrap_radio">
+                  <div class="radio">
+                      <label class="radio-material-blue">
+                          <input checked="checked" id="radio_payment_1" name="payment_method1" type="radio" value="1">
+                          <span class="check">1. Người mua hàng trả tiền sản phẩm + phí vận chuyển :</span>
+                      </label>
+                      <div class="block">
+                          <p class="title-choice">Speedlink</p>
+                          <div class="form-horizontal invoice-promotion-box">
+                              <div class="pay-money">
+                                  <div class="col-md-4">
+                                      <label class="radio-material-blue">
+                                          <input id="" name="save" type="radio" value="">
+                                          <span class="check">Tiết kiệm</span>
+                                          <p class="note">Giao trong vòng 3 ngày</p>
+                                      </label>
+                                      
+                                      <p class="lime-highlight">
+                                          <label class="radio-material-blue">
+                                              <strong id="strong_text_fee">13.000</strong> <ins>đ</ins>
+                                          </label>
+                                      </p>
+                                  </div>
+                                  <div class="col-md-4">
+                                      <label class="radio-material-blue">
+                                          <input id="" name="save" type="radio" value="">
+                                          <span class="check">Bình thường</span>
+                                          <p class="note">Giao trong vòng 3 ngày</p>
+                                      </label>
+                                      
+                                      <p class="lime-highlight">
+                                          <label class="radio-material-blue">
+                                              <strong id="strong_text_fee">19.000</strong> <ins>đ</ins>
+                                          </label>
+                                      </p>
+                                  </div>
+                              </div>
+                              <div class="col-md-12 pay-custom">
+                                  <label class="radio-material-blue">
+                                      <input id="" name="" type="radio" value="">
+                                      <span class="check">Tùy chỉnh</span>
+                                  </label>
+                                  <div class="custom-ship">
+                                      <p class="color-label">VNĐ</p>
+                                      <input class="form-control" id="" placeholder="Nhập số tiền muốn thu" type="number">
+                                  </div>
+                              </div>
+                          </div>
+                      
+                          <p class="title-choice">Giao hàng tiết kiệm</p>
+                          <div class="form-horizontal invoice-promotion-box">
+                              <div class="pay-money">
+                                  <div class="col-md-4">
+                                      <label class="radio-material-blue">
+                                          <input id="" name="save1" type="radio" value="">
+                                          <span class="check">Tiết kiệm</span>
+                                          <p class="note">Giao trong vòng 3 ngày</p>
+                                      </label>
+                                      <p class="lime-highlight">
+                                          <label class="radio-material-blue">
+                                              <strong id="strong_text_fee">13.000</strong> <ins>đ</ins>
+                                          </label>
+                                      </p>
+                                  </div>
+                                  <div class="col-md-4">
+                                      <label class="radio-material-blue">
+                                          <input id="" name="save1" type="radio" value="">
+                                          <span class="check">Bình thường</span>
+                                          <p class="note">Giao trong vòng 3 ngày</p>
+                                      </label>
+                                      <p class="lime-highlight">
+                                          <label class="radio-material-blue">
+                                              <strong id="strong_text_fee">19.000</strong> <ins>đ</ins>
+                                          </label>
+                                      </p>
+                                  </div>
+                              </div>
+                              <div class="col-md-12 pay-custom">
+                                  <label class="radio-material-blue">
+                                      <input id="" name="" type="radio" value="">
+                                      <span class="check">Tùy chỉnh</span>
+                                  </label>
+                                  <div class="custom-ship">
+                                      <p class="color-label">VNĐ</p>
+                                      <input class="form-control" id="" placeholder="Nhập số tiền muốn thu" type="number">
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
                   </div>
-                  <div class="col-md-4">
-                    <label class="radio-material-blue">
-                      <input type="radio" name="" id="" value="">
-                      <span class="check">Bình thường</span>
-                      <p class="lime-highlight">
-                        <strong id="strong_text_fee">15.000</strong>
-                        <ins> đ</ins>
-                      </p>
-                    </label>
+                  <div class="radio">
+                      <label class="radio-material-blue">
+                          <input class="radio_payment" id="radio_payment_2" name="payment_method1" type="radio" value="2">
+                          <span class="check">2. Người mua hàng không trả tiền sản phẩm. Người mua hàng trả phí vận chuyển</span>
+                      </label>
+                      <div class="form-horizontal invoice-promotion-box">
+                          <div class="pay-money">
+                              <div class="col-md-4">
+                                  <label class="radio-material-blue">
+                                      <input id="" name="" type="radio" value="">
+                                      <span class="check">Tiết kiệm</span>
+                                  </label>
+                                  <p class="lime-highlight">
+                                      <label class="radio-material-blue">
+                                          <strong id="strong_text_fee">13.000</strong> <ins>đ</ins>
+                                      </label>
+                                  </p>
+                              </div>
+                              <div class="col-md-4">
+                                  <label class="radio-material-blue">
+                                      <input id="" name="" type="radio" value="">
+                                      <span class="check">Bình thường</span>
+                                  </label>
+                                  <p class="lime-highlight">
+                                      <label class="radio-material-blue">
+                                          <strong id="strong_text_fee">15.000</strong> <ins>đ</ins>
+                                      </label>
+                                  </p>
+                              </div>
+                              <div class="col-md-4">
+                                  <label class="radio-material-blue">
+                                      <input id="" name="" type="radio" value="">
+                                      <span class="check">Hỏa tốc</span>
+                                  </label>
+                                  <p class="lime-highlight">
+                                      <label class="radio-material-blue">
+                                          <strong id="strong_text_fee">27.000</strong> <ins>đ</ins>
+                                      </label>
+                                  </p>
+                              </div>
+                          </div>
+                      </div>
                   </div>
-                  <div class="col-md-4">
-                    <label class="radio-material-blue">
-                      <input type="radio" name="" id="" value="">
-                      <span class="check">Hỏa tốc</span>
-                      <p class="lime-highlight">
-                        <strong id="strong_text_fee">27.000</strong>
-                        <ins> đ</ins>
-                      </p>
-                    </label>
+                  <div class="radio">
+                      <label class="radio-material-blue">
+                          <input class="radio_payment" id="radio_payment_3" name="payment_method" type="radio" value="3">
+                          <span class="check">3. Người bán hàng đã thu tiền hàng. Người bán hàng trả phí vận chuyển</span>
+                      </label>
+                      <div class="form-horizontal invoice-promotion-box">
+                          <div class="pay-money">
+                              <div class="col-md-4">
+                                  <label class="radio-material-blue">
+                                      <input id="" name="" type="radio" value="">
+                                      <span class="check">Tiết kiệm</span>
+                                  </label>
+                                  <p class="lime-highlight">
+                                      <label class="radio-material-blue">
+                                          <strong id="strong_text_fee">13.200</strong> <ins>đ</ins>
+                                      </label>
+                                  </p>
+                              </div>
+                              <div class="col-md-4">
+                                  <label class="radio-material-blue">
+                                      <input id="" name="" type="radio" value="">
+                                      <span class="check">Bình thường</span>
+                                  </label>
+                                  <p class="lime-highlight">
+                                      <label class="radio-material-blue">
+                                          <strong id="strong_text_fee">15.400</strong> <ins>đ</ins>
+                                      </label>
+                                  </p>
+                              </div>
+                              <div class="col-md-4">
+                                  <label class="radio-material-blue">
+                                      <input id="" name="" type="radio" value="">
+                                      <span class="check">Hỏa tốc</span>
+                                  </label>
+                                  <p class="lime-highlight">
+                                      <label class="radio-material-blue">
+                                          <strong id="strong_text_fee">26.400</strong> <ins>đ</ins>
+                                      </label>
+                                  </p>
+                              </div>
+                          </div>
+                      </div>
                   </div>
-                </div>
+                  <div class="radio">
+                      <label class="radio-material-blue">
+                          <input class="radio_payment" id="radio_payment_2" name="payment_method" type="radio" value="2">
+                          <span class="check">4. Người mua hàng trả tiền sản phẩm. Người bán hàng (chủ shop) trả phí vận chuyển</span>
+                      </label>
+                      <div class="form-horizontal invoice-promotion-box">
+                          <div class="pay-money">
+                              <div class="col-md-4">
+                                  <label class="radio-material-blue">
+                                      <input id="" name="" type="radio" value="">
+                                      <span class="check">Tiết kiệm</span>
+                                  </label>
+                                  <p class="lime-highlight">
+                                      <label class="radio-material-blue">
+                                          <strong id="strong_text_fee">13.200</strong> <ins>đ</ins>
+                                      </label>
+                                  </p>
+                              </div>
+                              <div class="col-md-4">
+                                  <label class="radio-material-blue">
+                                      <input id="" name="" type="radio" value="">
+                                      <span class="check">Bình thường</span>
+                                  </label>
+                                  <p class="lime-highlight">
+                                      <label class="radio-material-blue">
+                                          <strong id="strong_text_fee">15.400</strong> <ins>đ</ins>
+                                      </label>
+                                  </p>
+                              </div>
+                              <div class="col-md-4">
+                                  <label class="radio-material-blue">
+                                      <input id="" name="" type="radio" value="">
+                                      <span class="check">Hỏa tốc</span>
+                                  </label>
+                                  <p class="lime-highlight">
+                                      <label class="radio-material-blue">
+                                          <strong id="strong_text_fee">26.400</strong> <ins>đ</ins>
+                                      </label>
+                                  </p>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
               </div>
-            </div>
-            <div class="radio">
-              <label class="radio-material-blue">
-                <input class="radio_payment" type="radio" id="radio_payment_3" name="payment_method" value="3">
-                <span class="check">3. Người bán hàng đã thu tiền hàng. Người bán hàng trả phí vận chuyển</span>
-              </label>
-              <div class="form-horizontal invoice-promotion-box">
-                <div class="pay-money">
-                  <div class="col-md-4">
-                    <label class="radio-material-blue">
-                      <input type="radio" name="" id="" value="">
-                      <span class="check">Tiết kiệm</span>
-                      <p class="lime-highlight">
-                        <strong id="strong_text_fee">13.200</strong>
-                        <ins> đ</ins>
-                      </p>
-                    </label>
-                  </div>
-                  <div class="col-md-4">
-                    <label class="radio-material-blue">
-                      <input type="radio" name="" id="" value="">
-                      <span class="check">Bình thường</span>
-                      <p class="lime-highlight">
-                        <strong id="strong_text_fee">15.400</strong>
-                        <ins> đ</ins>
-                      </p>
-                    </label>
-                  </div>
-                  <div class="col-md-4">
-                    <label class="radio-material-blue">
-                      <input type="radio" name="" id="" value="">
-                      <span class="check">Hỏa tốc</span>
-                      <p class="lime-highlight">
-                        <strong id="strong_text_fee">26.400</strong>
-                        <ins> đ</ins>
-                      </p>
-                    </label>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="radio">
-              <label class="radio-material-blue">
-                <input class="radio_payment" type="radio" id="radio_payment_2" name="payment_method" value="4">
-                <span class="check">4. Người mua hàng trả tiền sản phẩm. Người bán hàng (chủ shop) trả phí vận chuyển</span>
-              </label>
-              <div class="form-horizontal invoice-promotion-box">
-                <div class="pay-money">
-                  <div class="col-md-4">
-                    <label class="radio-material-blue">
-                      <input type="radio" name="" id="" value="">
-                      <span class="check">Tiết kiệm</span>
-                      <p class="lime-highlight">
-                        <strong id="strong_text_fee">13.200</strong>
-                        <ins> đ</ins>
-                      </p>
-                    </label>
-                  </div>
-                  <div class="col-md-4">
-                    <label class="radio-material-blue">
-                      <input type="radio" name="" id="" value="">
-                      <span class="check">Bình thường</span>
-                      <p class="lime-highlight">
-                        <strong id="strong_text_fee">15.400</strong>
-                        <ins> đ</ins>
-                      </p>
-                    </label>
-                  </div>
-                  <div class="col-md-4">
-                    <label class="radio-material-blue">
-                      <input type="radio" name="" id="" value="">
-                      <span class="check">Hỏa tốc</span>
-                      <p class="lime-highlight">
-                        <strong id="strong_text_fee">26.400</strong>
-                        <ins> đ</ins>
-                      </p>
-                    </label>
-                  </div>
-                </div>
-              </div>
-            </div>
-
+          </div>
           </div>
         </div>
         <div class="clearfix">
@@ -235,7 +317,7 @@
               <div class="form-group">
                 <div class="col-xs-12">
                   <span>Phương thức giao hàng:
-                    <strong>Tiết kiệm</strong>
+                    <strong>Tiết kiệm của Speedlink</strong>
                   </span>
                   <input readonly="" type="text" class="form-control" id="" placeholder="13.200">
                   <p class="color-label">VND</p>

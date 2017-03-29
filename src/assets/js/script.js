@@ -219,6 +219,15 @@ $(document).ready(function() {
         $(this).closest('.collapse-row').find('.collapse-div').slideUp("slow");
         $('.collapse-toggle-nav').removeClass('show-collapse');
     });
+    //collapse radio
+    $("#radio_company").click(function(){
+        $(".wrap_radio").slideDown();
+        $(".first_choice .invoice-promotion-box").slideUp();
+    });
+    $("#radio_shop").click(function(){
+        $(".wrap_radio").slideUp();
+        $(".first_choice .invoice-promotion-box").slideDown();
+    });
     //promotion
     $(".multi-collapse-toggle").click(function(e) {
         e.preventDefault();

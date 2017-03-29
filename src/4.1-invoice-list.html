@@ -155,27 +155,17 @@
                                         </div>
                                         <div class="checkbox col-xs-3">
                                             <label>
-                                                <input type="checkbox"> Nhận hàng tại shop
+                                                <input type="checkbox"> Shop giao hàng
                                             </label>
                                         </div>
                                         <div class="checkbox col-xs-3">
                                             <label>
-                                                <input type="checkbox"> Quantium
+                                                <input type="checkbox"> Speedlink
                                             </label>
                                         </div>
                                         <div class="checkbox col-xs-3">
                                             <label>
-                                                <input type="checkbox"> Giao hàng nhanh
-                                            </label>
-                                        </div>
-                                        <div class="checkbox col-xs-3">
-                                            <label>
-                                                <input type="checkbox"> Viettel Post
-                                            </label>
-                                        </div>
-                                        <div class="checkbox col-xs-3">
-                                            <label>
-                                                <input type="checkbox"> Pro Ship
+                                                <input type="checkbox"> Giao hàng tiết kiệm
                                             </label>
                                         </div>
                                     </div>
@@ -250,7 +240,7 @@
                                     </div>
                                 </td>
                             </tr>
-                            {% for x in [1,2,3,4,5,6,7,8,9,10]%}
+                            {% for x in [1,3,5,7]%}
                             <tr class="collapse-toggle-nav">
                                 <td><input type="checkbox"></td>
                                 <td>
@@ -291,7 +281,375 @@
                                     </select>
                                 </td>
                                 <td class="text-center">
-                                    <p>Quantium</p>
+                                    <p>SPL</p>
+                                </td>
+                                <td>
+                                    <p>
+                                        <a href="3.3-update-customer.html">Phạm Ngọc Thiên Thư</a>
+                                    </p>
+                                    <p class="in-num">(32 đơn hàng)</p>
+                                </td>
+                                <td class="text-center">04/11/2015 - 11:00:35</td><!--format 24 giờ -->
+                                <td>
+                                    <label>1.000.000<ins>đ</ins></label>
+                                </td>
+                                <td>
+                                    <button class="btn btn-primary fast-view-btn collapse-toggle">Xem nhanh</button>
+                                    <a class="btn btn-lime in-view-btn" href="4.2-invoice-detail.html">Xem</a>
+                                </td>
+                            </tr>
+                            <tr class="collapse-row fast-view-content">
+                                <td class="collapse-inner" colspan="9">
+                                    <div class="collapse-div">
+                                        <div class="row invoice-info">
+                                            <div class="col-sm-4 invoice-col">
+                                                <p class="title">
+                                                    Địa điểm lấy hàng (sản phẩm)
+                                                </p>
+                                                <p class="info-row">
+                                                    <address>
+                                                        <strong>Địa chỉ 1:</strong> Taodan, Số 121/11, Đường Hưng Phú, Phường Mỹ Quý, Thành Phố Long Xuyên, Tỉnh An Giang
+                                                    </address>
+                                                </p>
+                                            </div><!-- /.col -->
+                                            <div class="col-sm-4 invoice-col">
+                                                <p class="title">
+                                                    Địa điểm giao hàng
+                                                </p>
+                                                <p class="info-row">
+                                                    <address>
+                                                        <strong>Phan Thị Lê</strong><br>
+                                                        <strong>Địa chỉ:</strong> Taodan, Số 121/11, Đường Hưng Phú, Phường Mỹ Quý, Thành Phố Long Xuyên, Tỉnh An Giang
+                                                    </address>
+                                                </p>
+                                            </div><!-- /.col -->
+                                            <div class="col-sm-4 invoice-col">
+                                                <p class="title">
+                                                    Cước vận chuyển (trả cho công ty vận chuyển)
+                                                </p>
+                                                <p class="info-row">
+                                                    Phương thức giao hàng:
+                                                    <strong>Tiết kiệm </strong>
+                                                    <span class="lime-text">13000</span>
+                                                    (VNĐ)
+                                                </p>
+                                            </div><!-- /.col -->
+                                        </div>
+                                        <div class="row invoice-info">
+                                            <div class="col-sm-8 invoice-col">
+                                                <table class="table table-striped order-product-table">
+                                                    <thead>
+                                                        <tr>
+                                                            <th class="col-xs-4">Tên sản phẩm</th>
+                                                            <th class="col-xs-2 text-center">Giá bán</th>
+                                                            <th class="col-xs-2 text-center">Số lượng</th>
+                                                            <th class="col-xs-2 text-center">Khối lượng (gram)</th>
+                                                            <th class="col-xs-2 text-center">Thành tiền</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td class="products-list">
+                                                                <div class="item">
+                                                                    <div class="product-img">
+                                                                        <a href="#">
+                                                                            <img alt="myface" src="assets/images/product/product-2.jpg">
+                                                                        </a>
+                                                                    </div>
+                                                                    <div class="product-info">
+                                                                        <a class="product-title" href="#">Combo 2 Hộp Sữa Bột Ensure Gold Acti M2 400g</a>
+                                                                        <p class="product-properties">(Màu sắc: Xanh rêu, Size: M)</p>
+                                                                    </div>
+                                                                </div>
+                                                            </td>
+                                                            <td class="text-center">
+                                                                <span>1.000.000<ins>đ</ins></span>
+                                                            </td>
+                                                            <td class="text-center">2</td>
+                                                            <td class="text-center">2000</td>
+                                                            <td class="text-center">
+                                                                <label>1.000.000<ins>đ</ins></label>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                            <div class="col-sm-4 invoice-col">
+                                                <div class="table-responsive">
+                                                    <table class="table">
+                                                        <tbody>
+                                                            <tr>
+                                                                <th>Tiền sản phẩm:</th>
+                                                                <td>
+                                                                    2.000.000<ins>đ</ins>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th>Phí vận chuyển và thu tiền tận nơi:</th>
+                                                                <td>
+                                                                    0<ins>đ</ins>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th>Giảm giá khuyến mãi:</th>
+                                                                <td>
+                                                                    0<ins>đ</ins>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th>Giảm giá coupon:</th>
+                                                                <td>
+                                                                    0<ins>đ</ins>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th>Mã coupon sử dụng:</th>
+                                                                <td>Chưa có</td>
+                                                            </tr>
+                                                            <tr class="invoice-price-footer">
+                                                                <th>Tổng tiền đơn hàng:</th>
+                                                                <td>
+                                                                    <label class="lime-highlight">2.000.000<ins>đ</ins></label>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group text-right last-row">
+                                            <a class="btn btn-lime" href="4.3.1-invoice-detail-edit-1.html">Sửa đơn hàng</a>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            {% endfor %}
+                            {% for x in [2,4,6]%}
+                            <tr class="collapse-toggle-nav">
+                                <td><input type="checkbox"></td>
+                                <td>
+                                    <a class="cate-name" href="4.2-invoice-detail.html">12486578929</a>
+                                </td>
+                                <td>
+                                    <select class="form-control">
+                                        <option>
+                                            Đặt hàng thành công
+                                        </option>
+                                        <option>
+                                            Đã xác nhận
+                                        </option>
+                                        <option>
+                                            Chưa liên lạc được
+                                        </option>
+                                        <option>
+                                            Đang chuẩn bị hàng
+                                        </option>
+                                        <option>
+                                            Đã đóng gói
+                                        </option>
+                                        <option>
+                                            Đang giao hàng
+                                        </option>
+                                        <option>
+                                            Đã giao hàng
+                                        </option>
+                                        <option>
+                                            Hủy đơn hàng
+                                        </option>
+                                        <option>
+                                            Thanh toán thành công
+                                        </option>
+                                        <option>
+                                            Thanh toán thất bại
+                                        </option>
+                                    </select>
+                                </td>
+                                <td class="text-center">
+                                    <p>GHTK</p>
+                                </td>
+                                <td>
+                                    <p>
+                                        <a href="3.3-update-customer.html">Phạm Ngọc Thiên Thư</a>
+                                    </p>
+                                    <p class="in-num">(32 đơn hàng)</p>
+                                </td>
+                                <td class="text-center">04/11/2015 - 11:00:35</td><!--format 24 giờ -->
+                                <td>
+                                    <label>1.000.000<ins>đ</ins></label>
+                                </td>
+                                <td>
+                                    <button class="btn btn-primary fast-view-btn collapse-toggle">Xem nhanh</button>
+                                    <a class="btn btn-lime in-view-btn" href="4.2-invoice-detail.html">Xem</a>
+                                </td>
+                            </tr>
+                            <tr class="collapse-row fast-view-content">
+                                <td class="collapse-inner" colspan="9">
+                                    <div class="collapse-div">
+                                        <div class="row invoice-info">
+                                            <div class="col-sm-4 invoice-col">
+                                                <p class="title">
+                                                    Địa điểm lấy hàng (sản phẩm)
+                                                </p>
+                                                <p class="info-row">
+                                                    <address>
+                                                        <strong>Địa chỉ 1:</strong> Taodan, Số 121/11, Đường Hưng Phú, Phường Mỹ Quý, Thành Phố Long Xuyên, Tỉnh An Giang
+                                                    </address>
+                                                </p>
+                                            </div><!-- /.col -->
+                                            <div class="col-sm-4 invoice-col">
+                                                <p class="title">
+                                                    Địa điểm giao hàng
+                                                </p>
+                                                <p class="info-row">
+                                                    <address>
+                                                        <strong>Phan Thị Lê</strong><br>
+                                                        <strong>Địa chỉ:</strong> Taodan, Số 121/11, Đường Hưng Phú, Phường Mỹ Quý, Thành Phố Long Xuyên, Tỉnh An Giang
+                                                    </address>
+                                                </p>
+                                            </div><!-- /.col -->
+                                            <div class="col-sm-4 invoice-col">
+                                                <p class="title">
+                                                    Cước vận chuyển (trả cho công ty vận chuyển)
+                                                </p>
+                                                <p class="info-row">
+                                                    Phương thức giao hàng:
+                                                    <strong>Tiết kiệm </strong>
+                                                    <span class="lime-text">13000</span>
+                                                    (VNĐ)
+                                                </p>
+                                            </div><!-- /.col -->
+                                        </div>
+                                        <div class="row invoice-info">
+                                            <div class="col-sm-8 invoice-col">
+                                                <table class="table table-striped order-product-table">
+                                                    <thead>
+                                                        <tr>
+                                                            <th class="col-xs-4">Tên sản phẩm</th>
+                                                            <th class="col-xs-2 text-center">Giá bán</th>
+                                                            <th class="col-xs-2 text-center">Số lượng</th>
+                                                            <th class="col-xs-2 text-center">Khối lượng (gram)</th>
+                                                            <th class="col-xs-2 text-center">Thành tiền</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td class="products-list">
+                                                                <div class="item">
+                                                                    <div class="product-img">
+                                                                        <a href="#">
+                                                                            <img alt="myface" src="assets/images/product/product-2.jpg">
+                                                                        </a>
+                                                                    </div>
+                                                                    <div class="product-info">
+                                                                        <a class="product-title" href="#">Combo 2 Hộp Sữa Bột Ensure Gold Acti M2 400g</a>
+                                                                        <p class="product-properties">(Màu sắc: Xanh rêu, Size: M)</p>
+                                                                    </div>
+                                                                </div>
+                                                            </td>
+                                                            <td class="text-center">
+                                                                <span>1.000.000<ins>đ</ins></span>
+                                                            </td>
+                                                            <td class="text-center">2</td>
+                                                            <td class="text-center">2000</td>
+                                                            <td class="text-center">
+                                                                <label>1.000.000<ins>đ</ins></label>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                            <div class="col-sm-4 invoice-col">
+                                                <div class="table-responsive">
+                                                    <table class="table">
+                                                        <tbody>
+                                                            <tr>
+                                                                <th>Tiền sản phẩm:</th>
+                                                                <td>
+                                                                    2.000.000<ins>đ</ins>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th>Phí vận chuyển và thu tiền tận nơi:</th>
+                                                                <td>
+                                                                    0<ins>đ</ins>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th>Giảm giá khuyến mãi:</th>
+                                                                <td>
+                                                                    0<ins>đ</ins>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th>Giảm giá coupon:</th>
+                                                                <td>
+                                                                    0<ins>đ</ins>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th>Mã coupon sử dụng:</th>
+                                                                <td>Chưa có</td>
+                                                            </tr>
+                                                            <tr class="invoice-price-footer">
+                                                                <th>Tổng tiền đơn hàng:</th>
+                                                                <td>
+                                                                    <label class="lime-highlight">2.000.000<ins>đ</ins></label>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group text-right last-row">
+                                            <a class="btn btn-lime" href="4.3.1-invoice-detail-edit-1.html">Sửa đơn hàng</a>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            {% endfor %}
+                            {% for x in [1,2,3]%}
+                            <tr class="collapse-toggle-nav">
+                                <td><input type="checkbox"></td>
+                                <td>
+                                    <a class="cate-name" href="4.2-invoice-detail.html">12486578929</a>
+                                </td>
+                                <td>
+                                    <select class="form-control">
+                                        <option>
+                                            Đặt hàng thành công
+                                        </option>
+                                        <option>
+                                            Đã xác nhận
+                                        </option>
+                                        <option>
+                                            Chưa liên lạc được
+                                        </option>
+                                        <option>
+                                            Đang chuẩn bị hàng
+                                        </option>
+                                        <option>
+                                            Đã đóng gói
+                                        </option>
+                                        <option>
+                                            Đang giao hàng
+                                        </option>
+                                        <option>
+                                            Đã giao hàng
+                                        </option>
+                                        <option>
+                                            Hủy đơn hàng
+                                        </option>
+                                        <option>
+                                            Thanh toán thành công
+                                        </option>
+                                        <option>
+                                            Thanh toán thất bại
+                                        </option>
+                                    </select>
+                                </td>
+                                <td class="text-center">
+                                    <p>SGH</p>
                                 </td>
                                 <td>
                                     <p>
