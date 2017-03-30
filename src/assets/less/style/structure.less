@@ -778,6 +778,7 @@ main {
     margin-bottom: 0;
   }
 }
+
 .custom-ship {
   padding-left: 20px;
   padding-right: 15px;
@@ -786,7 +787,23 @@ main {
     display: inline-block;
   }
 }
-
+.first_choice {
+  .custom-ship {
+    float: left;
+    padding-left: 15px;
+  }
+  .radio-material-blue {
+    width: 100%;
+  }
+  .form-horizontal {
+    .radio-material-blue {
+      float: left;
+      position: relative;
+      top: 5px;
+      width: auto;
+    }
+  }
+}
 .margin-bottom-20 {
   margin-bottom: 20px;
 }
@@ -1175,14 +1192,6 @@ main {
 .edit-info-inner {
   float: none;
   margin: 0 auto;
-  .second_choice {
-    .wrap_radio {
-      display: inline-block;
-      .block {
-        /*display: inline-block;*/
-      }
-    }
-  }
 }
 .save-continue-btn {
   color: @black;
